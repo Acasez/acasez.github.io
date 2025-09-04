@@ -18,7 +18,7 @@
 				gap: 2em;
 			}
 			.portfolio-image img {
-				max-width: 400px;
+				max-width: 600px;
 				width: 100%;
 				height: auto;
 				border-radius: 8px;
@@ -36,6 +36,16 @@
 			.portfolio-subtitle {
 				font-size: 1.2em;
 				margin-bottom: 1em;
+			}
+			.portfolio-row.reverse {
+				flex-direction: row-reverse;
+			}
+			.portfolio-row.reverse .portfolio-image {
+				margin-left: 2em;
+				margin-right: 0;
+			}
+			.portfolio-row .portfolio-image {
+				margin-right: 2em;
 			}
 		</style>
 	</head>
@@ -103,9 +113,10 @@
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<header>
-						<h2>Portfolio</h2>
+						<h3 class="portfolio-title">Main Projects</h3>
+						<p class="portfolio-subtitle">Some of the projects I've done</p>
 					</header>
-					<div class="portfolio-row">
+					<div class="portfolio-row reverse">
 						<div class="portfolio-image">
 							<img src="images/Amsvartne.JPG" alt="Amsvartne" />
 						</div>
