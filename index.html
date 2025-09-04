@@ -51,6 +51,50 @@
 			.portfolio-row .portfolio-image {
 				margin-right: 1em;
 			}
+			.intro-flex {
+				background: url('images/bg-pattern.png'), #155a6a; /* Use your own pattern or color */
+				background-size: cover;
+				padding: 3em 0;
+			}
+			.intro-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				max-width: 1200px;
+				margin: 0 auto;
+				gap: 3em;
+			}
+			.intro-image img {
+				width: 320px;
+				height: 320px;
+				object-fit: cover;
+				border-radius: 12px;
+				box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+			}
+			.intro-text {
+				color: #fff;
+				font-size: 1.2em;
+				max-width: 700px;
+			}
+			.intro-text h2 {
+				margin-top: 0;
+				font-size: 2em;
+				font-weight: bold;
+			}
+			.intro-text a {
+				color: #aeefff;
+				text-decoration: underline;
+			}
+			@media (max-width: 900px) {
+				.intro-container {
+					flex-direction: column;
+					gap: 2em;
+				}
+				.intro-image img {
+					width: 220px;
+					height: 220px;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -70,6 +114,7 @@
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#Main Projects" id="Main Projects-link"><span class="icon solid fa-th">Main Projects</span></a></li>
 								<li><a href="#Personal Projects" id="Personal Projects-link"><span class="icon solid fa-th">Personal Projects</span></a></li>
+								<li><a href="#Small Projects" id="Small Projects-link"><span class="icon solid fa-th">Small Projects</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
@@ -83,28 +128,24 @@
 						</ul>
 				</div>
 			</div>
-
 		<!-- Main -->
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Edvin Skogsholm Sanne</strong>, a game desinger.<br />
-								<p>My name is Edvin Skogsholm Sanne and I'm a game designer from Sweden. I've studied game design and digital narration at Högskolan i Skövde/Skövde University. <br>
-								My main skills lie in gameplay, balance and level design. I have also worked on level design, programming and UI design. I have experience with scripting in Unity, with Unreal Blueprints as well as other programming languages <br>
-								My favorite game genre to both design and play is strategy games, though I can work with most genres. I also really like worldbuilding, especially in fantasy and historical settings.</p>
-								<p>https://acasez.itch.io/ for all the games I've worked on. </p>
-								<p>edvin.sanne@gmail.com if you want to contact me. If there is a job you think I would fit in, don't hesitate to contact me.</p>
-								</header>
-
-							<footer>
-								<a href="#Main Projects" class="button scrolly">Main Projects</a>
-								<a href="#Personal Projects" class="button scrolly">Personal Projects</a>
-							</footer>
-
+					<section id="top" class="one dark cover intro-flex">
+						<div class="intro-container">
+							<div class="intro-image">
+								<img src="images/Photo.jpg" alt="Picture of me" />
+							</div>
+							<div class="intro-text">
+								<h2>Hi!</h2>
+								<p>
+									My name is Edvin Skogsholm Sanne and I'm a game designer from Sweden. I've studied game design and digital narration at Högskolan i Skövde/Skövde University. My main skills lie in gameplay, balance and level design. I have also worked on level design, programming and UI design. I have experience with scripting in Unity and with Unreal Blueprints.<br><br>
+									My favorite game genre to both design and play is strategy games, though I can work with most genres. I also really like worldbuilding, especially in fantasy and historical settings.<br><br>
+									<a href="https://acasez.itch.io/">https://acasez.itch.io/</a> for all the games I've worked on.<br><br>
+									<a href="mailto:edvin.sanne@gmail.com">edvin.sanne@gmail.com</a> if you want to contact me. If there is a job you think I would fit in, don't hesitate to contact me.
+								</p>
+							</div>
 						</div>
 					</section>
 
@@ -254,7 +295,7 @@
 					<!-- Small Projects -->
 					<section id="Small Projects" class="two">
 					<header>
-						<h3 class="portfolio-title">Personal Projects</h3>
+						<h3 class="portfolio-title">Small Projects</h3>
 						<p class="portfolio-subtitle">Small or old projects. They lack their own subpage</p>
 						</header>
 						<div class="portfolio-row reverse">
@@ -297,7 +338,7 @@
 								<h3 class="portfolio-title">Abyss Tactics (2018-2019)</h3>
 								<p class="portfolio-subtitle"><strong>Fantasy/Magitech 4X</strong></p>
 								<p>
-									Multiplayer turn based tactics game, inspired by Xcom with a Napoleonic setting. The first larger group project I was part of, I worked on game design, level design and programming using Unreal Blueprints. It was a good learning experience in working with a larger group and project management.
+									Local ultiplayer turn based tactics game, inspired by Xcom with a Napoleonic setting. The first larger group project I was part of, I worked on game design, level design and programming using Unreal Blueprints. It was a good learning experience in working with a larger group and project management.
 								</p>
 								<p>
 									<a href="https://acasez.itch.io/abyss">https://acasez.itch.io/abyss</a>
