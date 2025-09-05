@@ -76,9 +76,6 @@
 				font-size: 1.1em;
 				max-width: 1400px;
 			}
-			.intro-text a {
-				color: black;
-			}
 			.intro-text a:hover {
 				color: blue;
 			}
@@ -91,7 +88,7 @@
 				font-weight: bold;
 			}
 			.intro-text a {
-				color: #aeefff;
+				color: black;
 				text-decoration: underline;
 			}
 			@media (max-width: 1500px) {
@@ -105,10 +102,15 @@
 				}
 			}
 			.top {
-				font-size: 0.9em;
-			}
-			.top p{
-				font-size: 5em;
+				#title {
+					font-size: 0.9em;
+				}
+				#role {
+					font-size: 1.1em;
+				}
+				#nav a {
+					font-size: 1.2em;
+				}
 			}
 		</style>
 	</head>
@@ -118,9 +120,9 @@
 				<div class="top">
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/Photo.jpg" alt="Picture of me" /></span>
+							<span class="image tinyImage"><img src="images/Photo.jpg" alt="Picture of me" /></span>
 							<h1 id="title">Edvin Skogsholm Sanne</h1>
-							<p>Game Designer</p>
+							<p id="role">Game Designer</p>
 						</div>
 					<!-- Nav -->
 						<nav id="nav">
