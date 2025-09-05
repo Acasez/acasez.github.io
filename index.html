@@ -51,11 +51,6 @@
 			.portfolio-row .portfolio-image {
 				margin-right: 1em;
 			}
-			.intro-flex {
-				background: url('images/bg-pattern.png'), #155a6a; /* Use your own pattern or color */
-				background-size: cover;
-				padding: 1.1em 0;
-			}
 			.intro-container {
 				display: flex;
 				align-items: center;
@@ -66,6 +61,9 @@
 				padding-left: 0.2em;
 				padding-right: 0.2em;
 			}
+			.intro-box {
+				background-color: lightblue;
+			}
 			.intro-image img {
 				width: 320px;
 				height: 320px;
@@ -74,9 +72,15 @@
 				box-shadow: 0 4px 24px rgba(0,0,0,0.25);
 			}
 			.intro-text {
-				color: #fff;
+				color: black;
 				font-size: 1.1em;
 				max-width: 1400px;
+			}
+			.intro-text a {
+				color: black;
+			}
+			.intro-text a:hover {
+				color: blue;
 			}
 			.intro-text p {
 				margin-bottom: 0.7em; /* Less space between paragraphs */
@@ -100,11 +104,11 @@
 					height: 350px;
 				}
 			}
-			.top h1{
-				font-size: 1.85em;
+			.top {
+				font-size: 0.9em;
 			}
 			.top p{
-				font-size: 0.65em;
+				font-size: 5em;
 			}
 		</style>
 	</head>
@@ -141,7 +145,7 @@
 		<!-- Main -->
 			<div id="main">
 				<!-- Intro -->
-					<section id="top" class="one dark cover intro-flex">
+					<section id="top" class="intro-box">
 						<div class="intro-container">
 							<div class="intro-image">
 								<img src="images/Photo.jpg" alt="Picture of me" />
@@ -150,8 +154,8 @@
 								<h2>Hi!</h2>
 								<p>
 									My name is Edvin Skogsholm Sanne and I'm a game designer from Sweden. I've studied game design and digital narration at Högskolan i Skövde/Skövde University. My main skills lie in gameplay, balance and level design. I have also worked on level design, programming and UI design. I have experience with scripting in Unity and with Unreal Blueprints.<br><br>
-									My favorite game genre to both design and play is strategy games, though I can work with most genres. I also really like worldbuilding, especially in fantasy and historical settings.<br><br>
-									<a href="https://acasez.itch.io/">https://acasez.itch.io/</a> for all the games I've worked on.<br><br>
+									My favorite game genre to both design and play is strategy games, though I can work with most genres. I also really like worldbuilding, especially in fantasy and historical settings.<br>
+									<a href="https://acasez.itch.io/">https://acasez.itch.io/</a> for all the games I've worked on.<br>
 									<a href="mailto:edvin.sanne@gmail.com">edvin.sanne@gmail.com</a> if you want to contact me. If there is a job you think I would fit in, don't hesitate to contact me.
 								</p>
 							</div>
