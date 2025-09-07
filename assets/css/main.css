@@ -27,16 +27,23 @@ section.two {
 .portfolio-text {
 	flex: 1;
 }
-.portfolio-title {
-	font-size: 2.5em;
-	font-weight: bold;
-	letter-spacing: 1px;
-	margin-bottom: 0.3em;
-}
-.portfolio-subtitle {
-	font-size: 1.2em;
-	margin-bottom: 1em;
-}
+	.portfolio-title {
+		font-size: 2.5em;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-bottom: 0.3em;
+	}
+	.portfolio-subtitle {
+		font-size: 1.2em;
+		margin-bottom: 0.4em;
+		margin-top: -0.8em;  /* Reduce top margin */
+	}
+	.portfolio-endtext {
+    	margin-bottom: -1.5em; /* Reduce bottom margin */
+	}
+	.portfolio-description {
+		margin-bottom: 0.5em; /* Space between description and end text */
+	}
 .portfolio-row.reverse {
 	flex-direction: row-reverse;
 }
@@ -269,19 +276,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
-
 /* Basic */
-
-	html {
-		box-sizing: border-box;
-	}
-
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
