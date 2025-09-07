@@ -32,11 +32,12 @@ section.two {
 		font-weight: bold;
 		letter-spacing: 1px;
 		margin-bottom: 0.3em;
+		line-height: 60px;
 	}
 	.portfolio-subtitle {
 		font-size: 1.2em;
 		margin-bottom: 0.4em;
-		margin-top: -0.8em;  /* Reduce top margin */
+		margin-top: 0em;  /* Reduce top margin */
 	}
 	.portfolio-endtext {
     	margin-bottom: -1.5em; /* Reduce bottom margin */
@@ -53,6 +54,13 @@ section.two {
 }
 .portfolio-row .portfolio-image {
 	margin-right: 1em;
+}
+hr {
+    border: 0;
+    height: 2px;          /* Line thickness */
+    background: #ff0000; /* Red color, adjust as needed */
+    margin: 1.5em 0;     /* Vertical space above/below the line */
+    width: 100%;         /* Full width */
 }
 .intro-container {
 	display: flex;
@@ -105,9 +113,6 @@ section.two {
 	}
 }
 .top {
-	#title {
-		font-size: 0.9em;
-	}
 	#role {
 		font-size: 1.1em;
 	}
@@ -115,6 +120,9 @@ section.two {
 		font-size: 1.2em;
 	}
 }
+.job-title {
+		font-size: 0.9em !important;
+	}
 
 /* Header */
 #header {
@@ -248,6 +256,10 @@ section.two {
 					width: 48px;
 					height: 48px;
 				}
+
+html {
+    scroll-behavior: smooth;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
