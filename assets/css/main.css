@@ -108,7 +108,7 @@ html {
 
 .about-me-image img {
 	align-content: center;
-	height: 600px;
+	height: 520px;
 	object-fit: fill;
 	border-radius: 10px;
 	box-shadow: 0 4px 24px rgba(0,0,0,0.25);
@@ -117,6 +117,7 @@ html {
 .about-me-text {
 	text-align: center;
 	margin-top: -1em;
+	margin-bottom: 1.2em;
 	margin-left: 5%;
 	margin-right: 5%;
 }
