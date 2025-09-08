@@ -1,6 +1,14 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
+.to-main-page {
+	text-decoration: underline;
+	margin-left: 4vw;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
 section.two {
 	padding-left: 4vw;
 	padding-right: 4vw;
