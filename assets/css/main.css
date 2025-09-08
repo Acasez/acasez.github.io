@@ -1201,7 +1201,6 @@ input::-moz-focus-inner {
 	}
 
 /* Mobile */
-
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
@@ -1254,5 +1253,4 @@ input::-moz-focus-inner {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-
 	}
