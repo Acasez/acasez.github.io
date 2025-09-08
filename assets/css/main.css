@@ -18,6 +18,9 @@ section.two {
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+	.portfolio-image.large img {
+		max-width: 1000px; /* Larger max width for large images */
+	}
 .portfolio-text {
 	flex: 1;
 }
@@ -67,8 +70,6 @@ hr.big-divider {
 	justify-content: center;
 	margin: 0 auto;
 	gap: 0.5em;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
 }
 .intro-box {
 	background-color: lightblue;
@@ -101,7 +102,6 @@ hr.big-divider {
 	color: black;
 	text-decoration: underline;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -125,7 +125,10 @@ html {
 .sectionText {
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 1em;
 }
+
+ul.a {list-style-type: circle;}
 
 /* Basic */
 	body {
