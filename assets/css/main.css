@@ -10,6 +10,8 @@ section.two {
 	align-items: flex-start;
 	margin-bottom: 3em;
 	gap: 1em;
+	margin-left: 3em;
+	margin-right: 3em;
 }
 .portfolio-image img {
 	max-width: 800px;
@@ -128,7 +130,11 @@ html {
 	margin-top: 1em;
 }
 
-ul.a {list-style-type: circle;}
+ul.a {
+	list-style-type: circle;
+	margin-left: 10%;
+	margin-right: 10%;
+}
 
 /* Basic */
 	body {
