@@ -245,6 +245,7 @@
 									First off all I increased the amount of traffic steps from 8 to 12, and made it scale depending on the amount of players in the game. 
 									This meant that the traffic meter wont generally get filled halfway trough most 4 player game and delays the formation of any draw engines.
 								</p>
+								<br>
 							</div>
 						</div>
 						<div class="portfolio-row reverse"> <!-- Results of Playtesting -->
@@ -292,7 +293,52 @@
 							</div>
 						</div>
 					</section>
-					
+					<section id="Card Making Tool" class="sectionText">
+					<header>
+						<h3 class="portfolio-title">Card Making Tool</h3>
+					</header>
+						<div class="portfolio-row"> <!-- The Search for a Card Making Tool -->
+							<div class="portfolio-image">
+								<img src="images/MariestadClimateGame/BiologiskaStudier.png" alt="Card Example" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									We started the project with hand written paper prototypes to test the concept. 
+									After seeing that they worked well, Iris started experimenting with card layouts in Clip Studio Paint, which she then could add card stats into and save for printing. 
+									After a while I took over editing the cards themself in Clip Studio Paint. 
+									This took some time and meant that if I wanted to change something on all cards, even minor details, I had to open them individually and change it. 
+									That wasn't very efficient and I felt like there should be a better solution
+								</p>
+								<p class="portfolio-description">
+									I had previous experience trying to use dedicated "card making tools" like nanDeck without much success, but I still tried again. 
+									But both <a href="https://nandeck.com/" class="underlined-link">nanDeck</a> and another alternative I found online; <a href="https://oatear.github.io/cider/" class="underlined-link">Cider</a> had unclear UI and complex scripting languages. 
+									I did find a tool called <a href="https://beta.editor.paperize.io/#/" class="underlined-link">Paperrize</a>, which I actually liked the UI and ease of use of, but it did not have support for Inline images in texts yet, so it didn't fit this task. 
+									So after nearly giving up I instead went, "well I guess I'll just make it myself".
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row reverse"> <!-- The Search for a Card Making Tool -->
+							<div class="portfolio-image">
+								<img src="images/MariestadClimateGame/ScripatbleObject.JPG" alt="Scripatble Object for the card above" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									So I made a "program" for it. 
+									I first tried to make it in Godot, as I wanted to learn to use it, but decided to stick to Unity as I knew it well and Godot had no built in way to automatically scale font size. 
+									And well, it was a success. 
+									I made a scriptable object for project cards and a script that puts the cards together from all of their components and then takes a screenshot. 
+									Now to edit cards I simply change the values of the scriptable object for the card. 
+									With that working I did the same thing for actor cards. 
+									I looked into trying to use <a href="https://www.youtube.com/watch?v=Q_vS2V1sAeY&list=WL&index=2&t=502s" class="underlined-link">this custom unity package</a> so I could automatically import changes from the google spreadsheet, but it didn't fit how I had organized the cards so I decided not to. 
+								</p>
+								<p class="portfolio-description">
+									To handle the symbols in texts I use Unity's TextMeshPro style sheet, with a function I made that automatically adds them in when it sees specific words in the a string that it takes in the effect text in this case.
+									Today I've learned how to use CSV files to import data from spreadsheets and use that to import data like this. 
+									In my current projects I use that to import data from spreadsheets to Unity, but I haven't yet updated this tool to use that.
+								</p>
+							</div>
+						</div>
+					</section>
 			</div>
 		<!-- Footer -->
 			<div id="footer">

@@ -121,6 +121,13 @@ hr.big-divider {
 html {
     scroll-behavior: smooth;
 }
+.underlined-link {
+    text-decoration: underline;
+}
+.underlined-link:hover {
+	color: blue;
+	text-decoration: none;
+}
 
 .about-me-image img {
 	align-content: center;
