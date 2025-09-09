@@ -11,7 +11,7 @@
 .portfolio-row {
 	display: flex;
 	align-items: flex-start;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	gap: 1em;
 	margin-left: 3em;
 	margin-right: 3em;
@@ -62,7 +62,8 @@ hr {
     border: 0;
     height: 2px;          /* Line thickness */
     background: #0000ff; /* Red color, adjust as needed */
-    margin: 1.5em 0;     /* Vertical space above/below the line */
+    margin-bottom: 1.2em;
+	margin-top: 2.2em;    
     width: 100%;         /* Full width */
 }
 hr.big-divider {
