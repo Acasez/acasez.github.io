@@ -1,13 +1,32 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-.to-main-page {
-	text-decoration: underline;
-	margin-left: 4vw;
-	margin-bottom: 1em;
-	text-align: center;
-	font-size: 1.2em;
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Match your background color */
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 8px 0;
+    text-align: center;
 }
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+#main {
+	padding-top: 80px; /* Adjust based on the height of your topnav */
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
 .portfolio-row {
 	display: flex;
 	align-items: flex-start;
