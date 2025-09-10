@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Backgrounds</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Back to Portfolio</a>
+			<a href="RPG Overview.html">RPG OVerview</a>
+			<a href="Arcane Feats.html">Arcane Feats</a>
+			<a href="General Feats.html">General Feats</a>
+			<a href="Advantages.html">Advantages</a>
+			<a href="Backgrounds.html">Backgrounds</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Backgrounds</h3>
+							<p class="portfolio-subtitle">Backgrounds give you a general feat and some other features</p>
+						</header>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Background Name</th>
+									<th onclick="sortTable(1)">Description</th>
+									<th onclick="sortTable(2)">Stat Increase</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Medic</td>
+									<td>You are practiced in the art of healing and curing. 
+										You are trained in <b>medicine</b> and get the <a href="General Feats.html#battlefield_medic">Battlefield Medic</a> feat. 
+										If you spend your whole turn to do an medicine action you add +3 to that roll. You start with a medicine kit
+									</td>
+									<td>INT or DEX</td>
+								</tr>
+								<tr>
+									<td>Noble</td>
+									<td>You come from a wealthy or influential family. 
+										You are trained in <b>society</b> and gain the <a href="General Feats.html#skilled">Skilled</a> feat. 
+										You start with 15 gold pieces and have a seal from your house.
+									</td>
+									<td>WIL or INT</td>
+								</tr>
+								<tr>
+									<td>Soldier</td>
+									<td>You have trained and fought in a army or militia. 
+										You are trained in <b>athletics</b> and gain the <a href="General Feats.html#combat_training">Combat Training</a> feat. 
+										You start with a set of light armor and a martial weapon of your choice.
+									</td>
+									<td>PHY or DEX</td>
+								</tr>
+								<tr>
+									<td>Artisan</td>
+									<td>You have trained in a craft or trade. 
+										You are trained in <b>crafting</b> and gain the <a href="General Feats.html#skilled">Skilled</a> feat. 
+										You start with a set of artisan's tools and 10 gold pieces.
+									</td>
+									<td>INT or DEX</td>
+								</tr>
+								<tr>
+									<td>Scholar</td>
+									<td>You have spent years studying a specific field of knowledge. 
+										You are trained in <b>arcana</b>, <b>history</b>, or <b>nature</b> and gain the <a href="General Feats.html#dedicated_student">Dedicated Student</a> feat. 
+										You start with a book on your field of study and 10 gold pieces.
+									</td>
+									<td>INT or WIL</td>
+								</tr>
+								<tr>
+									<td>Explorer</td>
+									<td>You have traveled to many different places and seen many different things. 
+										You are trained in <b>survival</b> and gain the <a href="General Feats.html#surveyor">Surveyor</a> feat. 
+										You start with a set of traveler's clothes, a bedroll, and 10 gold pieces.
+									</td>
+									<td>PHY or WIL</td>
+								</tr>
+								<tr>
+									<td>Spy</td>
+									<td>You have worked in the shadows, gathering information and secrets. 
+										You are trained in <b>stealth</b> and gain the <a href="General Feats.html#sneaky">Sneaky</a> feat. 
+										You start with a disguise kit, a forged idenity and 10 gold pieces.
+									</td>
+									<td>DEX or INT</td>
+								</tr>
+								<tr>
+									<td>Hunter</td>
+									<td>You've learned how to hunt using traditional ranged weapons or runeguns. 
+										You are trained in either bows, crossbows or runeguns. You are also trained in nature or survival. 
+										You gain the <a href="General Feats.html#take_aim">Take Aim</a> feat. 
+										You start with a ranged weapon that you are trained in and 10 gold pieces.
+									</td>
+									<td>DEX or PHY</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>

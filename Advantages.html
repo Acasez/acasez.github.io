@@ -14,6 +14,7 @@
 			<a href="Arcane Feats.html">Arcane Feats</a>
 			<a href="General Feats.html">General Feats</a>
 			<a href="Advantages.html">Advantages</a>
+			<a href="Backgrounds.html">Backgrounds</a>
 		</div>
 		<!-- Main -->
 			<div id="main">
@@ -77,7 +78,8 @@
 								</tr>
 								<tr>
 									<td>Experienced</td>
-									<td>ou've spent your time doing a variety of things. Gain one more background and one more <a href="">Combat Feat</a> </td>
+									<td>You've spent your time doing a variety of things. 
+										Gain one more background and one more <a href="General Feats.html">General Feat</a> </td>
 									<td></td>
 									<td>1</td>
 								</tr>
@@ -92,55 +94,36 @@
 									<td>1</td>
 								</tr>
 								<tr>
-									<td>Duelist</td>
-									<td>You have trained a bit in duels, of the arcane or mundane variety. You become trained in Reflex saving throws. 
-										When you roll initiative and aren't surprised you may add your INT or WIL to your roll.
+									<td>Large Mana Well</td>
+									<td>You have an larger than average mana well, allowing you to cast more spells and increasing the strength of your aura. 
+										Increase your maximum Mana by 5. Every time you level up your maximum mana increases by an additional 3.
 									</td>
 									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
-									<td>Heavy Armor Training</td>
-									<td>Unlike most mages you have experience in fighting in heavy armor. You are trained with heavy armor
+									<td>Arcane Training</td>
+									<td>You have spend your time studying magic to compete with those that have magical gifts. 
+										Learn two more <a href="Arcane Feats.html">Arcane Feats</a>.
+										Additionally you become trained in <b>arcana</b>.
 									</td>
-									<td>Trained in light armor </td>
+									<td> </td>
 									<td>1</td>
 								<tr>
-									<td>Survivor</td>
-									<td>You have survived against the elements. 
-										You gain resistance 3 to one type of elemental damage: fire, cold, electricity, acid or sonic.
-										You have a +3 bonus on survival checks to avoid natural hazards and extreme weather.
+									<td>Soulsight</td>
+									<td>You posses the rare gift of natural soulsight, allowing you to see souls. 
+										Souls appear as tiny dots of light in the center of living creatures. 
+										You have the Inspect Soul action. 
+										<b>Inspect Soul </b><u>1 Action.</u> Target one creature you can see within 4 tiles. 
+										Looking at a creatures soul you perceive a few details about it. 
+										You learn if it has
+										<ul class="a">
+											<li>An attunement, and if so which aspect.</li>
+											<li>A soulbond. You can make a DC 20 arcana check to try to figure out the nature of the soulbond.</li>
+											<li>Weather any other soul magic is affecting the target, though you don't know what type it is.</li>
+											<li>If the creature is an illusion, or a object or golem made to look like a creature you get no information about it, but see that it's not a creature</li>
+										</ul>
 									</td>
-									<td></td>
-									<td>1</td>
-								<tr>
-									<td>Staff Training</td>
-									<td>You are trained with channeling staves and battlestaves.
-										You can turn wood into a battlestaff during a short rest.
-										If you have the <i>Mold Earth</i> or <i>Shape Metal</i> spells you can use it to create a battlestaff during a short rest.
-									</td>
-									<td></td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Non Magical Fighting</td>
-									<td>You have trained in non magical fighting. 
-										You become trained with simple weapons, unarmed attacks and one weapon group of your choice. </td>
-									<td></td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Gadget Crafting</td>
-									<td>You are trained in crafting. Each morning you can make one temporary gadget. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
-									<td></td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Martial Arts Training</td>
-									<td>You know how to fight unarmed, from time spent scrapping or formal martial arts training. 
-										You become trained with unarmed attacks. 
-										Your unarmed attacks use a one step larger dice (1 -> 1d4 -> 1d6 -> 1d8). 
-										You also become trained in Brawling Lore.</td>
 									<td></td>
 									<td>1</td>
 								</tr>
@@ -200,6 +183,10 @@
 						}
 					}
 				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
 
 				document.getElementById("searchInput").addEventListener("keyup", function() {
 					let input, filter, table, tr, td, i, txtValue;

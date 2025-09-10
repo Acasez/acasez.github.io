@@ -13,6 +13,7 @@
 			<a href="RPG Overview.html">RPG OVerview</a>
 			<a href="Arcane Feats.html">Arcane Feats</a>
 			<a href="General Feats.html">General Feats</a>
+			<a href="Backgrounds.html">Backgrounds</a>
 		</div>
 		<!-- Main -->
 			<div id="main">
@@ -44,7 +45,7 @@
 									<td></td>
 									<td>1</td>
 								</tr>
-								<tr>
+								<tr id="battlefield_medic">
 									<td>Battlefield Medic</td>
 									<td>
 										You are trained in medicine or athletics and you don't take the -2 penalty to the treat wounds and stabilize creature actions in combat
@@ -52,7 +53,7 @@
 									<td></td>
 									<td>1</td>
 								</tr>
-								<tr>
+								<tr id="combat_training"> 
 									<td>Combat Training</td>
 									<td>Your have seen combat or trained in a army. You are trained with <i>light armor</i>
 										You also become trained in <b>Fortitude</b> saving throws.
@@ -60,13 +61,13 @@
 									<td></td>
 									<td>1</td>
 								</tr>
-								<tr>
+								<tr id="dedicated_student">
 									<td>Dedicated Student</td>
 									<td>You have put practicing magic as your focus ahead of all else. Gain one level 1 <a href="Arcane Feats.html">Arcane Feats</a> </td>
 									<td></td>
 									<td>1</td>
 								</tr>
-								<tr>
+								<tr> 
 									<td>Duck!</td>
 									<td>Your experience tells you diving out of the way is sometime the best out of the way of powerful attacks. 
 										You have the Duck! reaction 
@@ -90,6 +91,27 @@
 									</td>
 									<td>Trained in light armor </td>
 									<td>1</td>
+								</tr>
+								<tr>
+									<td>Inspiring Leader</td>
+									<td>You have a way with words and can inspire those around you. 
+										You can use the <strong>Inspire Courage</strong> action
+										<strong>Inspire Courage</strong> <u>2 Actions</u> <br>
+										You give a rousing speech or perform an act that inspires your allies. 
+										All allies in the aura gain a +1 bonus to attack rolls and saving throws against fear effects for the duration. 
+										This bonus increases to +2 at level 10 and +3 at level 15.
+										The aura lasts for one minute or until you are incapacitated.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr id="sneaky">
+									<td>Sneaky</td>
+									<td>You can move silently and hide in shadows. 
+										When sneaking you can move at full speed without taking the -5 penalty.
+									</td>
+									<td>Trained in stealth</td>
+									<td>1</td>
 								<tr>
 									<td>Survivor</td>
 									<td>You have survived against the elements. 
@@ -98,6 +120,17 @@
 									</td>
 									<td></td>
 									<td>1</td>
+								</tr>
+								<tr id="surveyor">
+									<td>Surveyor</td>
+									<td>You have studied maps and the land, learning how to read the terrain. 
+										You become trained in <b>geography lore</b>. 
+										Your exploration speed is two steps faster than what it would normally be.
+										You can use survival to navigate even in unfamiliar terrain, and you can always find north.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
 								<tr>
 									<td>Staff Training</td>
 									<td>You are trained with channeling staves and battlestaves.
@@ -114,6 +147,16 @@
 									<td></td>
 									<td>1</td>
 								</tr>
+								<tr id="take_aim">
+									<td>Take Aim</td>
+									<td>You've trained in the art of aiming and shooting. 
+										You can use the <strong>Aim</strong> action
+										<strong>Aim</strong> <u>1 Action</u> <br>
+										You carefully aim your next ranged attack, gaining a +2 bonus to the attack roll. 
+										The bonus lasts until you move or the start of your next turn.
+									</td>
+									<td></td>
+									<td>1</td>
 								<tr>
 									<td>Gadget Crafting</td>
 									<td>You are trained in crafting. Each morning you can make one temporary gadget. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
@@ -129,6 +172,12 @@
 									<td></td>
 									<td>1</td>
 								</tr>
+								<tr id="skilled">
+									<td>Skilled</td>
+									<td>You have trained in two skills of your choice, becoming trained them. 
+									</td>
+									<td></td>
+									<td>1</td>
 							</tbody>
 						</table>
 					</section>
@@ -185,6 +234,10 @@
 						}
 					}
 				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
 
 				document.getElementById("searchInput").addEventListener("keyup", function() {
 					let input, filter, table, tr, td, i, txtValue;
