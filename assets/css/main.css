@@ -203,6 +203,9 @@ ul.a {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+.b{
+	font-weight: 600;
+}
 
 /* Basic */
 	body {
