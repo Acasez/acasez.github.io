@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Feats</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Back to Portfolio</a>
+			<a href="RPG Overview.html">RPG OVerview</a>
+			<a href="Arcane Feats.html">Arcane Feats</a>
+			<a href="General Feats.html">General Feats</a>
+			<a href="Advantages.html">Advantages</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Advantages</h3>
+							<p class="portfolio-subtitle">Advatages are powerful feats that shape your character. You pick one advantage at level 1, 4, 8, 12 and 16.</p>
+						</header>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Feat Name</th>
+									<th onclick="sortTable(1)">Description</th>
+									<th onclick="sortTable(2)">Prerequisites</th>
+									<th onclick="sortTable(3)">Level</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Attunement</td>
+									<td>You have an attunement, a magical connection through your soul to one aspect of magic. 
+										This makes it easier to cast that type of magic, but prevents you from casting the opposite aspect. 
+										Spells from your attuned aspect are called attuned spells
+										<ul class="a">
+											<li>While casting attuned spells, reduce their mana cost by your level</li>
+											<li>While casting attuned spells, you may also use your WIL instead of INT for the spellshaping check.</li>
+											<li>You learn one apprentice spell of your attunement.</li>
+											<li>You cannot learn or cast spells of the opposite aspect from your attunement</li>
+										</ul>
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Crafting Prodigy</td>
+									<td>
+										You are specialized in one field of crafting above everything else and are able to craft things that would normally be above your level of knowlegde. 
+										You learn one of
+										<a href="Arcane Feats.html#golemcrafter">Golemcrafter</a>,
+										<a href="Arcane Feats.html#armor_artificer">Armor Artificer</a>, or
+										<a href="Arcane Feats.html#runegun_smith">Runegun Smith</a>
+										feats, ignoring their level requirements.
+										When picking new feats you treat feats from your chosen archetype as if their level requirements were 2 levels lower.
+										<br><br>
+										Additionally you become trained in crafting and have a +3 bonus to any checks regarding your field.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Swift</td>
+									<td>You have 1 tile extra movement speed and may add your DEX to initiative checks. 
+										Your become trained in Reflex saves, and if another effect would make you trained you become expert instead.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Experienced</td>
+									<td>ou've spent your time doing a variety of things. Gain one more background and one more <a href="">Combat Feat</a> </td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Duck!</td>
+									<td>Your experience tells you diving out of the way is sometime the best out of the way of powerful attacks. 
+										You have the Duck! reaction 
+										<strong>Duck!</strong> <u>1 Reaction, when you are forced to make a Reflex Saving Throw.</u> <br>
+										You attempt to dive out of the effect. You move 1 tile. If this causes you to leave the area of the spell you have +5 bonus to the saving throw, otherwise its a +3 bonus. 
+										After making the save you fall prone.
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Duelist</td>
+									<td>You have trained a bit in duels, of the arcane or mundane variety. You become trained in Reflex saving throws. 
+										When you roll initiative and aren't surprised you may add your INT or WIL to your roll.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Heavy Armor Training</td>
+									<td>Unlike most mages you have experience in fighting in heavy armor. You are trained with heavy armor
+									</td>
+									<td>Trained in light armor </td>
+									<td>1</td>
+								<tr>
+									<td>Survivor</td>
+									<td>You have survived against the elements. 
+										You gain resistance 3 to one type of elemental damage: fire, cold, electricity, acid or sonic.
+										You have a +3 bonus on survival checks to avoid natural hazards and extreme weather.
+									</td>
+									<td></td>
+									<td>1</td>
+								<tr>
+									<td>Staff Training</td>
+									<td>You are trained with channeling staves and battlestaves.
+										You can turn wood into a battlestaff during a short rest.
+										If you have the <i>Mold Earth</i> or <i>Shape Metal</i> spells you can use it to create a battlestaff during a short rest.
+									</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Non Magical Fighting</td>
+									<td>You have trained in non magical fighting. 
+										You become trained with simple weapons, unarmed attacks and one weapon group of your choice. </td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Gadget Crafting</td>
+									<td>You are trained in crafting. Each morning you can make one temporary gadget. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Martial Arts Training</td>
+									<td>You know how to fight unarmed, from time spent scrapping or formal martial arts training. 
+										You become trained with unarmed attacks. 
+										Your unarmed attacks use a one step larger dice (1 -> 1d4 -> 1d6 -> 1d8). 
+										You also become trained in Brawling Lore.</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>

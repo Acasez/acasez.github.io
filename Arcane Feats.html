@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Kastorix RPG Overview</title>
+		<title>Arcane Feats</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -12,6 +12,8 @@
 			<a href="index.html">Back to Portfolio</a>
 			<a href="RPG Overview.html">RPG OVerview</a>
 			<a href="Arcane Feats.html">Arcane Feats</a>
+			<a href="General Feats.html">General Feats</a>
+			<a href="Advantages.html">Advantages</a>
 		</div>
 		<!-- Main -->
 			<div id="main">
@@ -40,7 +42,7 @@
 									<strong>Abjure Accident.</strong> <u>1 Reaction when you get a failure, but not a critical failure on a spellshaping check.</u> <br>
 									Prevent the effect of the spellshaping failure.
 									</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
@@ -65,44 +67,65 @@
 									<td>You are trained in <b>alchemy</b>. Each morning you can make two temporary potions. 
 									For each potion you prepare you lock away 2 mana from your mana well for the day and they expire after the day. 
 									The potions can be <i>lesser health potions</i>, <i>lesser mana potions</i> or <i>lesser elemental resistance potions</i>.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
+								</tr>
+								<tr id="armor_artificer">
+									<td>Armor Artificer</td>
+									<td>You have constructed a enchanted suit of armor, designed for you specifically.
+										You can choose between Leather Laminar, Half Plate and Full Plate.
+										You are trained in this armor and can ignore its PHY requirements.
+										It has <i>Anti Tampering</i> runes, preventing it from being affected by metal magic as well as one more basic rune of your choice.
+									</td>
+									<td>Trained in crafting</td>
+									<td>4</td>
 								</tr>
 								<tr>
 									<td>Aura Reinforcement</td>
 									<td>You have trained your aura and can raise and lower it as a single action. 
 										When you use the <b>Reinforce Aura</b> action you can spend mana up to 3 times your level + your Will.
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Basic Elemental Magic</td>
 									<td>Can be chosen multiple times, once for each aspect. Choose one aspect and learn two apprentice rank spells from that aspect. You have +1 to spellcasting when casting spells of your chosen aspect.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Focused Spellshaping</td>
 									<td>You have a +1 to spellshaping when casting spells that cost 3 actions or more. Learn two apprentices spells that costs 3 actions or more.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Freeform Learning</td>
 									<td>You learn four apprentice spells of your choosing.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Gadget Crafting</td>
-									<td>You are trained in crafting. Each morning you can make one temporary gadget. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
-									<td>None</td>
+									<td>You are trained in crafting. Each morning you can make one temporary <i>gadget</i>. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
+									<td></td>
 									<td>1</td>
+								</tr>
+								<tr id="golemcrafter">
+									<td>Golemcrafter</td>
+									<td>
+										You are trained golem lore. 
+										You have created a <i>golem companion</i> that follows you around.
+										See the golem companion page for more information.
+										If it is reduced to 0 hit points it is destroyed and you can repair it your next long rest.
+									</td>
+									<td>Trained in crafting</td>
+									<td>4</td>
 								</tr>
 								<tr>
 									<td>Monster Hunting</td>
 									<td>You are trained in monster hunting lore, which can be used to recall knowledge against monsters and elementals. When you succeed on a recall knowledge with monster hunting lore, the creature takes a -2 penalty to the next save you impose on it.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
@@ -115,13 +138,19 @@
 								<tr>
 									<td>Metamagic Novice</td>
 									<td>You learn two metamagics of your choice.</td>
-									<td>None</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Physical Sort</td>
+									<td>You have forgone some of your arcane training to focus on the practical. Gain one level 1 <a href="General Feats.html">General Feats</a></td>
+									<td></td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Staff Training</td>
 									<td>You are trained with channeling staves and battlestaves. You can provide somatic components with hand even if your holding a staff in it.</td>
-									<td>None</td>
+									<td></td>
 									<td>1</td>
 								</tr>
 							</tbody>
@@ -180,6 +209,10 @@
 						}
 					}
 				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
 
 				document.getElementById("searchInput").addEventListener("keyup", function() {
 					let input, filter, table, tr, td, i, txtValue;
