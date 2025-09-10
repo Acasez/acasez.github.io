@@ -16,6 +16,7 @@
 			<a href="Advantages.html">Advantages</a>
 			<a href="Backgrounds.html">Backgrounds</a>
 			<a href="Armors.html">Armor</a>
+			<a href="Weapons.html">Weapons</a>
 		</div>
 		<!-- Main -->
 			<div id="main">
@@ -33,6 +34,7 @@
 									Some armor require characters to have a certain Physique score to wear it. You take a 1 tile movement penalty for each step below the requirement.
 									<br><br>
 									If you don't have proficiency in the armor your wearing it's penalties is doubled and you can't add your DEX to spellshaping checks.
+									<br><br>
 								</p>
 							</div>
 						<div class="search-container">
@@ -49,7 +51,7 @@
 									<th onclick="sortTable(5)">Description</th>
 									<th onclick="sortTable(6)">Price</th>
 									<th onclick="sortTable(7)">Type</th>
-									<th onclick="sortTable(7)">PHY requirement</th>
+									<th onclick="sortTable(7)">PHY</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -121,7 +123,7 @@
 								<tr>
 									<td>Plate Mail</td>
 									<td>12 to slashing and piercing, 5 to bludgeoning, fire and frost damage.</td>
-									<td>7</td>
+									<td>8</td>
 									<td>-3 Reflex Saves & initiative Checks. Mana Recovery Speed -50%</td>
 									<td></td>
 									<td>Full plate provides the greatest protection and has fewer weak spots to target. Being encased in metal is dampens mana recovery though, making it rarely used by mages, but favored by some knight orders.</td>
@@ -187,7 +189,8 @@
 				}
 				// Sort by feat name on page load
 					window.onload = function() {
-						sortTable(0);
+						sortTable(7);
+						sortTable(7);
 					};
 
 				document.getElementById("searchInput").addEventListener("keyup", function() {

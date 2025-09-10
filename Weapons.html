@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Weapons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Back to Portfolio</a>
+			<a href="RPG Overview.html">RPG OVerview</a>
+			<a href="Arcane Feats.html">Arcane Feats</a>
+			<a href="General Feats.html">General Feats</a>
+			<a href="Advantages.html">Advantages</a>
+			<a href="Backgrounds.html">Backgrounds</a>
+			<a href="Armors.html">Armor</a>
+			<a href="Weapons.html">Weapons</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Weapons</h3>
+							<p class="portfolio-subtitle">List of all weapons and weapon traits</p>
+						</header>
+						<div class="portfolio-text">
+								<p class="portfolio-description">
+									Weapon attacks made with PHY rolls and are avoided by Reflex Saves, hitting if the attack roll is higher than the save. 
+									Ranged weapon attacks are made with DEX and weapons with the finesse trait can be used with either. Damage rolls always add PHY.
+									Mages rarely use weapons as they need their hands free for somantic components. 
+									Somantic Components, while your hands are free you can add your DEX to spellshaping checks. 
+									If you have one hand free you can add half your DEX.  
+									<br><br>
+								</p>
+							</div>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for weapon..." title="Type in a weapon name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Name</th>
+									<th onclick="sortTable(1)">Damage</th>
+									<th onclick="sortTable(2)">Hands</th>
+									<th onclick="sortTable(3)">Traits</th>
+									<th onclick="sortTable(4)">Description</th>
+									<th onclick="sortTable(6)">Price</th>
+									<th onclick="sortTable(7)">Type</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Dagger</td>
+									<td>1d4 piercing</td>
+									<td>1</td>
+									<td>Precision, Finesse, Thrown (3 tiles), Versatile (Slashing), Agile</td>
+									<td>A simple fallback weapon that can also be thrown in a pitch</td>
+									<td>2 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Shortsword</td>
+									<td>1d6 piercing</td>
+									<td>1</td>
+									<td>Finesse, Agile, Versatile (Slashing), Parry</td>
+									<td>A light and easy to handle sword, favored by rogues and scouts</td>
+									<td>1 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Longsword</td>
+									<td>1d8 slashing</td>
+									<td>1</td>
+									<td>Versatile (Piercing, Bludgeoning 1d4), Parry</td>
+									<td>The standard sword of choice for many soldiers and adventurers</td>
+									<td>4 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Greatsword</td>
+									<td>1d10 slashing</td>
+									<td>2</td>
+									<td>Versatile (Piercing, Bludgeoning 1d6), Parry, Heavy</td>
+									<td>A large two handed sword that can cleave through multiple enemies in one swing</td>
+									<td>10 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Warhammer</td>
+									<td>1d8 bludgeoning</td>
+									<td>1</td>
+									<td>Versatile (Piercing 1d6), Shove</td>
+									<td>A solid hammer, effective against armored foes</td>
+									<td>4 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Maul</td>
+									<td>1d10 bludgeoning</td>
+									<td>2</td>
+									<td>Shove, Heavy</td>
+									<td>A large two handed hammer, capable of crushing armor and bone alike</td>
+									<td>8 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Spear</td>
+									<td>1d6 piercing</td>
+									<td>1</td>
+									<td>Thrown (4 tiles), Reach (1 tile), Precision</td>
+									<td>A long pole weapon that can be thrown or used to keep enemies at bay</td>
+									<td>5 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Halberd</td>
+									<td>1d10 slashing</td>
+									<td>2</td>
+									<td>Reach (1 tile), Heavy, Versatile (Piercing)</td>
+									<td>A pole weapon with an axe blade and a spike, capable of keeping foes at reach</td>
+									<td>8 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Glaive</td>
+									<td>1d8 slashing</td>
+									<td>2</td>
+									<td>Reach (1 tile), Versatile (Piercing), Parry</td>
+									<td>A pole weapon with a single edged blade, favored by infantry for its versatility</td>
+									<td>8 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Battlestaff</td>
+									<td>1d6 bludgeoning</td>
+									<td>1</td>
+									<td>Channeling</td>
+									<td>A sturdy wooden staff, which can be used in somantic components</td>
+									<td>2 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Channeling Staff</td>
+									<td>1d6 bludgeoning</td>
+									<td>1</td>
+									<td>Channeling, Spell Focus</td>
+									<td>A special staff used by mages to focus and aim their spells</td>
+									<td>10 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Rapier</td>
+									<td>1d6 piercing</td>
+									<td>1</td>
+									<td>Agile, Precision, Finesse, Parry</td>
+									<td>A duelists weapon, for outmanuvering their foes on the battlefield</td>
+									<td>4 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Mace</td>
+									<td>1d6 bludgeoning</td>
+									<td>1</td>
+									<td>Shove</td>
+									<td>A simple club with a heavy head, effective against armored foes</td>
+									<td>1 gp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Club</td>
+									<td>1d4 bludgeoning</td>
+									<td>1</td>
+									<td> - </td>
+									<td>A simple wooden club, easy to make and use</td>
+									<td>1 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Greataxe</td>
+									<td>1d12 slashing</td>
+									<td>2</td>
+									<td>Heavy, Versatile (Piercing 1d6)</td>
+									<td>A large two handed axe, capable of cleaving through armor and bone alike</td>
+									<td>6 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Crossbow</td>
+									<td>1d8 piercing</td>
+									<td>2</td>
+									<td>Reload 1, Precision</td>
+									<td>A ranged weapon that fires bolts with great force. Requires two hands to use effectively.</td>
+									<td>5 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Shortbow</td>
+									<td>1d6 piercing</td>
+									<td>2</td>
+									<td>Precision, Agile</td>
+									<td>A light and easy to handle bow, favored by rangers and scouts</td>
+									<td>2 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Longbow</td>
+									<td>1d10 piercing</td>
+									<td>2</td>
+									<td>Precision, Heavy</td>
+									<td>A powerful bow, capable of hitting targets at long range</td>
+									<td>5 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Arbalest</td>
+									<td>1d12 piercing</td>
+									<td>2</td>
+									<td>Reload 2, Precision, Heavy</td>
+									<td>A large crossbow that takes longer to reload, but delivers devastating power</td>
+									<td>20 gp</td>
+									<td>Martial</td>
+								</tr>
+								<tr>
+									<td>Throwing Axe</td>
+									<td>1d6 slashing</td>
+									<td>1</td>
+									<td>Thrown (4 tiles), Agile</td>
+									<td>A small axe designed for throwing, but can also be used in melee combat</td>
+									<td>6 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Runegun Rifle</td>
+									<td>1d10 piercing</td>
+									<td>2</td>
+									<td>Reload 1</td>
+									<td>Runegun Rifles use mana to accelrate bullets to high speeds.</td>
+									<td>6 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Runegun Pistol</td>
+									<td>1d6 piercing</td>
+									<td>1</td>
+									<td>Reload 1</td>
+									<td>Fitting the runes of Runegun on a one-handed object requires great skill, but they are an effective weapon.</td>
+									<td>30 sp</td>
+									<td>Simple</td>
+								</tr>
+								<tr>
+									<td>Runegun Cannon</td>
+									<td>2d8 bludgeoning</td>
+									<td>2</td>
+									<td>Reload 3, Heavy</td>
+									<td>Runegun Cannons are deadly weapons but their reload time make them generally unfit for adventurers</td>
+									<td>6 sp</td>
+									<td>Simple</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(7);
+						sortTable(7);
+					};
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>
