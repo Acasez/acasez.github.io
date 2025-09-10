@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kastorix RPG Overview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Back to Portfolio</a>
+			<a href="RPG Overview.html">RPG OVerview</a>
+			<a href="Arcane Feats.html">Arcane Feats</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Arcane Feats</h3>
+							<p class="portfolio-subtitle">Arcane Feats comes from your practicing and learning of magic. You can pick one new arcane feat each level and retrain them during downtime.</p>
+						</header>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Feat Name</th>
+									<th onclick="sortTable(1)">Description</th>
+									<th onclick="sortTable(2)">Prerequisites</th>
+									<th onclick="sortTable(3)">Level</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Abjure Accident</td>
+									<td>You've trained to abjure a spellshaping failure, one of the deadliest threats to mages. You learn the Abjure Accident Reaction.<br>
+									<strong>Abjure Accident.</strong> <u>1 Reaction when you get a failure, but not a critical failure on a spellshaping check.</u> <br>
+									Prevent the effect of the spellshaping failure.
+									</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Adept Elemental Magic</td>
+									<td>Can be chosen multiple times, once for each aspect. Choose one aspect and learn two adept rank spells from that aspect. You gain a bonus depending on the aspect
+									<ul class="a">
+										<li>Air: After you cast an air spell you ignore difficult terrain for the turn</li>
+										<li>Earth: After you cast an earth spell you have a +3 bonus to saving throws against being knocked prone, off-guard or moved against your will for the rest of the turn</li>
+										<li>Fire: You learn the fuel spell metamagic, fueling spells with your inner heat.</li>
+										<li>Water: +1 to saving throws against being poisoned or diseased</li>
+										<li>Light: +1 to saving throws against being blinded or dazzled</li>
+										<li>Darkness: After you cast an darkness spell, you gain darkvision for the turn</li>
+										<li>Metal: After you cast an metal spell you gain resistance 3 to physical damage for the rest of turn</li>
+										<li>Ice: You ignore difficult terrain from ice and snow</li>
+									</ul>
+									</td>
+									<td>Basic Elemental Magic, for the same aspect</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Alchemy Training</td>
+									<td>You are trained in <b>alchemy</b>. Each morning you can make two temporary potions. 
+									For each potion you prepare you lock away 2 mana from your mana well for the day and they expire after the day. 
+									The potions can be <i>lesser health potions</i>, <i>lesser mana potions</i> or <i>lesser elemental resistance potions</i>.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Aura Reinforcement</td>
+									<td>You have trained your aura and can raise and lower it as a single action. 
+										When you use the <b>Reinforce Aura</b> action you can spend mana up to 3 times your level + your Will.
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Basic Elemental Magic</td>
+									<td>Can be chosen multiple times, once for each aspect. Choose one aspect and learn two apprentice rank spells from that aspect. You have +1 to spellcasting when casting spells of your chosen aspect.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Focused Spellshaping</td>
+									<td>You have a +1 to spellshaping when casting spells that cost 3 actions or more. Learn two apprentices spells that costs 3 actions or more.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Freeform Learning</td>
+									<td>You learn four apprentice spells of your choosing.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Gadget Crafting</td>
+									<td>You are trained in crafting. Each morning you can make one temporary gadget. If you do you lock away 4 mana from your mana well for the day and the gadget only works for you.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Monster Hunting</td>
+									<td>You are trained in monster hunting lore, which can be used to recall knowledge against monsters and elementals. When you succeed on a recall knowledge with monster hunting lore, the creature takes a -2 penalty to the next save you impose on it.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Metamagic Adept</td>
+									<td>You learn three metamagics of your choice. <br>
+									You may use multiple metamagics on a single spell</td>
+									<td>Metamagic Novice Feat</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Metamagic Novice</td>
+									<td>You learn two metamagics of your choice.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Staff Training</td>
+									<td>You are trained with channeling staves and battlestaves. You can provide somatic components with hand even if your holding a staff in it.</td>
+									<td>None</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>
