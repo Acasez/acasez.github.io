@@ -99,6 +99,11 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin-bottom: 0.5em; /* Space between image and caption */
 }
+	.image-with-caption-cover img {
+		max-width: 100%;
+		width: 100%;
+		align-self: center;
+	}
 
 .image-caption {
     text-align: center;
@@ -107,6 +112,9 @@
     color: #555; /* Optional: Adjust color to fit your design */
     max-width: 800px; /* Match the max-width of the image */
 }
+	.image-caption-cover {
+			max-width: 2000px;
+		}
 hr {
     border: 0;
     height: 2px;          /* Line thickness */
