@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Armor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Back to Portfolio</a>
+			<a href="RPG Overview.html">RPG OVerview</a>
+			<a href="Arcane Feats.html">Arcane Feats</a>
+			<a href="General Feats.html">General Feats</a>
+			<a href="Advantages.html">Advantages</a>
+			<a href="Backgrounds.html">Backgrounds</a>
+			<a href="Armors.html">Armor</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Armor</h3>
+							<p class="portfolio-subtitle">List of all armors in the game.</p>
+						</header>
+						<div class="portfolio-text">
+								<p class="portfolio-description">
+									Armor is split into light and heavy armor and provides damage resistance, but reduces your mana recovery and some dexterity based stats. 
+									Armor comes with a weak point which can be targeted, halving the armor resistance at the cost of making the attack easier to dodge. 
+									<br><br>
+									Some armor require characters to have a certain Physique score to wear it. You take a 1 tile movement penalty for each step below the requirement.
+									<br><br>
+									If you don't have proficiency in the armor your wearing it's penalties is doubled and you can't add your DEX to spellshaping checks.
+								</p>
+							</div>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Name</th>
+									<th onclick="sortTable(1)">Resistances</th>
+									<th onclick="sortTable(2)">Weak Point Difficulty</th>
+									<th onclick="sortTable(3)">Penalties</th>
+									<th onclick="sortTable(4)">Special Traits</th>
+									<th onclick="sortTable(5)">Description</th>
+									<th onclick="sortTable(6)">Price</th>
+									<th onclick="sortTable(7)">Type</th>
+									<th onclick="sortTable(7)">PHY requirement</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Reinforced Cloth</td>
+									<td>2 to physical, frost, lightning and fire damage</td>
+									<td>3</td>
+									<td>-1 Reflex Saves & initiative Checks</td>
+									<td>Can still add half your DEX to spellshaping checks if you aren't proficient</td>
+									<td>Commonly used by adventurers unused to heavier armor.</td>
+									<td>3 gp</td>
+									<td>Light</td>
+									<td> - </td>
+								</tr>
+								<tr>
+									<td>Hide Armor</td>
+									<td>3 to physical, frost, lightning and fire damage</td>
+									<td>4</td>
+									<td>-1 Reflex Saves & initiative Checks</td>
+									<td></td>
+									<td>Tough leather armor made from the hides of large animals. Popular among rangers and hunters.</td>
+									<td>5 gp</td>
+									<td>Light</td>
+									<td> - </td>
+								</tr>
+								<tr>
+									<td>Leather Lamellar</td>
+									<td>4 to physical, frost, lightning and fire damage</td>
+									<td>6</td>
+									<td>-2 Reflex Saves & initiative Checks</td>
+									<td></td>
+									<td>Overlapping leather plates provide good all-round protection, without limitng mana recoveru</td>
+									<td>12 gp</td>
+									<td>Light</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Chain Mail</td>
+									<td>6 to slashing and piercing, 3 to bludgeoning, fire and frost damage.</td>
+									<td>3</td>
+									<td>-2 Reflex Saves & initiative Checks. Mana Recovery Speed -33%</td>
+									<td></td>
+									<td>Interlocking metal rings provide good all-round protection, but are less effective against heavy blows and spells.</td>
+									<td>5 gp</td>
+									<td>Heavy</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Splint Mail</td>
+									<td>8 to slashing and piercing, 3 to bludgeoning, fire and frost damage.</td>
+									<td>5</td>
+									<td>-2 Reflex Saves & initiative Checks. Mana Recovery Speed -33%</td>
+									<td></td>
+									<td>Metal plates riveted to leather, designed to deflect spells and blows.</td>
+									<td>14 gp</td>
+									<td>Heavy</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Half Plate</td>
+									<td>11 to slashing and piercing, 4 to bludgeoning, 3 to fire and frost damage</td>
+									<td>3</td>
+									<td>-2 Reflex Saves & initiative Checks. Mana Recovery Speed -33%</td>
+									<td></td>
+									<td>A hybrid of plate and leather, favored by dedicated battle-mages. Unlike the protection of full platemail, it has more weak points to be exploited by clever enemies.</td>
+									<td>10 gp</td>
+									<td>Heavy</td>
+									<td>1</td>
+								<tr>
+									<td>Plate Mail</td>
+									<td>12 to slashing and piercing, 5 to bludgeoning, fire and frost damage.</td>
+									<td>7</td>
+									<td>-3 Reflex Saves & initiative Checks. Mana Recovery Speed -50%</td>
+									<td></td>
+									<td>Full plate provides the greatest protection and has fewer weak spots to target. Being encased in metal is dampens mana recovery though, making it rarely used by mages, but favored by some knight orders.</td>
+									<td>25 gp</td>
+									<td>Heavy</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>
