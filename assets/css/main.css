@@ -8,7 +8,7 @@
     width: 100%;
     background-color: #1a1a1a; /* Match your background color */
     z-index: 1000; /* Ensures it stays above other content */
-    padding: 8px 0;
+    padding: 6px 0;
     text-align: center;
 }
 
@@ -17,6 +17,7 @@
     text-decoration: none;
     padding: 14px 20px;
     display: inline-block;
+	font-size: 0.8em;
 }
 
 #main {
@@ -35,9 +36,6 @@
 	margin-left: 3em;
 	margin-right: 3em;
 }
-	.portfolio-row.cover {
-		align-items: center;
-	}
 .portfolio-image img {
 	max-width: 800px;
 	width: 100%;
@@ -86,6 +84,28 @@
 }
 .portfolio-row .portfolio-image {
 	margin-right: 1em;
+}
+.image-with-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image and caption */
+}
+
+.image-with-caption img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 0.5em; /* Space between image and caption */
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 0;
+    color: #555; /* Optional: Adjust color to fit your design */
+    max-width: 800px; /* Match the max-width of the image */
 }
 hr {
     border: 0;
