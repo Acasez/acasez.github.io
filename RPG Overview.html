@@ -8,15 +8,7 @@
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
-		<div class="topnav">
-			<a href="index.html">Back to Portfolio</a>
-			<a href="RPG Overview.html">RPG Overview</a>
-			<a href="Arcane Feats.html">Arcane Feats</a>
-			<a href="General Feats.html">General Feats</a>
-			<a href="Advantages.html">Advantages</a>
-			<a href="Armors.html">Armor</a>
-			<a href="Weapons.html">Weapons</a>
-		</div>
+		<div id="header-placeholder"></div>
 		<!-- Main -->
 			<div id="main">
 				<!-- Main Projects -->
@@ -240,6 +232,14 @@
 					</ul>
 			</div>
 		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+			</script>
+		 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
