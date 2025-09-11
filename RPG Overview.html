@@ -238,6 +238,18 @@
 					.then(data => {
 						document.getElementById('header-placeholder').innerHTML = data;
 					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
 			</script>
 		 
 			<script src="assets/js/jquery.min.js"></script>
