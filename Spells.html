@@ -1,30 +1,21 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Weapons</title>
+		<title>Spells</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
-		<div class="topnav">
-			<a href="index.html">Back to Portfolio</a>
-			<a href="RPG Overview.html">RPG OVerview</a>
-			<a href="Arcane Feats.html">Arcane Feats</a>
-			<a href="General Feats.html">General Feats</a>
-			<a href="Advantages.html">Advantages</a>
-			<a href="Backgrounds.html">Backgrounds</a>
-			<a href="Armors.html">Armor</a>
-			<a href="Weapons.html">Weapons</a>
-		</div>
+		<div id="header-placeholder"></div>
 		<!-- Main -->
 			<div id="main">
 				<!-- Main Projects -->
 					<section id="Main Projects" class="sectionText">
 						<header>
-							<h3 class="portfolio-title">Weapons</h3>
-							<p class="portfolio-subtitle">List of all weapons and weapon traits</p>
+							<h3 class="portfolio-title">Spells</h3>
+							<p class="portfolio-subtitle">List of all spells and spell traits</p>
 						</header>
 						<div class="portfolio-text">
 							<p class="portfolio-description">
@@ -322,6 +313,12 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+
 				function sortTable(n) {
 					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
 					table = document.getElementById("featsTable");
