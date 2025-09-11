@@ -33,6 +33,7 @@
 									<li><b>Manipulation </b>The spell manipulates or shapes matter </li>
 									<li><b>Complex </b>The spellshaping DC increase by 2 </li>
 									<li><b>Draining </b>The mana cost is increased to next rank </li>
+									<li><b>Enchanment </b>The spell temporarily inproves the caster or gives them new abilities </li>
 								</ul>
 							</p>
 						</div>
@@ -78,7 +79,7 @@
 									<td>2</td>  <!-- Actions -->
 									<td>Ice</td> <!-- Aspects -->
 									<td>Targeting </td> <!-- Traits -->
-									<td>1</td> <!-- Range -->
+									<td>3</td> <!-- Range -->
 									<td>One Creature</td> <!-- Targets -->
 									<td>Up to one turn</td> <!-- Duration -->
 									<td> <!-- Effect -->
@@ -101,6 +102,245 @@
 										Allows the caster to shape and manipulate water, creating simple shapes or moving water around. 
 										While the spell doesn't offer permanent control, it can be used to redirect small rivers, create temporary barriers, or even form small tools made of water. 
 										The water returns to its natural state after the spell ends.
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Darken</td> <!-- Name -->
+									<td>2+</td>  <!-- Actions -->
+									<td>Darkness</td> <!-- Aspects -->
+									<td>Area </td> <!-- Traits -->
+									<td>5</td> <!-- Range -->
+									<td>3x3 tiles</td> <!-- Targets -->
+									<td>Up to one turn</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Creates a 3x3 tiles square zone of darkness that blocks out non-magical lights. 
+										If you spend 3 actions on this spell, the zone is 5x5 tiles.
+									</td>
+									<td>The spell is centered on you.</td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Earthglide</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Earth</td> <!-- Aspects -->
+									<td>Enchanment, Complex</td> <!-- Traits -->
+									<td>-</td> <!-- Range -->
+									<td>Self</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Glide along the earth, creating rough terrain in your wake. 
+										Move up to 6 tiles in a line across the ground, and cause any tile you move across to become rough terrain. 
+										If your next action is to cast a Earth spell, it has a +2 spellshaping bonus.
+									</td>
+									<td>You travel half the intended distance, then fall prone</td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Ferrokinesis</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Metal</td> <!-- Aspects -->
+									<td>Targeting</td> <!-- Traits -->
+									<td>5</td> <!-- Range -->
+									<td>One unenchanted metal object of light weight or less</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Move a piece of metal of light weight or less 4 tiles. 
+										If you move it into your space you may catch it with a free hand. 
+										If you attempt to move a metal object that's being held, the holder gets a to attempt a Fortitude save against the spell. 
+										Enchanted metal or artifice typically has runes to prevent it being moved with spells.
+										You can use this spell to shoot a metal object at an enemy in range, dealing 2d8 physical damage with a basic Reflex save.
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Firebolt</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Fire</td> <!-- Aspects -->
+									<td>Targeting</td> <!-- Traits -->
+									<td>6</td> <!-- Range -->
+									<td>One creature</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Throw a bolt of fire against a target, dealing 2d6 fire damage with a basic Reflex save. 
+										On a critical failure the target is also set on fire, taking 1d6 persistent fire damage.
+									</td>
+									<td>-</td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Icy Floor</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Ice</td> <!-- Aspects -->
+									<td>Area</td> <!-- Traits -->
+									<td>5</td> <!-- Range -->
+									<td>4x4 Tiles</td> <!-- Targets -->
+									<td>One minute</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Freeze the ground in a 4x4 tiles large area. 
+										Any creatures that walks across one of those squares must make a DC 13 Acrobatics check or fall prone.  
+										If another effect would cause the creature to fall prone while standing on Icy Floor, it has a -5 penalty to that check.
+									</td>
+									<td>The spell is centered on you.</td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Gentle Breeze</td> <!-- Name -->
+									<td>2+</td>  <!-- Actions -->
+									<td>Air</td> <!-- Aspects -->
+									<td>Enchanment</td> <!-- Traits -->
+									<td>Self</td> <!-- Range -->
+									<td>2 tile burst</td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Summons a cool breeze that refreshes and soothes. 
+										A common spell in hot climates or social gatherings. 
+										The first time each day a creature is affected by this spell it loses one level of exhaustion.
+										 If you spend 3 actions on this spell, the area increases to a 3 tiles burst from the caster
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Glow</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Light</td> <!-- Aspects -->
+									<td>Enchanment</td> <!-- Traits -->
+									<td>Touch</td> <!-- Range -->
+									<td>One object or creature of size small or smaller</td> <!-- Targets -->
+									<td>Up to a minute</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Cause an object or creature to glow spreading light for 4 tiles, and dim light for 4 more. 
+										The light can be dismissed with an action.
+										If the target is a creature or held object it gets a Reflex save to resist
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Gravel Spray</td> <!-- Name -->
+									<td>2+</td>  <!-- Actions -->
+									<td>Earth</td> <!-- Aspects -->
+									<td>Area</td> <!-- Traits -->
+									<td>-</td> <!-- Range -->
+									<td>4 Tile cone from caster</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Throw a barrage of gravel or other small bits of earth in a cone. 
+										Creatures inside the cone need to make a Fortitude saving throw or take 2d4 physical damage. 
+										The area affected by the spell becomes difficult terrain. 
+										<br>
+										If you spend three actions on this spell it deals 3d4 damage and the area is a 5 tile cone.
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Gust</td> <!-- Name -->
+									<td>1+</td>  <!-- Actions -->
+									<td>Air</td> <!-- Aspects -->
+									<td>Targeting</td> <!-- Traits -->
+									<td>8</td> <!-- Range -->
+									<td>One creature or object</td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Creates a sudden burst of wind that can push away small objects, unbalance foes, or snuff out small flames. 
+										If the target is a creature it must make a Reflex or Fortitude save. 
+										On a failure its pushed 2 tile back or knocked off-guard until the start of its next turn (target's choice).
+										On a critical failure its knocked double distance and off-guard until the start of its next turn
+										<br>
+										A light object is pushed 4 tiles back. 
+										This spell cannot push large or larger creatures. 
+										You may increase the actions spent on the spell to increase the amount of tiles of knockback by 2 for each action.
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Heat</td> <!-- Name -->
+									<td>1</td>  <!-- Actions -->
+									<td>Fire</td> <!-- Aspects -->
+									<td>Targeting</td> <!-- Traits -->
+									<td>Touch</td> <!-- Range -->
+									<td>One creature or object</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Heat an medium or smaller object or creature, dealing 2d4 fire damage with a basic Fortitude save. 
+										The effect can be lessened to warm food or objects to a pleasant temperature. 
+										If the target is a created affected by an Ice spell, your may attempt to remove it, giving it a new save against the effect.
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td>Ice Shard</td> <!-- Name -->
+									<td>2</td>  <!-- Actions -->
+									<td>Ice</td> <!-- Aspects -->
+									<td>Targeting, Precision</td> <!-- Traits -->
+									<td>6</td> <!-- Range -->
+									<td>One Creature</td> <!-- Targets -->
+									<td>-</td> <!-- Duration -->
+									<td> <!-- Effect -->
+										Throw a shard of ice against a target, dealing 2d6 physical damage with a basic Reflex save. 
+										On a critical failure the damage dice of this spell increases to d8's
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td></td> <!-- Name -->
+									<td></td>  <!-- Actions -->
+									<td></td> <!-- Aspects -->
+									<td></td> <!-- Traits -->
+									<td></td> <!-- Range -->
+									<td></td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td></td> <!-- Name -->
+									<td></td>  <!-- Actions -->
+									<td></td> <!-- Aspects -->
+									<td></td> <!-- Traits -->
+									<td></td> <!-- Range -->
+									<td></td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td></td> <!-- Name -->
+									<td></td>  <!-- Actions -->
+									<td></td> <!-- Aspects -->
+									<td></td> <!-- Traits -->
+									<td></td> <!-- Range -->
+									<td></td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										
+									</td>
+									<td></td> <!-- Failed Cast -->
+									<td>Apprintice</td>  <!-- Rank -->
+								</tr>
+								<tr>
+									<td></td> <!-- Name -->
+									<td></td>  <!-- Actions -->
+									<td></td> <!-- Aspects -->
+									<td></td> <!-- Traits -->
+									<td></td> <!-- Range -->
+									<td></td> <!-- Targets -->
+									<td></td> <!-- Duration -->
+									<td> <!-- Effect -->
+										
 									</td>
 									<td></td> <!-- Failed Cast -->
 									<td>Apprintice</td>  <!-- Rank -->
