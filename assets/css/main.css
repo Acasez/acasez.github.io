@@ -66,6 +66,7 @@
 /*Others*/
 #main {
 	padding-top: 80px; /* Adjust based on the height of your topnav */
+	max-width: auto;
 }
 
 .portfolio-row {
