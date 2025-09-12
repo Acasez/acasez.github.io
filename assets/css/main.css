@@ -132,6 +132,32 @@
 	.portfolio-description {
 		margin-bottom: -0.6em; /* Space between description and end text */
 	}
+	.wikibox {
+    border: 2px solid #a2a9b1;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin-left: 1em;
+    max-width: 400px;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.wikibox-header {
+		background-color: #e9ecef;
+		padding: 0.5em;
+		border-bottom: 2px solid #a2a9b1;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.wikibox-content {
+		padding: 1em;
+	}
+
+	.wikibox-content p {
+		margin: 0.3em 0;
+	}
 .portfolio-row.reverse {
 	flex-direction: row-reverse;
 }
