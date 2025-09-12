@@ -9,6 +9,8 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 5%;
+
+	position: relative;
 }
 
 .topnav ul{
@@ -54,6 +56,11 @@
 .topnav ul li:hover .dropdown_menu ul li{
 	width: 150px;
 	padding: 10px;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
 }
 
 /*Others*/
