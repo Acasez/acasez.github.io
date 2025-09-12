@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Humans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">Humans</h3>
+						</header>
+						<div class="portfolio-row"> <!-- Humans -->
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Humans used to be most common species in Kastorix before The Breach, who lived in great numbers in countries and cities across Avijor. 
+									When those countries fell some made it to Meibor or Santsim, but many died. 
+									Humans are diverse in appearance, with a wide range of skin, hair, and eye colors. 
+									Known for their physical versatility and ability to adapt to various environments, humans have a remarkable endurance, allowing them to sustain prolonged physical activity longer than many other species. 
+								</p>
+							</div>
+							<div class="wikibox">
+								<div class="wikibox-header">
+									<h4>Humans</h4>
+								</div>
+								<div class="wikibox-content">
+									<b>Population:</b> 29 Million<br>
+									<b>Average Lifespan:</b> 75 years<br>
+									<b>Size:</b> 1.5 - 2 meters<br>
+									<b>Rarity:</b> Uncommon<br>
+									<br>
+									<p><b>WIL, INT</b> or <b>DEX</b></p>
+									<p><b>Size:</b> Medium</p>
+									<p><b>Starting Health:</b> 6</p>
+									<p><b>Starting Mana:</b> 14</p>
+									<p><b>Endurance:</b> The first time you would be fatigued each day ignore it</p>
+									<p><b>Natural Ambition:</b> Gain one more Level 1 <a href="General Feats.html">General Feats</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Vesper -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Physical Characteristics</h3>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Vesper -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Society and Culture</h3>
+								<p class="portfolio-subtitle">Community Structure</p>
+								<p class="portfolio-description">
+									
+								</p>
+								<br>
+								<p class="portfolio-subtitle">Settlements</p>
+								<p class="portfolio-description">
+									
+								</p>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Economy -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Economy and Craftsmanship</h3>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Religion and Beliefs -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Religion and Beliefs</h3>
+								<p class="portfolio-description">
+									
+								</p>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Daily Life and Practices -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Daily Life and Practices</h3>
+								<p class="portfolio-subtitle">Education</p>
+								<p class="portfolio-description">
+									<!-- Add education details here if available -->
+								</p>
+								<br>
+								<p class="portfolio-subtitle">Art and Music</p>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Interaction with Other Species -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Interaction with Other Species</h3>
+								<p class="portfolio-description">
+									
+								</p>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Military and Defense -->
+							<div class="portfolio-text">
+								<h3 class="portfolio-title">Military and Defense</h3>
+								<p class="portfolio-description">
+									
+								</p>
+							</div>
+						</div>
+
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
+			</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
