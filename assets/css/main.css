@@ -4,11 +4,11 @@
 .topnav{
 	background-color: #222729;
 	height: 80px;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 5%;
+	max-width: 1920px;
 
 	position: relative;
 }
@@ -64,6 +64,11 @@
 }
 
 /*Others*/
+.is-preload {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 #main {
 	padding-top: 80px; /* Adjust based on the height of your topnav */
 	max-width: 1920;
@@ -274,6 +279,11 @@ ul.a {
 	font-weight: 600;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 /* Basic */
 	body {
 		background: #fff;
@@ -282,7 +292,8 @@ ul.a {
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
-		margin: 0px;
+		margin: 0 auto;
+		max-width: 1920px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
