@@ -1,88 +1,64 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 /*Topnav*/
-.topnav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1a1a1a; /* Match your background color */
-    z-index: 1000; /* Ensures it stays above other content */
-    padding: 6px 0;
-    text-align: center;
+.topnav{
+	background-color: #222729;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
 }
 
-.topnav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-	font-size: 0.8em;
+.topnav ul{
+	list-style: none;
+	display:  flex;
+	
 }
 
-/* Navigation bar */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    font-family: Arial;
+.topnav ul li{
+	padding: 10px 30px; 
+	position: relative;
 }
 
-/* Navigation links */
-.topnav a, .topnav .dropbtn {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
+.topnav ul li a{
+	color: #ddd;
+	text-decoration: none;
+	font-size: 20px;
+
+	transition:  all 0.3;
 }
 
-/* Dropdown button */
-.dropbtn {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-	font-size: 0.8em;
+.topnav ul li a:hover{
+	color: lightgray;
 }
 
-/* Dropdown container */
-.dropdown {
-    display: inline-block;
-    position: relative;
+.dropdown_menu{
+	display: none;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.topnav ul li:hover .dropdown_menu{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: black;
 }
 
-/* Links inside dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.topnav ul li:hover .dropdown_menu ul{
+	display: block;
+	margin: 10px;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.topnav ul li:hover .dropdown_menu ul li{
+	width: 150px;
+	padding: 10px;
 }
 
-/* Hover effects */
-.topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-}
 /*Others*/
 #main {
 	padding-top: 80px; /* Adjust based on the height of your topnav */
-}
-
-.topnav a:hover {
-    text-decoration: underline;
 }
 
 .portfolio-row {
@@ -298,6 +274,7 @@ ul.a {
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
+		margin: 0px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
