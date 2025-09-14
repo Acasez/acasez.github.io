@@ -8,18 +8,7 @@
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
-		<div class="topnav">
-			<a href="index.html">Front Page</a>
-			<a href="amsvartne.html">Amsvartne</a>
-			<a href="mariestadClimateGame.html">Mariestad Board Game</a>
-			<a href="ionInternship.html">Ion Games Internship</a>
-			<a href="cityState.html">City State</a>
-			<a href="#to-hel-and-back">To Hel and Back</a>
-			<a href="#land-of-the-arcane">Land of the Arcane</a>
-			<a href="#city-builder-project">City Builder Project</a>
-			<a href="kastorix.html">Kastorix</a>
-			<a href="#about-me">About Me</a>
-		</div>
+		<div id="header-placeholder"></div>
 		<!-- Main -->
 			<div id="main">
 				<!-- Main Projects -->
@@ -138,5 +127,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				fetch('mainheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+			</script>
 	</body>
 </html>
