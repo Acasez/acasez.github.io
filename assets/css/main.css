@@ -73,6 +73,12 @@
     }
 }
 
+.topnav ul{
+	list-style: none;
+	display:  flex;
+	width: 100%;
+}
+
 .topnav ul li a {
     color: #ddd;
     text-decoration: none;
@@ -87,12 +93,9 @@
     padding: 10px 15px;
     flex-grow: 1;
     text-align: center;
+	position: relative;
 }
 
-.topnav ul {
-    width: 100%;
-    justify-content: space-between;
-}
 
 .topnav ul li a:hover{
 	color: lightgray;
