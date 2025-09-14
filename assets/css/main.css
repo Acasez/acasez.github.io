@@ -1,17 +1,76 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-/*Topnav*/
-.topnav{
-	background-color: #222729;
-	height: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 5%;
-	max-width: 100%;
-	width: 100%;
+/* Default styles for larger screens */
+.topnav {
+    background-color: #222729;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
 
-	position: relative;
+/* Adjust for screens smaller than 2048px */
+@media screen and (max-width: 2048px) {
+    .topnav {
+        padding: 0 3%;
+    }
+    .topnav ul li {
+        padding: 10px 20px; /* Reduce horizontal padding */
+    }
+}
+
+/* Adjust for screens smaller than 1920px */
+@media screen and (max-width: 1920px) {
+    .topnav {
+        padding: 0 2%;
+    }
+    .topnav ul li {
+        padding: 10px 15px; /* Further reduce horizontal padding */
+    }
+    .topnav ul li a {
+        font-size: 14px; /* Slightly smaller font */
+    }
+}
+
+/* For even smaller screens (e.g., tablets) */
+@media screen and (max-width: 1200px) {
+    .topnav {
+        flex-wrap: wrap; /* Allow items to wrap */
+        height: auto; /* Let height adjust to content */
+    }
+    .topnav ul li {
+        padding: 8px 10px;
+    }
+    .topnav ul li a {
+        font-size: 13px;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        height: auto;
+    }
+    .topnav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .topnav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 8px 15px;
+    }
+    .dropdown_menu {
+        position: static;
+        width: 100%;
+    }
 }
 
 .topnav ul{
@@ -79,8 +138,8 @@
 	align-items: flex-start;
 	margin-bottom: 1em;
 	gap: 1em;
-	margin-left: 3em;
-	margin-right: 3em;
+	margin-left: 2%;
+    margin-right: 2%;
 }
 .portfolio-image img {
 	max-width: 800px;
@@ -99,6 +158,14 @@
 		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 	}
+@media screen and (max-width: 1200px) {
+    .portfolio-row {
+        flex-direction: column;
+    }
+    .portfolio-image, .portfolio-text {
+        width: 100%;
+    }
+}
 .portfolio-text {
 	flex: 1;
 }
@@ -274,10 +341,6 @@ html {
 	font-weight: 600;
 }
 
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
 
 /* Basic */
 body {
@@ -288,7 +351,7 @@ body {
 	line-height: 1.75em;
 	color: #888;
 	margin: 0 auto;
-	max-width: 1920px;
+	max-width: 100%;
 }
 
 	h1, h2, h3, h4, h5, h6 {
