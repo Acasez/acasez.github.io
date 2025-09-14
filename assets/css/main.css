@@ -8,7 +8,8 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 5%;
-	max-width: 1920px;
+	max-width: 100%;
+	width: 100%;
 
 	position: relative;
 }
@@ -65,13 +66,13 @@
 
 /*Others*/
 .is-preload {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 #main {
-	padding-top: 80px; /* Adjust based on the height of your topnav */
-	max-width: 1920;
+	padding-top: 40px; /* Adjust based on the height of your topnav */
+	max-width: 100%;
 }
 
 .portfolio-row {

@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mariestad Digital Adaptation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="topnav">
+			<a href="index.html">Front Page</a>
+			<a href="amsvartne.html">Amsvartne</a>
+			<a href="mariestadClimateGame.html">Mariestad Board Game</a>
+			<a href="ionInternship.html">Ion Games Internship</a>
+			<a href="cityState.html">City State</a>
+			<a href="#to-hel-and-back">To Hel and Back</a>
+			<a href="#land-of-the-arcane">Land of the Arcane</a>
+			<a href="#city-builder-project">City Builder Project</a>
+			<a href="kastorix.html">Kastorix</a>
+			<a href="#about-me">About Me</a>
+		</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">Mariestad Digital Adaptation</h3>
+						<p class="portfolio-subtitle">Eurogame style board game about city planning and sustainability</p>
+						</header>
+						<div class="portfolio-row reverse"> <!-- Digital Adaptation -->
+							<div class="portfolio-image large">
+								<div class="image-with-caption">
+									<img src="images/MariestadDigitalAdaptation/NewMidScience.JPG" alt="The game in play" />
+									<p class="image-caption">Screenshot of the game</p>
+								</div>
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									I made digital, solo only, adaption of the <a href="mariestadClimateGame.html" class="underlined-link">Mariestad Board Game</a>.
+									Its up on itch and can be be found here: 
+									<br><br>
+									https://acasez.itch.io/mariestad-climate-game
+									<br><br>
+									It has most of the features of physical board game and a inbuilt tutorial. 
+									It has support to be played in both English and Swedish and has options for different amount of starting pollution, to provide different levels of challenge. 
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Cards -->
+							<div class="portfolio-image cover">
+								<img src="images/MariestadDigitalAdaptation/gameplay.gif" alt="Gameplay"/>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Things I've Worked On -->
+							<div class="portfolio-image large">
+								<div class="image-with-caption">
+									<img src="images/MariestadDigitalAdaptation/CardExample.JPG" alt="Example of a card in game" />
+									<p class="image-caption">Actor Cards from the game</p>
+								</div>
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Things I've Worked on:
+									<ul class="a">
+										<li>Made a unity script to put together cards from their components using scripable objects</li>
+										<li>Coded the game and its many possible interactions, between different cards and game mechanics</li>
+										<li>Made a system where card info is stored on a google sheet and can be downloaded and imported into the game as CSV (Comma separeted value file). </li>
+										<li>Re-balanced the game for a solo only challenge and redesigned some of the cards that needed changes to work in the format.</li>
+										<li>Tested the game many times, and got feedback from friends. Worked iteratively from feedback. </li>
+										<li>Redesigned the UI to be something that fit in a digital format and followed genre conventions. Worked in Figma to plan out and prototype the UI.</li>
+										<li>Added micro animations using the DOTween Unity plugin to add game feel and "juice" to the game, and help explain how systems interact. </li>
+										<li>Made an in game tutorial that explains how the game, which works pops up organically during gameplay.</li>
+										<li>Made a simple localization system in the using JSON files so it can be played in both English and Swedish.</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Cards -->
+							<div class="portfolio-image cover">
+								<img src="images/MariestadDigitalAdaptation/NewTutorialStart.JPG" alt="Gameplay"/>
+							</div>
+						</div>
+					<hr>
+					</section>
+					<section id="Design Process" class="sectionText">
+					<header>
+						<h3 class="portfolio-title">Design Process</h3>
+					</header>
+						<div class="portfolio-row"> <!-- Idea -->
+							<div class="portfolio-image">
+								<div class="image-with-caption">
+									<img src="images/MariestadClimateGame/ScripatbleObject.JPG" alt="Card Scriptable Object from Unity" />
+									<p class="image-caption">Part of a card's scripable object</p>
+								</div>
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									When I was making the <a href="mariestadClimateGame.html#Card Making Tool">Unity Script</a> that put together the cards for the Board Game, I got the idea of trying to actually make a digital adaptation.
+									It would be nice to play and a easier way to show people the game design of the board game without having to sit down and play it.
+									I had also gotten really into playing solo Terraforming Mars at https://terraforming-mars.herokuapp.com, and I liked the idea of making something similiar.
+									<br><br>
+									I did most of the game code in spring 2024 as the game was being printed, and had a playable version in May. 
+									But for the initial versions I just used the games boards for UI, which looked awkward and was inefficient on a digital screen. 
+									I knew I wanted to fix something better, but I was a bit tired of the game then and took a few months break from the project.
+									<br><br> 
+									In the fall of 2024 I took a remote course in UI design from Uppsala University and decided that was a good time to fix the UI of the digital adaption.  
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row reverse"> <!-- Coding -->
+							<div class="portfolio-image">
+								<div class="image-with-caption">
+									<img src="images/MariestadDigitalAdaptation/CurrentDigital.JPG" alt="Old UI for the game"/>
+									<p class="image-caption">The early UI for the digital adaptation </p>
+								</div>
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									The first part of this was splitting up the game boards and moving elements around for a more natural feeling layout that follows strategy genre conventions. 
+									Money, Income and tags were moved to the top of the screen where resources generally are in strategy games. 
+									Many resources that used tracks in the board game were made into numbers instead to take advantage of the digital format.
+									<br><br>
+									I also changed the size of green energy and traffic tracks as the current size was way to be to fit for solo play. The pollution track I did a large redesign on, making into a dynamic display that show the next couple of steps and their bonus rewards. This removes a lot of unused game elements and created a nice visual of "pulling" in pollution. 
+									It also allowed to create an alternative setting where the bonuses on the track are randomly placed.
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row reverse"> <!-- Wireframe UI design -->
+							<div class="portfolio-image large">
+								<img src="images/MariestadDigitalAdaptation/Wireframe0.1.JPG" alt="Wireframe Dsign"/>
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									I used Figma to plan out the new design for the UI, starting with a wireframe and then adding more details.
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Pollution UI -->
+							<div class="portfolio-image large">
+								<div class="image-with-caption">
+									<img src="images/MariestadDigitalAdaptation/PollutionTrack.JPG" alt="Pollution Track"/>
+									<p class="image-caption">The pollution track I described earlier. 
+										As you reduce pollution it gets moved into the VP display, connecting the two elements and creating a visual of "pulling" in pollution into nature. 
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-image large">
+								<div class="image-with-caption">
+									<div class="image-with-caption">
+										<img src="images/MariestadDigitalAdaptation/gameboardpollution.jpg" alt="Game Board Pollution Track"/>
+										<p class="image-caption">The same pollution track on the physical game board</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- DoTween -->
+							<div class="portfolio-image">
+								<img src="images/MariestadDigitalAdaptation/DoScale.JPG" alt="Start of playtesting" />
+								<div class="portfolio-text">
+									<p class="portfolio-description">
+										I also wanted to add more feeling or "juice" into the game. 
+										For this I added some micro animations using the DoTween plugin for unity which I found absolutely perfect for this. It allows you to add easy animations of things moving between points, scaling up or down or rotating. 
+										While none of these things are particularly hard to in code, DoTween is so much faster and easier than doing it by hand. 
+										A line like the one above is so much quicker to write and use than having to deal with Unity's default ways of doing scaling, timers and more. 
+										I will definitely use this plugin for future projects that would benefit from something like it.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- After Course -->
+							<div class="portfolio-image">
+								<img src="images/MariestadDigitalAdaptation/TutorialStep2.JPG" alt="Start of playtesting" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Far better than before but there was still room for more upgrades. 
+									The updates used screen space and organized things better, but I made the board a bit cluttered and some UI elements blended into each other. 
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row reverse"> <!-- Current UI -->
+							<div class="portfolio-image">
+								<img src="images/MariestadDigitalAdaptation/NewStart.JPG" alt="Current UI" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									To improve the organization of the UI I added some backgrounds to the different elements, with dark green lines to separate them.
+									<br><br>
+									I also moved around the year track so it covered less of the screen. I'm not 100% happy with it yet though, since it feels like it goes in a strange direction
+									<br><br>
+									I'm also thinking about some more borders, along the card played space. 
+								</p>
+							</div>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
