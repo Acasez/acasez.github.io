@@ -35,20 +35,43 @@
             margin-bottom: 10px;
             color: #444;
         }
-        .stat-row {
+		/*Stats*/
+        .stats-wrapper {
             display: flex;
-            margin-bottom: 5px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .stats-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .stat-box {
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            width: 100px;
         }
+
         .stat-label {
-            width: 50px;
             font-weight: bold;
+            margin-bottom: 5px;
+			font-size: 150%;
+  			color: skyblue;
         }
+
         .stat-input {
-            width: 50px;
+            width: 60px;
             padding: 5px;
-            margin-right: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
+
         .modifier {
             width: 50px;
             background: #f0f0f0;
@@ -136,21 +159,25 @@
 
 			<div class="section">
 				<div class="section-title">Stats</div>
-				<div class="stat-row">
-					<div class="stat-label">PHY</div>
-					<input type="number" class="stat-input" id="phy" min="-5" max="10">
-				</div>
-				<div class="stat-row">
-					<div class="stat-label">DEX</div>
-					<input type="number" class="stat-input" id="dex" min="-5" max="10">
-				</div>
-				<div class="stat-row">
-					<div class="stat-label">INT</div>
-					<input type="number" class="stat-input" id="int" min="-5" max="10">
-				</div>
-				<div class="stat-row">
-					<div class="stat-label">WIL</div>
-					<input type="number" class="stat-input" id="wil" min="-5" max="10">
+				<div class="stats-wrapper">
+					<div class="stats-container">
+						<div class="stat-box">
+							<div class="stat-label">PHY</div>
+							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="1">
+						</div>
+						<div class="stat-box">
+							<div class="stat-label">DEX</div>
+							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="3">
+						</div>
+						<div class="stat-box">
+							<div class="stat-label">INT</div>
+							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="5">
+						</div>
+						<div class="stat-box">
+							<div class="stat-label">WIL</div>
+							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="3">
+						</div>
+					</div>
 				</div>
 			</div>
 
