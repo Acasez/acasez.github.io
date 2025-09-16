@@ -93,30 +93,30 @@
 				<div class="section-title">Stats</div>
 				<div class="stat-row">
 					<div class="stat-label">PHY</div>
-					<input type="number" class="stat-input" id="str" min="-5" max="10">
+					<input type="number" class="stat-input" id="phy" min="-5" max="10">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">DEX</div>
-					<input type="number" class="stat-input" id="str" min="-5" max="10">
+					<input type="number" class="stat-input" id="dex" min="-5" max="10">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">INT</div>
-					<input type="number" class="stat-input" id="str" min="-5" max="10">
+					<input type="number" class="stat-input" id="int" min="-5" max="10">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">WIL</div>
-					<input type="number" class="stat-input" id="str" min="-5" max="10">
+					<input type="number" class="stat-input" id="wil" min="-5" max="10">
 				</div>
 			</div>
 
 			<div class="section">
 				<div class="section-title">Arcane Feats</div>
-				<textarea id="feats" placeholder="List your arcane feats here..."></textarea>
+				<textarea id="arcaneFeats" placeholder="List your arcane feats here..."></textarea>
 			</div>
 
 			<div class="section">
 				<div class="section-title">General Feats</div>
-				<textarea id="feats" placeholder="List your general feats here..."></textarea>
+				<textarea id="generalFeats" placeholder="List your general feats here..."></textarea>
 			</div>
 
 			<div class="section">
@@ -139,7 +139,7 @@
 				</select>
 				<button onclick="loadSelectedCharacter()">Load Selected</button>
 			</div>
-			
+
 			<div class="section">
 				<div class="section-title">Export/Import</div>
 				<button onclick="exportCharacter()">Export Character</button>
@@ -162,6 +162,7 @@
 					.then(data => {
 						document.getElementById('header-placeholder').innerHTML = data;
 					});
+
 				// Close dropdowns when clicking outside
 				window.onclick = function(event) {
 					if (!event.target.matches('.dropbtn')) {
@@ -174,14 +175,7 @@
 						}
 					}
 				};
-				// Update modifier when stat changes
-				function updateModifier(statId, modId) {
-					const statValue = parseInt(document.getElementById(statId).value) || 0;
-					const modifier = calculateModifier(statValue);
-					document.getElementById(modId).value = modifier >= 0 ? `+${modifier}` : modifier;
-				}
 
-				// Save character data to localStorage
 				function saveSheet() {
 					const charName = document.getElementById('charName').value;
 					if (!charName) {
@@ -223,7 +217,9 @@
 					localStorage.setItem('ttrpgCharacters', JSON.stringify(characters));
 
 					alert(`Character "${charName}" saved!`);
+					populateCharacterList();
 				}
+
 
 				// Load character data from localStorage
 				function loadSheet() {
@@ -252,6 +248,7 @@
 					} else {
 						alert(`No saved character found with the name "${charName}".`);
 					}
+					populateCharacterList();
 				}
 
 				// Delete a character
@@ -272,6 +269,7 @@
 						alert(`Character "${charName}" deleted!`);
 					}
 				}
+
 				// Populate the character list dropdown
 				function populateCharacterList() {
 					const characterList = document.getElementById('characterList');
