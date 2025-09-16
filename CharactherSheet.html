@@ -436,51 +436,50 @@
 				};
 
 				// Track proficiency levels for each skill
-				const skillProficiencies = {};
+				window.skillProficiencies = window.skillProficiencies || {};
 
-				// Set proficiency for a skill and update its modifier
 				function setProficiency(skillId, proficiencyBonus, button) {
-					skillProficiencies[skillId] = proficiencyBonus;
-
+					window.skillProficiencies[skillId] = proficiencyBonus;
 					// Update active button styling
 					const buttons = button.parentNode.querySelectorAll('.proficiency-button');
 					buttons.forEach(btn => btn.classList.remove('active'));
 					button.classList.add('active');
-
 					// Update the skill modifier
-					console.log("Set Skill proficiencies:", skillProficiencies);
+					console.log("Set Skill proficiencies:", window.skillProficiencies);
 					updateSkillModifiers();
 				}
 
-				// Update all skill modifiers based on stat values and proficiency
 				function updateSkillModifiers() {
+					console.log("Update Modifiers");
+					console.log("Pre Skill proficiencies:", window.skillProficiencies);
 					const phyMod = parseInt(document.getElementById('phy').value) || 0;
 					const dexMod = parseInt(document.getElementById('dex').value) || 0;
 					const intMod = parseInt(document.getElementById('int').value) || 0;
 					const wilMod = parseInt(document.getElementById('wil').value) || 0;
 
 					// Update each skill modifier
-					document.getElementById('acrobaticsMod').value = dexMod + (skillProficiencies.acrobatics || 0);
-					document.getElementById('arcanaMod').value = intMod + (skillProficiencies.arcana || 0);
-					document.getElementById('athleticsMod').value = phyMod + (skillProficiencies.athletics || 0);
-					document.getElementById('craftingMod').value = intMod + (skillProficiencies.crafting || 0);
-					document.getElementById('deceptionMod').value = wilMod + (skillProficiencies.deception || 0);
-					document.getElementById('historyMod').value = intMod + (skillProficiencies.history || 0);
-					document.getElementById('insightMod').value = wilMod + (skillProficiencies.insight || 0);
-					document.getElementById('intimidationMod').value = phyMod + (skillProficiencies.intimidation || 0);
-					document.getElementById('medicineMod').value = intMod + (skillProficiencies.medicine || 0);
-					document.getElementById('manaSensingMod').value = wilMod + (skillProficiencies.manaSensing || 0);
-					document.getElementById('natureMod').value = intMod + (skillProficiencies.nature || 0);
-					document.getElementById('perceptionMod').value = intMod + (skillProficiencies.perception || 0);
-					document.getElementById('performanceMod').value = dexMod + (skillProficiencies.performance || 0);
-					document.getElementById('persuasionMod').value = wilMod + (skillProficiencies.persuasion || 0);
-					document.getElementById('societyMod').value = intMod + (skillProficiencies.society || 0);
-					document.getElementById('sleightOfHandMod').value = dexMod + (skillProficiencies.sleightOfHand || 0);
-					document.getElementById('stealthMod').value = dexMod + (skillProficiencies.stealth || 0);
-					document.getElementById('survivalMod').value = wilMod + (skillProficiencies.survival || 0);
+					document.getElementById('acrobaticsMod').value = dexMod + (window.skillProficiencies.acrobatics || 0);
+					document.getElementById('arcanaMod').value = intMod + (window.skillProficiencies.arcana || 0);
+					document.getElementById('athleticsMod').value = phyMod + (window.skillProficiencies.athletics || 0);
+					document.getElementById('craftingMod').value = intMod + (window.skillProficiencies.crafting || 0);
+					document.getElementById('deceptionMod').value = wilMod + (window.skillProficiencies.deception || 0);
+					document.getElementById('historyMod').value = intMod + (window.skillProficiencies.history || 0);
+					document.getElementById('insightMod').value = wilMod + (window.skillProficiencies.insight || 0);
+					document.getElementById('intimidationMod').value = phyMod + (window.skillProficiencies.intimidation || 0);
+					document.getElementById('medicineMod').value = intMod + (window.skillProficiencies.medicine || 0);
+					document.getElementById('manaSensingMod').value = wilMod + (window.skillProficiencies.manaSensing || 0);
+					document.getElementById('natureMod').value = intMod + (window.skillProficiencies.nature || 0);
+					document.getElementById('perceptionMod').value = intMod + (window.skillProficiencies.perception || 0);
+					document.getElementById('performanceMod').value = dexMod + (window.skillProficiencies.performance || 0);
+					document.getElementById('persuasionMod').value = wilMod + (window.skillProficiencies.persuasion || 0);
+					document.getElementById('societyMod').value = intMod + (window.skillProficiencies.society || 0);
+					document.getElementById('sleightOfHandMod').value = dexMod + (window.skillProficiencies.sleightOfHand || 0);
+					document.getElementById('stealthMod').value = dexMod + (window.skillProficiencies.stealth || 0);
+					document.getElementById('survivalMod').value = wilMod + (window.skillProficiencies.survival || 0);
 
-					console.log("Skill proficiencies:", skillProficiencies);
+					console.log("Skill proficiencies:", window.skillProficiencies);
 				}
+
 
 				function saveSheet() {
 					const charName = document.getElementById('charName').value;
@@ -499,36 +498,26 @@
 							int: document.getElementById('int').value,
 							wil: document.getElementById('wil').value,
 						},
-						skillProficiencies: {...skillProficiencies},
+						skillProficiencies: {...window.skillProficiencies},
 						arcaneFeats: document.getElementById('arcaneFeats').value,
 						generalFeats: document.getElementById('generalFeats').value,
 						equipment: document.getElementById('equipment').value,
 						notes: document.getElementById('notes').value,
 					};
 
-					// Get existing characters or initialize an empty array
 					let characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
-
-					// Check if a character with this name already exists
 					const existingIndex = characters.findIndex(char => char.name === charName);
 
 					if (existingIndex >= 0) {
-						// Update existing character
 						characters[existingIndex] = charData;
 					} else {
-						// Add new character
 						characters.push(charData);
 					}
 
-					// Save the updated array back to localStorage
 					localStorage.setItem('ttrpgCharacters', JSON.stringify(characters));
-
 					alert(`Character "${charName}" saved!`);
-					populateCharacterList();
 				}
 
-
-				// Load character data from localStorage
 				function loadSheet() {
 					const charName = document.getElementById('charName').value;
 					if (!charName) {
@@ -549,11 +538,11 @@
 						document.getElementById('wil').value = charData.stats.wil;
 
 						// Load skill proficiencies
-						Object.assign(skillProficiencies, charData.skillProficiencies);
+						window.skillProficiencies = {...charData.skillProficiencies};
 
 						// Update active proficiency buttons
-						Object.keys(skillProficiencies).forEach(skillId => {
-							const proficiency = skillProficiencies[skillId];
+						Object.keys(charData.skillProficiencies).forEach(skillId => {
+							const proficiency = charData.skillProficiencies[skillId];
 							const buttons = document.querySelectorAll(`button[onclick*="setProficiency('${skillId}']`);
 							buttons.forEach(button => {
 								const bonus = parseInt(button.getAttribute('onclick').match(/\d+/)[0]);
@@ -572,12 +561,13 @@
 						document.getElementById('generalFeats').value = charData.generalFeats;
 						document.getElementById('equipment').value = charData.equipment;
 						document.getElementById('notes').value = charData.notes;
+
 						alert(`Character "${charName}" loaded!`);
 					} else {
 						alert(`No saved character found with the name "${charName}".`);
 					}
-					populateCharacterList();
 				}
+
 
 				// Delete a character
 				function deleteSheet() {
