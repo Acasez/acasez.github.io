@@ -6,28 +6,127 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .sheet-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .stat-row {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;
+        }
+        .stat-label {
+            width: 50px;
+            font-weight: bold;
+        }
+        .stat-input {
+            width: 50px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .modifier {
+            width: 50px;
+            background: #f0f0f0;
+            border: none;
+            padding: 5px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
 	<body class="is-preload">
 		<!-- Header -->
 		<div id="header-placeholder"></div>
-		<!-- Main -->
-			<div id="main">
-				<!-- Main Projects -->
-					<section id="Main Projects" class="sectionText">
-						<header>
-						<h3 class="portfolio-title">Charachter Sheet</h3>
-						</header>
-						<div class="portfolio-row"> <!-- Aruna -->
-							<div class="portfolio-text">
-								<p class="portfolio-description">
-									The aruna are an intelligent avian species inhabiting the Shattered Isles.
-									They live in small nations or clans, often referred to as flocks.
-									They have colorful feathers which vary depending on the region they originate from and dexterous wingarms.
-									Although aruna wings don’t provide enough lift for sustained flight, they excel at gliding and utilizing natural updrafts to remain airborne.
-									The aruna are also adept swimmers, frequently sourcing materials and food from the sea.
-								</p>
-							</div>
-					</section>
+		<!-- Body-->
+			<div class="sheet-container">
+			<h1>TTRPG Character Sheet</h1>
+
+			<div class="section">
+				<div class="section-title">Character Info</div>
+				<input type="text" placeholder="Character Name" id="charName">
+				<input type="text" placeholder="Species" id="charSpecies">
+				<input type="number" placeholder="Level" id="charLevel">
 			</div>
+
+			<div class="section">
+				<div class="section-title">Stats</div>
+				<div class="stat-row">
+					<div class="stat-label">PHY</div>
+					<input type="number" class="stat-input" id="str" min="-5" max="10">
+				</div>
+				<div class="stat-row">
+					<div class="stat-label">DEX</div>
+					<input type="number" class="stat-input" id="str" min="-5" max="10">
+				</div>
+				<div class="stat-row">
+					<div class="stat-label">INT</div>
+					<input type="number" class="stat-input" id="str" min="-5" max="10">
+				</div>
+				<div class="stat-row">
+					<div class="stat-label">WIL</div>
+					<input type="number" class="stat-input" id="str" min="-5" max="10">
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="section-title">Feats</div>
+				<textarea id="feats" placeholder="List your feats here..."></textarea>
+			</div>
+
+			<div class="section">
+				<div class="section-title">Equipment</div>
+				<textarea id="equipment" placeholder="List your equipment here..."></textarea>
+			</div>
+
+			<div class="section">
+				<div class="section-title">Notes</div>
+				<textarea id="notes" placeholder="Additional notes..."></textarea>
+			</div>
+
+			<button onclick="saveSheet()">Save Character</button>
+			<button onclick="loadSheet()">Load Character</button>
+		</div>
 		<!-- Footer -->
 			<div id="footer">
 				<!-- Copyright -->
@@ -55,7 +154,55 @@
 					}
 				};
 			</script>
-		 
+		 	<script>
+				// Update modifier when stat changes
+				function updateModifier(statId, modId) {
+					const statValue = parseInt(document.getElementById(statId).value) || 0;
+					const modifier = calculateModifier(statValue);
+					document.getElementById(modId).value = modifier >= 0 ? `+${modifier}` : modifier;
+				}
+
+				// Save character data to localStorage
+				function saveSheet() {
+					const charData = {
+						name: document.getElementById('charName').value,
+						species: document.getElementById('charSpecies').value,
+						level: document.getElementById('charLevel').value,
+						stats: {
+							phy: document.getElementById('phy').value,
+							dex: document.getElementById('dex').value,
+							int: document.getElementById('int').value,
+							wil: document.getElementById('wil').value,
+						},
+						
+						feats: document.getElementById('feats').value,
+						equipment: document.getElementById('equipment').value,
+						notes: document.getElementById('notes').value,
+					};
+					localStorage.setItem('ttrpgCharSheet', JSON.stringify(charData));
+					alert('Character saved!');
+				}
+
+				// Load character data from localStorage
+				function loadSheet() {
+					const charData = JSON.parse(localStorage.getItem('ttrpgCharSheet'));
+					if (charData) {
+						document.getElementById('charName').value = charData.name;
+						document.getElementById('charClass').value = charData.class;
+						document.getElementById('charLevel').value = charData.level;
+						document.getElementById('str').value = charData.stats.str;
+						document.getElementById('dex').value = charData.stats.dex;
+						document.getElementById('int').value = charData.stats.int;
+						document.getElementById('wil').value = charData.stats.wis;
+						document.getElementById('feats').value = charData.feats;
+						document.getElementById('equipment').value = charData.equipment;
+						document.getElementById('notes').value = charData.notes;
+						alert('Character loaded!');
+					} else {
+						alert('No saved character found.');
+					}
+				}
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
