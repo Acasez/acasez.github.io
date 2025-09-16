@@ -131,6 +131,22 @@
 
 			<button onclick="saveSheet()">Save Character</button>
 			<button onclick="loadSheet()">Load Character</button>
+			<button onclick="deleteSheet()">Delete Character</button>
+			<div class="section">
+				<div class="section-title">Load Character</div>
+				<select id="characterList" onchange="populateCharacter()">
+					<option value="">Select a character...</option>
+				</select>
+				<button onclick="loadSelectedCharacter()">Load Selected</button>
+			</div>
+			
+			<div class="section">
+				<div class="section-title">Export/Import</div>
+				<button onclick="exportCharacter()">Export Character</button>
+				<input type="file" id="importFile" accept=".json" onchange="importCharacter(event)" style="display: none;">
+				<button onclick="document.getElementById('importFile').click()">Import Character</button>
+			</div>
+
 		</div>
 		<!-- Footer -->
 			<div id="footer">
@@ -167,8 +183,14 @@
 
 				// Save character data to localStorage
 				function saveSheet() {
+					const charName = document.getElementById('charName').value;
+					if (!charName) {
+						alert('Please enter a character name.');
+						return;
+					}
+
 					const charData = {
-						name: document.getElementById('charName').value,
+						name: charName,
 						species: document.getElementById('charSpecies').value,
 						level: document.getElementById('charLevel').value,
 						stats: {
@@ -177,36 +199,179 @@
 							int: document.getElementById('int').value,
 							wil: document.getElementById('wil').value,
 						},
-						
 						arcaneFeats: document.getElementById('arcaneFeats').value,
 						generalFeats: document.getElementById('generalFeats').value,
 						equipment: document.getElementById('equipment').value,
 						notes: document.getElementById('notes').value,
 					};
-					localStorage.setItem('ttrpgCharSheet', JSON.stringify(charData));
-					alert('Character saved!');
+
+					// Get existing characters or initialize an empty array
+					let characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+
+					// Check if a character with this name already exists
+					const existingIndex = characters.findIndex(char => char.name === charName);
+
+					if (existingIndex >= 0) {
+						// Update existing character
+						characters[existingIndex] = charData;
+					} else {
+						// Add new character
+						characters.push(charData);
+					}
+
+					// Save the updated array back to localStorage
+					localStorage.setItem('ttrpgCharacters', JSON.stringify(characters));
+
+					alert(`Character "${charName}" saved!`);
 				}
 
 				// Load character data from localStorage
 				function loadSheet() {
-					const charData = JSON.parse(localStorage.getItem('ttrpgCharSheet'));
+					const charName = document.getElementById('charName').value;
+					if (!charName) {
+						alert('Please enter a character name to load.');
+						return;
+					}
+
+					const characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+					const charData = characters.find(char => char.name === charName);
+
 					if (charData) {
 						document.getElementById('charName').value = charData.name;
-						document.getElementById('charClass').value = charData.class;
+						document.getElementById('charSpecies').value = charData.species;
 						document.getElementById('charLevel').value = charData.level;
-						document.getElementById('str').value = charData.stats.str;
+						document.getElementById('phy').value = charData.stats.phy;
 						document.getElementById('dex').value = charData.stats.dex;
 						document.getElementById('int').value = charData.stats.int;
-						document.getElementById('wil').value = charData.stats.wis;
+						document.getElementById('wil').value = charData.stats.wil;
 						document.getElementById('arcaneFeats').value = charData.arcaneFeats;
 						document.getElementById('generalFeats').value = charData.generalFeats;
 						document.getElementById('equipment').value = charData.equipment;
 						document.getElementById('notes').value = charData.notes;
-						alert('Character loaded!');
+						alert(`Character "${charName}" loaded!`);
 					} else {
-						alert('No saved character found.');
+						alert(`No saved character found with the name "${charName}".`);
 					}
 				}
+
+				// Delete a character
+				function deleteSheet() {
+					const charName = document.getElementById('charName').value;
+					if (!charName) {
+						alert('Please enter a character name to delete.');
+						return;
+					}
+
+					let characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+					const updatedCharacters = characters.filter(char => char.name !== charName);
+
+					if (updatedCharacters.length === characters.length) {
+						alert(`No saved character found with the name "${charName}".`);
+					} else {
+						localStorage.setItem('ttrpgCharacters', JSON.stringify(updatedCharacters));
+						alert(`Character "${charName}" deleted!`);
+					}
+				}
+				// Populate the character list dropdown
+				function populateCharacterList() {
+					const characterList = document.getElementById('characterList');
+					characterList.innerHTML = '<option value="">Select a character...</option>';
+
+					const characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+					characters.forEach(char => {
+						const option = document.createElement('option');
+						option.value = char.name;
+						option.textContent = char.name;
+						characterList.appendChild(option);
+					});
+				}
+
+				// Load the selected character from the dropdown
+				function loadSelectedCharacter() {
+					const characterList = document.getElementById('characterList');
+					const charName = characterList.value;
+					if (!charName) {
+						alert('Please select a character to load.');
+						return;
+					}
+
+					document.getElementById('charName').value = charName;
+					loadSheet();
+				}
+
+				// Call this function when the page loads
+				window.onload = function() {
+					populateCharacterList();
+				};
+
+				// Export character as a JSON file
+				function exportCharacter() {
+					const charName = document.getElementById('charName').value;
+					if (!charName) {
+						alert('Please enter a character name to export.');
+						return;
+					}
+
+					const characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+					const charData = characters.find(char => char.name === charName);
+
+					if (!charData) {
+						alert(`No saved character found with the name "${charName}".`);
+						return;
+					}
+
+					const jsonStr = JSON.stringify(charData, null, 2);
+					const blob = new Blob([jsonStr], { type: 'application/json' });
+					const url = URL.createObjectURL(blob);
+
+					const a = document.createElement('a');
+					a.href = url;
+					a.download = `${charName}.json`;
+					document.body.appendChild(a);
+					a.click();
+					document.body.removeChild(a);
+					URL.revokeObjectURL(url);
+				}
+
+				// Import character from a JSON file
+				function importCharacter(event) {
+					const file = event.target.files[0];
+					if (!file) return;
+
+					const reader = new FileReader();
+					reader.onload = function(e) {
+						try {
+							const charData = JSON.parse(e.target.result);
+
+							// Get existing characters or initialize an empty array
+							let characters = JSON.parse(localStorage.getItem('ttrpgCharacters')) || [];
+
+							// Check if a character with this name already exists
+							const existingIndex = characters.findIndex(char => char.name === charData.name);
+
+							if (existingIndex >= 0) {
+								// Update existing character
+								characters[existingIndex] = charData;
+							} else {
+								// Add new character
+								characters.push(charData);
+							}
+
+							// Save the updated array back to localStorage
+							localStorage.setItem('ttrpgCharacters', JSON.stringify(characters));
+
+							// Update the character list dropdown
+							populateCharacterList();
+
+							alert(`Character "${charData.name}" imported!`);
+						} catch (error) {
+							alert('Error importing character: ' + error.message);
+						}
+					};
+					reader.readAsText(file);
+				}
+
+
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
