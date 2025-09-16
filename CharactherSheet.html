@@ -110,8 +110,13 @@
 			</div>
 
 			<div class="section">
-				<div class="section-title">Feats</div>
-				<textarea id="feats" placeholder="List your feats here..."></textarea>
+				<div class="section-title">Arcane Feats</div>
+				<textarea id="feats" placeholder="List your arcane feats here..."></textarea>
+			</div>
+
+			<div class="section">
+				<div class="section-title">General Feats</div>
+				<textarea id="feats" placeholder="List your general feats here..."></textarea>
 			</div>
 
 			<div class="section">
@@ -175,7 +180,8 @@
 							wil: document.getElementById('wil').value,
 						},
 						
-						feats: document.getElementById('feats').value,
+						arcaneFeats: document.getElementById('arcaneFeats').value,
+						generalFeats: document.getElementById('generalFeats').value,
 						equipment: document.getElementById('equipment').value,
 						notes: document.getElementById('notes').value,
 					};
@@ -194,7 +200,8 @@
 						document.getElementById('dex').value = charData.stats.dex;
 						document.getElementById('int').value = charData.stats.int;
 						document.getElementById('wil').value = charData.stats.wis;
-						document.getElementById('feats').value = charData.feats;
+						document.getElementById('arcaneFeats').value = charData.arcaneFeats;
+						document.getElementById('generalFeats').value = charData.generalFeats;
 						document.getElementById('equipment').value = charData.equipment;
 						document.getElementById('notes').value = charData.notes;
 						alert('Character loaded!');
