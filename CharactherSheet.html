@@ -74,6 +74,51 @@
         button:hover {
             background: #45a049;
         }
+		/*Skills*/
+		#skillsTable {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 10px;
+		}
+
+		#skillsTable th, #skillsTable td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+
+		#skillsTable th {
+			background-color: #f2f2f2;
+		}
+
+		#skillsTable tr:nth-child(even) {
+			background-color: #f9f9f9;
+		}
+
+		.skill-modifier {
+			width: 50px;
+			background: #f0f0f0;
+			border: none;
+			padding: 5px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.proficiency-button {
+			width: 25px;
+			height: 25px;
+			margin-right: 3px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			font-weight: bold;
+			background-color: #ddd;
+			color: black;
+		}
+
+		.proficiency-button.active {
+			background-color: #4CAF50;
+			color: white;
+		}
     </style>
 	<body class="is-preload">
 		<!-- Header -->
@@ -93,21 +138,235 @@
 				<div class="section-title">Stats</div>
 				<div class="stat-row">
 					<div class="stat-label">PHY</div>
-					<input type="number" class="stat-input" id="phy" min="-5" max="10">
+					<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">DEX</div>
-					<input type="number" class="stat-input" id="dex" min="-5" max="10">
+					<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">INT</div>
-					<input type="number" class="stat-input" id="int" min="-5" max="10">
+					<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()">
 				</div>
 				<div class="stat-row">
 					<div class="stat-label">WIL</div>
-					<input type="number" class="stat-input" id="wil" min="-5" max="10">
+					<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()">
 				</div>
 			</div>
+
+			<div class="section">
+				<div class="section-title">Skills</div>
+				<table id="skillsTable">
+					<thead>
+						<tr>
+							<th>Skill</th>
+							<th>Stat</th>
+							<th>Modifier</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Acrobatics</td>
+							<td>DEX</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('acrobatics', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('acrobatics', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('acrobatics', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('acrobatics', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="acrobaticsMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Arcana</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('arcana', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('arcana', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('arcana', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('arcana', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="arcanaMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Athletics</td>
+							<td>PHY</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('athletics', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('athletics', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('athletics', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('athletics', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="athleticsMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Crafting</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('crafting', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('crafting', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('crafting', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('crafting', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="craftingMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Deception</td>
+							<td>WIL</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('deception', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('deception', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('deception', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('deception', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="deceptionMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>History</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('history', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('history', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('history', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('history', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="historyMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Insight</td>
+							<td>WIL</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('insight', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('insight', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('insight', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('insight', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="insightMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Intimidation</td>
+							<td>PHY</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('intimidation', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('intimidation', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('intimidation', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('intimidation', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="intimidationMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Medicine</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('medicine', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('medicine', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('medicine', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('medicine', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="medicineMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Mana Sensing</td>
+							<td>WIL</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('manaSensing', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('manaSensing', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('manaSensing', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('manaSensing', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="manaSensingMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Nature</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('nature', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('nature', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('nature', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('nature', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="natureMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Perception</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('perception', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('perception', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('perception', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('perception', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="perceptionMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Performance</td>
+							<td>DEX</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('performance', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('performance', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('performance', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('performance', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="performanceMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Persuasion</td>
+							<td>WIL</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('persuasion', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('persuasion', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('persuasion', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('persuasion', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="persuasionMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Society</td>
+							<td>INT</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('society', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('society', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('society', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('society', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="societyMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Sleight of Hand</td>
+							<td>DEX</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="sleightOfHandMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Stealth</td>
+							<td>DEX</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('stealth', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('stealth', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('stealth', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('stealth', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="stealthMod" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>Survival</td>
+							<td>WIL</td>
+							<td>
+								<button class="proficiency-button" onclick="setProficiency('survival', 0, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('survival', 3, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('survival', 6, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('survival', 9, this)">M</button>
+								<input type="text" class="skill-modifier" id="survivalMod" readonly>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
 
 			<div class="section">
 				<div class="section-title">Arcane Feats</div>
@@ -176,6 +435,53 @@
 					}
 				};
 
+				// Track proficiency levels for each skill
+				const skillProficiencies = {};
+
+				// Set proficiency for a skill and update its modifier
+				function setProficiency(skillId, proficiencyBonus, button) {
+					skillProficiencies[skillId] = proficiencyBonus;
+
+					// Update active button styling
+					const buttons = button.parentNode.querySelectorAll('.proficiency-button');
+					buttons.forEach(btn => btn.classList.remove('active'));
+					button.classList.add('active');
+
+					// Update the skill modifier
+					console.log("Set Skill proficiencies:", skillProficiencies);
+					updateSkillModifiers();
+				}
+
+				// Update all skill modifiers based on stat values and proficiency
+				function updateSkillModifiers() {
+					const phyMod = parseInt(document.getElementById('phy').value) || 0;
+					const dexMod = parseInt(document.getElementById('dex').value) || 0;
+					const intMod = parseInt(document.getElementById('int').value) || 0;
+					const wilMod = parseInt(document.getElementById('wil').value) || 0;
+
+					// Update each skill modifier
+					document.getElementById('acrobaticsMod').value = dexMod + (skillProficiencies.acrobatics || 0);
+					document.getElementById('arcanaMod').value = intMod + (skillProficiencies.arcana || 0);
+					document.getElementById('athleticsMod').value = phyMod + (skillProficiencies.athletics || 0);
+					document.getElementById('craftingMod').value = intMod + (skillProficiencies.crafting || 0);
+					document.getElementById('deceptionMod').value = wilMod + (skillProficiencies.deception || 0);
+					document.getElementById('historyMod').value = intMod + (skillProficiencies.history || 0);
+					document.getElementById('insightMod').value = wilMod + (skillProficiencies.insight || 0);
+					document.getElementById('intimidationMod').value = phyMod + (skillProficiencies.intimidation || 0);
+					document.getElementById('medicineMod').value = intMod + (skillProficiencies.medicine || 0);
+					document.getElementById('manaSensingMod').value = wilMod + (skillProficiencies.manaSensing || 0);
+					document.getElementById('natureMod').value = intMod + (skillProficiencies.nature || 0);
+					document.getElementById('perceptionMod').value = intMod + (skillProficiencies.perception || 0);
+					document.getElementById('performanceMod').value = dexMod + (skillProficiencies.performance || 0);
+					document.getElementById('persuasionMod').value = wilMod + (skillProficiencies.persuasion || 0);
+					document.getElementById('societyMod').value = intMod + (skillProficiencies.society || 0);
+					document.getElementById('sleightOfHandMod').value = dexMod + (skillProficiencies.sleightOfHand || 0);
+					document.getElementById('stealthMod').value = dexMod + (skillProficiencies.stealth || 0);
+					document.getElementById('survivalMod').value = wilMod + (skillProficiencies.survival || 0);
+
+					console.log("Skill proficiencies:", skillProficiencies);
+				}
+
 				function saveSheet() {
 					const charName = document.getElementById('charName').value;
 					if (!charName) {
@@ -193,6 +499,7 @@
 							int: document.getElementById('int').value,
 							wil: document.getElementById('wil').value,
 						},
+						skillProficiencies: {...skillProficiencies},
 						arcaneFeats: document.getElementById('arcaneFeats').value,
 						generalFeats: document.getElementById('generalFeats').value,
 						equipment: document.getElementById('equipment').value,
@@ -240,6 +547,27 @@
 						document.getElementById('dex').value = charData.stats.dex;
 						document.getElementById('int').value = charData.stats.int;
 						document.getElementById('wil').value = charData.stats.wil;
+
+						// Load skill proficiencies
+						Object.assign(skillProficiencies, charData.skillProficiencies);
+
+						// Update active proficiency buttons
+						Object.keys(skillProficiencies).forEach(skillId => {
+							const proficiency = skillProficiencies[skillId];
+							const buttons = document.querySelectorAll(`button[onclick*="setProficiency('${skillId}']`);
+							buttons.forEach(button => {
+								const bonus = parseInt(button.getAttribute('onclick').match(/\d+/)[0]);
+								if (bonus === proficiency) {
+									button.classList.add('active');
+								} else {
+									button.classList.remove('active');
+								}
+							});
+						});
+
+						// Update skill modifiers
+						updateSkillModifiers();
+
 						document.getElementById('arcaneFeats').value = charData.arcaneFeats;
 						document.getElementById('generalFeats').value = charData.generalFeats;
 						document.getElementById('equipment').value = charData.equipment;
@@ -299,6 +627,7 @@
 
 				// Call this function when the page loads
 				window.onload = function() {
+					updateSkillModifiers();
 					populateCharacterList();
 				};
 
@@ -369,6 +698,33 @@
 					reader.readAsText(file);
 				}
 
+				// Update all skill modifiers based on stat values
+				function updateSkillModifiers() {
+					const phyMod = parseInt(document.getElementById('phy').value) || 0;
+					const dexMod = parseInt(document.getElementById('dex').value) || 0;
+					const intMod = parseInt(document.getElementById('int').value) || 0;
+					const wilMod = parseInt(document.getElementById('wil').value) || 0;
+
+					// Update each skill modifier
+					document.getElementById('acrobaticsMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
+					document.getElementById('arcanaMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('athleticsMod').value = phyMod >= 0 ? `+${phyMod}` : phyMod;
+					document.getElementById('craftingMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('deceptionMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+					document.getElementById('historyMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('insightMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+					document.getElementById('intimidationMod').value = phyMod >= 0 ? `+${phyMod}` : phyMod;
+					document.getElementById('medicineMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('manaSensingMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+					document.getElementById('natureMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('perceptionMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('performanceMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
+					document.getElementById('persuasionMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+					document.getElementById('societyMod').value = intMod >= 0 ? `+${intMod}` : intMod;
+					document.getElementById('sleightOfHandMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
+					document.getElementById('stealthMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
+					document.getElementById('survivalMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+				}
 
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
