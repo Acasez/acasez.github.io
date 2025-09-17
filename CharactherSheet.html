@@ -74,20 +74,33 @@
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 10px;
+			justify-content: center; /* Center the save boxes horizontally */
+			gap: 20px; /* Space between save boxes */
         }
 
         .stat-box {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100px;
+			text-align: center; /* Center text */
+            width: 150px;
+        }
+		.save-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			text-align: center; /* Center text */
+            width: 200px;
+			margin-top: 10px;
         }
 
         .stat-label {
             font-weight: bold;
+			margin-top: -20px;
             margin-bottom: 5px;
 			font-size: 150%;
   			color: skyblue;
+			width: 100%; /* Ensure label takes full width of the save box */
         }
 
         .stat-input {
@@ -96,15 +109,9 @@
             text-align: center;
             border: 1px solid #ccc;
             border-radius: 4px;
+			text-align: center; /* Center input text */
         }
 
-        .modifier {
-            width: 50px;
-            background: #f0f0f0;
-            border: none;
-            padding: 5px;
-            text-align: center;
-        }
         textarea {
             width: 100%;
             padding: 8px;
@@ -301,20 +308,44 @@
 				<div class="stats-wrapper">
 					<div class="stats-container">
 						<div class="stat-box">
+							<p>Physique</p>
 							<div class="stat-label">PHY</div>
-							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="1">
+							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 						</div>
 						<div class="stat-box">
+							<p>Dexterity</p>
 							<div class="stat-label">DEX</div>
-							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="3">
+							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 						</div>
 						<div class="stat-box">
+							<p>Intelligence</p>
 							<div class="stat-label">INT</div>
-							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="5">
+							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 						</div>
 						<div class="stat-box">
+							<p>Willpower</p>
 							<div class="stat-label">WIL</div>
-							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="3">
+							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="section-title">Saving Throws</div>
+				<div class="stats-wrapper">
+					<div class="stats-container">
+						<div class="save-box">
+							<div class="stat-label">Fortitude (PHY)</div>
+							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+						</div>
+						<div class="save-box">
+							<div class="stat-label">Reflex (DEX)</div>
+							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+						</div>
+						<div class="save-box">
+							<div class="stat-label">Will <br>(WIL)</div>
+							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 						</div>
 					</div>
 				</div>
