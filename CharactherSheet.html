@@ -31,7 +31,7 @@
         }
         .section-title {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 2em;
             margin-bottom: 10px;
             color: #444;
 			justify-content: center;
@@ -184,11 +184,12 @@
 			display: flex;
 			flex-direction: column; /* Stack bar above inputs */
 			align-items: flex-start;
+			margin: 5px;
 		}
 
 		.bar-container {
 			height: 20px;
-			width: 150px;
+			width: 100%;
 			background-color: #ddd;
 			border-radius: 10px;
 			overflow: hidden;
@@ -246,7 +247,10 @@
 						<p>Initiative</p>
 						<input type="number" placeholder="0" id="initiative">
 					</div>
-					<!-- Add more fields here if needed -->
+					<div class="form-group">
+						<p>Passive Perception</p>
+						<input type="number" placeholder="10" id="passivePerception">
+					</div>
 				</div>
 			</div>		
 
@@ -615,6 +619,7 @@
 						species: document.getElementById('charSpecies').value,
 						level: document.getElementById('charLevel').value,
 						initiative: document.getElementById('initiative').value,
+						passivePerception: document.getElementById('passivePerception').value,
 
 						health: document.getElementById('health').value,
 						maxHealth: document.getElementById('maxHealth').value,
@@ -683,6 +688,7 @@
 						document.getElementById('charSpecies').value = charData.species;
 						document.getElementById('charLevel').value = charData.level;
 						document.getElementById('initiative').value = charData.initiative;
+						document.getElementById('passivePerception').value = charData.passivePerception;
 
 						document.getElementById('health').value = charData.health;
 						document.getElementById('maxHealth').value = charData.maxHealth;
