@@ -94,6 +94,7 @@
     flex-grow: 1;
     text-align: center;
 	position: relative;
+	margin-left: -30px;
 }
 
 
@@ -111,6 +112,7 @@
 	left: 0;
 	top: 100%;
 	background-color: black;
+	width: 180px;
 }
 
 .topnav ul li:hover .dropdown_menu ul{
