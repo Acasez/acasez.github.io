@@ -310,22 +310,22 @@
 						<div class="stat-box">
 							<p>Physique</p>
 							<div class="stat-label">PHY</div>
-							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="setProficiency()" value="0">
 						</div>
 						<div class="stat-box">
 							<p>Dexterity</p>
 							<div class="stat-label">DEX</div>
-							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="setProficiency()" value="0">
 						</div>
 						<div class="stat-box">
 							<p>Intelligence</p>
 							<div class="stat-label">INT</div>
-							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="setProficiency()" value="0">
 						</div>
 						<div class="stat-box">
 							<p>Willpower</p>
 							<div class="stat-label">WIL</div>
-							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="setProficiency()" value="0">
 						</div>
 					</div>
 				</div>
@@ -339,30 +339,30 @@
 							<div class="stat-label">Fortitude (PHY)</div>
 							<input type="number" class="stat-input" id="fortitude" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 9, this)">M</button>
+								<button class="proficiency-button" onclick="setProficiency('fortitude', 0, PHY, this)">U</button> 
+								<button class="proficiency-button" onclick="setProficiency('fortitude', 3, PHY, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('fortitude', 6, PHY, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('fortitude', 9, PHY, this)">M</button>
 							</div>
 						</div>
 						<div class="save-box">
 							<div class="stat-label">Reflex (DEX)</div>
 							<input type="number" class="stat-input" id="reflex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('reflex', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 9, this)">M</button>
+								<button class="proficiency-button" onclick="setProficiency('reflex', 0, DEX, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('reflex', 3, DEX, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('reflex', 6, DEX, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('reflex', 9, DEX, this)">M</button>
 							</div>
 						</div>
 						<div class="save-box">
 							<div class="stat-label">Will <br>(WIL)</div>
 							<input type="number" class="stat-input" id="will" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('will', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 9, this)">M</button>
+								<button class="proficiency-button" onclick="setProficiency('will', 0, WIL, this)">U</button>
+								<button class="proficiency-button" onclick="setProficiency('will', 3, WIL, this)">T</button>
+								<button class="proficiency-button" onclick="setProficiency('will', 6, WIL, this)">E</button>
+								<button class="proficiency-button" onclick="setProficiency('will', 9, WIL, this)">M</button>
 							</div>
 						</div>
 					</div>
@@ -650,10 +650,16 @@
 					}
 				};
 
-				function setProficiency(skillId, proficiencyBonus, button) {
+				function setProficiency(skillId, proficiencyBonus, stat, button) {
 					const buttons = button.parentNode.querySelectorAll('.proficiency-button');
 					buttons.forEach(btn => btn.classList.remove('active'));
 					button.classList.add('active');
+
+					saves.forEach(element => {
+						if (skillId == element) {
+							console.log("Same", element)
+						}
+					});
 				}
 
 				function saveSheet() {
@@ -682,6 +688,11 @@
 							dex: document.getElementById('dex').value,
 							int: document.getElementById('int').value,
 							wil: document.getElementById('wil').value,
+						},
+						saves: {
+							fortitude: document.getElementById('fortitude').value,
+							reflex: document.getElementById('reflex').value,
+							will: document.getElementById('will').value,
 						},
 						skills: {
 							acrobatics: document.getElementById('acrobatics').value,
