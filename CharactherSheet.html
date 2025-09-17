@@ -189,13 +189,14 @@
 		<div id="header-placeholder"></div>
 		<!-- Body-->
 			<div class="sheet-container">
-			<h1>TTRPG Character Sheet</h1>
+			<h1>Kastorix Character Sheet</h1>
 
 			<div class="section">
 				<div class="section-title">Character Info</div>
 				<input type="text" placeholder="Character Name" id="charName">
 				<input type="text" placeholder="Species" id="charSpecies">
 				<input type="number" placeholder="Level" id="charLevel">
+				<input type="number" placeholder="0" id="initiative">
 			</div>
 
 			 <!-- Resource Bars Container -->
@@ -562,6 +563,7 @@
 						name: charName,
 						species: document.getElementById('charSpecies').value,
 						level: document.getElementById('charLevel').value,
+						initiative: document.getElementById('initiative').value,
 
 						health: document.getElementById('health').value,
 						maxHealth: document.getElementById('maxHealth').value,
@@ -629,6 +631,7 @@
 						document.getElementById('charName').value = charData.name;
 						document.getElementById('charSpecies').value = charData.species;
 						document.getElementById('charLevel').value = charData.level;
+						document.getElementById('initiative').value = charData.initiative;
 
 						document.getElementById('health').value = charData.health;
 						document.getElementById('maxHealth').value = charData.maxHealth;
