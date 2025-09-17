@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kastorix World Overview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">Kastorix World</h3>
+						</header>
+						<div class="portfolio-row reverse"> <!-- Amsvartne -->
+							<div class="portfolio-image large">
+								<img src="images/Kastorix 2.6.png" alt="World Map" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Kastorix is a large, blue moon with multiple continents, orbiting the gas giant of Teivis. 
+									Kastorix is home to many sapient species and civilizations, the most advanced of which who are in the middle of a industrial revolution. 
+									Kastorix is smaller than most planets, but has a dense core of adamantium that gives it gravity similar to many terrestrial planets. 
+									It is one of the largest moons of the many orbiting Teivis. 
+									<br><br>
+									30 Years ago Kastorix was thrown into chaos when an event known as The Breach happened, and a portal to Teivis opened on the northern continent of Avijor. 
+									From this portal a large amounts of the so-called Void Creatures emerged and quickly conquered most of the continent. 
+									Now only the The Draconium remains on the Avijor, holding the creatures at bay with dragonfire and steel. 
+									<br><br>
+									t is currently 1374 (AD, After the forming of the Draconium)
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Geography -->
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									<h3 class="portfolio-title">Geography</h3>
+									The largest Kastorix's continents is Avijor, which used to be home of many nations and peoples. Now most of those lie in ruin, with only the strange Void Creatures wandering the debris. But The Draconium still stands. 
+									<br><br>
+									On the southern continent of Meibor the largest nation of Theze has recently had large changes after High King Salizar's overthrew his father and created a parliament. 
+									On the continents north-most tip sits Ishyin Academy, the worlds most reknown academy of the magical arts. It has taken the influx of mages, scholars and new students in stride. 
+									Meibor also has the ancient desert nation of Jadiar, known to be haven for spellcasters as well as the republic of Thune which produces a decent amount of the worlds airships, many traditional yirte communities and a host of other nations.
+									<br><br>
+									West of Meibor lies Santsim, the smallest continent. Santsim has the ancient nation of El-Shavri ruled by the Sun King and guarded by armies of soul bonded creatures. 
+									On the other side of the continent lies the newly unified federation Glarnast. 
+									Many smaller nations also exist like commune of Tharn in the north, the strong kingdom of Qual in the center and the nomadic tribes of Quarthax on its southern shores.
+									<br><br>
+									Much of Kastorix is covered by a water, in the vast ocean called the grand sea. 
+									There is an large archipelago known as The Shattered Isles in the far east and the two islands of Te'Ohuvi to the west. 
+									Kastorix also has a vast amount of underground caves, connected in a giant cave system called The Caverns Below. 
+									These caves are inhabited by the bat-like vesper which have two large competing nations the Emerald Empire and the Crimson Spire.
+								</p>
+							</div>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
+			</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
