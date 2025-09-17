@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Avijor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">Avijor</h3>
+						</header>
+						<div class="portfolio-row reverse"> <!-- Avijor -->
+							<div class="portfolio-image large">
+								<img src="images/Kastorix/Avijor.png" alt="World Map" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Avijor is the northernmost and largest of the continents on Kastorix. 
+									Historically it was composed of many different nations, however after The Breach, only The Draconium remains standing. 
+									Before the breach Avijor had a majority human population, with a significant amount of gnomes, brannur, dragonkin and yirte. 
+									It also had all of Kastorix's elves before they vanished in the breach.
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Geography -->
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									<h3 class="portfolio-title">Geography</h3>
+									Avijor is the northernmost and largest of the continents on Kastorix. 
+									Historically it was composed of many different nations, however after The Breach, only The Draconium remains standing. 
+									Before the breach Avijor had a majority human population, with a significant amount of gnomes, brannur, dragonkin and yirte. 
+									It also had all of Kastorix's elves before they vanished in the breach.
+									<br><br>
+									West of the highlands and south of the woods is a fertile grassland which housed many kingdoms and nations. 
+									In the central part of the grasslands one can also find the mystical Saryo Forest which held many giant mushrooms and magical creatures. 
+									The grassland stretches to the south part of the continent were the climate grows warmer and hillier again. 
+									Before the breach the southern part of Avijor was dominated by a group of powerful city states, primarily populated by gnomes which was the center of artifice before the breach.
+									<br><br>
+									On the eastern part Avijor, beyond Spear's Legacy sits the only surviving nation on the continent, the Draconium. 
+									Home to almost all the worlds dragons they hold back the darkness that has befallen the rest of the continent. 
+									South of the Draconium lies the The Charged Lands, a rocky area known for its lightning magic after a magical comet hit it a many hundred years ago. 
+									The charged lands is known for its magical flora and fauna that adapted for life there.
+								</p>
+							</div>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
+			</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
