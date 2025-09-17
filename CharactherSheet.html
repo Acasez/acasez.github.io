@@ -141,10 +141,47 @@
 			justify-content: center;
 			align-items: center;
 		}
-
+		
 		.proficiency-button.active {
 			background-color: #4CAF50;
 			color: white;
+		}
+		/*Resource Bars*/
+		.resource-bars-container {
+			display: flex;
+            justify-content: center;
+			gap: 20px;
+			margin-top: 10px;
+		}
+
+		.resource-bar-wrapper {
+			display: flex;
+			flex-direction: column; /* Stack bar above inputs */
+			align-items: flex-start;
+		}
+
+		.bar-container {
+			height: 20px;
+			width: 150px;
+			background-color: #ddd;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.bar {
+			height: 100%;
+			border-radius: 10px;
+			transition: width 0.3s;
+		}
+
+		.resource-inputs {
+			display: flex;
+			align-items: center;
+			margin-top: 5px;
+		}
+
+		.resource-inputs label {
+			margin-right: 5px;
 		}
     </style>
 	<body class="is-preload">
@@ -159,6 +196,48 @@
 				<input type="text" placeholder="Character Name" id="charName">
 				<input type="text" placeholder="Species" id="charSpecies">
 				<input type="number" placeholder="Level" id="charLevel">
+			</div>
+
+			 <!-- Resource Bars Container -->
+			<div class="resource-bars-container">
+				<!-- Health Bar -->
+				<div class="resource-bar-wrapper">
+					<div class="bar-container">
+						<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
+					</div>
+					<div class="resource-inputs">
+						<label for="health">Health:</label>
+						<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
+						/
+						<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
+					</div>
+				</div>
+
+				<!-- Aura Bar -->
+				<div class="resource-bar-wrapper">
+					<div class="bar-container">
+						<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
+					</div>
+					<div class="resource-inputs">
+						<label for="aura">Aura:</label>
+						<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
+						/
+						<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
+					</div>
+				</div>
+
+				<!-- Mana Bar -->
+				<div class="resource-bar-wrapper">
+					<div class="bar-container">
+						<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
+					</div>
+					<div class="resource-inputs">
+						<label for="mana">Mana:</label>
+						<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
+						/
+						<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
+					</div>
+				</div>
 			</div>
 
 			<div class="section">
@@ -483,6 +562,14 @@
 						name: charName,
 						species: document.getElementById('charSpecies').value,
 						level: document.getElementById('charLevel').value,
+
+						health: document.getElementById('health').value,
+						maxHealth: document.getElementById('maxHealth').value,
+						aura: document.getElementById('aura').value,
+						maxAura: document.getElementById('maxAura').value,
+						mana: document.getElementById('mana').value,
+						maxMana: document.getElementById('maxMana').value,
+
 						stats: {
 							phy: document.getElementById('phy').value,
 							dex: document.getElementById('dex').value,
@@ -542,6 +629,14 @@
 						document.getElementById('charName').value = charData.name;
 						document.getElementById('charSpecies').value = charData.species;
 						document.getElementById('charLevel').value = charData.level;
+
+						document.getElementById('health').value = charData.health;
+						document.getElementById('maxHealth').value = charData.maxHealth;
+						document.getElementById('aura').value = charData.aura;
+						document.getElementById('maxAura').value = charData.maxAura;
+						document.getElementById('mana').value = charData.mana;
+						document.getElementById('maxMana').value = charData.maxMana;
+
 						document.getElementById('phy').value = charData.stats.phy;
 						document.getElementById('dex').value = charData.stats.dex;
 						document.getElementById('int').value = charData.stats.int;
@@ -628,6 +723,9 @@
 				window.onload = function() {
 					updateSkillModifiers();
 					populateCharacterList();
+					updateBar('health')
+					updateBar('aura')
+					updateBar('mana')
 				};
 
 				// Export character as a JSON file
@@ -696,33 +794,21 @@
 					};
 					reader.readAsText(file);
 				}
+			
+				function updateBar(type) {
+					const currentInput = document.getElementById(type);
+					const maxInput = document.getElementById(`max${type.charAt(0).toUpperCase() + type.slice(1)}`);
+					const bar = document.getElementById(`${type}Bar`);
 
-				// Update all skill modifiers based on stat values
-				function updateSkillModifiers() {
-					const phyMod = parseInt(document.getElementById('phy').value) || 0;
-					const dexMod = parseInt(document.getElementById('dex').value) || 0;
-					const intMod = parseInt(document.getElementById('int').value) || 0;
-					const wilMod = parseInt(document.getElementById('wil').value) || 0;
+					const currentValue = parseInt(currentInput.value);
+					const maxValue = parseInt(maxInput.value);
 
-					// Update each skill modifier
-					document.getElementById('acrobaticsMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
-					document.getElementById('arcanaMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('athleticsMod').value = phyMod >= 0 ? `+${phyMod}` : phyMod;
-					document.getElementById('craftingMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('deceptionMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
-					document.getElementById('historyMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('insightMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
-					document.getElementById('intimidationMod').value = phyMod >= 0 ? `+${phyMod}` : phyMod;
-					document.getElementById('medicineMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('manaSensingMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
-					document.getElementById('natureMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('perceptionMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('performanceMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
-					document.getElementById('persuasionMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
-					document.getElementById('societyMod').value = intMod >= 0 ? `+${intMod}` : intMod;
-					document.getElementById('sleightOfHandMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
-					document.getElementById('stealthMod').value = dexMod >= 0 ? `+${dexMod}` : dexMod;
-					document.getElementById('survivalMod').value = wilMod >= 0 ? `+${wilMod}` : wilMod;
+					if (currentValue > maxValue) {
+						currentInput.value = maxValue;
+					}
+
+					const percentage = (currentValue / maxValue) * 100;
+					bar.style.width = `${percentage}%`;
 				}
 
 			</script>
