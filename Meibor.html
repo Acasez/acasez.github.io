@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Meibor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">Meibor</h3>
+						</header>
+						<div class="portfolio-row reverse"> <!-- Amsvartne -->
+							<div class="portfolio-image large">
+								<img src="images/Kastorix/Meibor 2.png" alt="World Map" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									Meibor is the second largest continent of Kastorix, and home to a wide variety of nations and species. 
+									It is located south of Avijor and east of Santsim. 
+									The most populous species on Meibor are nagas, who thrive in the continent's jungles and deserts. 
+									Meibor also has a significant yirte community, primarily inhabiting the continent's southern forests and hills. 
+									The continent has minority populations of humans, gnomes and brannur which have grown considerably since The Breach.
+								</p>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Geography -->
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									<h3 class="portfolio-title">Geography</h3>
+									The western part of Meibor features the largest desert in the world, the Jadieran Desert, where the nation of Jadiar is located. 
+									To the north of the desert lies the Diavar Bay, home to several small but wealthy nations. 
+									This area is also adjacent to Ishyin Academy, the most prominent magical school in Kastorix, known for educating many of the world's best mages.
+									<br><br>
+									Southeast of Ishyin, the expansive nation of Theze spans most of the continent's northern coast. 
+									The central region of Theze and much of central Meibor is covered by the vast Najanova Jungle, rich in biodiversity and magical flora. 
+									This jungle is cut in a half by The Yearning, one of Kastorix's largest rivers which forms from Lake Yatinue and ends in the central ocean. 
+									Moving eastward, the United Duchies of Heksan and various smaller yirte communities are situated within the vast Greenspan Forest, which covers most of eastern Meibor. On the eastern edge of the continent, the jagged Thousand Spires mountains stretch inland from the coast, presenting a dramatic landscape. 
+									Here the historically isolated nation of Deshir lives, which trades with The Shattered Isles of the coast.
+									<br><br>
+									Meibor is horizontally bisected in the lower middle by the Everglow Mountains, which separate the lush northern jungles from the darker, temperate forests of southern Meibor. 
+									Southeastern Meibor is characterized by the Mistlands, a sparsely populated region shrouded in an ever-present mist, creating a mysterious and eerie environment.
+									<br><br>
+									The southern part of Meibor, although smaller and less populated than the northern regions, hosts ancient Yirte communities and some new, post-breach nations. 
+									This area is less favored by nagas due to its cooler climate. 
+									Finally, the southwestern part of Meibor is a mountainous and rocky region with many fjords, where with newer nation of Straix on its southmost tip.
+								</p>
+							</div>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
+			</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
