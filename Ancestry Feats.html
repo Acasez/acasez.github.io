@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Anscestry Feats</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+							<h3 class="portfolio-title">Arcane Feats</h3>
+							<p class="portfolio-subtitle">Arcane Feats comes from your practicing and learning of magic. 
+								You can pick one new arcane feat each level and retrain them during downtime.
+								You cannot pick the same feat twice, unless otherwise specified.</p>
+						</header>
+						<div class="search-container">
+							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
+						</div>
+						<table id="featsTable">
+							<thead>
+								<tr>
+									<th onclick="sortTable(0)">Feat Name</th>
+									<th onclick="sortTable(1)">Description</th>
+									<th onclick="sortTable(2)">Prerequisites</th>
+									<th onclick="sortTable(3)">Level</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Sensative Nose</td>
+									<td>
+										While all Yirte have a greater sense of smell than most, you have trained your nose beyond that.
+										You have an inprecise sense of smell, which you can use to try find creatures or objects.
+										Your proffiency level in Perception increases (max Expert)
+									</td>
+									<td>Yirte</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Coil up</td>
+									<td>
+										You learned to coil your body up, to later strike in burst of speed.<br>
+										<strong>Coil Up</strong> <u>1 Action.</u> <br>
+										Next turn you may Step or Stride once as free action. 
+										If you move or are knocked prone, this bonus is lost
+									</td>
+									<td>Naga</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Jungle Swimmer</td>
+									<td>
+										You've swam in the many rivers and lakes of your homeland. 
+										You have a 4 tile Swim Speed
+									</td>
+									<td>Yirte</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Sha'des'ka Practioner</td>
+									<td>
+										You trained in the ancient art of Sha'des'ka or its modern form, Arcane Dueling.
+										
+									</td>
+									<td>Naga</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+					
+				function sortTable(n) {
+					let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					table = document.getElementById("featsTable");
+					switching = true;
+					dir = "asc";
+					while (switching) {
+						switching = false;
+						rows = table.rows;
+						for (i = 1; i < (rows.length - 1); i++) {
+							shouldSwitch = false;
+							x = rows[i].getElementsByTagName("td")[n];
+							y = rows[i + 1].getElementsByTagName("td")[n];
+							if (dir === "asc") {
+								if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							} else if (dir === "desc") {
+								if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+									shouldSwitch = true;
+									break;
+								}
+							}
+						}
+						if (shouldSwitch) {
+							rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+							switching = true;
+							switchcount++;
+						} else {
+							if (switchcount === 0 && dir === "asc") {
+								dir = "desc";
+								switching = true;
+							}
+						}
+					}
+				}
+				// Sort by feat name on page load
+					window.onload = function() {
+						sortTable(0);
+					};
+
+				document.getElementById("searchInput").addEventListener("keyup", function() {
+					let input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("searchInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("featsTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+							} else {
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				});
+			</script>
+	</body>
+</html>
