@@ -490,3 +490,164 @@ table th {
 .trait-list li{
 	list-style-position: inside;
 }
+/*Charachter Sheet*/
+	/*Resource Bars*/
+	.resource-bars-container {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin-top: 10px;
+	}
+	.resource-bar-wrapper {
+		display: flex;
+		flex-direction: column; /* Stack bar above inputs */
+		align-items: flex-start;
+		margin: 5px;
+	}
+
+	.bar-container {
+		height: 20px;
+		width: 100%;
+		background-color: #ddd;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.bar {
+		height: 100%;
+		border-radius: 10px;
+		transition: width 0.3s;
+	}
+
+	.resource-inputs {
+		display: flex;
+		align-items: center;
+		margin-top: 5px;
+	}
+
+	.resource-inputs label {
+		margin-right: 5px;
+	}
+	/*Skills*/
+	#skillsTable th {
+		background-color: black
+	}
+
+	#skillsTable tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+
+	.proficiency-button {
+		width: 25px;
+		height: 25px;
+		margin-right: 3px;
+		cursor: pointer;
+		font-weight: bold;
+		background-color: #ddd;
+		color: black;
+
+		border: none;
+		
+		display: inline-flex !important;
+		justify-content: center;
+		align-items: center;
+	}
+		.proficiency-button.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.proficiency-button, .skill-input {
+			display: inline-block;
+			margin: 0 5px 0 0;
+		}
+	/*SaveLoad*/
+	.saveload-button {
+		background: #4CAF50;
+		color: white;
+		border: none;
+		padding: 8px 12px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	/*Stats*/
+	.stats-wrapper {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.stats-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-top: 10px;
+		justify-content: center; /* Center the save boxes horizontally */
+		gap: 20px; /* Space between save boxes */
+	}
+
+	.stat-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center; /* Center text */
+		width: 150px;
+	}
+	.save-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center; /* Center text */
+		width: 200px;
+		margin-top: 10px;
+	}
+
+	.stat-label {
+		font-weight: bold;
+		margin-top: -20px;
+		margin-bottom: 5px;
+		font-size: 150%;
+		color: skyblue;
+		width: 100%; /* Ensure label takes full width of the save box */
+	}
+
+	.stat-input {
+		width: 60px;
+		padding: 5px;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		text-align: center; /* Center input text */
+	}
+
+	textarea {
+		width: 100%;
+		padding: 8px;
+		margin-top: 5px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+	/*Character Info*/
+	.form-row {
+		display: flex; /* Arrange form groups in a row */
+		gap: 20px; /* Space between form groups */
+		margin-bottom: 10px; /* Space between rows */
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column; /* Stack label and input vertically */
+		flex: 1; /* Allow form groups to share space equally */
+	}
+
+	.form-group p {
+		margin: 0;
+		margin-bottom: 5px; /* Space between label and input */
+		font-weight: bold;
+	}
+
+	.form-group input {
+		width: 100%; /* Make inputs fill the form group */
+		padding: 5px;
+		box-sizing: border-box; /* Include padding in width */
+	}
