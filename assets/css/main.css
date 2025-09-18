@@ -249,6 +249,7 @@
 	background-color: lightblue;
 	width: fit-content;
 	box-shadow: 10px black;
+	border-radius: 0% 8px 8px 0%;
 }
 	.portfolio-link p{
 	margin-left: 5px;
