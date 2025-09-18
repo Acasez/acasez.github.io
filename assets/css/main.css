@@ -82,7 +82,7 @@
 .topnav ul li a {
     color: #ddd;
     text-decoration: none;
-    font-size: clamp(12px, 1.5vw, 16px);
+    font-size: clamp(12px, 1.5vw, 20px);
     transition: all 0.3s;
     white-space: nowrap;
     overflow: hidden;
@@ -126,14 +126,14 @@
 }
 
 .logo {
-  color: var(--color-white);
-  font-size: 30px;
+	color: var(--color-white);
+	font-size: clamp(12px, 1.5vw, 20px);
 }
 
 /*Others*/
 .is-preload {
-  max-width: 100%;
-  margin: 0 auto;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 #main {
