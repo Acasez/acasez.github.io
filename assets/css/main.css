@@ -128,6 +128,8 @@
 .logo {
 	color: var(--color-white);
 	font-size: clamp(12px, 1.5vw, 20px);
+	white-space: nowrap;
+  	width: fit-content;
 }
 
 /*Others*/
