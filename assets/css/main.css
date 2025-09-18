@@ -244,6 +244,16 @@
 .portfolio-row .portfolio-image {
 	margin-right: 1em;
 }
+.portfolio-link{
+	margin-top: 90px;;
+	background-color: lightblue;
+	width: fit-content;
+	box-shadow: 10px black;
+}
+	.portfolio-link p{
+	margin-left: 5px;
+	margin-right: 5px;
+}
 .image-with-caption {
     display: flex;
     flex-direction: column;
