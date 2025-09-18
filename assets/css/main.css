@@ -484,3 +484,8 @@ table th {
 	color: #fff;
 	background: #222729 url("images/overlay.png");
 }
+
+/* Lists */
+.trait-list li{
+	list-style-position: inside;
+}
