@@ -10,6 +10,7 @@
         h1 {
             text-align: center;
             color: #333;
+			margin-bottom: 20px;
         }
         .section {
             margin-bottom: 20px;
@@ -50,192 +51,261 @@
 			}
 
 			.main-content {
-				flex: 1; /* Takes up remaining space */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
+		.character-info-container {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 800px;
+			gap: 20px;
+		}
+		/* Blue Box: Level, Initiative, Perception, and Bars */
+		.character-top-box {
+			border: 2px solid blue;
+			border-radius: 8px;
+			padding: 10px;
+			background-color: rgba(0, 0, 255, 0.1);
+		}
+
+		/* Red Box: Stats and Saving Throws */
+		.character-stats-box {
+			border: 2px solid red;
+			border-radius: 8px;
+			padding: 10px;
+			background-color: rgba(255, 0, 0, 0.1);
+		}
+
+		/* Form Row Styling */
+		.form-row {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 15px;
+		}
+
+		.form-group {
+			flex: 1;
+			margin: 0 5px;
+		}
+
+		/* Resource Bars Container */
+		.resource-bars-container {
+			margin-bottom: 10px;
+		}
+
+		/* Section Titles */
+		.section-title {
+			font-weight: bold;
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #333;
+		}
+
+		/* Stats Wrapper */
+		.stats-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		/* Stat Boxes */
+		
+		.character-stats-box {
+			width: 550px;
+		}
     </style>
 	<body class="is-preload">
 		<!-- Header -->
 		<div id="header-placeholder"></div>
 		<div class="container">
-		<!-- Sidebar -->
-		<div class="sidebar">
-			<div class="levelSelection" id="levelZero">
-				<div class="form-group">
-					<p>Name</p>
-					<input type="text" placeholder="Character Name" id="charName">
-				</div>
-				<div class="form-group">
-					<p>Species</p>
-					<input type="text" placeholder="Species" id="charSpecies">
-				</div>
-				<div class="form-group">
-					<p>Background</p>
-					<input type="text" placeholder="Background" id="charBackground">
-				</div>
-			</div>
-			<div class="levelSelection" id="levelOne">
-				<p>Level One</p>
-				<div class="form-group">
-					<p>Advantage</p>
-					<input type="text" placeholder="Advatage">
-				</div>
-				<div class="form-group">
-					<p>Arcane Feat</p>
-					<input type="text" placeholder="Arcane Feat">
-				</div>
-				<div class="form-group">
-					<p>Arcane Feat</p>
-					<input type="text" placeholder="Arcane Feat">
-				</div>
-				<div class="form-group">
-					<p>General Feat</p>
-					<input type="text" placeholder="General Feat">
-				</div>
-				<div class="form-group">
-					<p>Ancestry Feat</p>
-					<input type="text" placeholder="Ancestry Feat">
-				</div>
-			</div>	
-		</div>	
-		<!-- Body-->
-		<div class="main-content">
-			<h1>Kastorix Character Sheet</h1>
-
-			<div class="character-info-box">
-				<!-- Level, Initiative, Passive Perception -->
-				<div class="form-row">
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<div class="levelSelection" id="levelZero">
 					<div class="form-group">
-						<p>Level</p>
-						<input type="number" placeholder="1" id="charLevel">
+						<p>Name</p>
+						<input type="text" placeholder="Character Name" id="charName">
 					</div>
 					<div class="form-group">
-						<p>Initiative</p>
-						<input type="number" placeholder="0" id="initiative">
+						<p>Species</p>
+						<input type="text" placeholder="Species" id="charSpecies">
 					</div>
 					<div class="form-group">
-						<p>Passive Perception</p>
-						<input type="number" placeholder="10" id="passivePerception">
+						<p>Background</p>
+						<input type="text" placeholder="Background" id="charBackground">
+					</div>
+				</div>
+				<div class="levelSelection" id="levelOne">
+					<p>Level One</p>
+					<div class="form-group">
+						<p>Advantage</p>
+						<input type="text" placeholder="Advatage">
+					</div>
+					<div class="form-group">
+						<p>Arcane Feat</p>
+						<input type="text" placeholder="Arcane Feat">
+					</div>
+					<div class="form-group">
+						<p>Arcane Feat</p>
+						<input type="text" placeholder="Arcane Feat">
+					</div>
+					<div class="form-group">
+						<p>General Feat</p>
+						<input type="text" placeholder="General Feat">
+					</div>
+					<div class="form-group">
+						<p>Ancestry Feat</p>
+						<input type="text" placeholder="Ancestry Feat">
 					</div>
 				</div>	
+			</div>	
+			<!-- Body-->
+			<div class="main-content">
+				
+				<!-- Red Box: Stats and Saving Throws -->
+				<div class="character-info-container">
+					<div class="character-stats-box">
+						<div class="section">
+							<div class="section-title">Stats</div>
+								<div class="stats-wrapper">
+									<div class="stats-container">
+										<div class="stat-box">
+											<p>Physique</p>
+											<div class="stat-input-container">
+												<div class="stat-label">PHY</div>
+												<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+											</div>
+										</div>
 
-				<!-- Resource Bars Container -->
-				<div class="resource-bars-container">
-					<!-- Health Bar -->
-					<div class="resource-bar-wrapper">
-						<div class="bar-container">
-							<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
-						</div>
-						<div class="resource-inputs">
-							<label for="health">Health:</label>
-							<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
-							/
-							<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
-						</div>
-					</div>
+										<div class="stat-box">
+											<p>Dexterity</p>
+											<div class="stat-input-container">
+												<div class="stat-label">DEX</div>
+												<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+											</div>
+										</div>
 
-					<!-- Aura Bar -->
-					<div class="resource-bar-wrapper">
-						<div class="bar-container">
-							<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
-						</div>
-						<div class="resource-inputs">
-							<label for="aura">Aura:</label>
-							<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
-							/
-							<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
-						</div>
-					</div>
+										<div class="stat-box">
+											<p>Intelligence</p>
+											<div class="stat-input-container">
+												<div class="stat-label">INT</div>
+												<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+											</div>
+										</div>
 
-					<!-- Mana Bar -->
-					<div class="resource-bar-wrapper">
-						<div class="bar-container">
-							<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
-						</div>
-						<div class="resource-inputs">
-							<label for="mana">Mana:</label>
-							<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
-							/
-							<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
+										<div class="stat-box">
+											<p>Willpower</p>
+											<div class="stat-input-container">
+												<div class="stat-label">WIL</div>
+												<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<div class="section">
+							<div class="section-title">Saving Throws</div>
+								<div class="stats-wrapper">
+									<div class="stats-container">
+										<div class="save-box">
+											<div class="stat-label">Fortitude (PHY)</div>
+											<p class="stat-input" id="fortitude">0</p>
+											<div class ="save-proficiency-box">
+												<button class="proficiency-button" onclick="setProficiency('fortitude', 0, this)">U</button> 
+												<button class="proficiency-button" onclick="setProficiency('fortitude', 3, this)">T</button>
+												<button class="proficiency-button" onclick="setProficiency('fortitude', 6, this)">E</button>
+												<button class="proficiency-button" onclick="setProficiency('fortitude', 9, this)">M</button>
+											</div>
+										</div>
+										<div class="save-box">
+											<div class="stat-label">Reflex (DEX)</div>
+											<p class="stat-input" id="reflex">0</p>
+											<div class ="save-proficiency-box">
+												<button class="proficiency-button" onclick="setProficiency('reflex', 0, this)">U</button>
+												<button class="proficiency-button" onclick="setProficiency('reflex', 3, this)">T</button>
+												<button class="proficiency-button" onclick="setProficiency('reflex', 6, this)">E</button>
+												<button class="proficiency-button" onclick="setProficiency('reflex', 9, this)">M</button>
+											</div>
+										</div>
+										<div class="save-box">
+											<div class="stat-label">Will (WIL)</div>
+											<p class="stat-input" id="will">0</p>
+											<div class ="save-proficiency-box">
+												<button class="proficiency-button" onclick="setProficiency('will', 0, this)">U</button>
+												<button class="proficiency-button" onclick="setProficiency('will', 3, this)">T</button>
+												<button class="proficiency-button" onclick="setProficiency('will', 6, this)">E</button>
+												<button class="proficiency-button" onclick="setProficiency('will', 9, this)">M</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="section">
-					<div class="section-title">Stats</div>
-					<div class="stats-wrapper">
-						<div class="stats-container">
-							<div class="stat-box">
-								<p>Physique</p>
-								<div class="stat-input-container">
-									<div class="stat-label">PHY</div>
-									<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
-								</div>
-							</div>
-							<div class="stat-box">
-								<p>Dexterity</p>
-								<div class="stat-input-container">
-									<div class="stat-label">DEX</div>
-									<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
-								</div>
-							</div>
-
-							<div class="stat-box">
-								<p>Intelligence</p>
-								<div class="stat-input-container">
-									<div class="stat-label">INT</div>
-									<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
-								</div>
-							</div>
-
-							<div class="stat-box">
-								<p>Willpower</p>
-								<div class="stat-input-container">
-									<div class="stat-label">WIL</div>
-									<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
-								</div>
-							</div>
+				<h1><u>Kastorix Character Sheet</u></h1>
+				<!-- Blue Box: Level, Initiative, Perception, and Bars -->
+				<div class="character-top-box">
+					<div class="form-row">
+						<div class="form-group">
+							<p>Level</p>
+							<input type="number" placeholder="1" id="charLevel">
+						</div>
+						<div class="form-group">
+							<p>Initiative</p>
+							<input type="number" placeholder="0" id="initiative">
+						</div>
+						<div class="form-group">
+							<p>Passive Perception</p>
+							<input type="number" placeholder="10" id="passivePerception">
 						</div>
 					</div>
-				</div>
+					<!-- Resource Bars Container -->
+					<div class="resource-bars-container">
+						<!-- Health Bar -->
+						<div class="resource-bar-wrapper">
+							<div class="bar-container">
+								<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
+							</div>
+							<div class="resource-inputs">
+								<label for="health">Health:</label>
+								<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
+								/
+								<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
+							</div>
+						</div>
 
-				<div class="section">
-					<div class="section-title">Saving Throws</div>
-					<div class="stats-wrapper">
-						<div class="stats-container">
-							<div class="save-box">
-								<div class="stat-label">Fortitude (PHY)</div>
-								<p class="stat-input" id="fortitude">0</p>
-								<div class ="save-proficiency-box">
-									<button class="proficiency-button" onclick="setProficiency('fortitude', 0, this)">U</button> 
-									<button class="proficiency-button" onclick="setProficiency('fortitude', 3, this)">T</button>
-									<button class="proficiency-button" onclick="setProficiency('fortitude', 6, this)">E</button>
-									<button class="proficiency-button" onclick="setProficiency('fortitude', 9, this)">M</button>
-								</div>
+						<!-- Aura Bar -->
+						<div class="resource-bar-wrapper">
+							<div class="bar-container">
+								<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
 							</div>
-							<div class="save-box">
-								<div class="stat-label">Reflex (DEX)</div>
-								<p class="stat-input" id="reflex">0</p>
-								<div class ="save-proficiency-box">
-									<button class="proficiency-button" onclick="setProficiency('reflex', 0, this)">U</button>
-									<button class="proficiency-button" onclick="setProficiency('reflex', 3, this)">T</button>
-									<button class="proficiency-button" onclick="setProficiency('reflex', 6, this)">E</button>
-									<button class="proficiency-button" onclick="setProficiency('reflex', 9, this)">M</button>
-								</div>
+							<div class="resource-inputs">
+								<label for="aura">Aura:</label>
+								<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
+								/
+								<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
 							</div>
-							<div class="save-box">
-								<div class="stat-label">Will (WIL)</div>
-								<p class="stat-input" id="will">0</p>
-								<div class ="save-proficiency-box">
-									<button class="proficiency-button" onclick="setProficiency('will', 0, this)">U</button>
-									<button class="proficiency-button" onclick="setProficiency('will', 3, this)">T</button>
-									<button class="proficiency-button" onclick="setProficiency('will', 6, this)">E</button>
-									<button class="proficiency-button" onclick="setProficiency('will', 9, this)">M</button>
-								</div>
+						</div>
+
+						<!-- Mana Bar -->
+						<div class="resource-bar-wrapper">
+							<div class="bar-container">
+								<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
+							</div>
+							<div class="resource-inputs">
+								<label for="mana">Mana:</label>
+								<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
+								/
+								<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+
 			<div class="section">
 				<div class="section-title">Skills</div>
 				<table id="skillsTable">
