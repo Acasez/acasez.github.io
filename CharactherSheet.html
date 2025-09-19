@@ -101,10 +101,8 @@
 		<div class="main-content">
 			<h1>Kastorix Character Sheet</h1>
 
-			<div class="section">
-				<div class="section-title">Character Info</div>
-
-				<!-- Second Row: Level, Initiative, etc. -->
+			<div class="character-info-box">
+				<!-- Level, Initiative, Passive Perception -->
 				<div class="form-row">
 					<div class="form-group">
 						<p>Level</p>
@@ -118,117 +116,126 @@
 						<p>Passive Perception</p>
 						<input type="number" placeholder="10" id="passivePerception">
 					</div>
-				</div>
-			</div>		
+				</div>	
 
-			 <!-- Resource Bars Container -->
-			<div class="resource-bars-container">
-				<!-- Health Bar -->
-				<div class="resource-bar-wrapper">
-					<div class="bar-container">
-						<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
-					</div>
-					<div class="resource-inputs">
-						<label for="health">Health:</label>
-						<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
-						/
-						<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
-					</div>
-				</div>
-
-				<!-- Aura Bar -->
-				<div class="resource-bar-wrapper">
-					<div class="bar-container">
-						<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
-					</div>
-					<div class="resource-inputs">
-						<label for="aura">Aura:</label>
-						<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
-						/
-						<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
-					</div>
-				</div>
-
-				<!-- Mana Bar -->
-				<div class="resource-bar-wrapper">
-					<div class="bar-container">
-						<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
-					</div>
-					<div class="resource-inputs">
-						<label for="mana">Mana:</label>
-						<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
-						/
-						<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
-					</div>
-				</div>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Stats</div>
-				<div class="stats-wrapper">
-					<div class="stats-container">
-						<div class="stat-box">
-							<p>Physique</p>
-							<div class="stat-label">PHY</div>
-							<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+				<!-- Resource Bars Container -->
+				<div class="resource-bars-container">
+					<!-- Health Bar -->
+					<div class="resource-bar-wrapper">
+						<div class="bar-container">
+							<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
 						</div>
-						<div class="stat-box">
-							<p>Dexterity</p>
-							<div class="stat-label">DEX</div>
-							<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+						<div class="resource-inputs">
+							<label for="health">Health:</label>
+							<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
+							/
+							<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
 						</div>
-						<div class="stat-box">
-							<p>Intelligence</p>
-							<div class="stat-label">INT</div>
-							<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+					</div>
+
+					<!-- Aura Bar -->
+					<div class="resource-bar-wrapper">
+						<div class="bar-container">
+							<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
 						</div>
-						<div class="stat-box">
-							<p>Willpower</p>
-							<div class="stat-label">WIL</div>
-							<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+						<div class="resource-inputs">
+							<label for="aura">Aura:</label>
+							<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
+							/
+							<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
+						</div>
+					</div>
+
+					<!-- Mana Bar -->
+					<div class="resource-bar-wrapper">
+						<div class="bar-container">
+							<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
+						</div>
+						<div class="resource-inputs">
+							<label for="mana">Mana:</label>
+							<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
+							/
+							<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="section">
-				<div class="section-title">Saving Throws</div>
-				<div class="stats-wrapper">
-					<div class="stats-container">
-						<div class="save-box">
-							<div class="stat-label">Fortitude (PHY)</div>
-							<p class="stat-input" id="fortitude">0</p>
-							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 0, this)">U</button> 
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('fortitude', 9, this)">M</button>
+				<div class="section">
+					<div class="section-title">Stats</div>
+					<div class="stats-wrapper">
+						<div class="stats-container">
+							<div class="stat-box">
+								<p>Physique</p>
+								<div class="stat-input-container">
+									<div class="stat-label">PHY</div>
+									<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+								</div>
 							</div>
-						</div>
-						<div class="save-box">
-							<div class="stat-label">Reflex (DEX)</div>
-							<p class="stat-input" id="reflex">0</p>
-							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('reflex', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('reflex', 9, this)">M</button>
+							<div class="stat-box">
+								<p>Dexterity</p>
+								<div class="stat-input-container">
+									<div class="stat-label">DEX</div>
+									<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+								</div>
 							</div>
-						</div>
-						<div class="save-box">
-							<div class="stat-label">Will <br>(WIL)</div>
-							<p class="stat-input" id="will">0</p>
-							<div class ="save-proficiency-box">
-								<button class="proficiency-button" onclick="setProficiency('will', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('will', 9, this)">M</button>
+
+							<div class="stat-box">
+								<p>Intelligence</p>
+								<div class="stat-input-container">
+									<div class="stat-label">INT</div>
+									<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+								</div>
+							</div>
+
+							<div class="stat-box">
+								<p>Willpower</p>
+								<div class="stat-input-container">
+									<div class="stat-label">WIL</div>
+									<input type="number" class="stat-input" id="wil" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
+				<div class="section">
+					<div class="section-title">Saving Throws</div>
+					<div class="stats-wrapper">
+						<div class="stats-container">
+							<div class="save-box">
+								<div class="stat-label">Fortitude (PHY)</div>
+								<p class="stat-input" id="fortitude">0</p>
+								<div class ="save-proficiency-box">
+									<button class="proficiency-button" onclick="setProficiency('fortitude', 0, this)">U</button> 
+									<button class="proficiency-button" onclick="setProficiency('fortitude', 3, this)">T</button>
+									<button class="proficiency-button" onclick="setProficiency('fortitude', 6, this)">E</button>
+									<button class="proficiency-button" onclick="setProficiency('fortitude', 9, this)">M</button>
+								</div>
+							</div>
+							<div class="save-box">
+								<div class="stat-label">Reflex (DEX)</div>
+								<p class="stat-input" id="reflex">0</p>
+								<div class ="save-proficiency-box">
+									<button class="proficiency-button" onclick="setProficiency('reflex', 0, this)">U</button>
+									<button class="proficiency-button" onclick="setProficiency('reflex', 3, this)">T</button>
+									<button class="proficiency-button" onclick="setProficiency('reflex', 6, this)">E</button>
+									<button class="proficiency-button" onclick="setProficiency('reflex', 9, this)">M</button>
+								</div>
+							</div>
+							<div class="save-box">
+								<div class="stat-label">Will (WIL)</div>
+								<p class="stat-input" id="will">0</p>
+								<div class ="save-proficiency-box">
+									<button class="proficiency-button" onclick="setProficiency('will', 0, this)">U</button>
+									<button class="proficiency-button" onclick="setProficiency('will', 3, this)">T</button>
+									<button class="proficiency-button" onclick="setProficiency('will', 6, this)">E</button>
+									<button class="proficiency-button" onclick="setProficiency('will', 9, this)">M</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="section">
 				<div class="section-title">Skills</div>
 				<table id="skillsTable">
