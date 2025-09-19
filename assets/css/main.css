@@ -523,6 +523,7 @@ table th {
 		display: flex;
 		align-items: center;
 		margin-top: 5px;
+		margin-bottom: -15px;
 	}
 
 	.resource-inputs label {
@@ -623,8 +624,9 @@ table th {
 	
 	.form-group p {
 		margin: 0;
-		margin-bottom: 5px; /* Space between label and input */
+		margin-bottom: -5px; /* Space between label and input */
 		font-weight: bold;
+		font-size: 22px;
 	}
 
 	.form-group input {
