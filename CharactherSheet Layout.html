@@ -67,7 +67,6 @@
 		.character-info-container {
 			display: flex;
 			flex-direction: column;
-			width: 100%;
 			max-width: 800px;
 			gap: 20px;
 		}
@@ -84,15 +83,26 @@
 		}
 		.skillsContainer{
 			display: inline-flex;
-			flex-direction: column;
+			flex-direction: colum n;
 			margin-top: 0.5em;
 			margin-bottom: 0.5em;
 		}
 		.skillsScroll{
-			flex: 1 1 auto;
+			/*flex: 1 1 auto;
 			overflow-y: auto;
 			overflow-x: hidden;
-			height: 0;
+			height: 0;*/
+		}
+		.spellsContainer{
+			display: inline-flex;
+			flex-direction: column;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			width: 400px;
+		}
+		.spellData{
+			display: flex;
+			flex-direction: row;
 		}
 		/* Blue Box: Level, Initiative, Perception, and Bars */
 		.character-top-box {
@@ -274,6 +284,18 @@
 					</div>
 					<div class="character-sheet-title">
 						<h1><u>Kastorix <br>Character Sheet</u></h1>
+						<div class="saveLoadSection">
+							<button class="saveload-button" onclick="saveSheet()">Save Character</button>
+							<button class="saveload-button" onclick="loadSheet()">Load Character</button>
+							<button class="saveload-button" onclick="deleteSheet()">Delete Character</button>
+
+							<div class="section">
+								<div class="section-title">Export/Import</div>
+								<button class="saveload-button" onclick="exportCharacter()">Export Character</button>
+								<input type="file" id="importFile" accept=".json" onchange="importCharacter(event)" style="display: none;">
+								<button class="saveload-button" onclick="document.getElementById('importFile').click()">Import Character</button>
+							</div>
+						</div>
 					</div>
 					<!-- Blue Box: Level, Initiative, Perception, and Bars -->
 					<div class="character-top-box">
@@ -335,8 +357,8 @@
 					</div>
 				</div>
 				<div class="lowerHalf-row">
-					<div class="section">
-						<div class="skillsContainer">
+					<div class="skillsContainer">
+						<div class="skillsScroll">
 							<div class="section-title">Skills</div>
 							<table id="skillsTable">
 								<thead>
@@ -549,60 +571,41 @@
 							</table>
 						</div>
 					</div>
+					<div class="spellsContainer">
+						<div class="section-title">Spells</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<textarea id="spellActions" placeholder="2"></textarea>
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<textarea id="spellActions" placeholder="2"></textarea>
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<textarea id="spellActions" placeholder="2"></textarea>
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+					</div>
 				</div>
 			</div>
 				
 			</div>
 			
 		</div>
-
-
-			<div class="section">
-				<div class="section-title">Arcane Feats</div>
-				<textarea id="arcaneFeats" placeholder="List your arcane feats here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">General Feats</div>
-				<textarea id="generalFeats" placeholder="List your general feats here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Equipment</div>
-				<textarea id="equipment" placeholder="List your equipment here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Notes</div>
-				<textarea id="notes" placeholder="Additional notes..."></textarea>
-			</div>
-
-			<button class="saveload-button" onclick="saveSheet()">Save Character</button>
-			<button class="saveload-button" onclick="loadSheet()">Load Character</button>
-			<button class="saveload-button" onclick="deleteSheet()">Delete Character</button>
-			<div class="section">
-				<div class="section-title">Load Character</div>
-				<select id="characterList" onchange="populateCharacter()">
-					<option value="">Select a character...</option>
-				</select>
-				<button class="saveload-button" onclick="loadSelectedCharacter()">Load Selected</button>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Export/Import</div>
-				<button class="saveload-button" onclick="exportCharacter()">Export Character</button>
-				<input type="file" id="importFile" accept=".json" onchange="importCharacter(event)" style="display: none;">
-				<button class="saveload-button" onclick="document.getElementById('importFile').click()">Import Character</button>
-			</div>
 		</div>
 	</div>
-		<!-- Footer -->
-			<div id="footer">
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-			</div>
 		<!-- Scripts -->
 			<script>
 				fetch('rpgheader.html')
