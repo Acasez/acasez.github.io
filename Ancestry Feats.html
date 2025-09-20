@@ -14,10 +14,13 @@
 				<!-- Main Projects -->
 					<section id="Main Projects" class="sectionText">
 						<header>
-							<h3 class="portfolio-title">Arcane Feats</h3>
-							<p class="portfolio-subtitle">Arcane Feats comes from your practicing and learning of magic. 
+							<h3 class="portfolio-title">Anscestry Feats</h3>
+							<p class="portfolio-subtitle">Anscestry Feats comes from your species and culture 
 								You can pick one new arcane feat each level and retrain them during downtime.
-								You cannot pick the same feat twice, unless otherwise specified.</p>
+								You cannot pick the same feat twice, unless otherwise specified. <br>
+								If a feat lists multiple possible species, you can choose it if you come from either. <br>
+								If you were raised in a culture unlike your own pick their cultural feats. 
+							</p>
 						</header>
 						<div class="search-container">
 							<input type="text" id="searchInput" placeholder="Search for feats..." title="Type in a feat name">
@@ -27,8 +30,9 @@
 								<tr>
 									<th onclick="sortTable(0)">Feat Name</th>
 									<th onclick="sortTable(1)">Description</th>
-									<th onclick="sortTable(2)">Prerequisites</th>
-									<th onclick="sortTable(3)">Level</th>
+									<th onclick="sortTable(2)">Cultural</th>
+									<th onclick="sortTable(3)">Prerequisites</th>
+									<th onclick="sortTable(4)">Level</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -39,6 +43,7 @@
 										You have an inprecise sense of smell, which you can use to try find creatures or objects.
 										Your proffiency level in Perception increases (max Expert)
 									</td>
+									<td>Biological</td>
 									<td>Yirte</td>
 									<td>1</td>
 								</tr>
@@ -50,26 +55,80 @@
 										Next turn you may Step or Stride once as free action. 
 										If you move or are knocked prone, this bonus is lost
 									</td>
+									<td>Biological</td>
 									<td>Naga</td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Jungle Swimmer</td>
 									<td>
-										You've swam in the many rivers and lakes of your homeland. 
+										You've grown up swimming in the many rivers and lakes of your homeland. 
 										You have a 4 tile Swim Speed
 									</td>
-									<td>Yirte</td>
+									<td>Cultural</td>
+									<td>Naga, Yirte</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Marsh Walker</td>
+									<td>
+										You've learned to navigate the wet and dangerous grounds of your homeland.
+										You ignore difficult terrain caused by wetlands, swamps, jungles and similiar.
+										You have +3 bonus to Survival and Nature checks regarding your environments. 
+									</td>
+									<td>Biological</td>
+									<td>Naga</td>
 									<td>1</td>
 								</tr>
 								<tr>
 									<td>Sha'des'ka Practioner</td>
 									<td>
-										You trained in the ancient art of Sha'des'ka or its modern form, Arcane Dueling.
-										
+										You trained in the ancient Naga art of Sha'des'ka, or its modern form Arcane Dueling.
+										You gain the <a href="Arcane Feats.html#arcane_duelist">Arcane Duelist</a>
 									</td>
+									<td>Cultural</td>
 									<td>Naga</td>
 									<td>1</td>
+								</tr>
+								<tr>
+									<td>Lesser Dragonbreath</td>
+									<td>
+										You've learned to imitate the breath of your draconic ancestor. 
+										You gain the Dragonbreath action.
+										When you gain this feat choose an element for damage; fire, cold, lightning or poison. 
+										<br>
+										<strong>Dragonbreath</strong> <u>2 Actions. Can be used once per Minute</u> <br>
+										Breathe out a 5 tile cone of elemental force. 
+										Creatures inside the cone need to make a basic Reflex save. 
+										On a failure they take 3d6 damage.
+										Costs 7 Mana to use.
+									</td>
+									<td>Biological</td>
+									<td>Dragonkin</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Elemental Resistance</td>
+									<td>
+										Your connection to an element provides some resistance to it. 
+										When you gain this feat choose an element; fire, cold, lightning or poison.
+										You have resistance 3 + your level to it. 
+										If you also have the Lesser Dragonbreath feat you must choose the same element.
+									</td>
+									<td>Biological</td>
+									<td>Dragonkin</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Winged Dragonkin</td>
+									<td>
+										You've been chosen to undergo the ritual of Wings. 
+										This ritual is generally only granted to high ranking Dragonkin of the Draconium
+										Your new dragconic wings grants you a 5 tile flying speed.
+									</td>
+									<td>Biological</td>
+									<td>Dragonkin</td>
+									<td>5</td>
 								</tr>
 							</tbody>
 						</table>
