@@ -55,18 +55,79 @@
 				margin-right: 20px; /* Optional: Add spacing between sidebar and main content */
 			}
 
-			.main-content {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+		.main-content {
+			flex: 1;
+			height: calc(100vh - 3.8em);
+			margin-left: -1em;
+			padding-left: .5em;
+			padding-right: .5em;
+			min-width: 0;
+			min-height: 0;
+		}
 		.character-info-container {
 			display: flex;
 			flex-direction: column;
-			width: 100%;
 			max-width: 800px;
 			gap: 20px;
 		}
+		.top-row{
+			display: flex;
+			flex-direction: row;
+		}
+		.lowerHalf-row{
+			display: flex;
+			flex-flow: row;
+			height: calc(100vh - 17.8em);
+			min-width: 0;
+			min-height: 0;
+		}
+		.skillsContainer{
+			display: inline-flex;
+			flex-direction: colum n;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+		.skillsScroll{
+			/*flex: 1 1 auto;
+			overflow-y: auto;
+			overflow-x: hidden;
+			height: 0;*/
+		}
+		.spellsContainer{
+			display: inline-flex;
+			flex-direction: column;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			width: 400px;
+		}
+		.spellData{
+			display: flex;
+			flex-direction: row;
+		}
+		.spellActions{
+			width: 50px;
+		}
+		.actionsContainer{
+			display: inline-flex;
+			flex-direction: column;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			width: 400px;
+		}
+			.actionsContainer p {
+				margin-top: -5px;
+				margin-left: 25px;
+				margin-bottom: 0px;
+				font-size: 20px;
+				line-height: 1.5;
+			}
+			.actionsContainer h3 {
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: -5px;
+				margin-left: 25px;
+				margin-bottom: 0px;
+			}
 		/* Blue Box: Level, Initiative, Perception, and Bars */
 		.character-top-box {
 			border: 2px solid blue;
@@ -74,6 +135,13 @@
 			padding: 10px;
 			background-color: rgba(0, 0, 255, 0.1);
 			height: fit-content;
+		}
+		.blueBoxTextArea{
+			margin-bottom: -5px;
+  			width: 170px;
+		}
+		.doubleWidth{
+			width: 400px;
 		}
 
 		/* Red Box: Stats and Saving Throws */
@@ -88,7 +156,7 @@
 		.form-row {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 15px;
+			margin-bottom: 0px;
 		}
 
 		.form-group {
@@ -167,12 +235,12 @@
 			</div>	
 			<!-- Body-->
 			<div class="main-content">
-				
-				<!-- Red Box: Stats and Saving Throws -->
-				<div class="character-info-container">
-					<div class="character-stats-box">
-						<div class="section">
-							<div class="section-title">Stats</div>
+				<div class="top-row">
+					<!-- Red Box: Stats and Saving Throws -->
+					<div class="character-info-container">
+						<div class="character-stats-box">
+							<div class="section">
+								<div class="section-title">Stats</div>
 								<div class="stats-wrapper">
 									<div class="stats-container">
 										<div class="stat-box">
@@ -182,7 +250,6 @@
 												<input type="number" class="stat-input" id="phy" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 											</div>
 										</div>
-
 										<div class="stat-box">
 											<p>Dexterity</p>
 											<div class="stat-input-container">
@@ -190,7 +257,6 @@
 												<input type="number" class="stat-input" id="dex" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 											</div>
 										</div>
-
 										<div class="stat-box">
 											<p>Intelligence</p>
 											<div class="stat-input-container">
@@ -198,7 +264,6 @@
 												<input type="number" class="stat-input" id="int" min="-5" max="10" oninput="updateSkillModifiers()" value="0">
 											</div>
 										</div>
-
 										<div class="stat-box">
 											<p>Willpower</p>
 											<div class="stat-input-container">
@@ -209,8 +274,8 @@
 									</div>
 								</div>
 							</div>
-						<div class="section">
-							<div class="section-title">Saving Throws</div>
+							<div class="section">
+								<div class="section-title">Saving Throws</div>
 								<div class="stats-wrapper">
 									<div class="stats-container">
 										<div class="save-box">
@@ -248,330 +313,367 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="character-sheet-title">
-					<h1><u>Kastorix <br>Character Sheet</u></h1>
-				</div>
-				<!-- Blue Box: Level, Initiative, Perception, and Bars -->
-				<div class="character-top-box">
-					<div class="form-row">
-						<div class="form-group">
-							<p>Level</p>
-							<input type="number" placeholder="1" id="charLevel">
-						</div>
-						<div class="form-group">
-							<p>Initiative</p>
-							<input type="number" placeholder="0" id="initiative">
-						</div>
-						<div class="form-group">
-							<p>Passive Perception</p>
-							<input type="number" placeholder="10" id="passivePerception">
-						</div>
-					</div>
-					<!-- Resource Bars Container -->
-					<div class="resource-bars-container">
-						<!-- Health Bar -->
-						<div class="resource-bar-wrapper">
-							<div class="bar-container">
-								<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
-							</div>
-							<div class="resource-inputs">
-								<label for="health">Health:</label>
-								<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
-								/
-								<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
-							</div>
-						</div>
+					<div class="character-sheet-title">
+						<h1><u>Kastorix <br>Character Sheet</u></h1>
+						<div class="saveLoadSection">
+							<button class="saveload-button" onclick="saveSheet()">Save Character</button>
+							<button class="saveload-button" onclick="loadSheet()">Load Character</button>
+							<button class="saveload-button" onclick="deleteSheet()">Delete Character</button>
 
-						<!-- Aura Bar -->
-						<div class="resource-bar-wrapper">
-							<div class="bar-container">
-								<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
-							</div>
-							<div class="resource-inputs">
-								<label for="aura">Aura:</label>
-								<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
-								/
-								<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
-							</div>
-						</div>
-
-						<!-- Mana Bar -->
-						<div class="resource-bar-wrapper">
-							<div class="bar-container">
-								<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
-							</div>
-							<div class="resource-inputs">
-								<label for="mana">Mana:</label>
-								<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
-								/
-								<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
+							<div class="section">
+								<div class="section-title">Export/Import</div>
+								<button class="saveload-button" onclick="exportCharacter()">Export Character</button>
+								<input type="file" id="importFile" accept=".json" onchange="importCharacter(event)" style="display: none;">
+								<button class="saveload-button" onclick="document.getElementById('importFile').click()">Import Character</button>
 							</div>
 						</div>
 					</div>
+					<!-- Blue Box: Level, Initiative, Perception, and Bars -->
+					<div class="character-top-box">
+						<div class="form-row">
+							<div class="form-group">
+								<p>Level</p>
+								<input type="number" placeholder="1" id="charLevel">
+							</div>
+							<div class="form-group">
+								<p>Initiative</p>
+								<input type="number" placeholder="0" id="initiative">
+							</div>
+							<div class="form-group">
+								<p>Passive Perception</p>
+								<input type="number" placeholder="10" id="passivePerception">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<p>Land Speed</p>
+								<input type="number" placeholder="5" id="landSpeed">
+							</div>
+							<div class="form-group">
+								<p>Other Move Speeds</p>
+								<textarea class="blueBoxTextArea" id="otherMoveSpeeds" placeholder="Swim/Climb/Glide/Fly"></textarea>
+							</div>
+							<div class="form-group">
+								<p>Senses</p>
+								<textarea class="blueBoxTextArea" id="senses" placeholder="Other senses beyond sight"></textarea>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<p>Resistances</p>
+								<textarea class="blueBoxTextArea doubleWidth"id="resistances" placeholder="resistances to different damage types"></textarea>
+							</div>
+							<div class="form-group">
+								<p>Languages</p>
+								<textarea class="blueBoxTextArea" id="languages" placeholder="Common, Naga, etc"></textarea>
+							</div>
+						</div>
+						<!-- Resource Bars Container -->
+						<div class="resource-bars-container">
+							<!-- Health Bar -->
+							<div class="resource-bar-wrapper">
+								<div class="bar-container">
+									<div id="healthBar" class="bar" style="width: 50%; background-color: #ff4d4d;"></div>
+								</div>
+								<div class="resource-inputs">
+									<label for="health">Health:</label>
+									<input type="number" id="health" min="0" max="100" value="10" oninput="updateBar('health')">
+									/
+									<input type="number" id="maxHealth" min="1" max="100" value="10" oninput="updateBar('health')">
+								</div>
+							</div>
+
+							<!-- Aura Bar -->
+							<div class="resource-bar-wrapper">
+								<div class="bar-container">
+									<div id="auraBar" class="bar" style="width: 30%; background-color: #4da6ff;"></div>
+								</div>
+								<div class="resource-inputs">
+									<label for="aura">Aura:</label>
+									<input type="number" id="aura" min="0" max="100" value="10" oninput="updateBar('aura')">
+									/
+									<input type="number" id="maxAura" min="1" max="100" value="10" oninput="updateBar('aura')">
+								</div>
+							</div>
+
+							<!-- Mana Bar -->
+							<div class="resource-bar-wrapper">
+								<div class="bar-container">
+									<div id="manaBar" class="bar" style="width: 70%; background-color: #b34dff;"></div>
+								</div>
+								<div class="resource-inputs">
+									<label for="mana">Mana:</label>
+									<input type="number" id="mana" min="0" max="100" value="10" oninput="updateBar('mana')">
+									/
+									<input type="number" id="maxMana" min="1" max="100" value="10" oninput="updateBar('mana')">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lowerHalf-row">
+					<div class="skillsContainer">
+						<div class="skillsScroll">
+							<div class="section-title">Skills</div>
+							<table id="skillsTable">
+								<thead>
+									<tr>
+										<th>Skill</th>
+										<th>Stat</th>
+										<th>Modifier</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Acrobatics</td>
+										<td>DEX</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('acrobatics', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('acrobatics', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('acrobatics', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('acrobatics', 9, this)">M</button>
+											<p class="skill-input" id="acrobatics">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Arcana</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('arcana', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('arcana', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('arcana', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('arcana', 9, this)">M</button>
+											<p class="skill-input" id="arcana">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Athletics</td>
+										<td>PHY</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('athletics', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('athletics', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('athletics', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('athletics', 9, this)">M</button>
+											<p class="skill-input" id="athletics">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Crafting</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('crafting', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('crafting', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('crafting', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('crafting', 9, this)">M</button>
+											<p class="skill-input" id="crafting">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Deception</td>
+										<td>WIL</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('deception', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('deception', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('deception', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('deception', 9, this)">M</button>
+											<p class="skill-input" id="deception">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>History</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('history', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('history', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('history', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('history', 9, this)">M</button>
+											<p class="skill-input" id="history">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Insight</td>
+										<td>WIL</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('insight', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('insight', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('insight', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('insight', 9, this)">M</button>
+											<p class="skill-input" id="insight">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Intimidation</td>
+										<td>PHY</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('intimidation', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('intimidation', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('intimidation', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('intimidation', 9, this)">M</button>
+											<p class="skill-input" id="intimidation">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Medicine</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('medicine', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('medicine', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('medicine', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('medicine', 9, this)">M</button>
+											<p class="skill-input" id="medicine">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Mana Sensing</td>
+										<td>WIL</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('manaSensing', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('manaSensing', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('manaSensing', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('manaSensing', 9, this)">M</button>
+											<p class="skill-input" id="manaSensing">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Nature</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('nature', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('nature', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('nature', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('nature', 9, this)">M</button>
+											<p class="skill-input" id="nature">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Perception</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('perception', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('perception', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('perception', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('perception', 9, this)">M</button>
+											<p class="skill-input" id="perception">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Performance</td>
+										<td>DEX</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('performance', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('performance', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('performance', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('performance', 9, this)">M</button>
+											<p class="skill-input" id="performance">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Persuasion</td>
+										<td>WIL</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('persuasion', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('persuasion', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('persuasion', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('persuasion', 9, this)">M</button>
+											<p class="skill-input" id="persuasion">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Society</td>
+										<td>INT</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('society', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('society', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('society', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('society', 9, this)">M</button>
+											<p class="skill-input" id="society">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Sleight of Hand</td>
+										<td>DEX</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 9, this)">M</button>
+											<p class="skill-input" id="sleightOfHand">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Stealth</td>
+										<td>DEX</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('stealth', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('stealth', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('stealth', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('stealth', 9, this)">M</button>
+											<p class="skill-input" id="stealth">0</p>
+										</td>
+									</tr>
+									<tr>
+										<td>Survival</td>
+										<td>WIL</td>
+										<td>
+											<button class="proficiency-button" onclick="setProficiency('survival', 0, this)">U</button>
+											<button class="proficiency-button" onclick="setProficiency('survival', 3, this)">T</button>
+											<button class="proficiency-button" onclick="setProficiency('survival', 6, this)">E</button>
+											<button class="proficiency-button" onclick="setProficiency('survival', 9, this)">M</button>
+											<p class="skill-input" id="survival">0</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="spellsContainer">
+						<div class="section-title">Spells</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+						<div class="spellSection">
+							<div class="spellData">
+								<textarea id="spellName" placeholder="Spellname"></textarea>
+								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
+							</div>
+							<textarea id="description" placeholder="Spell Effect"></textarea>
+						</div>
+					</div>
+					<div class="actionsContainer">
+						<div class="section-title">Actions</div>
+						<h3><strong>Stride</strong> <u>1 Action</u></h3> <br>
+						<p>Move up to your Land Speed</p>
+						<h3><strong>Step</strong> <u>1 Action</u></h3> <br>
+						<p>Move one tile. Creatures cannot make reactions to this</p>
+						<h3><strong>Cast a Spell</strong> <u>1-3 Actions</u></h3> <br>
+						<p>Attempt to cast a Spell, making a Spellshaping check and casting the spell on success</p>
+						<h3><strong>Strike</strong> <u>1 Action</u></h3> <br>
+						<p>Make an unarmed or weapon attack, rolling against a Reflex saving throw of the target.
+							Attacks after the first each turn take a stacking multiple attack penetalty
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="section-title">Skills</div>
-				<table id="skillsTable">
-					<thead>
-						<tr>
-							<th>Skill</th>
-							<th>Stat</th>
-							<th>Modifier</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Acrobatics</td>
-							<td>DEX</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('acrobatics', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('acrobatics', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('acrobatics', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('acrobatics', 9, this)">M</button>
-								<p class="skill-input" id="acrobatics">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Arcana</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('arcana', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('arcana', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('arcana', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('arcana', 9, this)">M</button>
-								<p class="skill-input" id="arcana">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Athletics</td>
-							<td>PHY</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('athletics', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('athletics', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('athletics', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('athletics', 9, this)">M</button>
-								<p class="skill-input" id="athletics">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Crafting</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('crafting', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('crafting', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('crafting', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('crafting', 9, this)">M</button>
-								<p class="skill-input" id="crafting">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Deception</td>
-							<td>WIL</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('deception', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('deception', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('deception', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('deception', 9, this)">M</button>
-								<p class="skill-input" id="deception">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>History</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('history', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('history', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('history', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('history', 9, this)">M</button>
-								<p class="skill-input" id="history">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Insight</td>
-							<td>WIL</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('insight', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('insight', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('insight', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('insight', 9, this)">M</button>
-								<p class="skill-input" id="insight">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Intimidation</td>
-							<td>PHY</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('intimidation', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('intimidation', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('intimidation', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('intimidation', 9, this)">M</button>
-								<p class="skill-input" id="intimidation">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Medicine</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('medicine', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('medicine', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('medicine', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('medicine', 9, this)">M</button>
-								<p class="skill-input" id="medicine">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Mana Sensing</td>
-							<td>WIL</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('manaSensing', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('manaSensing', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('manaSensing', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('manaSensing', 9, this)">M</button>
-								<p class="skill-input" id="manaSensing">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Nature</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('nature', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('nature', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('nature', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('nature', 9, this)">M</button>
-								<p class="skill-input" id="nature">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Perception</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('perception', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('perception', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('perception', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('perception', 9, this)">M</button>
-								<p class="skill-input" id="perception">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Performance</td>
-							<td>DEX</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('performance', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('performance', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('performance', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('performance', 9, this)">M</button>
-								<p class="skill-input" id="performance">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Persuasion</td>
-							<td>WIL</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('persuasion', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('persuasion', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('persuasion', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('persuasion', 9, this)">M</button>
-								<p class="skill-input" id="persuasion">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Society</td>
-							<td>INT</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('society', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('society', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('society', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('society', 9, this)">M</button>
-								<p class="skill-input" id="society">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Sleight of Hand</td>
-							<td>DEX</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('sleightOfHand', 9, this)">M</button>
-								<p class="skill-input" id="sleightOfHand">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Stealth</td>
-							<td>DEX</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('stealth', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('stealth', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('stealth', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('stealth', 9, this)">M</button>
-								<p class="skill-input" id="stealth">0</p>
-							</td>
-						</tr>
-						<tr>
-							<td>Survival</td>
-							<td>WIL</td>
-							<td>
-								<button class="proficiency-button" onclick="setProficiency('survival', 0, this)">U</button>
-								<button class="proficiency-button" onclick="setProficiency('survival', 3, this)">T</button>
-								<button class="proficiency-button" onclick="setProficiency('survival', 6, this)">E</button>
-								<button class="proficiency-button" onclick="setProficiency('survival', 9, this)">M</button>
-								<p class="skill-input" id="survival">0</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				
 			</div>
+			
 		</div>
-
-
-			<div class="section">
-				<div class="section-title">Arcane Feats</div>
-				<textarea id="arcaneFeats" placeholder="List your arcane feats here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">General Feats</div>
-				<textarea id="generalFeats" placeholder="List your general feats here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Equipment</div>
-				<textarea id="equipment" placeholder="List your equipment here..."></textarea>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Notes</div>
-				<textarea id="notes" placeholder="Additional notes..."></textarea>
-			</div>
-
-			<button class="saveload-button" onclick="saveSheet()">Save Character</button>
-			<button class="saveload-button" onclick="loadSheet()">Load Character</button>
-			<button class="saveload-button" onclick="deleteSheet()">Delete Character</button>
-			<div class="section">
-				<div class="section-title">Load Character</div>
-				<select id="characterList" onchange="populateCharacter()">
-					<option value="">Select a character...</option>
-				</select>
-				<button class="saveload-button" onclick="loadSelectedCharacter()">Load Selected</button>
-			</div>
-
-			<div class="section">
-				<div class="section-title">Export/Import</div>
-				<button class="saveload-button" onclick="exportCharacter()">Export Character</button>
-				<input type="file" id="importFile" accept=".json" onchange="importCharacter(event)" style="display: none;">
-				<button class="saveload-button" onclick="document.getElementById('importFile').click()">Import Character</button>
-			</div>
 		</div>
 	</div>
-		<!-- Footer -->
-			<div id="footer">
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-			</div>
 		<!-- Scripts -->
 			<script>
 				fetch('rpgheader.html')
