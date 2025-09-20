@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Draconium</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header-placeholder"></div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Main Projects -->
+					<section id="Main Projects" class="sectionText">
+						<header>
+						<h3 class="portfolio-title">The Draconium</h3>
+						</header>
+						<div class="portfolio-row"> <!-- The Draconium -->
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									The Draconium Imperialis is the only surviving nation on Avijor, the northern continent. 
+									It is home to almost all of the worlds dragons, as well as most of the dragonkin. 
+									The Draconium is an ancient nation formed by draconic clans that stretch back to the times of yore. 
+									Since its founding it has been a world power and bastion of stability, wielding a great degree of influence. 
+									The most common calendar of the world is the draconic calendar, which starts at the founding of the Draconium. 
+									Since The Breach the Draconium has been forced to undergo a lot of changes, to sustain the endless siege from the Void Creatures. 
+									The power dynamics between the dragons, dragonkin and other species has shifted. 
+								</p>
+							</div>
+							<div class="wikibox">
+								<div class="wikibox-header">
+									<h4>The Draconium</h4>
+								</div>
+								<div class="wikibox-content">
+									<b>Location:</b> Eastern Avijor<br>
+									<b>Size:</b> 1 857 000km²<br>
+									<b>Military Strength:</b> Powerful<br>
+									<b>Government:</b> Parliamentary democracy, by the draconic clans<br>
+									<b>Exports</b> Fine goods<br>
+									<b>Imports:</b> Adamantium, Artifice <br>
+									<b>Species:</b> Dragonkin and Dragons, minorities humans, brannur and gnomes<br>
+									<b>History:</b> Founded year 0 DC, 1374 years ago.<br>
+									<b>Motto:</b> On wings of glory <br>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-row"> <!-- Geography -->
+							<div class="portfolio-image large">
+								<img src="images/Kastorix/The Draconium.png" alt="Map of the Draconium" />
+							</div>
+							<div class="portfolio-text">
+								<p class="portfolio-description">
+									<h3 class="portfolio-title">Geography</h3>
+									At 1 857 000km² the Draconium is the biggest country in the world by area. 
+									Most of the country lies on the eastern part of Avijor, covering the easternmost part of the continent. 
+									The large island of Revonia (387 000km²) is also part of the Draconium, lying southwest of the mainland. 
+									Most of the Draconium is in a temperate region with mild winters and warm summers. 
+									The northern parts of the country and western hills can get chillier, but nation rarely sees significant snowfalls. 
+									<br><br>
+									Before the Breach the Draconium used to border multiple nations to the west, including the territory owned by the world famed Spears Legacy mercenary company. 
+									Since the Breach, the nation now only borders territory conquered by the void. 
+									The Draconium has always had an well managed series of walls on the borders, but these have been significantly reinforced and modernized since the breach. 
+									<br><br>
+									The Draconium's capital and largest city of Mellafier lies on the northeastern coast, but it has many other significant cities over its territory. 
+									Revonia is less populated than the rest of the country, with a large forest on the east side of the island. 
+									The Shattered Isles are not too far to the east of the Revonia, but the The Galeward lies in-between disrupting trade. 
+								</p>
+							</div>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Edvin Skogsholm Sanne's Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+		<!-- Scripts -->
+			<script>
+				fetch('rpgheader.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					});
+				// Close dropdowns when clicking outside
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						for (var i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.style.display === "block") {
+								openDropdown.style.display = "none";
+							}
+						}
+					}
+				};
+			</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

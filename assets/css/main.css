@@ -205,7 +205,7 @@
     background-color: #f8f9fa;
     padding: 0;
     margin-left: 1em;
-    max-width: 500px;
+    max-width: 600px;
     font-size: 0.9em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
@@ -225,16 +225,20 @@
 	.wikibox-content p {
 		margin: 0.3em 0;
 	}
-	.portfolio-row.doubleImage {
-		justify-content: center;
-		flex-wrap: wrap;
-	}
 
-	.portfolio-row.doubleImage .portfolio-image {
-		flex: 1 1 45%;
-		max-width: 48%;
-		text-align: center;
+	.wikibox-content b{
+		font-weight: bolder;
 	}
+.portfolio-row.doubleImage {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-row.doubleImage .portfolio-image {
+	flex: 1 1 45%;
+	max-width: 48%;
+	text-align: center;
+}
 .portfolio-row.reverse {
 	flex-direction: row-reverse;
 }
