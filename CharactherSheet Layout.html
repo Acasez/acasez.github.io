@@ -104,6 +104,9 @@
 			display: flex;
 			flex-direction: row;
 		}
+		.spellActions{
+			width: 50px;
+		}
 		/* Blue Box: Level, Initiative, Perception, and Bars */
 		.character-top-box {
 			border: 2px solid blue;
@@ -311,6 +314,20 @@
 							<div class="form-group">
 								<p>Passive Perception</p>
 								<input type="number" placeholder="10" id="passivePerception">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<p>Land Speed</p>
+								<input type="number" placeholder="5" id="landSpeed">
+							</div>
+							<div class="form-group">
+								<p>Other Move Speeds</p>
+								<textarea id="otherMoveSpeeds" placeholder="Swim/Climb/Glide/Fly"></textarea>
+							</div>
+							<div class="form-group">
+								<p>Languages</p>
+								<textarea id="Languages" placeholder="Common"></textarea>
 							</div>
 						</div>
 						<!-- Resource Bars Container -->
@@ -577,7 +594,7 @@
 							<div class="spellData">
 								<textarea id="spellName" placeholder="Spellname"></textarea>
 								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
-								<textarea id="spellActions" placeholder="2"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
 							</div>
 							<textarea id="description" placeholder="Spell Effect"></textarea>
 						</div>
@@ -585,7 +602,7 @@
 							<div class="spellData">
 								<textarea id="spellName" placeholder="Spellname"></textarea>
 								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
-								<textarea id="spellActions" placeholder="2"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
 							</div>
 							<textarea id="description" placeholder="Spell Effect"></textarea>
 						</div>
@@ -593,7 +610,7 @@
 							<div class="spellData">
 								<textarea id="spellName" placeholder="Spellname"></textarea>
 								<textarea id="spellTraits" placeholder="traits and aspects"></textarea>
-								<textarea id="spellActions" placeholder="2"></textarea>
+								<input type="number" placeholder="2" class="spellActions">
 							</div>
 							<textarea id="description" placeholder="Spell Effect"></textarea>
 						</div>
