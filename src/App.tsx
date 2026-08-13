@@ -47,6 +47,19 @@ I proposed the original idea for the game and have worked on game design, balanc
         githubLink=""
         webpageLink="https://mariestad.se/nyheter/nyhetsarkiv/2024-06-03-klimatspelet-mariestad-bidrar-till-den-grona-omstallningen"
       />
+      <PortfolioRow
+        reverse={true}
+        imageLocation="src/Images/MariestadDigitalAdaptation/MariestadDigital.JPG"
+        altText="Image of the digital game"
+        projectTags={["Unity", "C#", "Game", "Solo"]}
+        name="Mariestad Digital Adaptation (2024-2025)"
+        subtitle="Digital Adaptation of the climate board game"
+        projectPageLink="./mariestadClimateGame.html"
+        description="I also made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of the physical board game and an inbuilt tutorial. It also has the option to be played in either English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge. I made a script that imports the card data using CSV files for quick playtesting and balancing, a method I use in my Unity projects today. "
+        itchLink="https://acasez.itch.io/mariestad-climate-game"
+        githubLink=""
+        webpageLink=""
+      />
     </>
   );
 }
