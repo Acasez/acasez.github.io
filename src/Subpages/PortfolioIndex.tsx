@@ -1,5 +1,5 @@
 import PortfolioRow from "../components/PortfolioRow";
-import "./CSS/HRLines.css";
+import "../CSS/HRLines.css";
 export default function PortfolioIndex() {
   return (
     <>

@@ -104,6 +104,7 @@ a.portfolio-title:hover::after {
 
 .portfolio-description {
     margin-bottom: 1em;
+    font-size: 24px;
 }
 
 .portfolio-description h3 {
