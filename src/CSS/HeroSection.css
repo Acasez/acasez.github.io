@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem;
+    margin: 4rem;
     gap: 0.5em;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -31,6 +31,7 @@
     font-size: 1.1em;
     max-width: 1400px;
     margin-left: 1em;
+    margin-bottom: 1rem;
 }
 
 .intro-text a:hover {

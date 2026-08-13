@@ -5,6 +5,10 @@ export default function PortfolioIndex() {
   return (
     <>
       <HeroSection />
+      <h1>Main Projects</h1>
+      <p>
+        Some of the projects I've done. Clicking on the titles go to their link
+      </p>
       <PortfolioRow //Edvins Nested Tooltips
         reverse={false}
         imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
@@ -116,7 +120,7 @@ I proposed the original idea for the game and have worked on game design, balanc
           },
         ]}
       />
-      <hr />
+      <hr className="big-divider" />
       <PortfolioRow //City State
         reverse={true}
         imageLocation="src/Images/CityState/CityState.JPG"
@@ -132,7 +136,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       <PortfolioRow //To Hel and Back
         reverse={false}
         videoId="7FwxtrYJtMs"
-        altText="Screenshot of the game during play"
+        altText="Game Trailer"
         projectTags={["Game", "Group", "Unity", "Level Design"]}
         name="To Hel and Back (2021-2022)"
         subtitle="Norse mythology inspired hack and slash roguelike"
@@ -141,6 +145,57 @@ I proposed the original idea for the game and have worked on game design, balanc
         description="Hack and Slash about a fallen warrior attempting to battle out of Hel. Defeat the enemies in your way and upgrade your abilities.
 Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
         itchLink="https://acasez.itch.io/city-state"
+      />
+      <hr className="big-divider" />
+      <h1>Game Drafts and Cancelled projects</h1>
+      <p>
+        For things that aren't finished, but I still have a lot to say about
+      </p>
+      <PortfolioRow //City Builder Projects
+        reverse={true}
+        imageLocation="src/Images/CityState/Exploring.jpg"
+        altText="Screenshot of the game during play"
+        projectTags={["Game", "Solo", "Unity", "C#"]}
+        name="City Builder Projects (2022-2024)"
+        subtitle="Turn Based City Builders"
+        projectPageLink="./mariestadClimateGame.html"
+        //TOOD, update description
+        description="After building City State and getting positive feedback on it I wanted to try to make another city builder. I've tried two different concepts and while neither were great successes, they have both taught me a great deal about making games in Unity and making city builders as games. The project also shows more of my design philosophy and methods."
+      />
+      <hr />
+      <PortfolioRow //Land of the Arcane
+        reverse={false}
+        imageLocation="src/Images/LandOfTheArcane/EarlyCivicTree.jpg"
+        altText="Image of the civic tree draft"
+        projectTags={["Game Concept", "Solo"]}
+        name="Land of the Arcane (2019-2021)"
+        subtitle="Fantasy/Magitech 4X"
+        projectPageLink="./mariestadClimateGame.html"
+        //TOOD, update description
+        description="I really want to make a Fantasy 4X, but can't really make it on my own. Still it's one of my favorite genres and so I have worked on planning out tech trees, worldbuilding and some mechanics. Land of the Arcane is a fantasy 4X inspired by Stellaris, Civilization, Age of Wonders and many other games, and one of my dream projects to make. Still in the planning stages so far."
+      />
+      <hr className="big-divider" />
+      <h1>Small Projects</h1>
+      <p>Small or old projects. They lack their own subpage</p>
+      <PortfolioRow //Avalonia Garage
+        reverse={true}
+        imageLocation="src/Images/Avalonia Garage/ParkedVehicles2.JPG"
+        altText="Image of the program displaying 6 different vehicles parked"
+        projectTags={["Avalonia", "CSharp", "Solo"]}
+        name="Avalonia Garage (2026)"
+        subtitle="C# Project"
+        description="Currently I'm doing a fullstack programming course at Lexicon/LTU, where we made a garage application in C# as a task. Since I already knew C# I took some extra time to learn Avalonia UI framework and create a UI for it. Features different types of vehicles that can be parked and unparked, a UI with drop downs and filters. Boats and Airplanes take up 2 and 3 respectively spaces in the garage, and can therefore not be added if there isn't enough empty space in a row."
+      />
+      <PortfolioRow //Wizards Legacy
+        reverse={false}
+        imageLocation="src/Images/Wizard's Legacy/HalfwayToInventory.JPG"
+        altText="Screenshot of the game, displaying different produced potions"
+        projectTags={["Game", "CSharp", "Unity", "Solo"]}
+        name="Wizards Legacy (2025)"
+        subtitle="Turn based “Wizard Life Sim”"
+        description="Game about learning magic and building magical items/potions/artifice. Designed to be set in the world of Kastorix. Inspired by Thaumcraft and progression fantasy books.
+
+I have an alpha version, but the project is on pause while I develop other projects and figure out the exact game design I want for it. Made my first nested tooltips system as part of the development "
       />
     </>
   );

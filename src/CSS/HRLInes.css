@@ -2,8 +2,8 @@ hr {
     border: 0;
     height: 2px;
     background: linear-gradient(90deg, transparent, #0000ff, transparent);
-    margin-bottom: 1.2em;
-    margin-top: 2.2em;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
     width: 100%;
 }
 

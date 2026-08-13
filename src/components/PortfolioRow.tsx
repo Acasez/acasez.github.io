@@ -11,7 +11,7 @@ interface PortFolioProps {
   projectTags: string[];
   name: string;
   subtitle: string;
-  projectPageLink: string;
+  projectPageLink?: string;
   description: string;
   itchLink?: string;
   githubLink?: string;
