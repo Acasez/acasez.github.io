@@ -35,7 +35,7 @@ export default function App() {
       <hr />
       <PortfolioRow
         reverse={false}
-        imageLocation="src/Images/Amsvartne/Amsvartne.JPG"
+        imageLocation="src/Images/MariestadClimateGame/Gameboard in Play.jpg"
         altText="Image of the board game in play"
         projectTags={["Board Game", "Professional Project", "Group"]}
         name="Mariestad Climate Board Game (2022-2024)"
