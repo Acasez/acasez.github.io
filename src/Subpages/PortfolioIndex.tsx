@@ -3,7 +3,7 @@ import "../CSS/HRLines.css";
 export default function PortfolioIndex() {
   return (
     <>
-      <PortfolioRow
+      <PortfolioRow //Edvins Nested Tooltips
         reverse={false}
         imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
         altText="Example of tooltip"
@@ -17,7 +17,7 @@ export default function PortfolioIndex() {
         githubLink="https://github.com/Acasez/EdvinsLayeredTooltips"
       />
       <hr />
-      <PortfolioRow
+      <PortfolioRow //Amsvartne
         reverse={true}
         imageLocation="src/Images/Amsvartne/Amsvartne.JPG"
         altText="Image of Amsvartne"
@@ -29,7 +29,7 @@ export default function PortfolioIndex() {
         itchLink="https://corviangames.itch.io/amsvartne"
       />
       <hr />
-      <PortfolioRow
+      <PortfolioRow //Mariestad Climate Board Game
         reverse={false}
         imageLocation="src/Images/MariestadClimateGame/Gameboard in Play.jpg"
         altText="Image of the board game in play"
@@ -46,7 +46,7 @@ I proposed the original idea for the game and have worked on game design, balanc
           },
         ]}
       />
-      <PortfolioRow
+      <PortfolioRow //Mariestad Digital
         reverse={true}
         imageLocation="src/Images/MariestadDigitalAdaptation/MariestadDigital.JPG"
         altText="Image of the digital game"
@@ -58,12 +58,12 @@ I proposed the original idea for the game and have worked on game design, balanc
         itchLink="https://acasez.itch.io/mariestad-climate-game"
       />
       <hr />
-      <PortfolioRow
+      <PortfolioRow //Ion Games
         reverse={false}
         imageLocation="src/Images/IonGames/IonGameDesignLogo.png"
         altText="Logo of ION Game Design"
         projectTags={["Board Games", "Internship", "Group"]}
-        name="ION Internship"
+        name="ION Internship (2024)"
         subtitle="Internship at ION Games"
         projectPageLink="./mariestadClimateGame.html"
         description="During the summer of 2024 I had an internship at ION Games, a board game studio in Stockholm, working on playtesting and game design. I helped playtest a variety of games, including Dino Dynasty, Atlas, and Pax Viking Second Edition. I worked with the designers to give feedback on rules, balance and rulebooks. I also did most of the work on the solo rules of Pax Viking Second Edition. Since then I have been in contact with some of the designers and done occasional digital playtests."
@@ -73,6 +73,16 @@ I proposed the original idea for the game and have worked on game design, balanc
             label: "ION Game Design Home Page",
           },
         ]}
+      />
+      <PortfolioRow //High Frontier
+        reverse={true}
+        imageLocation="src/Images/HighFrontier/MoveBurn.jpg"
+        altText="Screenshot of the tutorial"
+        projectTags={["Board Games", "Internship", "Group", "Unity, C#"]}
+        name="High Frontier Tutorial (2025)"
+        subtitle="Tutorial for the digital adaptation of the board game"
+        projectPageLink="./mariestadClimateGame.html"
+        description="During the fall of 2025 I returned to Ion Games for 3 months to do another internship, this one focusing on the digital side. I worked on making a tutorial and UI improvements for the digital implementation of the board game High Frontier, as well as various bug fixes, performance improvements and debug tools. I worked with many talented interns, as well as game designers in the company."
       />
     </>
   );
