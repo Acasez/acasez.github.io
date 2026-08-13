@@ -57,6 +57,23 @@ I proposed the original idea for the game and have worked on game design, balanc
         description="I also made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of the physical board game and an inbuilt tutorial. It also has the option to be played in either English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge. I made a script that imports the card data using CSV files for quick playtesting and balancing, a method I use in my Unity projects today. "
         itchLink="https://acasez.itch.io/mariestad-climate-game"
       />
+      <hr />
+      <PortfolioRow
+        reverse={false}
+        imageLocation="src/Images/IonGames/IonGameDesignLogo.png"
+        altText="Logo of ION Game Design"
+        projectTags={["Board Games", "Internship", "Group"]}
+        name="ION Internship"
+        subtitle="Internship at ION Games"
+        projectPageLink="./mariestadClimateGame.html"
+        description="During the summer of 2024 I had an internship at ION Games, a board game studio in Stockholm, working on playtesting and game design. I helped playtest a variety of games, including Dino Dynasty, Atlas, and Pax Viking Second Edition. I worked with the designers to give feedback on rules, balance and rulebooks. I also did most of the work on the solo rules of Pax Viking Second Edition. Since then I have been in contact with some of the designers and done occasional digital playtests."
+        webpageLinks={[
+          {
+            url: "https://iongamedesign.com",
+            label: "ION Game Design Home Page",
+          },
+        ]}
+      />
     </>
   );
 }
