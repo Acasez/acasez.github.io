@@ -14,7 +14,7 @@ interface PortFolioProps {
   description: string;
   itchLink?: string;
   githubLink?: string;
-  webpageLink?: string;
+  webpageLinks?: { url: string; label: string }[];
 }
 
 function PortfolioRow({
@@ -28,17 +28,12 @@ function PortfolioRow({
   description,
   itchLink,
   githubLink,
-  webpageLink,
+  webpageLinks = [],
 }: PortFolioProps) {
-  const LINK_OPTIONS: {
-    url: string | undefined;
-    label: string;
-    class: string;
-  }[] = [
-    { url: itchLink, label: "Itch.io", class: "itch" },
-    { url: githubLink, label: "Github", class: "github" },
-    { url: webpageLink, label: "Webpage", class: "web" },
-  ];
+  const LINK_CONFIG = [
+    { label: "Itch.io", class: "itch" },
+    { label: "Github", class: "github" },
+  ] as const;
   return (
     <>
       <div
@@ -66,8 +61,12 @@ function PortfolioRow({
           </p>
           <p className="portfolio-description">{description}</p>
           <div className="project-links">
-            {LINK_OPTIONS.filter((link) => link.url).map(
-              ({ url, label, class: cls }) => (
+            {/* Fixed links (itch, github) */}
+            {LINK_CONFIG.map(({ label, class: cls }) => {
+              const url = label === "Itch.io" ? itchLink : githubLink;
+              if (!url) return null;
+
+              return (
                 <a
                   key={cls}
                   href={url}
@@ -77,8 +76,21 @@ function PortfolioRow({
                 >
                   {label}
                 </a>
-              ),
-            )}
+              );
+            })}
+
+            {/* Custom webpage links */}
+            {webpageLinks.map(({ url, label }) => (
+              <a
+                key={`${url}-${label}`} // Unique key combination
+                href={url}
+                className="project-link web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {label}
+              </a>
+            ))}
           </div>
           <p />
         </div>
