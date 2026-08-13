@@ -1,6 +1,7 @@
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
+import { memo } from "react";
 
 interface PortFolioProps {
   reverse: boolean;
@@ -11,11 +12,12 @@ interface PortFolioProps {
   subtitle: string;
   projectPageLink: string;
   description: string;
-  itchLink: string;
-  githubLink: string;
-  webpageLink: string;
+  itchLink?: string;
+  githubLink?: string;
+  webpageLink?: string;
 }
-export default function PortfolioRow({
+
+function PortfolioRow({
   reverse,
   imageLocation,
   altText,
@@ -28,6 +30,15 @@ export default function PortfolioRow({
   githubLink,
   webpageLink,
 }: PortFolioProps) {
+  const LINK_OPTIONS: {
+    url: string | undefined;
+    label: string;
+    class: string;
+  }[] = [
+    { url: itchLink, label: "Itch.io", class: "itch" },
+    { url: githubLink, label: "Github", class: "github" },
+    { url: webpageLink, label: "Webpage", class: "web" },
+  ];
   return (
     <>
       <div
@@ -53,18 +64,10 @@ export default function PortfolioRow({
           <p className="portfolio-subtitle">
             <strong>{subtitle}</strong>
           </p>
-          <p className="portfolio-description">
-            {description} <br />
-            <br />
-          </p>
+          <p className="portfolio-description">{description}</p>
           <div className="project-links">
-            {[
-              { url: itchLink, label: "Itch.io", class: "itch" },
-              { url: githubLink, label: "Github", class: "github" },
-              { url: webpageLink, label: "Webpage", class: "webpage" },
-            ]
-              .filter((link) => link.url)
-              .map(({ url, label, class: cls }) => (
+            {LINK_OPTIONS.filter((link) => link.url).map(
+              ({ url, label, class: cls }) => (
                 <a
                   key={cls}
                   href={url}
@@ -74,7 +77,8 @@ export default function PortfolioRow({
                 >
                   {label}
                 </a>
-              ))}
+              ),
+            )}
           </div>
           <p />
         </div>
@@ -82,3 +86,5 @@ export default function PortfolioRow({
     </>
   );
 }
+
+export default memo(PortfolioRow);
