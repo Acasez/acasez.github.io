@@ -84,6 +84,29 @@ I proposed the original idea for the game and have worked on game design, balanc
         projectPageLink="./mariestadClimateGame.html"
         description="During the fall of 2025 I returned to Ion Games for 3 months to do another internship, this one focusing on the digital side. I worked on making a tutorial and UI improvements for the digital implementation of the board game High Frontier, as well as various bug fixes, performance improvements and debug tools. I worked with many talented interns, as well as game designers in the company."
       />
+      <hr />
+      <PortfolioRow //Kastorix
+        reverse={false}
+        imageLocation="src/Images/Kastorix/Maps/Kastorix.jpg"
+        altText="Kastorix World Map"
+        projectTags={["TTRPG", "Solo", "Website", "Javascript", "Python"]}
+        name="Kastorix (2023-)"
+        subtitle="Fantasy TTRPG"
+        projectPageLink="./mariestadClimateGame.html"
+        description="Kastorix is a worldbuilding project and TTRPG system I've been working on for a while. Fantasy world set on a moon orbiting a gas giant, featuring an industrial not-quite roman republic led by dragons fighting off eldritch monsters. It also has airships as the main method of travel, magic that's both a science and art form, humans as a minority species and lot's of lovely magitech.
+
+        I’m currently playtesting the system with some friends and developing a webpage for the project (see link below) There you can for example find a dynamic character sheet in the style of Pathbuilder for Pathfinder "
+        webpageLinks={[
+          {
+            url: "https://acasez.github.io/Kastorix/RPG%20Overview.html",
+            label: "TTRPG Home Page",
+          },
+          {
+            url: "https://acasez.github.io/Kastorix/InteractivePages/CharactherSheet.html",
+            label: "Character Sheet",
+          },
+        ]}
+      />
     </>
   );
 }
