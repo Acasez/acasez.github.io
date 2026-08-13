@@ -89,7 +89,14 @@ I proposed the original idea for the game and have worked on game design, balanc
         reverse={false}
         imageLocation="src/Images/Kastorix/Maps/Kastorix.jpg"
         altText="Kastorix World Map"
-        projectTags={["TTRPG", "Solo", "Website", "Javascript", "Python"]}
+        projectTags={[
+          "TTRPG",
+          "Solo",
+          "Website",
+          "Javascript",
+          "Python",
+          "SQLite",
+        ]}
         name="Kastorix (2023-)"
         subtitle="Fantasy TTRPG"
         projectPageLink="./mariestadClimateGame.html"
@@ -106,6 +113,32 @@ I proposed the original idea for the game and have worked on game design, balanc
             label: "Character Sheet",
           },
         ]}
+      />
+      <hr />
+      <PortfolioRow //City State
+        reverse={true}
+        imageLocation="src/Images/CityState/CityState.JPG"
+        altText="Screenshot of the game during play"
+        projectTags={["Game", "Solo", "Unity", "C#"]}
+        name="City State (2022)"
+        subtitle="Turn Based City Builder"
+        projectPageLink="./mariestadClimateGame.html"
+        //TOOD, update description
+        description="City State was made for my Bachelor's Thesis about structure in Tech Trees. It's a fairly short city building game that was made to see how different tech tree structures of tech trees affect the gameplay. It was however still designed to be fun and playable as a game though and I worked on it afterwards to add some juice. "
+        itchLink="https://acasez.itch.io/city-state"
+      />
+      <PortfolioRow //To Hel and Back
+        reverse={false}
+        videoId="7FwxtrYJtMs"
+        altText="Screenshot of the game during play"
+        projectTags={["Game", "Group", "Unity", "Level Design"]}
+        name="To Hel and Back (2021-2022)"
+        subtitle="Norse mythology inspired hack and slash roguelike"
+        projectPageLink="./mariestadClimateGame.html"
+        //TOOD, update description
+        description="Hack and Slash about a fallen warrior attempting to battle out of Hel. Defeat the enemies in your way and upgrade your abilities.
+Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
+        itchLink="https://acasez.itch.io/city-state"
       />
     </>
   );

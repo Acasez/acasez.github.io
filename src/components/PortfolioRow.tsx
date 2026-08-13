@@ -5,7 +5,8 @@ import { memo } from "react";
 
 interface PortFolioProps {
   reverse: boolean;
-  imageLocation: string;
+  imageLocation?: string;
+  videoId?: string;
   altText: string;
   projectTags: string[];
   name: string;
@@ -20,6 +21,7 @@ interface PortFolioProps {
 function PortfolioRow({
   reverse,
   imageLocation,
+  videoId,
   altText,
   projectTags,
   name,
@@ -39,8 +41,27 @@ function PortfolioRow({
       <div
         className={reverse === true ? "portfolio-row reverse" : "portfolio-row"}
       >
-        <div className="portfolio-image">
-          <img src={imageLocation} alt={altText} />
+        <div className="portfolio-media">
+          <div className="portfolio-image">
+            {videoId ? (
+              // YouTube embed
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={altText}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="portfolio-video"
+              />
+            ) : (
+              // Static image fallback
+              <img
+                src={imageLocation}
+                alt={altText}
+                className="portfolio-image"
+              />
+            )}
+          </div>
+          {/* Tags stay in same spot */}
           <div className="project-tags">
             {projectTags.map((tag) => (
               <span
