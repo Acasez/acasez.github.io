@@ -1,0 +1,72 @@
+/* Project Links */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    color: white !important;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-link.itch {
+    background: #fa5c5c;
+}
+
+.project-link.itch:hover {
+    background: #e04848;
+}
+
+.project-link.github {
+    background: #1f2328;
+}
+
+.project-link.github:hover {
+    background: #3c444e;
+}
+
+.project-link.web {
+    background: #4285f4;
+}
+
+.project-link.web:hover {
+    background: #3367d6;
+}
+
+.project-link.mail {
+    background: #fb55ea;
+}
+
+.project-link.mail:hover {
+    background: #ff7cd6;
+}
+
+.project-link.youtube {
+    background: #f21c39;
+}
+
+.project-link.youtube:hover {
+    background: #c0000a;
+}
+
+.project-link.linkedin {
+    background: #0a66c2;
+}
+
+.project-link.linkedin:hover {
+    background: #5885e7;
+}

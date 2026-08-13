@@ -1,0 +1,99 @@
+/* Tags - positioned below image */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Tag Styles */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    background: #666;
+    border: 1px solid #555;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Tag Color Variations */
+.tag.unity {
+    background: #0078d7;
+    border-color: #005a9e;
+}
+
+.tag.unreal {
+    background: #333;
+    border-color: #222;
+}
+
+.tag.csharp {
+    background: #68217a;
+    border-color: #4a1554;
+}
+
+.tag.javascript {
+    background: #f0db4f;
+    color: #000;
+    border-color: #d4b83d;
+}
+
+.tag.python {
+    background: #3572A5;
+    border-color: #285a82;
+}
+
+.tag.asset {
+    background: #008060;
+    border-color: #005a40;
+}
+
+.tag.solo {
+    background: #c45e1b;
+    border-color: #934513;
+}
+
+.tag.group {
+    background: #8844aa;
+    border-color: #663380;
+}
+
+.tag.internship {
+    background: #555;
+    border-color: #444;
+}
+
+.tag.game {
+    background: #4682b4;
+    border-color: #35638f;
+}
+
+.tag.board {
+    background: #179f0a;
+    border-color: #69e83b;
+}
+
+.tag.ttrpg {
+    background: #ba7309;
+    border-color: #d7e83b;
+}
+
+.tag.job {
+    background: #3eb6bf;
+    border-color: #65ffff;
+}
+
+.tag.website {
+    background: #4285f4;
+    border-color: #3367d6;
+}
