@@ -1,0 +1,54 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    gap: 0.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro-container {
+        display: block;
+        font-size: 1em;
+    }
+}
+
+.intro-box {
+    background-color: lightblue;
+}
+
+.intro-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.intro-text {
+    color: black;
+    font-size: 1.1em;
+    max-width: 1400px;
+    margin-left: 1em;
+}
+
+.intro-text a:hover {
+    color: blue;
+}
+
+.intro-text p {
+    margin-bottom: 0.7em;
+    /* Less space between paragraphs */
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.intro-text a {
+    color: black;
+    text-decoration: underline;
+}

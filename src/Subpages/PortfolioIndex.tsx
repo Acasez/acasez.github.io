@@ -1,8 +1,10 @@
+import HeroSection from "../components/HeroSection";
 import PortfolioRow from "../components/PortfolioRow";
 import "../CSS/HRLines.css";
 export default function PortfolioIndex() {
   return (
     <>
+      <HeroSection />
       <PortfolioRow //Edvins Nested Tooltips
         reverse={false}
         imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
