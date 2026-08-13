@@ -7,6 +7,7 @@ export default function App() {
       <PortfolioRow
         reverse={false}
         imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
+        altText="Example of tooltip"
         projectTags={["Unity", "C#", "Asset", "Solo"]}
         name="Edvin's Nested Tooltips (2026)"
         subtitle="Free Unity Asset"
@@ -21,6 +22,7 @@ export default function App() {
       <PortfolioRow
         reverse={true}
         imageLocation="src/Images/Amsvartne/Amsvartne.JPG"
+        altText="Image of Amsvartne"
         projectTags={["Unity", "C#", "Game", "Group"]}
         name="Amsvartne (2045-2025)"
         subtitle="Atmospheric Puzzle Platformer"

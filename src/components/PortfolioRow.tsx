@@ -5,6 +5,7 @@ import "../CSS/ProjectTags.css";
 interface PortFolioProps {
   reverse: boolean;
   imageLocation: string;
+  altText: string;
   projectTags: string[];
   name: string;
   subtitle: string;
@@ -17,6 +18,7 @@ interface PortFolioProps {
 export default function PortfolioRow({
   reverse,
   imageLocation,
+  altText,
   projectTags,
   name,
   subtitle,
@@ -32,7 +34,7 @@ export default function PortfolioRow({
         className={reverse === true ? "portfolio-row reverse" : "portfolio-row"}
       >
         <div className="portfolio-image">
-          <img src={imageLocation} alt="Example of the Tooltips" />
+          <img src={imageLocation} alt={altText} />
           <div className="project-tags">
             {projectTags.map((tag) => (
               <span
