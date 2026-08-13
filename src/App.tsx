@@ -1,4 +1,5 @@
 import PortfolioRow from "./components/PortfolioRow";
+import "./CSS/HRLines.css";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         githubLink="https://github.com/Acasez/EdvinsLayeredTooltips"
         webpageLink=""
       />
+      <hr />
       <PortfolioRow
         reverse={true}
         imageLocation="src/Images/Amsvartne/Amsvartne.JPG"

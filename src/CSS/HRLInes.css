@@ -1,0 +1,13 @@
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0000ff, transparent);
+    margin-bottom: 1.2em;
+    margin-top: 2.2em;
+    width: 100%;
+}
+
+hr.big-divider {
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #ff0000, transparent);
+}
