@@ -1,4 +1,5 @@
 import "../CSS/headerStyle.css";
+import { Link } from "react-router-dom";
 
 export default function MainHeader() {
   return (
@@ -6,12 +7,12 @@ export default function MainHeader() {
       <nav className="topnav" role="navigation">
         <ul>
           <li>
-            <a href="index.html">
+            <Link to="/">
               <u>Edvin Skogsholm Sanne</u>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="edvinsNestedTooltips.html">Edvin's Nested Tooltips</a>
+            <Link to="/NestedTooltips">Edvin's Nested Tooltips</Link>
           </li>
           <li>
             <a href="amsvartne.html">Amsvartne</a>
