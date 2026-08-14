@@ -185,6 +185,7 @@ Started as a school project with 10 other students, I worked with game mechanics
         name="Avalonia Garage (2026)"
         subtitle="C# Project"
         description="Currently I'm doing a fullstack programming course at Lexicon/LTU, where we made a garage application in C# as a task. Since I already knew C# I took some extra time to learn Avalonia UI framework and create a UI for it. Features different types of vehicles that can be parked and unparked, a UI with drop downs and filters. Boats and Airplanes take up 2 and 3 respectively spaces in the garage, and can therefore not be added if there isn't enough empty space in a row."
+        githubLink="https://github.com/Acasez/Garage-With-Avalonia-UI"
       />
       <PortfolioRow //Wizards Legacy
         reverse={false}
@@ -192,10 +193,41 @@ Started as a school project with 10 other students, I worked with game mechanics
         altText="Screenshot of the game, displaying different produced potions"
         projectTags={["Game", "CSharp", "Unity", "Solo"]}
         name="Wizards Legacy (2025)"
-        subtitle="Turn based “Wizard Life Sim”"
+        subtitle="Turn based “Wizard Life Sim"
         description="Game about learning magic and building magical items/potions/artifice. Designed to be set in the world of Kastorix. Inspired by Thaumcraft and progression fantasy books.
 
 I have an alpha version, but the project is on pause while I develop other projects and figure out the exact game design I want for it. Made my first nested tooltips system as part of the development "
+      />
+      <PortfolioRow //Dungeon of Dice
+        reverse={true}
+        imageLocation="src/Images/others/Skulltap.JPG"
+        altText="Screenshot of the game, displaying the combat menu against a spider monster"
+        projectTags={["Game", "Unreal", "Game"]}
+        name="Dungeon of Dice (2024)"
+        subtitle="Dice-based tactical rouge-like"
+        description="Dice based turn based tactical rouge-like about exploring an overgrown dungeon. It has a working turn-based dice-centric combat system. Prototype can be found on itch
+
+It was made with the other team members at Corvian Games (Now Tiny Creature Games). I worked on combat mechanics, and coded in blueprints. It was a nice refresher in working with blueprints, and I would like to do more projects in Unreal at some point. "
+      />
+      <PortfolioRow //Ruins of Magic
+        reverse={false}
+        imageLocation="src/Images/others/RuinsOFMagicGif.gif"
+        altText="Gif of the game, showing the player character using a magical rift to power a crystal and burning some crates"
+        projectTags={["Game", "CSharp", "Unity", "Solo"]}
+        name="Ruins of Magic (2022)"
+        subtitle="Fantasy Puzzle Platformer"
+        description="Puzzle Platformer about exploring magical caves. Use rifts to power crystals, solve puzzles and get around. Made as a project to help me learn to code in Unity. "
+        itchLink="https://acasez.itch.io/ruins-of-magic"
+      />
+      <PortfolioRow //Abyss Tactics
+        reverse={true}
+        imageLocation="src/Images/others/Abyss Final 2.JPG"
+        altText="Screenshot of the game, showing a battle where a gunner deciding who to shoot"
+        projectTags={["Game", "Unreal", "Game"]}
+        name="Abyss Tactics (2018-2019)"
+        subtitle="Fantasy Napoleonic Turn Based Tactics"
+        description="Local multiplayer turn based tactics game, inspired by Xcom with a Magitech Napoleonic setting. The first larger group project I was part of, I worked on game design, level design and programming using Unreal Blueprints. It was a good learning experience in working with a larger group and project management. It won Best Tech at Klara Game Awards in 2019 "
+        itchLink="https://acasez.itch.io/abyss"
       />
     </>
   );
