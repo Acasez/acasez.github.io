@@ -10,7 +10,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<PortfolioIndex />} />
           <Route
-            path="/NestedTooltips"
+            path="/EdvinsNestedTooltips"
             element={<div>Edvin's Nested tooltips</div>}
           />
         </Routes>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
@@ -74,9 +75,13 @@ function PortfolioRow({
           </div>
         </div>
         <div className="portfolio-text">
-          <a className="portfolio-title" href={projectPageLink}>
-            {name}
-          </a>
+          {projectPageLink ? (
+            <Link className="portfolio-title" to={projectPageLink}>
+              {name}
+            </Link>
+          ) : (
+            <h1 className="portfolio-title">{name}</h1>
+          )}
           <p className="portfolio-subtitle">
             <strong>{subtitle}</strong>
           </p>

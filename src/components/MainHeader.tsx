@@ -12,7 +12,7 @@ export default function MainHeader() {
             </Link>
           </li>
           <li>
-            <Link to="/NestedTooltips">Edvin's Nested Tooltips</Link>
+            <Link to="/EdvinsNestedTooltips">Edvin's Nested Tooltips</Link>
           </li>
           <li>
             <a href="amsvartne.html">Amsvartne</a>
