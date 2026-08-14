@@ -9,9 +9,9 @@ interface PortFolioProps {
   imageLocation?: string;
   videoId?: string;
   altText: string;
-  projectTags: string[];
-  name: string;
-  subtitle: string;
+  projectTags?: string[];
+  name?: string;
+  subtitle?: string;
   projectPageLink?: string;
   description: string;
   itchLink?: string;
@@ -62,17 +62,20 @@ function PortfolioRow({
               />
             )}
           </div>
-          {/* Tags stay in same spot */}
-          <div className="project-tags">
-            {projectTags.map((tag) => (
-              <span
-                key={tag}
-                className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          {projectTags ? (
+            <div className="project-tags">
+              {projectTags.map((tag) => (
+                <span
+                  key={tag}
+                  className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         <div className="portfolio-text">
           {projectPageLink ? (
