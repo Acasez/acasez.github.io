@@ -121,7 +121,6 @@ I proposed the original idea for the game and have worked on game design, balanc
           },
         ]}
       />
-      <hr className="big-divider" />
       <PortfolioRow //City State
         reverse={true}
         imageLocation="src/Images/CityState/CityState.JPG"
@@ -134,6 +133,7 @@ I proposed the original idea for the game and have worked on game design, balanc
         description="City State was made for my Bachelor's Thesis about structure in Tech Trees. It's a fairly short city building game that was made to see how different tech tree structures of tech trees affect the gameplay. It was however still designed to be fun and playable as a game though and I worked on it afterwards to add some juice. "
         itchLink="https://acasez.itch.io/city-state"
       />
+      <hr />
       <PortfolioRow //To Hel and Back
         reverse={false}
         videoId="7FwxtrYJtMs"
@@ -147,11 +147,10 @@ I proposed the original idea for the game and have worked on game design, balanc
 Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
         itchLink="https://acasez.itch.io/city-state"
       />
-      <hr className="big-divider" />
-      <h1>Game Drafts and Cancelled projects</h1>
-      <p>
-        For things that aren't finished, but I still have a lot to say about
-      </p>
+      <TitleSection
+        title="Game Drafts and Cancelled projects"
+        subtitle="For things that aren't finished, but I still have a lot to say about"
+      />
       <PortfolioRow //City Builder Projects
         reverse={true}
         imageLocation="src/Images/CityState/Exploring.jpg"
@@ -175,9 +174,10 @@ Started as a school project with 10 other students, I worked with game mechanics
         //TOOD, update description
         description="I really want to make a Fantasy 4X, but can't really make it on my own. Still it's one of my favorite genres and so I have worked on planning out tech trees, worldbuilding and some mechanics. Land of the Arcane is a fantasy 4X inspired by Stellaris, Civilization, Age of Wonders and many other games, and one of my dream projects to make. Still in the planning stages so far."
       />
-      <hr className="big-divider" />
-      <h1>Small Projects</h1>
-      <p>Small or old projects. They lack their own subpage</p>
+      <TitleSection
+        title="Small Projects"
+        subtitle="Small or old projects. They lack their own subpage"
+      />
       <PortfolioRow //Avalonia Garage
         reverse={true}
         imageLocation="src/Images/Avalonia Garage/ParkedVehicles2.JPG"

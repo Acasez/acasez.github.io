@@ -1,3 +1,4 @@
+import "../CSS/TitleSection.css";
 interface TitleSectionProps {
   title: string;
   subtitle: string;
@@ -6,7 +7,7 @@ interface TitleSectionProps {
 export default function TitleSection({ title, subtitle }: TitleSectionProps) {
   return (
     <>
-      <div>
+      <div className="TitleSection">
         <h1>{title} </h1>
         <h2>{subtitle} </h2>
       </div>

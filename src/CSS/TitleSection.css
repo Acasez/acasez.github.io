@@ -1,0 +1,16 @@
+.TitleSection {
+    position: relative;
+    background-color: whitesmoke;
+    margin-bottom: 0.5rem;
+}
+
+.TitleSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    /* Thickness of the gradient border */
+    background: linear-gradient(90deg, transparent, #ff0000, transparent);
+}
