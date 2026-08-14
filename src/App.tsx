@@ -1,6 +1,7 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainHeader from "./components/MainHeader";
 import PortfolioIndex from "./Subpages/PortfolioIndex";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NestedTooltips from "./Subpages/NestedTooltips";
 
 export default function App() {
   return (
@@ -9,10 +10,7 @@ export default function App() {
         <MainHeader />
         <Routes>
           <Route path="/" element={<PortfolioIndex />} />
-          <Route
-            path="/EdvinsNestedTooltips"
-            element={<div>Edvin's Nested tooltips</div>}
-          />
+          <Route path="/EdvinsNestedTooltips" element={<NestedTooltips />} />
         </Routes>
       </BrowserRouter>
     </>

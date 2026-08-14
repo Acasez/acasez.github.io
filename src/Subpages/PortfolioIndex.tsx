@@ -1,14 +1,15 @@
 import HeroSection from "../components/HeroSection";
 import PortfolioRow from "../components/PortfolioRow";
+import TitleSection from "../components/TitleSection";
 import "../CSS/HRLines.css";
 export default function PortfolioIndex() {
   return (
     <>
       <HeroSection />
-      <h1>Main Projects</h1>
-      <p>
-        Some of the projects I've done. Clicking on the titles go to their link
-      </p>
+      <TitleSection
+        title="Main Projects"
+        subtitle="Some of the projects I've done. Clicking on the titles go to their link"
+      />
       <PortfolioRow //Edvins Nested Tooltips
         reverse={false}
         imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
