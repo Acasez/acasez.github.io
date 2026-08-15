@@ -3,30 +3,33 @@ import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
 
 interface PortFolioProps {
-  imageLocation?: string;
-  altText: string;
-  listHeader: string;
-  listContent: string[];
+  imageLocationOne: string;
+  altTextOne: string;
+  imageLocationTwo: string;
+  altTextTwo: string;
 }
 
 export default function PortfolioRow({
-  imageLocation,
-  altText,
-  listHeader,
-  listContent,
+  imageLocationOne,
+  altTextOne,
+  imageLocationTwo,
+  altTextTwo,
 }: PortFolioProps) {
   return (
     <>
       <div className="portfolio-image">
-        <img src={imageLocation} alt={altText} className="portfolio-image" />
+        <img
+          src={imageLocationOne}
+          alt={altTextOne}
+          className="portfolio-image"
+        />
       </div>
-      <div className="portfolio-description">
-        <h3>{listHeader}:</h3>
-        <ul>
-          {listContent.map((listEntry) => (
-            <li>{listEntry}</li>
-          ))}
-        </ul>
+      <div className="portfolio-image">
+        <img
+          src={imageLocationTwo}
+          alt={altTextTwo}
+          className="portfolio-image"
+        />
       </div>
     </>
   );
