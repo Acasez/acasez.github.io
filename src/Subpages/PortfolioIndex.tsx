@@ -34,7 +34,7 @@ export default function PortfolioIndex() {
           projectTags={["Unity", "C#", "Game", "Group"]}
           name="Amsvartne (2045-2025)"
           subtitle="Atmospheric Puzzle Platformer"
-          projectPageLink="./amsvartne.html"
+          projectPageLink="Amsvartne"
           description="Amsvartne is a 2D puzzle platformer I made as part of the start up group Corvian Games (now Tiny Creature Games). It focuses on narrative exploration and puzzle solving using light to navigate levels and solve puzzles. It's set in a mystical mine in a fantasy dieselpunk setting. I worked on the game and level design, as well as programming multiple game systems."
           itchLink="https://corviangames.itch.io/amsvartne"
         />

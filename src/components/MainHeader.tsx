@@ -15,7 +15,7 @@ export default function MainHeader() {
             <Link to="/EdvinsNestedTooltips">Edvin's Nested Tooltips</Link>
           </li>
           <li>
-            <a href="amsvartne.html">Amsvartne</a>
+            <Link to="Amsvartne">Amsvartne</Link>
           </li>
           <li>
             <a href="#">Mariestad Board Game ▼</a>

@@ -4,6 +4,7 @@ import MainHeader from "./components/MainHeader";
 
 const PortfolioIndex = lazy(() => import("./Subpages/PortfolioIndex"));
 const NestedTooltips = lazy(() => import("./Subpages/NestedTooltips"));
+const Amsvartne = lazy(() => import("./Subpages/Amsvartne"));
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<PortfolioIndex />} />
           <Route path="/EdvinsNestedTooltips" element={<NestedTooltips />} />
+          <Route path="/Amsvartne" element={<Amsvartne />} />
         </Routes>
       </Suspense>
     </>
