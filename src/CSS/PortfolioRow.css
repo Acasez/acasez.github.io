@@ -115,6 +115,9 @@ a.portfolio-title:hover::after {
 .portfolio-description {
     margin: 1em;
     font-size: 24px;
+    white-space: pre-wrap;
+    /* Preserves newlines AND wraps text */
+    word-wrap: break-word;
 }
 
 .portfolio-description h3 {
