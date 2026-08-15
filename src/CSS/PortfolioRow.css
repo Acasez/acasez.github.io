@@ -11,12 +11,6 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-row.doubleImage .portfolio-image {
-    flex: 1 1 45%;
-    max-width: 48%;
-    text-align: center;
-}
-
 .portfolio-row.reverse {
     flex-direction: row-reverse;
 }
@@ -28,6 +22,10 @@
 
 .portfolio-row .portfolio-image {
     margin-right: 1em;
+}
+
+.doubleImage {
+    width: 50%;
 }
 
 /* Images */
