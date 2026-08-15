@@ -50,6 +50,15 @@ export default function EdvinsNestedTooltips() {
           imageCaptionTwo="Example of many tooltips for different keywords in the tutorial for High Frontier 4 All"
         />
       </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioRow //Edvins Nested Tooltips
+          name="Tooltips"
+          imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
+          altText="Screenshot of a chain of nested tooltips in High Frontier 4 All"
+          description="A tooltip is simply a message that appears in a text box when you hover over a UI element. They are common in video games, but also on websites and in software. I have some tooltips on the Kastorix Character Sheet page. Doing tooltips in Unity isn’t particularly hard, there are many youtube tutorials on the subject and and you can find free assets for tooltips on the Unity Store
+To make a tooltip you need a way to check if the user is hovering over a specific UI element, a way to get the right tooltip text on an object and show it in the right place There are some things to keep in mind here, enabling raycasting on the UI element, checking canvas layers so nothing obscures the UI or the tooltip and deciding how you want to show the tooltip text."
+        />
+      </PortfolioRowFrame>
     </>
   );
 }
