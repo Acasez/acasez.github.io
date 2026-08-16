@@ -1,3 +1,4 @@
+import PortfolioCodeblock from "../components/PortfolioCodeblock";
 import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
 import PortfolioListRow from "../components/PortfolioListRow";
 import PortfolioRow from "../components/PortfolioOverviewRow";
@@ -12,7 +13,7 @@ export default function EdvinsNestedTooltips() {
         subtitle="Unity Asset to easily add nested tooltips based on a keyword system"
       />
       <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Edvins Nested Tooltips
+        <PortfolioRow //Overview
           imageLocation="src/Images/EdvinsLayeredTooltips/CardTooltip.JPG"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
           description="Edvin's Nested Tooltips is exactly what it sounds like, it's a Unity Asset that helps easily add nested tooltips. Perfect for strategy games, rpg's or just any game with many mechanics and subsystems. Originally I was planning to put it up for purchase on the Unity Asset Store, but that proved a real hassle so I decided to instead make it available for free on itch.io (though you can still donate on itch if you really like it).
@@ -22,7 +23,7 @@ export default function EdvinsNestedTooltips() {
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioListRow //Edvins Nested Tooltips
+        <PortfolioListRow //Features List
           imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsExample.JPG"
           altText="Example of nested tooltips"
           listHeader="Features"
@@ -41,7 +42,7 @@ export default function EdvinsNestedTooltips() {
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Edvins Nested Tooltips
+        <PortfolioDoubleImageRow //Double Image
           imageLocationOne="src/Images/EdvinsLayeredTooltips/Chain of Tooltips.JPG"
           altTextOne="Example of nested tooltips"
           imageCaptionOne="Example of the nested tooltips in the Mariestad Climate Game"
@@ -51,7 +52,7 @@ export default function EdvinsNestedTooltips() {
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioRow //Edvins Nested Tooltips
+        <PortfolioRow //Tooltips
           name="Tooltips"
           imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
           altText="Screenshot of a chain of nested tooltips in High Frontier 4 All"
@@ -61,8 +62,8 @@ export default function EdvinsNestedTooltips() {
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Edvins Nested Tooltips
-          name="Tooltips"
+        <PortfolioRow //Implementation
+          name="Implementation"
           imageLocation="src/Images/EdvinsLayeredTooltips/TooltipManager.JPG"
           altText="Screenshot of the tooltip manager in the inspector view in Unity"
           description="The core of my system is the TooltipManager on its own prefab that can be added to any scene. In the Awake function it creates a number of tooltip window objects from a prefab. To give a UI element a tooltip you simply give it TooltipTrigger script (or put a TooltipArea prefab on top).
@@ -73,7 +74,7 @@ export default function EdvinsNestedTooltips() {
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioRow //Edvins Nested Tooltips
+        <PortfolioRow //Keywords
           name="Keywords"
           imageLocation="src/Images/EdvinsLayeredTooltips/IconImage.JPG"
           altText="Screenshot of a nested tooltip displaying the Tag keyword in the Mariestad Climate Game"
@@ -85,7 +86,7 @@ This is what's called nested keywords, and is extremely useful in complex games 
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Edvins Nested Tooltips
+        <PortfolioDoubleImageRow //Double Image
           imageLocationOne="src/Images/EdvinsLayeredTooltips/KeywordScriptableObject.JPG"
           altTextOne="Screenshot of a the a keyword Scriptable Object in the unity inspector"
           imageCaptionOne="Example of a keyword Scriptable Object"
@@ -94,8 +95,49 @@ This is what's called nested keywords, and is extremely useful in complex games 
           imageCaptionTwo="The layout of the scene objects in the example scene with a tooltip open"
         />
       </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioCodeblock //Double Image
+          code="private Vector2 GetPositionInsideCanvas(RectTransform tooltipRect, Vector2 screenPosition)
+          {
+              // Convert screen position to local position in canvas
+              RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                  canvasRectTransform,
+                  screenPosition,
+                  null, // Use null for overlay canvas, or specify your camera if using Screen Space - Camera
+                  out Vector2 localPosition
+              );
+
+              // Calculate tooltip size
+              float tooltipWidth = tooltipRect.rect.width;
+              float tooltipHeight = tooltipRect.rect.height;
+
+              // Calculate the desired position (adjust for tooltip pivot and offset)
+              float tipDownDistance = (tooltipHeight * tooltipSizeDownwardFactor) + tipNudge;
+              //When playing on mobile you will generally want the tooltips to appear above where you hover so your finger doesn't obscure it
+              if (mobile) tipDownDistance *= -1f; 
+              Vector2 desiredPosition = new(localPosition.x, localPosition.y - tipDownDistance);
+
+              // Get canvas bounds (already in local space)
+              Vector2 canvasMin = canvasRectTransform.rect.min;
+              Vector2 canvasMax = canvasRectTransform.rect.max;
+
+              // Calculate min/max allowed positions (accounting for tooltip size and pivot)
+              float minX = canvasMin.x + edgeOfScreenMargin + tooltipWidth * tooltipRect.pivot.x;
+              float maxX = canvasMax.x - edgeOfScreenMargin - tooltipWidth * (1 - tooltipRect.pivot.x);
+              float minY = canvasMin.y + edgeOfScreenMargin + tooltipHeight * tooltipRect.pivot.y;
+              float maxY = canvasMax.y - edgeOfScreenMargin - tooltipHeight * (1 - tooltipRect.pivot.y);
+
+              // Clamp
+              float clampedX = Mathf.Clamp(desiredPosition.x, minX, maxX);
+              float clampedY = Mathf.Clamp(desiredPosition.y, minY, maxY);
+
+              return new Vector2(clampedX, clampedY);
+          }"
+          language="c#"
+        />
+      </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Edvins Nested Tooltips
+        <PortfolioRow //Development Process
           name="Development Process"
           imageLocation="src/Images/EdvinsLayeredTooltips/TopBarIncomeTextChained.JPG"
           altText="Screenshot of a nested tooltip displaying the Tag keyword in the Mariestad Climate Game"

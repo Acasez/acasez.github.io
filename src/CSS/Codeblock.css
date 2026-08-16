@@ -1,0 +1,66 @@
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #2d2d2d;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+.toggle-button {
+    background: #6d4aff;
+    /* Your purple brand color */
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.toggle-button:hover {
+    background: #7f66ff;
+}
+
+.toggle-button:active {
+    transform: scale(0.95);
+}
+
+.code-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.code-container.expanded {
+    max-height: 80vh;
+    /* Limit height to prevent huge blocks */
+    opacity: 1;
+}
+
+.collapsed-preview {
+    padding: 1rem;
+    color: #aaa;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    border-top: 1px dashed #444;
+}
+
+.collapsed-preview pre {
+    margin: 0 0 0.5rem 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.more-info {
+    margin: 0;
+    font-size: 11px;
+    color: #6d4aff;
+    font-style: italic;
+}
