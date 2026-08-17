@@ -28,6 +28,10 @@ export const routes = [
     component: lazy(() => import("../Subpages/HighFrontierTutorial")),
   },
   {
+    path: "/CityState",
+    component: lazy(() => import("../Subpages/CityState")),
+  },
+  {
     path: "/LandOfTheArcane",
     component: lazy(() => import("../Subpages/LandOfTheArcane")),
   },
