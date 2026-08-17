@@ -1,17 +1,8 @@
+// App.jsx
 import { Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import { routes } from "./Routes/config.ts";
 import MainHeader from "./components/MainHeader";
-
-const PortfolioIndex = lazy(() => import("./Subpages/PortfolioIndex"));
-const NestedTooltips = lazy(() => import("./Subpages/NestedTooltips"));
-const Amsvartne = lazy(() => import("./Subpages/Amsvartne"));
-const MariestadClimateGame = lazy(
-  () => import("./Subpages/MariestadClimateGame"),
-);
-const MariestadDigitalAdaptation = lazy(
-  () => import("./Subpages/MariestadDigitalAdaptation"),
-);
-const IonInternship = lazy(() => import("./Subpages/IonInternship"));
 
 export default function App() {
   return (
@@ -19,18 +10,9 @@ export default function App() {
       <MainHeader />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<PortfolioIndex />} />
-          <Route path="/EdvinsNestedTooltips" element={<NestedTooltips />} />
-          <Route path="/Amsvartne" element={<Amsvartne />} />
-          <Route
-            path="/MariestadClimateGame"
-            element={<MariestadClimateGame />}
-          />
-          <Route
-            path="/MariestadDigitalAdaptation"
-            element={<MariestadDigitalAdaptation />}
-          />
-          <Route path="/IonInternship" element={<IonInternship />} />
+          {routes.map(({ path, component: Component }) => (
+            <Route key={path} path={path} element={<Component />} />
+          ))}
         </Routes>
       </Suspense>
     </>

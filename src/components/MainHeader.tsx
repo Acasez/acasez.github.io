@@ -22,40 +22,40 @@ export default function MainHeader() {
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <a href="mariestadClimateGame.html">Mariestad Board Game</a>
+                  <Link to="/MariestadClimateGame">Mariestad Board Game</Link>
                 </li>
                 <li>
-                  <a href="mariestadDigitalAdaption.html">
+                  <Link to="/MariestadDigitalAdaptation">
                     Mariestad Digital Adaptation
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
-          </li>
-          <li>
-            <a href="cityState.html">City State</a>
           </li>
           <li>
             <a href="#">Ion Internship ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <a href="ionInternship.html">Ion Internship</a>
+                  <Link to="/IonInternship">Ion Internship</Link>
                 </li>
                 <li>
-                  <a href="highFrontier.html">High Frontier</a>
+                  <Link to="/HighFrontierTutorial">High Frontier</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="toHelAndBack.html">To Hel and Back</a>
+            <Link to="/CityState">City State</Link>
           </li>
           <li>
-            <a href="landOfTheArcane.html">Land of the Arcane</a>
+            <Link to="/ToHelAndBack">To Hel and Back</Link>
           </li>
           <li>
-            <a href="kastorix.html">Kastorix</a>
+            <Link to="/landOfTheArcane">Land of the Arcane</Link>
+          </li>
+          <li>
+            <Link to="/Kastorix">Kastorix</Link>
           </li>
           <li>
             <a href="#">Fan Content ▼</a>
@@ -87,7 +87,7 @@ export default function MainHeader() {
             </div>
           </li>
           <li>
-            <a href="aboutme.html">About Me</a>
+            <Link to="/About Me">About Me</Link>
           </li>
         </ul>
       </nav>
