@@ -8,6 +8,7 @@ interface PortFolioProps {
   imageLocation?: string;
   videoId?: string;
   altText: string;
+  imageCaption?: string;
   projectTags?: string[];
   name?: string;
   subtitle?: string;
@@ -23,6 +24,7 @@ function PortfolioRow({
   imageLocation,
   videoId,
   altText,
+  imageCaption,
   projectTags,
   name,
   subtitle,
@@ -50,12 +52,20 @@ function PortfolioRow({
               className="portfolio-video"
             />
           ) : (
-            // Static image fallback
-            <img
-              src={imageLocation}
-              alt={altText}
-              className="portfolio-image"
-            />
+            <div>
+              {imageCaption ? (
+                <div className="image-with-caption">
+                  <img src={imageLocation} alt={altText} />
+                  <p>{imageCaption}</p>
+                </div>
+              ) : (
+                <img
+                  src={imageLocation}
+                  alt={altText}
+                  className="portfolio-image"
+                />
+              )}
+            </div>
           )}
         </div>
         {projectTags ? (
