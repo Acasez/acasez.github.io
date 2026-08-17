@@ -5,10 +5,14 @@ import MainHeader from "./components/MainHeader";
 const PortfolioIndex = lazy(() => import("./Subpages/PortfolioIndex"));
 const NestedTooltips = lazy(() => import("./Subpages/NestedTooltips"));
 const Amsvartne = lazy(() => import("./Subpages/Amsvartne"));
-
+const MariestadClimateGame = lazy(
+  () => import("./Subpages/MariestadClimateGame"),
+);
 const MariestadDigitalAdaptation = lazy(
   () => import("./Subpages/MariestadDigitalAdaptation"),
 );
+const IonInternship = lazy(() => import("./Subpages/IonInternship"));
+
 export default function App() {
   return (
     <>
@@ -18,14 +22,15 @@ export default function App() {
           <Route path="/" element={<PortfolioIndex />} />
           <Route path="/EdvinsNestedTooltips" element={<NestedTooltips />} />
           <Route path="/Amsvartne" element={<Amsvartne />} />
-          {/* <Route
+          <Route
             path="/MariestadClimateGame"
             element={<MariestadClimateGame />}
-          /> */}
+          />
           <Route
             path="/MariestadDigitalAdaptation"
             element={<MariestadDigitalAdaptation />}
           />
+          <Route path="/IonInternship" element={<IonInternship />} />
         </Routes>
       </Suspense>
     </>

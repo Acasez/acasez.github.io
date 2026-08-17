@@ -3,7 +3,7 @@ import PortfolioRow from "../components/PortfolioOverviewRow";
 import PortfolioRowFrame from "../components/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 
-export default function MariestadDigitalAdaptation() {
+export default function MariestadClimateGame() {
   return (
     <>
       <TitleSection
