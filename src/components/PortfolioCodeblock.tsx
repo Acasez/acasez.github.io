@@ -19,10 +19,10 @@ export default function PortfolioCodeblock({
   const handleToggle = () => setIsExpanded(!isExpanded);
 
   return (
-    <div className="portfolio-row">
+    <div className="code-block-row">
       {/* Header bar with title and toggle button */}
-      <div className="portfolio-header">
-        {title && <span className="portfolio-title">{title}</span>}
+      <div className="code-block-header">
+        {title && <span className="code-block-title">{title}</span>}
         <button
           className="toggle-button"
           onClick={handleToggle}
@@ -45,6 +45,9 @@ export default function PortfolioCodeblock({
             borderRadius: "0 0 8px 8px",
             fontSize: "13px",
             lineHeight: "1.5",
+            whiteSpace: "pre-wrap",
+            wordBreak: "break-word",
+            background: "#1e1e1e",
           }}
           wrapLongLines={true}
         >
@@ -62,3 +65,46 @@ export default function PortfolioCodeblock({
     </div>
   );
 }
+
+/*
+<PortfolioRowFrame reverse={false}>
+        <PortfolioCodeblock //Double Image
+          code="private Vector2 GetPositionInsideCanvas(RectTransform tooltipRect, Vector2 screenPosition)
+          {
+              // Convert screen position to local position in canvas
+              RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                  canvasRectTransform,
+                  screenPosition,
+                  null, // Use null for overlay canvas, or specify your camera if using Screen Space - Camera
+                  out Vector2 localPosition
+              );
+
+              // Calculate tooltip size
+              float tooltipWidth = tooltipRect.rect.width;
+              float tooltipHeight = tooltipRect.rect.height;
+
+              // Calculate the desired position (adjust for tooltip pivot and offset)
+              float tipDownDistance = (tooltipHeight * tooltipSizeDownwardFactor) + tipNudge;
+              //When playing on mobile you will generally want the tooltips to appear above where you hover so your finger doesn't obscure it
+              if (mobile) tipDownDistance *= -1f; 
+              Vector2 desiredPosition = new(localPosition.x, localPosition.y - tipDownDistance);
+
+              // Get canvas bounds (already in local space)
+              Vector2 canvasMin = canvasRectTransform.rect.min;
+              Vector2 canvasMax = canvasRectTransform.rect.max;
+
+              // Calculate min/max allowed positions (accounting for tooltip size and pivot)
+              float minX = canvasMin.x + edgeOfScreenMargin + tooltipWidth * tooltipRect.pivot.x;
+              float maxX = canvasMax.x - edgeOfScreenMargin - tooltipWidth * (1 - tooltipRect.pivot.x);
+              float minY = canvasMin.y + edgeOfScreenMargin + tooltipHeight * tooltipRect.pivot.y;
+              float maxY = canvasMax.y - edgeOfScreenMargin - tooltipHeight * (1 - tooltipRect.pivot.y);
+
+              // Clamp
+              float clampedX = Mathf.Clamp(desiredPosition.x, minX, maxX);
+              float clampedY = Mathf.Clamp(desiredPosition.y, minY, maxY);
+
+              return new Vector2(clampedX, clampedY);
+          }"
+          language="csharp"
+        />
+      </PortfolioRowFrame>*/

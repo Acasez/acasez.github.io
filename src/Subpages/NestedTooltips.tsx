@@ -1,4 +1,3 @@
-import PortfolioCodeblock from "../components/PortfolioCodeblock";
 import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
 import PortfolioListRow from "../components/PortfolioListRow";
 import PortfolioRow from "../components/PortfolioOverviewRow";
@@ -95,47 +94,7 @@ This is what's called nested keywords, and is extremely useful in complex games 
           imageCaptionTwo="The layout of the scene objects in the example scene with a tooltip open"
         />
       </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioCodeblock //Double Image
-          code="private Vector2 GetPositionInsideCanvas(RectTransform tooltipRect, Vector2 screenPosition)
-          {
-              // Convert screen position to local position in canvas
-              RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                  canvasRectTransform,
-                  screenPosition,
-                  null, // Use null for overlay canvas, or specify your camera if using Screen Space - Camera
-                  out Vector2 localPosition
-              );
 
-              // Calculate tooltip size
-              float tooltipWidth = tooltipRect.rect.width;
-              float tooltipHeight = tooltipRect.rect.height;
-
-              // Calculate the desired position (adjust for tooltip pivot and offset)
-              float tipDownDistance = (tooltipHeight * tooltipSizeDownwardFactor) + tipNudge;
-              //When playing on mobile you will generally want the tooltips to appear above where you hover so your finger doesn't obscure it
-              if (mobile) tipDownDistance *= -1f; 
-              Vector2 desiredPosition = new(localPosition.x, localPosition.y - tipDownDistance);
-
-              // Get canvas bounds (already in local space)
-              Vector2 canvasMin = canvasRectTransform.rect.min;
-              Vector2 canvasMax = canvasRectTransform.rect.max;
-
-              // Calculate min/max allowed positions (accounting for tooltip size and pivot)
-              float minX = canvasMin.x + edgeOfScreenMargin + tooltipWidth * tooltipRect.pivot.x;
-              float maxX = canvasMax.x - edgeOfScreenMargin - tooltipWidth * (1 - tooltipRect.pivot.x);
-              float minY = canvasMin.y + edgeOfScreenMargin + tooltipHeight * tooltipRect.pivot.y;
-              float maxY = canvasMax.y - edgeOfScreenMargin - tooltipHeight * (1 - tooltipRect.pivot.y);
-
-              // Clamp
-              float clampedX = Mathf.Clamp(desiredPosition.x, minX, maxX);
-              float clampedY = Mathf.Clamp(desiredPosition.y, minY, maxY);
-
-              return new Vector2(clampedX, clampedY);
-          }"
-          language="c#"
-        />
-      </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Development Process
           name="Development Process"
