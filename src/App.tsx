@@ -6,6 +6,9 @@ const PortfolioIndex = lazy(() => import("./Subpages/PortfolioIndex"));
 const NestedTooltips = lazy(() => import("./Subpages/NestedTooltips"));
 const Amsvartne = lazy(() => import("./Subpages/Amsvartne"));
 
+const MariestadDigitalAdaptation = lazy(
+  () => import("./Subpages/MariestadDigitalAdaptation"),
+);
 export default function App() {
   return (
     <>
@@ -15,6 +18,14 @@ export default function App() {
           <Route path="/" element={<PortfolioIndex />} />
           <Route path="/EdvinsNestedTooltips" element={<NestedTooltips />} />
           <Route path="/Amsvartne" element={<Amsvartne />} />
+          {/* <Route
+            path="/MariestadClimateGame"
+            element={<MariestadClimateGame />}
+          /> */}
+          <Route
+            path="/MariestadDigitalAdaptation"
+            element={<MariestadDigitalAdaptation />}
+          />
         </Routes>
       </Suspense>
     </>
