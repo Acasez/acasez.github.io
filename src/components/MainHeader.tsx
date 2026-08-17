@@ -87,7 +87,7 @@ export default function MainHeader() {
             </div>
           </li>
           <li>
-            <Link to="/About Me">About Me</Link>
+            <Link to="/AboutMe">About Me</Link>
           </li>
         </ul>
       </nav>
