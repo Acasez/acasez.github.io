@@ -1,5 +1,4 @@
 import PortfolioCoverImage from "../components/PortfolioCoverImage";
-import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
 import PortfolioRow from "../components/PortfolioOverviewRow";
 import PortfolioRowFrame from "../components/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
@@ -39,38 +38,45 @@ While I like most types of strategy games, I don’t vibe as much with games lik
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Other Games
-          name="Light as a Mechanic"
-          imageLocation="src/Images/Amsvartne/TurnAroundWithLight.gif"
-          altText="Bright Crystal that can be picked up"
-          description="After some early testing one of the key elements of the game we identified was light, both as a concept and main mechanic. The player, called Kol, finds a helmet with a light source and can use it to solve puzzles. The light mechanic also gave me as the designer a lot of ideas and concepts to make puzzles with. I designed puzzle elements like mirrors, lenses, crystals, light sensors and magical dark areas which I think could make for very cool puzzles."
+          imageLocation="src/Images/AboutMe/HFWCauldron.jpg"
+          altText="Screenshot from Horizon Forbidden West, me playing as Aloy gliding into a Cauldron"
+          description="While I do play a lot of strategy games and Civ 5 is the game I have the most time on steam, it's not close to the game I have spent overall the most time on. Let's just say I am glad Minecraft doesn't have an overall hour count. I haven’t played that much recently, but between different mod packs, servers (both large mini game and friendly servers), custom maps, and vanilla survival I have put in a lot of hours there.
+
+Besides Minecraft, some examples of games I've played and liked a lot are Portal 1 and 2, Subnautica and Below Zero, Hades 1 and 2, Katawa Shoujo, Overwatch, Dispatch, Jusant, and the Mass Effect trilogy and Andromeda. My favorite non strategy games of all time are probably Horizon Zero Dawn and Horizon Forbidden West. Fantastic world, characters, and great gameplay. (Though, please don't make me wait 2 years for the PC port next time Sony). 
+
+I'm not really a Console player, but I also enjoy Mario Kart when I get a chance to play. 
+"
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="src/Images/Amsvartne/CrystalLight.gif"
-          altTextOne="Crystals can change the lights intensity allowing to pass through magical darkness"
-          imageCaptionOne="Crystals can change the lights intensity allowing to pass through magical darkness"
-          imageLocationTwo="src/Images/Amsvartne/MultipleBounces.gif"
-          altTextTwo="Lights can bounce on multiple mirrors"
-          imageCaptionTwo="Lights can bounce on multiple mirrors"
-        />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioRow //Notes
-          name="Notes"
-          imageLocation="src/Images/Amsvartne/ExplosivesNoteGif.gif"
-          altText="Gif of A note in the game. Featuring a scriptwriter effect"
-          description="I also wrote most of the code for our notes system, which conveys the non-environmental storytelling. We started by using the Fungus plugin for text display, but I later made a custom script that handled the functionality we wanted to speed up development. The system stores notes using scriptable objects. It has a scriptwriter effect that causes letters to appear letter by letter, and a button to skip to the end of the note.
-I also used textMeshPro style sheets to have icons displayed in the texts.
+        <PortfolioRow //Board Games
+          imageLocation="src/Images/AboutMe/Sugs.jpg"
+          altText="Image of (some of) the games at SUGS"
+          description="If it wasn't clear already I'm also a big fan of board games. My favorite types of board games are deckbuilders, like Ascension, the Clank! series, Dune Imperium and Dominion. In general I've found that I like games that have a lot of different cards, but aren't ‘just’ card games with predefined/player created decks. There is something about figuring out a plan on the fly from an array of cards that is really fun.
+
+Other games I enjoy include Res Arcana, 7 Wonders, 7 Wonders Duel, SETI, Terraforming Mars, Through The Ages, and smaller games like Hero Realms, Cubirds, Tokaido, Tsuro and Codenames. In general, I just like board games. Currently I would say my favorite board game overall is Dune Imperium with the Rise of Ix expansion.
+
+I used to be part of the leadership at Sugs board game club in Skövde and play board games there (basically) every Tuesday evening, and now since I left Skövde I'm on the hunt for a board game group. Right now I’m organizing board game events once a month at the local library.
 "
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Testing Toolkit
-          name="Testing Toolkit"
-          imageLocation="src/Images/Amsvartne/TestingToolkit.JPG"
-          altText="Testing Toolkit in unity inspector"
-          description="To help test the game and new features we were developing I also made a testing toolkit script for the player. It features the variables seen to the side as well as keys for teleporting between checkpoints and summoning the camera to the player. Having a toolkit like this helped speed level design and testing a lot, and I will prioritize making one for future projects. From speaking with Ellis who worked on sound design for the game, he also seemed to have really appreciated the feature.
+        <PortfolioRow //TTRPG
+          imageLocation="src/Images/AboutMe/Jadiar 1.1.png"
+          altText="A Map I used as setting for a Pathfinder campaign"
+          description="And of course TTRPG's (Table Top Role Playing Games) are great, even if session scheduling is the greatest enemy of us all. I have played three characters from roughly level 1 to 5 in DnD fifth edition and they have all been great experiences. Acasez, my online username came from a Lizardfolk Cleric I played in one of those campaigns. I have also DM'd a few different campaigns, in both DND 5e and Pathfinder (2e). I have also been in an Anima Beyond Fantasy campaign, which was interesting. It had some cool ideas, but also a lot of strange systems and unnecessary complexity. 
+
+Currently I am as mentioned designing my own TTRPG called Kastorix, inspired by Pathfinder which you can read about on its tab. I have a group of people I am running that system with every two to three weeks. 
+"
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioRow //Reading
+          imageLocation="src/Images/AboutMe/Bookshelf.jpg"
+          altText="An image a row of my bookshelf"
+          description="I also read quite a bit, mostly fantasy books and have a love of interesting worldbuilding and magic systems. Some of my favorite series include The Wandering Inn, Arcane Ascension, Mother of Learning, Riyria, Mistborn, and the Shadow Campaigns. I also enjoy scifi like The Expanse, Wayfarers series, The Martian, Bobiverse and Project Hail Mary. I’m currently looking for something good to read, taking suggestions.
+
+I also read some manga of various genres, with some of my favorites including Lullaby of the Dawn, Bloom Into You, Dr Stone, Magus of the Library and I Hear the Sunspot. And I’ve read quite a bit of fanfics (mostly fluff and canon divergence AU's). I've written some fics of my own, including a Horizon Forbidden West longfic called Meridian Sunsets.
 "
         />
       </PortfolioRowFrame>
