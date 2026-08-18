@@ -8,10 +8,7 @@ import TitleSection from "../components/TitleSection";
 export default function CityState() {
   return (
     <>
-      <TitleSection
-        title="City State"
-        subtitle="Story rich atmospheric puzzle-platformer set in a mystical dieselpunk world"
-      />
+      <TitleSection title="City State" subtitle="Turn Based City Builder" />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Turn Based City Builder
           imageLocation="src/Images/CityState/EarlyGame.gif"
@@ -19,6 +16,12 @@ export default function CityState() {
           imageCaption="Gif of the early game with the random tech option, showing some of the choices that appear."
           description="City State was made for my Bachelor's Thesis about different structures in Tech Trees. It's a fairly short city building game that was made to see how different tech tree structures of tech trees affect the gameplay experience. To do that I still needed to design an interesting and fun game, and I focused I worked on it afterwards to add some ‘juice’ to the game"
           itchLink="https://acasez.itch.io/city-state"
+          webpageLinks={[
+            {
+              url: "https://his.diva-portal.org/smash/record.jsf?aq2=%5B%5B%7B%22dateIssued%22%3A%7B%22from%22%3A%222016%22%2C%22to%22%3A%22%22%7D%7D%2C%7B%22educationalProgramId%22%3A%224769%22%7D%5D%5D&c=10&af=%5B%5D&searchType=UNDERGRADUATE&sortOrder2=title_sort_asc&language=sv&pid=diva2%3A1672452&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=dateIssued_sort_desc&onlyFullText=false&noOfRows=50&dswid=404",
+              label: "My Bachelors Thesis",
+            },
+          ]}
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
