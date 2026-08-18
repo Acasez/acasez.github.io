@@ -7,32 +7,52 @@ export default function MariestadClimateGame() {
   return (
     <>
       <TitleSection
-        title="Amsvartne"
-        subtitle="Story rich atmospheric puzzle-platformer set in a mystical dieselpunk world"
+        title="Mariestad Climate Board Game"
+        subtitle="Eurogame style board game about city planning and sustainability"
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
-          imageLocation="src/Images/Amsvartne/AmsvartneLamp.jpg"
-          altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
-          description="Amsvartne is a 2D puzzle platformer I made as part of the start up group Corvian Games (now Tiny Creature Games). It focuses on narrative exploration and puzzle solving using light to navigate levels and solve puzzles. It's set in a mystical mine in a fantasy dieselpunk setting. I worked on the game and level design, as well as programming multiple game systems.
+          imageLocation="src/Images/MariestadClimateGame/Gameboard in Play.jpg"
+          altText="The game in play"
+          description="I designed a board game for the municipality of Mariestad with graphics by Iris Casado, Wu Deyu, Alexander Ros and others. The game is a eurogame inspired by games like Terraforming Mars, however the game is designed to be fairly short and easy to learn. The game can be played with 2-4 players and its playtime varies depending on the amount of players. 2 experienced players can play it in under 25 minutes, but for 4 new players it can take about an hour and half. 
+
+The goal of the game is to have the most Victory Points (VP) at the end of the game, in 2030. The main way to get VP is by reducing pollution which can be done in a variety of different ways. Some of those ways include, producing renewable power, reducing car traffic and building green areas to absorb CO². During the game players take the role of an actor in the city, like a company or organization. They then play different project cards, while managing their economy and relations with the people of the municipality. 
+
+The game takes place over 7 years, as part of the Viable Cities climate neutral 2030 strategy. At the end of the 7 years the player with the most Victory Points wins, and hopefully Mariestad is Climate neutral. 
 "
-          itchLink="https://corviangames.itch.io/amsvartne"
+          webpageLinks={[
+            {
+              url: "https://mariestad.se/nyheter/nyhetsarkiv/2024-06-03-klimatspelet-mariestad-bidrar-till-den-grona-omstallningen",
+              label: "Municipality Project Page",
+            },
+            {
+              url: "https://www.his.se/forskning/informationsteknologi/game-research-group/spelutveckling-for-ett-klimatneutralt-mariestad/",
+              label: "Skövde University page on the game",
+            },
+            {
+              url: "https://swedengamearena.com/sv/nyheter/nytt-spel-fran-hogskolan-hjalper-mariestad-att-bli-klimatneutralt/",
+              label: "SGA Page on the game",
+            },
+          ]}
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="src/Images/Amsvartne/Amsvartnelorepage.JPG"
-          altText="Lore text"
+          imageLocation="src/Images/MariestadClimateGame/ActorCards.jpg"
+          altText="Actor Cards"
+          imageCaption="Actor Cards from the game"
           listHeader="Things I've worked on"
           listContent={[
-            "Programmed the light mechanic.",
-            "Expandable keywords (tooltips within tooltips).",
-            "Designed and programmed objects like mirrors, crystals and light sensors that interact with light.",
-            "Designed the first level and worked iteratively on multiple puzzles.",
-            "Programmed the respawn and lamp recharge system .",
-            "Programmed and designed many level design and testing tools to speed up the development process.",
-            "Programmed many different puzzle elements like moving platforms, rune puzzles and levers.",
-            "Helped with narrative, worldbuilding and the ludo-narrative connection between the story and puzzles.",
+            "Pitched the original idea to the municipality; a strategic board game about reducing pollution and building sustainably",
+            "Worked on and tried out early concepts with Iris.",
+            "Designed game mechanics and tested them.",
+            "Led many different test sessions with different groups, both skilled board game players and people not used to playing board games. Collected feedback from game tests.",
+            "Implemented feedback from test sessions. Worked iteratively on card and game balance.",
+            "Talked with the people at Mariestad on how to best present different topics and themes.",
+            "Helped Iris and Zoey with reference images and feedback for card illustrations and graphical design.",
+            "Made a tool in Unity to compose the cards easier.",
+            "Worked with the printing company (Spelkortsförlaget) to get the right outlines and margins for the cards and boards to print them.",
+            "Made a digital solo version of the game to be playable online.",
           ]}
         />
       </PortfolioRowFrame>
