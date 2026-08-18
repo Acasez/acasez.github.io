@@ -1,3 +1,4 @@
+import MediaDisplay from "../components/MediaDisplay";
 import PortfolioCoverImage from "../components/PortfolioCoverImage";
 import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
 import PortfolioListRow from "../components/PortfolioListRow";
@@ -58,12 +59,15 @@ export default function CityState() {
           description="Implemented tool tips and icons to clearly display what everything does and icons to help the game feel and player learning. Having an UI that was easy to navigate was a high priority, as the focus for the participants should be on the mechanics."
         />
       </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioCoverImage //Double Image
-          imageLocationOne="src/Images/CityState/Readability_.JPG"
-          altTextOne="Two Versions of the Top Bar, one is adjusted in color and placement to make ui elements clearer to read"
-          imageCaptionOne="The top UI bar shows the different resources in the game and the players population. It went through many iterations to make it both readable and fit all the information needed."
-        />
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioCoverImage>
+          <MediaDisplay
+            imageLocation="src/Images/CityState/Readability_.JPG"
+            altText="Two Versions of the Top Bar, one is adjusted in color and placement to make ui elements clearer to read"
+            imageCaption="The top UI bar shows the different resources in the game and the players population. It went through many iterations to make it both readable and fit all the information needed."
+            coverImage={true}
+          />
+        </PortfolioCoverImage>
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Adjacency Planning

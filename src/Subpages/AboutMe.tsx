@@ -1,3 +1,4 @@
+import MediaDisplay from "../components/MediaDisplay";
 import PortfolioCoverImage from "../components/PortfolioCoverImage";
 import PortfolioRow from "../components/PortfolioOverviewRow";
 import PortfolioRowFrame from "../components/PortfolioRowFrame";
@@ -8,11 +9,14 @@ export default function AboutMe() {
     <>
       <TitleSection title="About Me" subtitle="Yup, that's me" />
       <PortfolioRowFrame reverse={false}>
-        <PortfolioCoverImage //Double Image
-          imageLocationOne="src/Images/AboutMe/SkövdeSlice.jpg"
-          altTextOne="Picture of Skövde from the nearby hill of Billingen, taken by me"
-          imageCaptionOne="Picture of Skövde from the nearby hill of Billingen, taken by me"
-        />
+        <PortfolioCoverImage>
+          <MediaDisplay
+            imageLocation="src/Images/AboutMe/SkövdeSlice.jpg"
+            altText="Picture of Skövde from the nearby hill of Billingen, taken by me"
+            imageCaption="Picture of Skövde from the nearby hill of Billingen, taken by me"
+            coverImage={true}
+          />
+        </PortfolioCoverImage>
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
