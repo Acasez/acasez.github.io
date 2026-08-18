@@ -41,29 +41,32 @@ function PortfolioRow({
   ] as const;
   return (
     <>
-      <div className="portfolio-media">
-        <MediaDisplay
-          videoId={videoId}
-          imageLocation={imageLocation}
-          altText={altText}
-          imageCaption={imageCaption}
-          coverImage={false}
-        />
-      </div>
-      {projectTags ? (
-        <div className="project-tags">
-          {projectTags.map((tag) => (
-            <span
-              key={tag}
-              className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
-            >
-              {tag}
-            </span>
-          ))}
+      <div>
+        <div className="portfolio-media">
+          <MediaDisplay
+            videoId={videoId}
+            imageLocation={imageLocation}
+            altText={altText}
+            imageCaption={imageCaption}
+            coverImage={false}
+          />
         </div>
-      ) : (
-        ""
-      )}
+        {projectTags ? (
+          <div className="project-tags">
+            {projectTags.map((tag) => (
+              <span
+                key={tag}
+                className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+
       <div className="portfolio-text">
         {projectPageLink ? (
           <Link className="portfolio-title" to={projectPageLink}>
