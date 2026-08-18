@@ -1,8 +1,10 @@
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
+import MediaDisplay from "./MediaDisplay";
 
 interface PortFolioProps {
+  videoId?: string;
   imageLocation?: string;
   altText: string;
   imageCaption?: string;
@@ -11,6 +13,7 @@ interface PortFolioProps {
 }
 
 export default function PortfolioRow({
+  videoId,
   imageLocation,
   altText,
   imageCaption,
@@ -19,15 +22,14 @@ export default function PortfolioRow({
 }: PortFolioProps) {
   return (
     <>
-      <div className="portfolio-image">
-        {imageCaption ? (
-          <div className="image-with-caption">
-            <img src={imageLocation} alt={altText} />
-            <p>{imageCaption}</p>
-          </div>
-        ) : (
-          <img src={imageLocation} alt={altText} className="portfolio-image" />
-        )}
+      <div className="portfolio-media">
+        <MediaDisplay
+          videoId={videoId}
+          imageLocation={imageLocation}
+          altText={altText}
+          imageCaption={imageCaption}
+          coverImage={false}
+        />
       </div>
       <div className="portfolio-description">
         <h3>{listHeader}:</h3>

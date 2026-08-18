@@ -1,53 +1,48 @@
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
+import MediaDisplay from "./MediaDisplay";
 
 interface PortFolioProps {
-  imageLocationOne: string;
+  videoIdOne?: string;
+  imageLocationOne?: string;
   altTextOne: string;
   imageCaptionOne?: string;
-  imageLocationTwo: string;
+  videoIdTwo?: string;
+  imageLocationTwo?: string;
   altTextTwo: string;
   imageCaptionTwo?: string;
 }
 
 export default function PortfolioRow({
+  videoIdOne,
   imageLocationOne,
   altTextOne,
   imageCaptionOne,
+  videoIdTwo,
   imageLocationTwo,
   altTextTwo,
   imageCaptionTwo,
 }: PortFolioProps) {
   return (
     <>
-      <div className="portfolio-image doubleImage">
-        {imageCaptionOne ? (
-          <div className="image-with-caption">
-            <img src={imageLocationOne} alt={altTextOne} />
-            <p>{imageCaptionOne}</p>
-          </div>
-        ) : (
-          <img
-            src={imageLocationOne}
-            alt={altTextOne}
-            className="portfolio-image"
-          />
-        )}
+      <div className="portfolio-media">
+        <MediaDisplay
+          videoId={videoIdOne}
+          imageLocation={imageLocationOne}
+          altText={altTextOne}
+          imageCaption={imageCaptionOne}
+          coverImage={false}
+        />
       </div>
-      <div className="portfolio-image doubleImage">
-        {imageCaptionTwo ? (
-          <div className="image-with-caption">
-            <img src={imageLocationTwo} alt={altTextTwo} />
-            <p>{imageCaptionTwo}</p>
-          </div>
-        ) : (
-          <img
-            src={imageLocationTwo}
-            alt={altTextTwo}
-            className="portfolio-image"
-          />
-        )}
+      <div className="portfolio-media">
+        <MediaDisplay
+          videoId={videoIdTwo}
+          imageLocation={imageLocationTwo}
+          altText={altTextTwo}
+          imageCaption={imageCaptionTwo}
+          coverImage={false}
+        />
       </div>
     </>
   );

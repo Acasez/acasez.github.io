@@ -23,6 +23,7 @@
 
 .portfolio-row .portfolio-image {
     margin-right: 1em;
+    max-width: 100%;
 }
 
 .doubleImage {
