@@ -3,6 +3,7 @@ import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
 import { memo } from "react";
+import MediaDisplay from "./MediaDisplay";
 
 interface PortFolioProps {
   imageLocation?: string;
@@ -41,48 +42,28 @@ function PortfolioRow({
   return (
     <>
       <div className="portfolio-media">
-        <div className="portfolio-image">
-          {videoId ? (
-            // YouTube embed
-            <iframe
-              src={`https://www.youtube.com/embed/${videoId}`}
-              title={altText}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="portfolio-video"
-            />
-          ) : (
-            <div>
-              {imageCaption ? (
-                <div className="image-with-caption">
-                  <img src={imageLocation} alt={altText} />
-                  <p>{imageCaption}</p>
-                </div>
-              ) : (
-                <img
-                  src={imageLocation}
-                  alt={altText}
-                  className="portfolio-image"
-                />
-              )}
-            </div>
-          )}
-        </div>
-        {projectTags ? (
-          <div className="project-tags">
-            {projectTags.map((tag) => (
-              <span
-                key={tag}
-                className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        ) : (
-          ""
-        )}
+        <MediaDisplay
+          videoId={videoId}
+          imageLocation={imageLocation}
+          altText={altText}
+          imageCaption={imageCaption}
+          coverImage={false}
+        />
       </div>
+      {projectTags ? (
+        <div className="project-tags">
+          {projectTags.map((tag) => (
+            <span
+              key={tag}
+              className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      ) : (
+        ""
+      )}
       <div className="portfolio-text">
         {projectPageLink ? (
           <Link className="portfolio-title" to={projectPageLink}>
