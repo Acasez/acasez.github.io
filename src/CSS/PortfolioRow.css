@@ -4,6 +4,7 @@
     margin-left: 2%;
     margin-right: 2%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-content: center;
 }
 
 .portfolio-row:hover {
@@ -179,7 +180,7 @@ a.portfolio-title:hover::after {
 .image-with-caption-cover img {
     max-width: 100%;
     width: 100%;
-    align-self: center;
+
 }
 
 .image-caption {

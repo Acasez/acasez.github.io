@@ -24,7 +24,7 @@ export default function PortfolioRow({
         <h3>{listHeader}:</h3>
         <ul>
           {listContent.map((listEntry) => (
-            <li>{listEntry}</li>
+            <li key={listEntry}>{listEntry}</li>
           ))}
         </ul>
       </div>
