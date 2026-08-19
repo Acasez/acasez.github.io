@@ -90,6 +90,7 @@ a.portfolio-title {
     position: relative;
     display: inline-block;
     color: green;
+    text-decoration-line: none;
 }
 
 a.portfolio-title::after {

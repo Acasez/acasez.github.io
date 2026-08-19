@@ -229,7 +229,7 @@ I have an alpha version, but the project is on pause while I develop other proje
         <PortfolioRow //Dungeon of Dice
           imageLocation="images/others/Skulltap.JPG"
           altText="Screenshot of the game, displaying the combat menu against a spider monster"
-          projectTags={["Game", "Unreal", "Game"]}
+          projectTags={["Game", "Unreal"]}
           name="Dungeon of Dice (2024)"
           subtitle="Dice-based tactical rouge-like"
           description="Dice based turn based tactical rouge-like about exploring an overgrown dungeon. It has a working turn-based dice-centric combat system. Prototype can be found on itch

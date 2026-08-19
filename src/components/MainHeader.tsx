@@ -64,36 +64,43 @@ export default function MainHeader() {
             <Link to="/portfolio-v2/Kastorix">Kastorix</Link>
           </li>
           <li>
-            <a href="#">Fan Content ▼</a>
+            <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <a href="customTomes.html">Age of Wonders 4 Tomes</a>
+                  <Link to="/portfolio-v2/AboutMe">About Me</Link>
                 </li>
                 <li>
-                  <a href="myherosnap.html">My Hero Snap</a>
+                  <a href="#">🞀 CV's</a>
+                  <div className="dropdown_menu">
+                    <ul>
+                      <li>
+                        <a href="englishCV.html">English</a>
+                      </li>
+                      <li>
+                        <a href="swedishCV.html">Swedish</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                  <a href="meridianSunsets.html">Meridian Sunsets</a>
+                  <a href="#">🞀 Fan Content</a>
+                  <div className="dropdown_menu">
+                    <ul>
+                      <li>
+                        <a href="customTomes.html">Age of Wonders 4 Tomes</a>
+                      </li>
+                      <li>
+                        <a href="myherosnap.html">My Hero Snap</a>
+                      </li>
+                      <li>
+                        <a href="meridianSunsets.html">Meridian Sunsets</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
-          </li>
-          <li>
-            <a href="#">CV's ▼</a>
-            <div className="dropdown_menu">
-              <ul>
-                <li>
-                  <a href="englishCV.html">English</a>
-                </li>
-                <li>
-                  <a href="swedishCV.html">Swedish</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <Link to="/portfolio-v2/AboutMe">About Me</Link>
           </li>
         </ul>
       </nav>
