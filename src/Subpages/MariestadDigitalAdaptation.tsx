@@ -15,7 +15,7 @@ export default function MariestadDigitalAdaptation() {
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
-          imageLocation="src/images/MariestadDigitalAdaptation/NewMidScience.JPG"
+          imageLocation="images/MariestadDigitalAdaptation/NewMidScience.JPG"
           altText="The game in play"
           description="I made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of a physical board game and an inbuilt tutorial. It has support to be played in both English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge.
 When I made my Unity Asset for layered tooltips I also updated this project to feature them.
@@ -26,7 +26,7 @@ When I made my Unity Asset for layered tooltips I also updated this project to f
       <PortfolioRowFrame reverse={false}>
         <PortfolioCoverImage>
           <MediaDisplay
-            imageLocation="src/images/MariestadDigitalAdaptation/gameplay.gif"
+            imageLocation="images/MariestadDigitalAdaptation/gameplay.gif"
             altText="Gif of gameplay"
             imageCaption="Some gameplay, you can see the mini animations as cards fly across the screen."
             coverImage={true}
@@ -35,7 +35,7 @@ When I made my Unity Asset for layered tooltips I also updated this project to f
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="src/images/MariestadDigitalAdaptation/CardExample.JPG"
+          imageLocation="images/MariestadDigitalAdaptation/CardExample.JPG"
           altText="Explanation of a cards cost in the tutorial"
           listHeader="Part of the tutorial explaining how a card costs work"
           listContent={[
@@ -59,7 +59,7 @@ When I made my Unity Asset for layered tooltips I also updated this project to f
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Idea
           name="Idea and start"
-          imageLocation="src/images/MariestadClimateGame/ScripatbleObject.JPG"
+          imageLocation="images/MariestadClimateGame/ScripatbleObject.JPG"
           altText="Card scripatble Object from Unity"
           description="When I was making the Unity Script that put together the cards for the Board Game, I got the idea of trying to actually make a digital adaptation. It would be nice to play and an easier way to show people the game design of the board game without having to sit down and play it. I had also gotten really into playing solo Terraforming Mars at https://terraforming-mars.herokuapp.com, and I liked the idea of making something similar.
 
@@ -72,7 +72,7 @@ In the fall of 2024 I took a remote course in UI design from Uppsala University 
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Idea
           name="Game Board Design"
-          imageLocation="src/images/MariestadDigitalAdaptation/CurrentDigital.JPG"
+          imageLocation="images/MariestadDigitalAdaptation/CurrentDigital.JPG"
           altText="Old UI for the game"
           imageCaption="The early UI for the digital adaptation "
           description="The first part of this was splitting up the game boards and moving elements around for a more natural feeling layout that follows strategy genre conventions. Money, Income and tags were moved to the top of the screen where resources generally are in strategy games. Many resources that used tracks in the board game were made into numbers instead to take advantage of the digital format.
@@ -83,10 +83,10 @@ I also changed the size of green energy and traffic tracks as the current size w
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="src/images/MariestadDigitalAdaptation/FigmaPlanning.JPG"
+          imageLocationOne="images/MariestadDigitalAdaptation/FigmaPlanning.JPG"
           altTextOne="Inspiration images I collected in a Figma board"
           imageCaptionOne="I began by finding images of UI for strategy, solarpunk and digital board games."
-          imageLocationTwo="src/images/MariestadDigitalAdaptation/Wireframe0.1.JPG"
+          imageLocationTwo="images/MariestadDigitalAdaptation/Wireframe0.1.JPG"
           altTextTwo="Wireframe Design"
           imageCaptionTwo="I then used Figma to plan out the new design for the UI, starting with a wireframe and adding more details over time. "
         />

@@ -5,7 +5,7 @@ export default function HeroSection() {
       <section id="top" className="intro-box">
         <div className="intro-container">
           <div className="intro-image">
-            <img src="src/Images/AboutMe/Photo.jpg" alt="Picture of me" />
+            <img src="images/AboutMe/Photo.jpg" alt="Picture of me" />
           </div>
           <div className="intro-text">
             <h2 className="sectionText">Heya!</h2>

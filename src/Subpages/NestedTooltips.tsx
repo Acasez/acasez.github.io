@@ -13,7 +13,7 @@ export default function EdvinsNestedTooltips() {
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
-          imageLocation="src/Images/EdvinsLayeredTooltips/CardTooltip.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/CardTooltip.JPG"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
           description="Edvin's Nested Tooltips is exactly what it sounds like, it's a Unity Asset that helps easily add nested tooltips. Perfect for strategy games, rpg's or just any game with many mechanics and subsystems. Originally I was planning to put it up for purchase on the Unity Asset Store, but that proved a real hassle so I decided to instead make it available for free on itch.io (though you can still donate on itch if you really like it).
       "
@@ -23,7 +23,7 @@ export default function EdvinsNestedTooltips() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsExample.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/TooltipsExample.JPG"
           altText="Example of nested tooltips"
           listHeader="Features"
           listContent={[
@@ -42,10 +42,10 @@ export default function EdvinsNestedTooltips() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="src/Images/EdvinsLayeredTooltips/Chain of Tooltips.JPG"
+          imageLocationOne="images/EdvinsLayeredTooltips/Chain of Tooltips.JPG"
           altTextOne="Example of nested tooltips"
           imageCaptionOne="Example of the nested tooltips in the Mariestad Climate Game"
-          imageLocationTwo="src/Images/EdvinsLayeredTooltips/LotsATooltip.JPG"
+          imageLocationTwo="images/EdvinsLayeredTooltips/LotsATooltip.JPG"
           altTextTwo="Example of nested tooltips"
           imageCaptionTwo="Example of many tooltips for different keywords in the tutorial for High Frontier 4 All"
         />
@@ -53,7 +53,7 @@ export default function EdvinsNestedTooltips() {
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Tooltips
           name="Tooltips"
-          imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
           altText="Screenshot of a chain of nested tooltips in High Frontier 4 All"
           description="A tooltip is simply a message that appears in a text box when you hover over a UI element. They are common in video games, but also on websites and in software. I have some tooltips on the Kastorix Character Sheet page. Doing tooltips in Unity isn’t particularly hard, there are many youtube tutorials on the subject and and you can find free assets for tooltips on the Unity Store
 
@@ -63,7 +63,7 @@ export default function EdvinsNestedTooltips() {
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Implementation
           name="Implementation"
-          imageLocation="src/Images/EdvinsLayeredTooltips/TooltipManager.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/TooltipManager.JPG"
           altText="Screenshot of the tooltip manager in the inspector view in Unity"
           description="The core of my system is the TooltipManager on its own prefab that can be added to any scene. In the Awake function it creates a number of tooltip window objects from a prefab. To give a UI element a tooltip you simply give it TooltipTrigger script (or put a TooltipArea prefab on top).
 
@@ -75,7 +75,7 @@ export default function EdvinsNestedTooltips() {
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Keywords
           name="Keywords"
-          imageLocation="src/Images/EdvinsLayeredTooltips/IconImage.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/IconImage.JPG"
           altText="Screenshot of a nested tooltip displaying the Tag keyword in the Mariestad Climate Game"
           description="The thing that makes the tooltips nested and my system unique however is the keyword system. There is a Keyword Scriptable Object that users can input any keywords into and a keyword handler that adds links to any keywords found in tooltips or other assigned texts. 
           
@@ -86,10 +86,10 @@ This is what's called nested keywords, and is extremely useful in complex games 
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="src/Images/EdvinsLayeredTooltips/KeywordScriptableObject.JPG"
+          imageLocationOne="images/EdvinsLayeredTooltips/KeywordScriptableObject.JPG"
           altTextOne="Screenshot of a the a keyword Scriptable Object in the unity inspector"
           imageCaptionOne="Example of a keyword Scriptable Object"
-          imageLocationTwo="src/Images/EdvinsLayeredTooltips/ExampleSceneInGame.JPG"
+          imageLocationTwo="images/EdvinsLayeredTooltips/ExampleSceneInGame.JPG"
           altTextTwo="Screenshot of a the scene object management showing objects"
           imageCaptionTwo="The layout of the scene objects in the example scene with a tooltip open"
         />
@@ -98,7 +98,7 @@ This is what's called nested keywords, and is extremely useful in complex games 
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Development Process
           name="Development Process"
-          imageLocation="src/Images/EdvinsLayeredTooltips/TopBarIncomeTextChained.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/TopBarIncomeTextChained.JPG"
           altText="Screenshot of a nested tooltip displaying the Tag keyword in the Mariestad Climate Game"
           description="As a fan of complicated strategy games, tooltips and good UI design have been important practices for me for a long time. Even in the first strategy game I made in Unity, City State, I made simple tooltips for the resource types.
 

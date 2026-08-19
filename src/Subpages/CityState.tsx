@@ -12,7 +12,7 @@ export default function CityState() {
       <TitleSection title="City State" subtitle="Turn Based City Builder" />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Turn Based City Builder
-          imageLocation="src/Images/CityState/EarlyGame.gif"
+          imageLocation="images/CityState/EarlyGame.gif"
           altText="Gif of the game in play"
           imageCaption="Gif of the early game with the random tech option, showing some of the choices that appear."
           description="City State was made for my Bachelor's Thesis about different structures in Tech Trees. It's a fairly short city building game that was made to see how different tech tree structures of tech trees affect the gameplay experience. To do that I still needed to design an interesting and fun game, and I focused I worked on it afterwards to add some ‘juice’ to the game"
@@ -27,7 +27,7 @@ export default function CityState() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="src/Images/CityState/Planning.JPG"
+          imageLocation="images/CityState/Planning.JPG"
           altText="A screenshot of a Miro Page with various notes for each tech, making up a tech tree"
           listHeader="Things I've worked on"
           listContent={[
@@ -44,17 +44,17 @@ export default function CityState() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="src/Images/CityState/BranchingTech.JPG"
+          imageLocationOne="images/CityState/BranchingTech.JPG"
           altTextOne="Screenshot of the branching Tech Tree"
           imageCaptionOne="Standard tech tree, designed first, inspired by the tech trees in games like Civilization. Techs have prerequisites and you can see the entire tech tree and plan ahead."
-          imageLocationTwo="src/Images/CityState/RandomTech.JPG"
+          imageLocationTwo="images/CityState/RandomTech.JPG"
           altTextTwo="Random Tech Tree"
           imageCaptionTwo="Random tech tree, inspired by Stellaris. Every time you research a tech you get three semi-random options. Techs are separated into tiers but there are no direct connections. You have to research 2 techs from a tier to get options in the next tier. "
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Turn Based City Builder
-          imageLocation="src/Images/CityState/TooltipTiny.JPG"
+          imageLocation="images/CityState/TooltipTiny.JPG"
           altText="Zoomed in screenshot of a tooltip in the game"
           description="Implemented tool tips and icons to clearly display what everything does and icons to help the game feel and player learning. Having an UI that was easy to navigate was a high priority, as the focus for the participants should be on the mechanics."
         />
@@ -62,7 +62,7 @@ export default function CityState() {
       <PortfolioRowFrame reverse={true}>
         <PortfolioCoverImage>
           <MediaDisplay
-            imageLocation="src/Images/CityState/Readability_.JPG"
+            imageLocation="images/CityState/Readability_.JPG"
             altText="Two Versions of the Top Bar, one is adjusted in color and placement to make ui elements clearer to read"
             imageCaption="The top UI bar shows the different resources in the game and the players population. It went through many iterations to make it both readable and fit all the information needed."
             coverImage={true}
@@ -72,7 +72,7 @@ export default function CityState() {
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Adjacency Planning
           name="Adjacency Planning"
-          imageLocation="src/Images/CityState/Indev2.jpg"
+          imageLocation="images/CityState/Indev2.jpg"
           altText="Early screenshot of the game, with the map and UI being far worse"
           imageCaption="Early screenshot of the game, with the map and UI being in development."
           description="When I started working on the game I knew I wanted some form of adjacency bonuses. Depending on where you place buildings they could give different bonuses or penalties based on other nearby buildings and features. At first I didn't really know why I felt like it was needed, mostly that most strategy/city building games had it and it made sense.
@@ -84,7 +84,7 @@ During development, when I was trying to figure out how I wanted to do adjacency
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Adjacency Implementation
           name="Adjacency Implementation"
-          imageLocation="src/Images/CityState/LateGame.jpg"
+          imageLocation="images/CityState/LateGame.jpg"
           altText="Later screenshot of the game of a city with many built buildings"
           imageCaption="Later screenshot of the game of a city with many built buildings"
           description="I wanted to design the specialization in a way that gives players control and feel like they make interesting decisions. Instead of directly stating ‘this is or could be a good industrial region, you can only put mines here’ I let players plan out their own city and build districts how they want to. Before this I had already implemented fisheries and farm buildings that require coast and river plots respectively. They create regions in a sense, but those regions are predefined by the map layout, and not the player's choices.
@@ -96,7 +96,7 @@ The different colored triangles above buildings mark different regions. Some bui
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Terrain
           name="Terrain"
-          imageLocation="src/Images/CityState/OtherCityBuilers.jpg"
+          imageLocation="images/CityState/OtherCityBuilers.jpg"
           altText="Image of Cities Skylines, Civilization 6, Banished and Concrete Jungle"
           imageCaption="A look into four strategy/city building games and how you place buildings in them. Cities Skylines, Civilization 6, Banished and Concrete Jungle."
           description="One of the first design decisions I made was regarding the terrain. I compared other strategy and City Building games, did I want it grid or hex-based, or use a free placement similar to Cities Skylines and most other City Builders?
@@ -108,7 +108,7 @@ I decided on neither of them. Looking at it, grids and hexes are great for rando
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Uncertainty
           name="Uncertainty"
-          imageLocation="src/Images/CityState/Itch7.JPG"
+          imageLocation="images/CityState/Itch7.JPG"
           altText="Screenshot of an event screen of an attack"
           imageCaption="Screenshot of an event screen of an attack"
           description="Overall I like the ‘plot’ system as I call it. It works, and is easy to code and implement. It did however remove a common source of uncertainty in games like this, the random terrain generation. This meant that the game only has three possible sources of uncertainty, random technology, barbarians and the expedition mechanic Since the random technology is a choice and only on for half the games for the study. and the expeditions is something players don't have to interact with you could be left with only the barbarians as a source of uncertainty. For the sake of this project that was fine, but if I were to continue working on the game I would want to add more sources of uncertainty."
@@ -117,7 +117,7 @@ I decided on neither of them. Looking at it, grids and hexes are great for rando
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Future Lessons
           name="Future Lessons"
-          imageLocation="src/Images/CityState/Itch8.jpg"
+          imageLocation="images/CityState/Itch8.jpg"
           altText="Screenshot of the Expedition mechanic, if the player has a harbour they can send out ships to explore the world and get random rewards."
           imageCaption="Screenshot of the Expedition mechanic, if the player has a harbour they can send out ships to explore the world and get random rewards"
           description="Still for the time I had on the project I think not trying to implement terrain generation was a good decision, the prototype would probably not have been completed in time if I tried. It's better to have a finished small game than a larger game stuck as a prototype. If I had done the project with more time or a team, I would have loved to try to make a terrain generation system with either a grid or hexes. Having that would have added another source of uncertainty and replayability. Alternatively I could look into other ways of adding randomness, like variation in what technologies and resources pop up."

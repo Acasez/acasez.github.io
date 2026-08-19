@@ -12,7 +12,7 @@ export default function HighFrontierTutorial() {
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
-          imageLocation="src/Images/Amsvartne/AmsvartneLamp.jpg"
+          imageLocation="images/Amsvartne/AmsvartneLamp.jpg"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
           description="Amsvartne is a 2D puzzle platformer I made as part of the start up group Corvian Games (now Tiny Creature Games). It focuses on narrative exploration and puzzle solving using light to navigate levels and solve puzzles. It's set in a mystical mine in a fantasy dieselpunk setting. I worked on the game and level design, as well as programming multiple game systems.
 "
@@ -21,7 +21,7 @@ export default function HighFrontierTutorial() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="src/Images/Amsvartne/Amsvartnelorepage.JPG"
+          imageLocation="images/Amsvartne/Amsvartnelorepage.JPG"
           altText="Lore text"
           listHeader="Things I've worked on"
           listContent={[

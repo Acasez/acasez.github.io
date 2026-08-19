@@ -11,7 +11,7 @@ export default function AboutMe() {
       <PortfolioRowFrame reverse={false}>
         <PortfolioCoverImage>
           <MediaDisplay
-            imageLocation="src/Images/AboutMe/SkövdeSlice.jpg"
+            imageLocation="images/AboutMe/SkövdeSlice.jpg"
             altText="Picture of Skövde from the nearby hill of Billingen, taken by me"
             imageCaption="Picture of Skövde from the nearby hill of Billingen, taken by me"
             coverImage={true}
@@ -20,7 +20,7 @@ export default function AboutMe() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Overview
-          imageLocation="src/Images/AboutMe/Photo.jpg"
+          imageLocation="images/AboutMe/Photo.jpg"
           altText="Picture of me"
           description="Hiya, welcome to the About Me page.
 
@@ -32,7 +32,7 @@ Now I'm back in Stockholm looking for work, but I am open to moving to some othe
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Strategy Games
-          imageLocation="src/Images/AboutMe/CK3Reform.jpg"
+          imageLocation="images/AboutMe/CK3Reform.jpg"
           altText="Screenshot from Crusader Kings 3 of me reforming the Asatru faith"
           description="I play a variety of games, but as I mentioned in my initial blurb on the front page and you might guess by the rest of my portfolio, strategy games are my favorite. I like grand strategy games (EU4, CK3), 4X's (Civ 5 & 6, Stellaris, Age of Wonders 3 & 4), turn based tactics (Xcom, Darkest Dungeon, Baldur's Gate 3), card games (Slay the Spire 1 & 2, Marvel Snap), city builders (City Skylines, Against The Storm) and more bite-sized strategy games (Slipways, Terraformers, FTL, Into the Breach).
 
@@ -42,7 +42,7 @@ While I like most types of strategy games, I don’t vibe as much with games lik
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Other Games
-          imageLocation="src/Images/AboutMe/HFWCauldron.jpg"
+          imageLocation="images/AboutMe/HFWCauldron.jpg"
           altText="Screenshot from Horizon Forbidden West, me playing as Aloy gliding into a Cauldron"
           description="While I do play a lot of strategy games and Civ 5 is the game I have the most time on steam, it's not close to the game I have spent overall the most time on. Let's just say I am glad Minecraft doesn't have an overall hour count. I haven’t played that much recently, but between different mod packs, servers (both large mini game and friendly servers), custom maps, and vanilla survival I have put in a lot of hours there.
 
@@ -54,7 +54,7 @@ I'm not really a Console player, but I also enjoy Mario Kart when I get a chance
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Board Games
-          imageLocation="src/Images/AboutMe/Sugs.jpg"
+          imageLocation="images/AboutMe/Sugs.jpg"
           altText="Image of (some of) the games at SUGS"
           description="If it wasn't clear already I'm also a big fan of board games. My favorite types of board games are deckbuilders, like Ascension, the Clank! series, Dune Imperium and Dominion. In general I've found that I like games that have a lot of different cards, but aren't ‘just’ card games with predefined/player created decks. There is something about figuring out a plan on the fly from an array of cards that is really fun.
 
@@ -66,7 +66,7 @@ I used to be part of the leadership at Sugs board game club in Skövde and play 
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //TTRPG
-          imageLocation="src/Images/AboutMe/Jadiar 1.1.png"
+          imageLocation="images/AboutMe/Jadiar 1.1.png"
           altText="A Map I used as setting for a Pathfinder campaign"
           description="And of course TTRPG's (Table Top Role Playing Games) are great, even if session scheduling is the greatest enemy of us all. I have played three characters from roughly level 1 to 5 in DnD fifth edition and they have all been great experiences. Acasez, my online username came from a Lizardfolk Cleric I played in one of those campaigns. I have also DM'd a few different campaigns, in both DND 5e and Pathfinder (2e). I have also been in an Anima Beyond Fantasy campaign, which was interesting. It had some cool ideas, but also a lot of strange systems and unnecessary complexity. 
 
@@ -76,7 +76,7 @@ Currently I am as mentioned designing my own TTRPG called Kastorix, inspired by 
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Reading
-          imageLocation="src/Images/AboutMe/Bookshelf.jpg"
+          imageLocation="images/AboutMe/Bookshelf.jpg"
           altText="An image a row of my bookshelf"
           description="I also read quite a bit, mostly fantasy books and have a love of interesting worldbuilding and magic systems. Some of my favorite series include The Wandering Inn, Arcane Ascension, Mother of Learning, Riyria, Mistborn, and the Shadow Campaigns. I also enjoy scifi like The Expanse, Wayfarers series, The Martian, Bobiverse and Project Hail Mary. I’m currently looking for something good to read, taking suggestions.
 

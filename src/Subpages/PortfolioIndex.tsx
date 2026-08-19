@@ -13,7 +13,7 @@ export default function PortfolioIndex() {
       />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Edvins Nested Tooltips
-          imageLocation="src/Images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
+          imageLocation="images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
           altText="Example of tooltip"
           projectTags={["Unity", "C#", "Asset", "Solo"]}
           name="Edvin's Nested Tooltips (2026)"
@@ -29,7 +29,7 @@ export default function PortfolioIndex() {
       <hr />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Amsvartne
-          imageLocation="src/Images/Amsvartne/Amsvartne.JPG"
+          imageLocation="images/Amsvartne/Amsvartne.JPG"
           altText="Image of Amsvartne"
           projectTags={["Unity", "C#", "Game", "Group"]}
           name="Amsvartne (2045-2025)"
@@ -43,7 +43,7 @@ export default function PortfolioIndex() {
       <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Mariestad Climate Board Game
-          imageLocation="src/Images/MariestadClimateGame/Gameboard in Play.jpg"
+          imageLocation="images/MariestadClimateGame/Gameboard in Play.jpg"
           altText="Image of the board game in play"
           projectTags={["Board Game", "Professional Project", "Group"]}
           name="Mariestad Climate Board Game (2022-2024)"
@@ -61,7 +61,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Mariestad Digital
-          imageLocation="src/Images/MariestadDigitalAdaptation/MariestadDigital.JPG"
+          imageLocation="images/MariestadDigitalAdaptation/MariestadDigital.JPG"
           altText="Image of the digital game"
           projectTags={["Unity", "C#", "Game", "Solo"]}
           name="Mariestad Digital Adaptation (2024-2025)"
@@ -74,7 +74,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Ion Games
-          imageLocation="src/Images/IonGames/IonGameDesignLogo.png"
+          imageLocation="images/IonGames/IonGameDesignLogo.png"
           altText="Logo of ION Game Design"
           projectTags={["Board Games", "Internship", "Group"]}
           name="ION Internship (2024)"
@@ -92,7 +92,7 @@ I proposed the original idea for the game and have worked on game design, balanc
 
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //High Frontier
-          imageLocation="src/Images/HighFrontier/MoveBurn.jpg"
+          imageLocation="images/HighFrontier/MoveBurn.jpg"
           altText="Screenshot of the tutorial"
           projectTags={["Board Games", "Internship", "Group", "Unity, C#"]}
           name="High Frontier Tutorial (2025)"
@@ -105,7 +105,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Kastorix
-          imageLocation="src/Images/Kastorix/Maps/Kastorix.jpg"
+          imageLocation="images/Kastorix/Maps/Kastorix.jpg"
           altText="Kastorix World Map"
           projectTags={[
             "TTRPG",
@@ -136,7 +136,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       <hr />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //City State
-          imageLocation="src/Images/CityState/CityState.JPG"
+          imageLocation="images/CityState/CityState.JPG"
           altText="Screenshot of the game during play"
           projectTags={["Game", "Solo", "Unity", "C#"]}
           name="City State (2022)"
@@ -169,7 +169,7 @@ Started as a school project with 10 other students, I worked with game mechanics
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //City Builder Projects
-          imageLocation="src/Images/CityState/Exploring.jpg"
+          imageLocation="images/CityState/Exploring.jpg"
           altText="Screenshot of the game during play"
           projectTags={["Game", "Solo", "Unity", "C#"]}
           name="City Builder Projects (2022-2024)"
@@ -183,7 +183,7 @@ Started as a school project with 10 other students, I worked with game mechanics
       <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Land of the Arcane
-          imageLocation="src/Images/LandOfTheArcane/EarlyCivicTree.jpg"
+          imageLocation="images/LandOfTheArcane/EarlyCivicTree.jpg"
           altText="Image of the civic tree draft"
           projectTags={["Game Concept", "Solo"]}
           name="Land of the Arcane (2019-2021)"
@@ -200,7 +200,7 @@ Started as a school project with 10 other students, I worked with game mechanics
       />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Avalonia Garage
-          imageLocation="src/Images/Avalonia Garage/ParkedVehicles2.JPG"
+          imageLocation="images/Avalonia Garage/ParkedVehicles2.JPG"
           altText="Image of the program displaying 6 different vehicles parked"
           projectTags={["Avalonia", "CSharp", "Solo"]}
           name="Avalonia Garage (2026)"
@@ -212,7 +212,7 @@ Started as a school project with 10 other students, I worked with game mechanics
 
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Wizards Legacy
-          imageLocation="src/Images/Wizard's Legacy/HalfwayToInventory.JPG"
+          imageLocation="images/Wizard's Legacy/HalfwayToInventory.JPG"
           altText="Screenshot of the game, displaying different produced potions"
           projectTags={["Game", "CSharp", "Unity", "Solo"]}
           name="Wizards Legacy (2025)"
@@ -225,7 +225,7 @@ I have an alpha version, but the project is on pause while I develop other proje
 
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Dungeon of Dice
-          imageLocation="src/Images/others/Skulltap.JPG"
+          imageLocation="images/others/Skulltap.JPG"
           altText="Screenshot of the game, displaying the combat menu against a spider monster"
           projectTags={["Game", "Unreal", "Game"]}
           name="Dungeon of Dice (2024)"
@@ -238,7 +238,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
 
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Ruins of Magic
-          imageLocation="src/Images/others/RuinsOFMagicGif.gif"
+          imageLocation="images/others/RuinsOFMagicGif.gif"
           altText="Gif of the game, showing the player character using a magical rift to power a crystal and burning some crates"
           projectTags={["Game", "CSharp", "Unity", "Solo"]}
           name="Ruins of Magic (2022)"
@@ -250,7 +250,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
 
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Abyss Tactics
-          imageLocation="src/Images/others/Abyss Final 2.JPG"
+          imageLocation="images/others/Abyss Final 2.JPG"
           altText="Screenshot of the game, showing a battle where a gunner deciding who to shoot"
           projectTags={["Game", "Unreal", "Game"]}
           name="Abyss Tactics (2018-2019)"
