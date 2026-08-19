@@ -18,7 +18,7 @@
 }
 
 .intro-box {
-    background-color: lightblue;
+    background: linear-gradient(180deg, rgba(179, 228, 245, 1) 0%, rgba(222, 241, 250, 1) 100%);
 }
 
 .intro-image img {

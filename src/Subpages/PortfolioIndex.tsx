@@ -50,7 +50,9 @@ export default function PortfolioIndex() {
           subtitle="Eurogame style board game about city planning and sustainability"
           projectPageLink="./mariestadClimateGame.html"
           description="A strategic board game about making a mid-sized Swedish city climate neutral. In the game players play cards to build green power, nature areas to absorb pollution and other projects to achieve sustainability, while managing their income and the opinion of people in the municipality.
-I proposed the original idea for the game and have worked on game design, balance and testing. I worked with 2D artists Iris Casado, Zoey Wu and Alexander Ros who worked on graphic design and card illustrations. "
+
+I proposed the original idea for the game to the municipality and have worked on game design, balance and testing. I worked with 2D artists Iris Casado, Zoey Wu and Alexander Ros who did the graphic design and card illustrations. It is now printed in use in schools and more in Mariestad
+"
           webpageLinks={[
             {
               url: "https://mariestad.se/nyheter/nyhetsarkiv/2024-06-03-klimatspelet-mariestad-bidrar-till-den-grona-omstallningen",
