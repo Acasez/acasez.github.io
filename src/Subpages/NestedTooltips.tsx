@@ -42,7 +42,7 @@ export default function EdvinsNestedTooltips() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/EdvinsLayeredTooltips/Chain of Tooltips.JPG"
+          imageLocationOne="images/EdvinsLayeredTooltips/Chain of tooltips.JPG"
           altTextOne="Example of nested tooltips"
           imageCaptionOne="Example of the nested tooltips in the Mariestad Climate Game"
           imageLocationTwo="images/EdvinsLayeredTooltips/LotsATooltip.JPG"

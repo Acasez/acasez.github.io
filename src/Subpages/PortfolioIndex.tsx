@@ -136,7 +136,7 @@ I proposed the original idea for the game and have worked on game design, balanc
       <hr />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //City State
-          imageLocation="images/CityState/CityState.JPG"
+          imageLocation="images/CityState/CityState.jpg"
           altText="Screenshot of the game during play"
           projectTags={["Game", "Solo", "Unity", "C#"]}
           name="City State (2022)"
