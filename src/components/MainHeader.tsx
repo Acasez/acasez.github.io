@@ -7,25 +7,29 @@ export default function MainHeader() {
       <nav className="topnav" role="navigation">
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/portfolio-v2/">
               <u>Edvin Skogsholm Sanne</u>
             </Link>
           </li>
           <li>
-            <Link to="/EdvinsNestedTooltips">Edvin's Nested Tooltips</Link>
+            <Link to="/portfolio-v2/EdvinsNestedTooltips">
+              Edvin's Nested Tooltips
+            </Link>
           </li>
           <li>
-            <Link to="Amsvartne">Amsvartne</Link>
+            <Link to="/portfolio-v2/Amsvartne">Amsvartne</Link>
           </li>
           <li>
             <a href="#">Mariestad Board Game ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <Link to="/MariestadClimateGame">Mariestad Board Game</Link>
+                  <Link to="/portfolio-v2/MariestadClimateGame">
+                    Mariestad Board Game
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/MariestadDigitalAdaptation">
+                  <Link to="/portfolio-v2/MariestadDigitalAdaptation">
                     Mariestad Digital Adaptation
                   </Link>
                 </li>
@@ -37,25 +41,27 @@ export default function MainHeader() {
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <Link to="/IonInternship">Ion Internship</Link>
+                  <Link to="/portfolio-v2/IonInternship">Ion Internship</Link>
                 </li>
                 <li>
-                  <Link to="/HighFrontierTutorial">High Frontier</Link>
+                  <Link to="/portfolio-v2/HighFrontierTutorial">
+                    High Frontier
+                  </Link>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <Link to="/CityState">City State</Link>
+            <Link to="/portfolio-v2/CityState">City State</Link>
           </li>
           <li>
-            <Link to="/ToHelAndBack">To Hel and Back</Link>
+            <Link to="/portfolio-v2/ToHelAndBack">To Hel and Back</Link>
           </li>
           <li>
-            <Link to="/landOfTheArcane">Land of the Arcane</Link>
+            <Link to="/portfolio-v2/landOfTheArcane">Land of the Arcane</Link>
           </li>
           <li>
-            <Link to="/Kastorix">Kastorix</Link>
+            <Link to="/portfolio-v2/Kastorix">Kastorix</Link>
           </li>
           <li>
             <a href="#">Fan Content ▼</a>
@@ -87,7 +93,7 @@ export default function MainHeader() {
             </div>
           </li>
           <li>
-            <Link to="/AboutMe">About Me</Link>
+            <Link to="/portfolio-v2/AboutMe">About Me</Link>
           </li>
         </ul>
       </nav>

@@ -2,41 +2,44 @@
 import { lazy } from "react";
 
 export const routes = [
-  { path: "/", component: lazy(() => import("../Subpages/PortfolioIndex")) },
   {
-    path: "/EdvinsNestedTooltips",
+    path: "/portfolio-v2",
+    component: lazy(() => import("../Subpages/PortfolioIndex")),
+  },
+  {
+    path: "/portfolio-v2/EdvinsNestedTooltips",
     component: lazy(() => import("../Subpages/NestedTooltips")),
   },
   {
-    path: "/Amsvartne",
+    path: "/portfolio-v2/Amsvartne",
     component: lazy(() => import("../Subpages/Amsvartne")),
   },
   {
-    path: "/MariestadClimateGame",
+    path: "/portfolio-v2/MariestadClimateGame",
     component: lazy(() => import("../Subpages/MariestadClimateGame")),
   },
   {
-    path: "/MariestadDigitalAdaptation",
+    path: "/portfolio-v2/MariestadDigitalAdaptation",
     component: lazy(() => import("../Subpages/MariestadDigitalAdaptation")),
   },
   {
-    path: "/IonInternship",
+    path: "/portfolio-v2/IonInternship",
     component: lazy(() => import("../Subpages/IonInternship")),
   },
   {
-    path: "/HighFrontierTutorial",
+    path: "/portfolio-v2/HighFrontierTutorial",
     component: lazy(() => import("../Subpages/HighFrontierTutorial")),
   },
   {
-    path: "/CityState",
+    path: "/portfolio-v2/CityState",
     component: lazy(() => import("../Subpages/CityState")),
   },
   {
-    path: "/LandOfTheArcane",
+    path: "/portfolio-v2/LandOfTheArcane",
     component: lazy(() => import("../Subpages/LandOfTheArcane")),
   },
   {
-    path: "/AboutMe",
+    path: "/portfolio-v2/AboutMe",
     component: lazy(() => import("../Subpages/AboutMe")),
   },
 ];
