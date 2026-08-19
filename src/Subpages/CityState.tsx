@@ -27,7 +27,7 @@ export default function CityState() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
-          imageLocation="images/CityState/Planning.JPG"
+          imageLocation="images/CityState/Planning.jpg"
           altText="A screenshot of a Miro Page with various notes for each tech, making up a tech tree"
           listHeader="Things I've worked on"
           listContent={[
@@ -44,10 +44,10 @@ export default function CityState() {
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/CityState/BranchingTech.JPG"
+          imageLocationOne="images/CityState/BranchingTech.jpg"
           altTextOne="Screenshot of the branching Tech Tree"
           imageCaptionOne="Standard tech tree, designed first, inspired by the tech trees in games like Civilization. Techs have prerequisites and you can see the entire tech tree and plan ahead."
-          imageLocationTwo="images/CityState/RandomTech.JPG"
+          imageLocationTwo="images/CityState/RandomTech.jpg"
           altTextTwo="Random Tech Tree"
           imageCaptionTwo="Random tech tree, inspired by Stellaris. Every time you research a tech you get three semi-random options. Techs are separated into tiers but there are no direct connections. You have to research 2 techs from a tier to get options in the next tier. "
         />
@@ -62,7 +62,7 @@ export default function CityState() {
       <PortfolioRowFrame reverse={true}>
         <PortfolioCoverImage>
           <MediaDisplay
-            imageLocation="images/CityState/Readability_.JPG"
+            imageLocation="images/CityState/Readability_.jpg"
             altText="Two Versions of the Top Bar, one is adjusted in color and placement to make ui elements clearer to read"
             imageCaption="The top UI bar shows the different resources in the game and the players population. It went through many iterations to make it both readable and fit all the information needed."
             coverImage={true}
@@ -108,7 +108,7 @@ I decided on neither of them. Looking at it, grids and hexes are great for rando
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Uncertainty
           name="Uncertainty"
-          imageLocation="images/CityState/Itch7.JPG"
+          imageLocation="images/CityState/Itch7.jpg"
           altText="Screenshot of an event screen of an attack"
           imageCaption="Screenshot of an event screen of an attack"
           description="Overall I like the ‘plot’ system as I call it. It works, and is easy to code and implement. It did however remove a common source of uncertainty in games like this, the random terrain generation. This meant that the game only has three possible sources of uncertainty, random technology, barbarians and the expedition mechanic Since the random technology is a choice and only on for half the games for the study. and the expeditions is something players don't have to interact with you could be left with only the barbarians as a source of uncertainty. For the sake of this project that was fine, but if I were to continue working on the game I would want to add more sources of uncertainty."
