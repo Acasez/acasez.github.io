@@ -43,7 +43,7 @@ export default function HeroSection() {
                 href="https://linkedin.com/in/edvin-skosgholm-sanne"
                 className="project-link linkedin"
               >
-                Linkedin
+                LinkedIn
               </a>
               <a
                 href="mailto:edvin.sanne@gmail.com"

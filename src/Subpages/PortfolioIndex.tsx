@@ -94,7 +94,7 @@ I proposed the original idea for the game and have worked on game design, balanc
         <PortfolioRow //High Frontier
           imageLocation="images/HighFrontier/MoveBurn.jpg"
           altText="Screenshot of the tutorial"
-          projectTags={["Board Games", "Internship", "Group", "Unity, C#"]}
+          projectTags={["Board Games", "Internship", "Group", "Unity", "C#"]}
           name="High Frontier Tutorial (2025)"
           subtitle="Tutorial for the digital adaptation of the board game"
           projectPageLink="./mariestadClimateGame.html"
