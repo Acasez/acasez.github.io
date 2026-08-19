@@ -37,7 +37,8 @@ When I made my Unity Asset for layered tooltips I also updated this project to f
         <PortfolioListRow //Features List
           imageLocation="images/MariestadDigitalAdaptation/CardExample.JPG"
           altText="Explanation of a cards cost in the tutorial"
-          listHeader="Part of the tutorial explaining how a card costs work"
+          imageCaption="The tutorial (if enabled) shows up in the top left corner and explains the game concepts. It can be minimized, and their are options to go forwards and back in it."
+          listHeader="Things I worked on"
           listContent={[
             "Made a unity script to put together cards from their components using scriptable objects",
             "Coded the game and its many possible interactions, between different cards and game mechanics",
@@ -89,6 +90,33 @@ I also changed the size of green energy and traffic tracks as the current size w
           imageLocationTwo="images/MariestadDigitalAdaptation/Wireframe0.1.JPG"
           altTextTwo="Wireframe Design"
           imageCaptionTwo="I then used Figma to plan out the new design for the UI, starting with a wireframe and adding more details over time. "
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioDoubleImageRow //Double Image
+          imageLocationOne="images/MariestadDigitalAdaptation/PollutionTrack.JPG"
+          altTextOne="Screenshot of the Pollution Track in the digital game"
+          imageCaptionOne="The pollution track I described earlier. As you reduce pollution it gets moved into the green VP display, connecting the two elements and creating a visual of ‘pulling’ pollution into nature. I really like this visual idea, and even if it’s a small touch, I think it adds a lot."
+          imageLocationTwo="images/MariestadDigitalAdaptation/gameboardpollution.jpg"
+          altTextTwo="Image of the Pollution Track on physical game board"
+          imageCaptionTwo="The same pollution track on the physical game board"
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioRow //DoTween
+          name="DoTween Micro Animations"
+          imageLocation="images/MariestadDigitalAdaptation/DoScale.JPG"
+          altText="moneyText.transform.DOScale(1.1f, animationsTimer).OnComplete(() => ResetText(moneyText));"
+          imageCaption="DOTween code for scaling up the money text temporary when your receive income, and then scaling it back after animationsTimer const has passed."
+          description="I also wanted to add more feeling or ‘juice’ into the game. For this I added some micro animations using the DoTween plugin for unity which I found absolutely perfect for this. It allows you to add easy animations of things moving between points, scaling up or down or rotating. While none of these things are particularly hard to do in code, DoTween is so much faster and easier than doing it by hand. A line like the one above is so much quicker to write and use than having to deal with Unity's default ways of doing scaling, timers and more. I will definitely use this plugin for future projects that would benefit from something like it. "
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioDoubleImageRow //Double Image
+          imageLocationOne="images/MariestadDigitalAdaptation/NewStart.JPG"
+          altTextOne="Screenshot of the game in the early game"
+          imageLocationTwo="images/MariestadDigitalAdaptation/NewEndGame.JPG"
+          altTextTwo="Screenshot of the game in the late game"
         />
       </PortfolioRowFrame>
     </>
