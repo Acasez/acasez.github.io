@@ -4,6 +4,7 @@ import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
 import { memo } from "react";
 import MediaDisplay from "./MediaDisplay";
+import ProjectLinks from "./ProjectLinks";
 
 interface PortFolioProps {
   imageLocation?: string;
@@ -37,10 +38,6 @@ function PortfolioRow({
   webpageLinks = [],
   portfolioLinks = [],
 }: PortFolioProps) {
-  const LINK_CONFIG = [
-    { label: "Itch.io", class: "itch" },
-    { label: "Github", class: "github" },
-  ] as const;
   return (
     <>
       <div>
@@ -81,48 +78,12 @@ function PortfolioRow({
           <strong>{subtitle}</strong>
         </p>
         <p className="portfolio-description">{description}</p>
-        <div className="project-links">
-          {/* Fixed links (itch, github) */}
-          {LINK_CONFIG.map(({ label, class: cls }) => {
-            const url = label === "Itch.io" ? itchLink : githubLink;
-            if (!url) return null;
-
-            return (
-              <a
-                key={cls}
-                href={url}
-                className={`project-link ${cls}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {label}
-              </a>
-            );
-          })}
-
-          {/* Custom webpage links */}
-          {webpageLinks.map(({ url, label }) => (
-            <a
-              key={`${url}-${label}`} // Unique key combination
-              href={url}
-              className="project-link web"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {label}
-            </a>
-          ))}
-          {/* Links to other part of portfolio */}
-          {portfolioLinks.map(({ linkTo, label }) => (
-            <Link
-              key={`${linkTo}-${label}`} // Unique key combination
-              to={linkTo}
-              className="project-link pf"
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
+        <ProjectLinks
+          itchLink={itchLink}
+          githubLink={githubLink}
+          webpageLinks={webpageLinks}
+          portfolioLinks={portfolioLinks}
+        />
         <p />
       </div>
     </>
