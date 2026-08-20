@@ -35,6 +35,10 @@ export const routes = [
     component: lazy(() => import("../Subpages/CityState")),
   },
   {
+    path: "/portfolio-v2/ToHelAndBack",
+    component: lazy(() => import("../Subpages/ToHelAndBack")),
+  },
+  {
     path: "/portfolio-v2/LandOfTheArcane",
     component: lazy(() => import("../Subpages/LandOfTheArcane")),
   },

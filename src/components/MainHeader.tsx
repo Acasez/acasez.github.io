@@ -1,5 +1,5 @@
 import "../CSS/headerStyle.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function MainHeader() {
   return (
@@ -7,31 +7,31 @@ export default function MainHeader() {
       <nav className="topnav" role="navigation">
         <ul>
           <li>
-            <Link to="/portfolio-v2/">
+            <NavLink to="/portfolio-v2/" end>
               <u>Edvin Skogsholm Sanne</u>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio-v2/EdvinsNestedTooltips">
+            <NavLink to="/portfolio-v2/EdvinsNestedTooltips">
               Edvin's Nested Tooltips
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio-v2/Amsvartne">Amsvartne</Link>
+            <NavLink to="/portfolio-v2/Amsvartne">Amsvartne</NavLink>
           </li>
           <li>
             <a href="#">Mariestad Board Game ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <Link to="/portfolio-v2/MariestadClimateGame">
+                  <NavLink to="/portfolio-v2/MariestadClimateGame">
                     Mariestad Board Game
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/portfolio-v2/MariestadDigitalAdaptation">
+                  <NavLink to="/portfolio-v2/MariestadDigitalAdaptation">
                     Mariestad Digital Adaptation
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -41,34 +41,38 @@ export default function MainHeader() {
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <Link to="/portfolio-v2/IonInternship">Ion Internship</Link>
+                  <NavLink to="/portfolio-v2/IonInternship">
+                    Ion Internship
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/portfolio-v2/HighFrontierTutorial">
+                  <NavLink to="/portfolio-v2/HighFrontierTutorial">
                     High Frontier
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <Link to="/portfolio-v2/CityState">City State</Link>
+            <NavLink to="/portfolio-v2/CityState">City State</NavLink>
           </li>
           <li>
-            <Link to="/portfolio-v2/ToHelAndBack">To Hel and Back</Link>
+            <NavLink to="/portfolio-v2/ToHelAndBack">To Hel and Back</NavLink>
           </li>
           <li>
-            <Link to="/portfolio-v2/landOfTheArcane">Land of the Arcane</Link>
+            <NavLink to="/portfolio-v2/landOfTheArcane">
+              Land of the Arcane
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio-v2/Kastorix">Kastorix</Link>
+            <NavLink to="/portfolio-v2/Kastorix">Kastorix</NavLink>
           </li>
           <li>
             <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <Link to="/portfolio-v2/AboutMe">About Me</Link>
+                  <NavLink to="/portfolio-v2/AboutMe">About Me</NavLink>
                 </li>
                 <li>
                   <a href="#">🞀 CV's</a>
