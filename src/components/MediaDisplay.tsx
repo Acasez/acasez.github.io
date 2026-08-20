@@ -1,4 +1,4 @@
-import "../CSS/PortfolioRow.css";
+import "../CSS/MediaStyling.css";
 
 interface MediaProps {
   videoId?: string;

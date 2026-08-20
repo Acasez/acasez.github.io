@@ -153,15 +153,16 @@ I proposed the original idea for the game to the municipality and have worked on
       <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //To Hel and Back
-          videoId="7FwxtrYJtMs"
-          altText="Game Trailer"
+          imageLocation="images/ToHelAndBack/axeattack.jpg"
+          altText="Screenshot of the game during play, showing the main character Sif attacking enemies"
           projectTags={["Game", "Group", "Unity", "Level Design"]}
           name="To Hel and Back (2021-2022)"
           subtitle="Norse mythology inspired hack and slash roguelike"
           projectPageLink="./mariestadClimateGame.html"
           //TOOD, update description
           description="Hack and Slash about a fallen warrior attempting to battle out of Hel. Defeat the enemies in your way and upgrade your abilities.
-Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
+
+          Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
           itchLink="https://acasez.itch.io/city-state"
         />
       </PortfolioRowFrame>
@@ -254,7 +255,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
         <PortfolioRow //Abyss Tactics
           imageLocation="images/others/Abyss Final 2.JPG"
           altText="Screenshot of the game, showing a battle where a gunner deciding who to shoot"
-          projectTags={["Game", "Unreal", "Game"]}
+          projectTags={["Game", "Unreal"]}
           name="Abyss Tactics (2018-2019)"
           subtitle="Fantasy Napoleonic Turn Based Tactics"
           description="Local multiplayer turn based tactics game, inspired by Xcom with a Magitech Napoleonic setting. The first larger group project I was part of, I worked on game design, level design and programming using Unreal Blueprints. It was a good learning experience in working with a larger group and project management. It won Best Tech at Klara Game Awards in 2019 "
