@@ -208,7 +208,8 @@ Ultimately we found that adding it would add too much complexity for casual play
         <PortfolioRow //The Search for a Card Making Tool
           name="The Search for a Card Making Tool"
           imageLocation="images/MariestadClimateGame/BiologiskaStudier.png"
-          altText="Example of the card Lokala Sponsorer"
+          altText="Example of the card Biologiska Studier/Biological Studies"
+          imageCaption="Example of the card Biologiska Studier/Biological Studies"
           description="We started the project with hand written paper prototypes to test the concept. After seeing that they worked well, Iris started experimenting with card layouts in Clip Studio Paint, which she then could add card stats into and save for printing. After a while I took over editing the cards in Clip Studio Paint. This took some time and meant that if I wanted to change something on all cards, even minor details, I had to open them individually and change it. That wasn't very efficient and I felt like there should be a better solution
 
 I had previous experience trying to use dedicated ‘card making tools’ like nanDeck without much success, but I still tried again. But both nanDeck and another alternative I found online; Cider had unclear UI’s and complex scripting languages. I did find a tool called Paperize, which I actually liked the UI and ease of use of, but it did not have support for Inline images in texts yet, so it didn't fit this task. So after nearly giving up I instead went, ‘well I guess I'll just make it myself’.
@@ -220,10 +221,16 @@ I had previous experience trying to use dedicated ‘card making tools’ like n
           name="My Unity Card Maker"
           imageLocation="images/MariestadClimateGame/ScripatbleObject.JPG"
           altText="Scripatble Object for the card above"
+          imageCaption="Scripatble Object for the card above"
           description="So I made a Unity project for it. I tried to use Godot at first but it had no built-in way to automatically scale font size, and I found that it would be better to use an engine I knew well. And well, it was a success. I made a scriptable object for project cards and a script that puts the cards together from all of their components and then takes a screenshot. Now to edit cards I simply change the values of the scriptable object for the card, and click run. With that working I did the same thing for actor cards. 
 
-To handle the symbols in texts I use Unity's TextMeshPro style sheet, with a function I made that automatically adds them in when it sees specific words in the a string that it takes in the effect text in this case. Today I've learned how to use CSV files to import data from spreadsheets and use that to import data like this. In my current projects I use that to import data from spreadsheets to Unity, but I haven't yet updated this tool to use that.
-"
+To handle the symbols in texts I use Unity's TextMeshPro style sheet, with a function I made that automatically adds them in when it sees specific words in the a string that it takes in the effect text in this case. Now I've learned how to use CSV files to import data from spreadsheets and use that to import data like this. In my current Unity projects, like the digital adaptation of the game I use CSV files to import data from spreadsheets to Unity, but I haven't yet updated this tool to use that."
+          portfolioLinks={[
+            {
+              linkTo: "/portfolio-v2/MariestadDigitalAdaptation",
+              label: "Digital Variant",
+            },
+          ]}
         />
       </PortfolioRowFrame>
     </>

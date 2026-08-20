@@ -18,9 +18,20 @@ export default function MariestadDigitalAdaptation() {
           imageLocation="images/MariestadDigitalAdaptation/NewMidScience.JPG"
           altText="The game in play"
           description="I made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of a physical board game and an inbuilt tutorial. It has support to be played in both English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge.
-When I made my Unity Asset for layered tooltips I also updated this project to feature them.
+
+          When I made my Unity Asset for layered tooltips I also updated this project to feature them.
 "
           itchLink="https://acasez.itch.io/mariestad-climate-game"
+          portfolioLinks={[
+            {
+              linkTo: "/portfolio-v2/MariestadClimateGame",
+              label: "Board Game",
+            },
+            {
+              linkTo: "/portfolio-v2/NestedTooltips",
+              label: "Nested Tooltips",
+            },
+          ]}
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
