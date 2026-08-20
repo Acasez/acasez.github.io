@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import "../CSS/ProjectLinks.css";
 
+interface ExternalLinkConfig {
+  key: keyof Pick<LinkProps, "itchLink" | "githubLink" | "youtubeLink">;
+  label: string;
+  class: string;
+}
+
 interface LinkProps {
   itchLink?: string;
   githubLink?: string;
+  youtubeLink?: string;
   webpageLinks?: { url: string; label: string }[];
   portfolioLinks?: { linkTo: string; label: string }[];
 }
@@ -11,19 +18,25 @@ interface LinkProps {
 export default function ProjectLinks({
   itchLink,
   githubLink,
+  youtubeLink,
   webpageLinks = [],
   portfolioLinks = [],
 }: LinkProps) {
-  const LINK_CONFIG = [
-    { label: "Itch.io", class: "itch" },
-    { label: "Github", class: "github" },
-  ] as const;
+  const LINK_CONFIG: ExternalLinkConfig[] = [
+    { key: "itchLink", label: "Itch.io", class: "itch" },
+    { key: "githubLink", label: "Github", class: "github" },
+    { key: "youtubeLink", label: "Youtube Trailer", class: "youtube" },
+  ];
+
+  // Build a lookup map from the props
+  const urlMap = { itchLink, githubLink, youtubeLink };
+
   return (
     <>
       <div className="project-links">
-        {/* Fixed links (itch, github) */}
-        {LINK_CONFIG.map(({ label, class: cls }) => {
-          const url = label === "Itch.io" ? itchLink : githubLink;
+        {/* Fixed platform links — easily extendable */}
+        {LINK_CONFIG.map(({ key, label, class: cls }) => {
+          const url = urlMap[key];
           if (!url) return null;
 
           return (
@@ -42,7 +55,7 @@ export default function ProjectLinks({
         {/* Custom webpage links */}
         {webpageLinks.map(({ url, label }) => (
           <a
-            key={`${url}-${label}`} // Unique key combination
+            key={`${url}-${label}`}
             href={url}
             className="project-link web"
             target="_blank"
@@ -51,10 +64,11 @@ export default function ProjectLinks({
             {label}
           </a>
         ))}
+
         {/* Links to other part of portfolio */}
         {portfolioLinks.map(({ linkTo, label }) => (
           <Link
-            key={`${linkTo}-${label}`} // Unique key combination
+            key={`${linkTo}-${label}`}
             to={linkTo}
             className="project-link pf"
           >

@@ -164,6 +164,7 @@ I proposed the original idea for the game to the municipality and have worked on
 
           Started as a school project with 10 other students, I worked with game mechanics, balance, UI and level design. 5 of us continued working on it afterwards and it was nominated for the Skövde Academic Game Award (SAGA) in 2021. "
           itchLink="https://acasez.itch.io/city-state"
+          youtubeLink="https://www.youtube.com/watch?v=7FwxtrYJtMs"
         />
       </PortfolioRowFrame>
       <TitleSection

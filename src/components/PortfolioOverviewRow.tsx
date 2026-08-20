@@ -17,6 +17,7 @@ interface PortFolioProps {
   description: string;
   itchLink?: string;
   githubLink?: string;
+  youtubeLink?: string;
   webpageLinks?: { url: string; label: string }[];
   portfolioLinks?: { linkTo: string; label: string }[];
   //featuresList?: string[];
@@ -34,6 +35,7 @@ function PortfolioRow({
   description,
   itchLink,
   githubLink,
+  youtubeLink,
   webpageLinks = [],
   portfolioLinks = [],
 }: PortFolioProps) {
@@ -80,6 +82,7 @@ function PortfolioRow({
         <ProjectLinks
           itchLink={itchLink}
           githubLink={githubLink}
+          youtubeLink={youtubeLink}
           webpageLinks={webpageLinks}
           portfolioLinks={portfolioLinks}
         />
