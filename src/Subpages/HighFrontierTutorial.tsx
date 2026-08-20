@@ -66,8 +66,14 @@ Then the challenge came with integrating the tutorial with the rest of the gamep
           altText="Tutorial Info on the hand size limit in the game"
           description="Besides having a tutorial I know I wanted tooltips, ideally layered tooltips like in Paradox Games, which I had coded before. Tooltips are an extremely useful bit of UI design, especially for complex games like this with many keywords. I designed the tooltips to show up on resource displays and UI elements, and set up with a simple Tooltip Trigger script that can be applied to more UI objects in the future. I also designed the tooltips to work on keywords in texts as seen below. 
 
-My work here on tooltips later led me to develop Edvins Nested Tooltips as a standalone Unity asset for easy creation of nested tooltips
-"
+          My work here on tooltips later led me to develop Edvin's Nested Tooltips as a standalone Unity asset for easy creation of nested tooltips
+          "
+          portfolioLinks={[
+            {
+              linkTo: "/portfolio-v2/EdvinsNestedTooltips",
+              label: "Edvin's Nested Tooltips",
+            },
+          ]}
         />
       </PortfolioRowFrame>
     </>

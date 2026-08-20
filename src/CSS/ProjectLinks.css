@@ -48,6 +48,14 @@
     background: #3367d6;
 }
 
+.project-link.pf {
+    background: #66fffa;
+}
+
+.project-link.web:hover {
+    background: #54d7d2;
+}
+
 .project-link.mail {
     background: #fb55ea;
 }

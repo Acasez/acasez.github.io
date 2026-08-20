@@ -18,6 +18,7 @@ interface PortFolioProps {
   itchLink?: string;
   githubLink?: string;
   webpageLinks?: { url: string; label: string }[];
+  portfolioLinks?: { linkTo: string; label: string }[];
   //featuresList?: string[];
 }
 
@@ -34,6 +35,7 @@ function PortfolioRow({
   itchLink,
   githubLink,
   webpageLinks = [],
+  portfolioLinks = [],
 }: PortFolioProps) {
   const LINK_CONFIG = [
     { label: "Itch.io", class: "itch" },
@@ -109,6 +111,16 @@ function PortfolioRow({
             >
               {label}
             </a>
+          ))}
+          {/* Links to other part of portfolio */}
+          {portfolioLinks.map(({ linkTo, label }) => (
+            <Link
+              key={`${linkTo}-${label}`} // Unique key combination
+              to={linkTo}
+              className="project-link pf"
+            >
+              {label}
+            </Link>
           ))}
         </div>
         <p />
