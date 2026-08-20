@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Network } from "vis-network";
 import { DataSet } from "vis-data";
+import "../CSS/TechTreeVisualizer.css";
 
 interface TechTreeProps {
   title: string;
@@ -35,7 +36,13 @@ const networkOptions = {
   },
   physics: { enabled: false },
   interaction: { dragNodes: false, zoomView: true, dragView: true },
+  zoom: {
+    min: 0.1, // Minimum zoom level
+    max: 2.0, // Maximum zoom level
+  },
 };
+
+const DEFAULT_ZOOM = 0.46;
 
 export default function TechTreeVisualizer({ jsonPath, title }: TechTreeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -61,6 +68,31 @@ export default function TechTreeVisualizer({ jsonPath, title }: TechTreeProps) {
           networkOptions,
         );
         network.fit();
+        network.moveTo({
+          scale: DEFAULT_ZOOM,
+          animation: false,
+        });
+        network.on("dragEnd", () => {
+          if (!network) return;
+          const currentView = network.getViewPosition();
+          const containerWidth = containerRef.current?.clientWidth || 0;
+          const containerHeight = containerRef.current?.clientHeight || 0;
+
+          // Define bounds (adjust as needed)
+          const minX = -containerWidth * 0.5;
+          const maxX = containerWidth * 0.5;
+          const minY = -containerHeight * 0.5;
+          const maxY = containerHeight * 0.5;
+
+          // Clamp the position
+          const clampedX = Math.max(minX, Math.min(maxX, currentView.x));
+          const clampedY = Math.max(minY, Math.min(maxY, currentView.y));
+
+          network.moveTo({
+            position: { x: clampedX, y: clampedY },
+            animation: false,
+          });
+        });
         setError(null);
       })
       .catch((err) => {
