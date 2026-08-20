@@ -1,0 +1,1230 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Organized Warfare",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 2,
+      "label": "Codified Laws",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 3,
+      "label": "Migration",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 4,
+      "label": "Territory",
+      "group": "Tribes",
+      "tier": 2,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 5,
+      "label": "Trade",
+      "group": "Tribes",
+      "tier": 2,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 6,
+      "label": "Shamanism",
+      "group": "Tribes",
+      "tier": 2,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 7,
+      "label": "Military Tradition",
+      "group": "Tribes",
+      "tier": 3,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 8,
+      "label": "Craftsmanship",
+      "group": "Tribes",
+      "tier": 3,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 9,
+      "label": "Philosophy",
+      "group": "Tribes",
+      "tier": 3,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 10,
+      "label": "Festivals",
+      "group": "Tribes",
+      "tier": 3,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 11,
+      "label": "Raids",
+      "group": "Kingdoms",
+      "tier": 4,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 12,
+      "label": "Citizenship",
+      "group": "Kingdoms",
+      "tier": 4,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 13,
+      "label": "Magecraft",
+      "group": "Kingdoms",
+      "tier": 4,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 14,
+      "label": "Drama",
+      "group": "Kingdoms",
+      "tier": 4,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 15,
+      "label": "Statecraft",
+      "group": "Kingdoms",
+      "tier": 5,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 16,
+      "label": "Patronage",
+      "group": "Kingdoms",
+      "tier": 5,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 17,
+      "label": "Theology",
+      "group": "Kingdoms",
+      "tier": 5,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 18,
+      "label": "Dungeoneering",
+      "group": "Kingdoms",
+      "tier": 6,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 19,
+      "label": "Vassalage",
+      "group": "Kingdoms",
+      "tier": 6,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 20,
+      "label": "Chivalry",
+      "group": "Kingdoms",
+      "tier": 6,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 21,
+      "label": "Guilds",
+      "group": "Empires",
+      "tier": 7,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 22,
+      "label": "Holy Orders",
+      "group": "Empires",
+      "tier": 7,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 23,
+      "label": "Education",
+      "group": "Empires",
+      "tier": 7,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 24,
+      "label": "Exploration",
+      "group": "Empires",
+      "tier": 8,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 25,
+      "label": "Supply Lines",
+      "group": "Empires",
+      "tier": 8,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 26,
+      "label": "Centralized Power",
+      "group": "Empires",
+      "tier": 8,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 27,
+      "label": "Tolerance",
+      "group": "Empires",
+      "tier": 9,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 28,
+      "label": "Colonization",
+      "group": "Empires",
+      "tier": 9,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 29,
+      "label": "Grand Armies",
+      "group": "Empires",
+      "tier": 9,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 30,
+      "label": "Artificing",
+      "group": "Empires",
+      "tier": 9,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 31,
+      "label": "Civil Engineering",
+      "group": "Nations",
+      "tier": 10,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 32,
+      "label": "Constitution",
+      "group": "Nations",
+      "tier": 10,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 33,
+      "label": "Guerilla Warfare",
+      "group": "Nations",
+      "tier": 10,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 34,
+      "label": "Civilian Flights",
+      "group": "Nations",
+      "tier": 11,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 35,
+      "label": "Mass Media",
+      "group": "Nations",
+      "tier": 11,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 36,
+      "label": "Nationalism",
+      "group": "Nations",
+      "tier": 11,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 37,
+      "label": "Archeology",
+      "group": "Nations",
+      "tier": 12,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 2400,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 38,
+      "label": "Conservation",
+      "group": "Nations",
+      "tier": 12,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 39,
+      "label": "Suffrage",
+      "group": "Nations",
+      "tier": 12,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 40,
+      "label": "International Agreements",
+      "group": "Nations",
+      "tier": 12,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 2400,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 41,
+      "label": "Urban Planning",
+      "group": "Magic",
+      "tier": 13,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2600,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 42,
+      "label": "Ideology",
+      "group": "Magic",
+      "tier": 13,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 43,
+      "label": "Fabrials",
+      "group": "Magic",
+      "tier": 13,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 2600,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 44,
+      "label": "Airship Fleets",
+      "group": "Magic",
+      "tier": 14,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 2800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 45,
+      "label": "Professional Sports",
+      "group": "Magic",
+      "tier": 14,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 46,
+      "label": "Large Scale Spellcraft",
+      "group": "Magic",
+      "tier": 14,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2800,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 47,
+      "label": "Extreme Exploration",
+      "group": "Magic",
+      "tier": 14,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 2800,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 48,
+      "label": "Sky Industries",
+      "group": "Magic",
+      "tier": 15,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 3000,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 49,
+      "label": "Globalization",
+      "group": "Magic",
+      "tier": 15,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 3000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 50,
+      "label": "Mechanized Warfare",
+      "group": "Magic",
+      "tier": 15,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 3000,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 51,
+      "label": "Environmentalism",
+      "group": "Wonder",
+      "tier": 16,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 3200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 52,
+      "label": "New Media",
+      "group": "Wonder",
+      "tier": 16,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 3200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 53,
+      "label": "Megaprojects",
+      "group": "Wonder",
+      "tier": 16,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 3200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 54,
+      "label": "Aerial Living",
+      "group": "Wonder",
+      "tier": 17,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 3400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 55,
+      "label": "Information Warfare",
+      "group": "Wonder",
+      "tier": 17,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 3400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 56,
+      "label": "Geopolitics",
+      "group": "Wonder",
+      "tier": 17,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 3400,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 57,
+      "label": "Gaia Movement",
+      "group": "Wonder",
+      "tier": 18,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 3600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 58,
+      "label": "Uplinked Governance",
+      "group": "Wonder",
+      "tier": 18,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 3600,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 59,
+      "label": "Arcane Arts",
+      "group": "Wonder",
+      "tier": 18,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 3600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 60,
+      "label": "Battlestations",
+      "group": "Wonder",
+      "tier": 18,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 3600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 3,
+      "to": 5
+    },
+    {
+      "from": 3,
+      "to": 6
+    },
+    {
+      "from": 4,
+      "to": 7
+    },
+    {
+      "from": 4,
+      "to": 8
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 5,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 10
+    },
+    {
+      "from": 7,
+      "to": 11
+    },
+    {
+      "from": 7,
+      "to": 12
+    },
+    {
+      "from": 8,
+      "to": 12
+    },
+    {
+      "from": 8,
+      "to": 13
+    },
+    {
+      "from": 9,
+      "to": 13
+    },
+    {
+      "from": 10,
+      "to": 14
+    },
+    {
+      "from": 12,
+      "to": 15
+    },
+    {
+      "from": 12,
+      "to": 16
+    },
+    {
+      "from": 13,
+      "to": 16
+    },
+    {
+      "from": 13,
+      "to": 17
+    },
+    {
+      "from": 14,
+      "to": 17
+    },
+    {
+      "from": 11,
+      "to": 18
+    },
+    {
+      "from": 15,
+      "to": 18
+    },
+    {
+      "from": 15,
+      "to": 19
+    },
+    {
+      "from": 16,
+      "to": 19
+    },
+    {
+      "from": 17,
+      "to": 19
+    },
+    {
+      "from": 17,
+      "to": 20
+    },
+    {
+      "from": 18,
+      "to": 21
+    },
+    {
+      "from": 19,
+      "to": 21
+    },
+    {
+      "from": 19,
+      "to": 22
+    },
+    {
+      "from": 20,
+      "to": 23
+    },
+    {
+      "from": 21,
+      "to": 24
+    },
+    {
+      "from": 22,
+      "to": 25
+    },
+    {
+      "from": 21,
+      "to": 25
+    },
+    {
+      "from": 22,
+      "to": 26
+    },
+    {
+      "from": 23,
+      "to": 26
+    },
+    {
+      "from": 24,
+      "to": 27
+    },
+    {
+      "from": 24,
+      "to": 28
+    },
+    {
+      "from": 25,
+      "to": 28
+    },
+    {
+      "from": 25,
+      "to": 29
+    },
+    {
+      "from": 26,
+      "to": 29
+    },
+    {
+      "from": 23,
+      "to": 30
+    },
+    {
+      "from": 26,
+      "to": 30
+    },
+    {
+      "from": 27,
+      "to": 31
+    },
+    {
+      "from": 28,
+      "to": 31
+    },
+    {
+      "from": 28,
+      "to": 32
+    },
+    {
+      "from": 29,
+      "to": 32
+    },
+    {
+      "from": 29,
+      "to": 33
+    },
+    {
+      "from": 30,
+      "to": 33
+    },
+    {
+      "from": 31,
+      "to": 34
+    },
+    {
+      "from": 31,
+      "to": 35
+    },
+    {
+      "from": 32,
+      "to": 35
+    },
+    {
+      "from": 32,
+      "to": 36
+    },
+    {
+      "from": 33,
+      "to": 36
+    },
+    {
+      "from": 34,
+      "to": 37
+    },
+    {
+      "from": 34,
+      "to": 38
+    },
+    {
+      "from": 36,
+      "to": 39
+    },
+    {
+      "from": 35,
+      "to": 39
+    },
+    {
+      "from": 36,
+      "to": 40
+    },
+    {
+      "from": 35,
+      "to": 40
+    },
+    {
+      "from": 37,
+      "to": 41
+    },
+    {
+      "from": 38,
+      "to": 41
+    },
+    {
+      "from": 39,
+      "to": 41
+    },
+    {
+      "from": 39,
+      "to": 42
+    },
+    {
+      "from": 40,
+      "to": 42
+    },
+    {
+      "from": 40,
+      "to": 43
+    },
+    {
+      "from": 41,
+      "to": 44
+    },
+    {
+      "from": 41,
+      "to": 45
+    },
+    {
+      "from": 42,
+      "to": 45
+    },
+    {
+      "from": 42,
+      "to": 46
+    },
+    {
+      "from": 42,
+      "to": 47
+    },
+    {
+      "from": 43,
+      "to": 47
+    },
+    {
+      "from": 44,
+      "to": 48
+    },
+    {
+      "from": 45,
+      "to": 48
+    },
+    {
+      "from": 45,
+      "to": 49
+    },
+    {
+      "from": 46,
+      "to": 49
+    },
+    {
+      "from": 47,
+      "to": 49
+    },
+    {
+      "from": 47,
+      "to": 50
+    },
+    {
+      "from": 48,
+      "to": 51
+    },
+    {
+      "from": 48,
+      "to": 52
+    },
+    {
+      "from": 49,
+      "to": 52
+    },
+    {
+      "from": 49,
+      "to": 53
+    },
+    {
+      "from": 50,
+      "to": 53
+    },
+    {
+      "from": 51,
+      "to": 54
+    },
+    {
+      "from": 52,
+      "to": 54
+    },
+    {
+      "from": 52,
+      "to": 55
+    },
+    {
+      "from": 53,
+      "to": 55
+    },
+    {
+      "from": 53,
+      "to": 56
+    },
+    {
+      "from": 54,
+      "to": 57
+    },
+    {
+      "from": 54,
+      "to": 58
+    },
+    {
+      "from": 55,
+      "to": 58
+    },
+    {
+      "from": 54,
+      "to": 59
+    },
+    {
+      "from": 55,
+      "to": 59
+    },
+    {
+      "from": 55,
+      "to": 60
+    },
+    {
+      "from": 56,
+      "to": 60
+    }
+  ]
+}
