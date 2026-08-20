@@ -1,0 +1,2235 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Fishing",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 2,
+      "label": "Fishing Boat",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 3,
+      "label": "Fishery",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 188.4,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 4,
+      "label": "Carpentry",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 5,
+      "label": "Stockpile",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 6,
+      "label": "Woodcutter",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 193.8,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 7,
+      "label": "Agriculture",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 8,
+      "label": "Farm",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 9,
+      "label": "Granary",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 202.8,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 10,
+      "label": "Mining",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 11,
+      "label": "Stone Pit",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 12,
+      "label": "Crafter",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 193.8,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 13,
+      "label": "Mine",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 171.2,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 14,
+      "label": "Domestication",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 15,
+      "label": "Camp",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 16,
+      "label": "Pasture",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 202.8,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 17,
+      "label": "Pottery",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 6,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 360,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 18,
+      "label": "Clay Pit",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 371,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 19,
+      "label": "Pottery",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 195.6,
+      "y": 371,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 20,
+      "label": "Sailing",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 21,
+      "label": "Lighthouse",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 22,
+      "label": "Harbor",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 392.0,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 23,
+      "label": "Bronze Working",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 24,
+      "label": "Quarry",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 25,
+      "label": "Copper Smithy",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 399.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 26,
+      "label": "Calendar",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 27,
+      "label": "Amphitheater",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 28,
+      "label": "Plantation",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 388.4,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 29,
+      "label": "Writing",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 30,
+      "label": "Library",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 31,
+      "label": "Currency",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 32,
+      "label": "Trade Post",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 33,
+      "label": "Weaver",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 392.0,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 34,
+      "label": "Iron Working",
+      "group": "Kingdoms",
+      "tier": 3,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 35,
+      "label": "Foundry",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 36,
+      "label": "Iron Smithy",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 597.4,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 37,
+      "label": "Construction",
+      "group": "Kingdoms",
+      "tier": 3,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 38,
+      "label": "Arena",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 39,
+      "label": "School",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 601.0,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 40,
+      "label": "Aqueduct",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 580.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 41,
+      "label": "Irrigation",
+      "group": "Kingdoms",
+      "tier": 3,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 42,
+      "label": "Irrigated Farm",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 43,
+      "label": "Watermill",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 584.8,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 44,
+      "label": "Craftsmanship",
+      "group": "Kingdoms",
+      "tier": 3,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 45,
+      "label": "Glassblower",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 46,
+      "label": "Saddles",
+      "group": "Kingdoms",
+      "tier": 3,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 47,
+      "label": "Organized Pasture",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 48,
+      "label": "Hunter's Guild",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 579.4,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 49,
+      "label": "Machinery",
+      "group": "Empires",
+      "tier": 4,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 50,
+      "label": "Workshop",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 51,
+      "label": "Lumber Mill",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 795.6,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 52,
+      "label": "Metallurgy",
+      "group": "Empires",
+      "tier": 4,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 53,
+      "label": "Tunnel Mine",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 54,
+      "label": "Compass",
+      "group": "Empires",
+      "tier": 4,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 55,
+      "label": "Trawler Fishery. Wharf",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 56,
+      "label": "Statecraft",
+      "group": "Empires",
+      "tier": 4,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 57,
+      "label": "Archive",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 58,
+      "label": "Town Hall",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 797.4,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 59,
+      "label": "Printing",
+      "group": "Empires",
+      "tier": 5,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 60,
+      "label": "Paper Mill",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 61,
+      "label": "Printing Press",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 992.0,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 62,
+      "label": "Physics",
+      "group": "Empires",
+      "tier": 5,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 63,
+      "label": "Dam",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 64,
+      "label": "Windmill",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1004.6,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 65,
+      "label": "Steel",
+      "group": "Empires",
+      "tier": 5,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 66,
+      "label": "Bloomery",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 67,
+      "label": "Education",
+      "group": "Empires",
+      "tier": 5,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 68,
+      "label": "University",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 69,
+      "label": "Astronomy",
+      "group": "Nations",
+      "tier": 6,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 70,
+      "label": "Observatory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 71,
+      "label": "Seaport",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1190.2,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 72,
+      "label": "Coking",
+      "group": "Nations",
+      "tier": 6,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 73,
+      "label": "Charcoal Kiln",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 74,
+      "label": "Chemistry",
+      "group": "Nations",
+      "tier": 6,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 75,
+      "label": "Sewer",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1220,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 76,
+      "label": "Fertilizer",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1201.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 77,
+      "label": "Mass Production",
+      "group": "Nations",
+      "tier": 6,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 78,
+      "label": "Glass Manufactory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 79,
+      "label": "Manufactory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1179.4,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 80,
+      "label": "Spinning Wheel",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1149.6,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 81,
+      "label": "Industrialization",
+      "group": "Nations",
+      "tier": 7,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 82,
+      "label": "Mechanized Forestry",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1420,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 83,
+      "label": "Factory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1375.8,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 84,
+      "label": "Dynamite",
+      "group": "Nations",
+      "tier": 7,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 85,
+      "label": "Industrial Quarry",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 86,
+      "label": "Industrial Mine",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1379.4,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 87,
+      "label": "Electricity",
+      "group": "Nations",
+      "tier": 7,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 88,
+      "label": "Hydro Power Plant",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 89,
+      "label": "Coal Power Plant",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1379.4,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 90,
+      "label": "Railways",
+      "group": "Nations",
+      "tier": 7,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 91,
+      "label": "Arc Furnace",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1420,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 92,
+      "label": "Railway Station",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1390.2,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 93,
+      "label": "Scientific Theory",
+      "group": "Nations",
+      "tier": 7,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1400,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 94,
+      "label": "Zoo",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1420,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 95,
+      "label": "Laboratory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1404.6,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 96,
+      "label": "Monoculture Farm",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1376.6,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 97,
+      "label": "Electronics",
+      "group": "Magic",
+      "tier": 8,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 98,
+      "label": "Industrial Paper Mill",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 99,
+      "label": "Electronics Factory",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1572.2,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 100,
+      "label": "Refining",
+      "group": "Magic",
+      "tier": 8,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 101,
+      "label": "Oil Power Plant",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1620,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 102,
+      "label": "Oil Well",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1583.0,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 103,
+      "label": "Plastics",
+      "group": "Magic",
+      "tier": 8,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 104,
+      "label": "Hospital",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 105,
+      "label": "Plastics Factory",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1595.6,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 106,
+      "label": "Radio",
+      "group": "Magic",
+      "tier": 8,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 107,
+      "label": "Public School",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 108,
+      "label": "Radio Station",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1586.6,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 109,
+      "label": "Flight",
+      "group": "Magic",
+      "tier": 8,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1600,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 110,
+      "label": "Aerodrome",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1620,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 111,
+      "label": "Jet Engines",
+      "group": "Magic",
+      "tier": 9,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 112,
+      "label": "Space Center",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1820,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 113,
+      "label": "Airport",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1788.4,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 114,
+      "label": "Transistors",
+      "group": "Magic",
+      "tier": 9,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 115,
+      "label": "Wind Power Plant",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1820,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 116,
+      "label": "Geothermal Plant",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1781.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 117,
+      "label": "High Speed Rail",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1742.4,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 118,
+      "label": "Computers",
+      "group": "Magic",
+      "tier": 9,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 119,
+      "label": "Chipset Factory",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1820,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 120,
+      "label": "Automation",
+      "group": "Magic",
+      "tier": 9,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 121,
+      "label": "Industrial Port",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1820,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 122,
+      "label": "Automated Farm",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1783.0,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 123,
+      "label": "Fish Farm",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1747.8,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 124,
+      "label": "Nuclear Fission",
+      "group": "Magic",
+      "tier": 9,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 1800,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 125,
+      "label": "Research",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1820,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 126,
+      "label": "Nuclear Power Plant",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1795.6,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 127,
+      "label": "Satelites",
+      "group": "Wonder",
+      "tier": 10,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 128,
+      "label": "Ecology",
+      "group": "Wonder",
+      "tier": 10,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 129,
+      "label": "Offshore Wind Power",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 130,
+      "label": "Sustainable Forestry",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1975.8,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 131,
+      "label": "Hydroponics",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1929.8,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 132,
+      "label": "Composite Materials",
+      "group": "Wonder",
+      "tier": 10,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 133,
+      "label": "Particle Accelerator",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2020,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 134,
+      "label": "Internet",
+      "group": "Wonder",
+      "tier": 10,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 135,
+      "label": "Data Center",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2020,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 136,
+      "label": "Video Games Studio",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1990.2,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 137,
+      "label": "Genetics",
+      "group": "Wonder",
+      "tier": 10,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 2000,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 138,
+      "label": "Medical Lab",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2020,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 139,
+      "label": "Space Travel",
+      "group": "Wonder",
+      "tier": 11,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 140,
+      "label": "Fusion",
+      "group": "Wonder",
+      "tier": 11,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 141,
+      "label": "Fusion Power Plant",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 142,
+      "label": "Mega Engineering",
+      "group": "Wonder",
+      "tier": 11,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 143,
+      "label": "Space Elevator",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2220,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 144,
+      "label": "Robotics",
+      "group": "Wonder",
+      "tier": 11,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 145,
+      "label": "Automated Chipset Factory",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 2220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 146,
+      "label": "Nanotechnology",
+      "group": "Wonder",
+      "tier": 11,
+      "height": 5,
+      "shape": "box",
+      "description": "",
+      "x": 2200,
+      "y": 300,
+      "font": {
+        "size": 14
+      }
+    }
+  ],
+  "edges": []
+}

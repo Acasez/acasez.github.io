@@ -1,0 +1,839 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Fishing",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 2,
+      "label": "Fishery",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 3,
+      "label": "Carpentry",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 4,
+      "label": "Woodcutter",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 5,
+      "label": "Palisade",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 192.0,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 6,
+      "label": "Agriculture",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 7,
+      "label": "Council",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 8,
+      "label": "Farm",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 197.4,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 9,
+      "label": "Mining",
+      "group": "Tribes",
+      "tier": 1,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 200,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 10,
+      "label": "Quarry",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 11,
+      "label": "Mine",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 199.2,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 12,
+      "label": "Sailing",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 13,
+      "label": "Lighthouse",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 14,
+      "label": "Harbor",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 392.0,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 15,
+      "label": "Hydroponics",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 16,
+      "label": "Watermill",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 17,
+      "label": "Writing",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 18,
+      "label": "Watchtower",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 19,
+      "label": "Library",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 392.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 20,
+      "label": "Masonry",
+      "group": "Kingdoms",
+      "tier": 2,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 400,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 21,
+      "label": "Stone Bridge",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 420,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 22,
+      "label": "Temple",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 388.4,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 23,
+      "label": "Currency",
+      "group": "Empires",
+      "tier": 3,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 24,
+      "label": "Marketplace",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 25,
+      "label": "Crop Rotation",
+      "group": "Empires",
+      "tier": 3,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 26,
+      "label": "Irrigation",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 620,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 27,
+      "label": "Granary",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 607.0,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 28,
+      "label": "Iron Working",
+      "group": "Empires",
+      "tier": 3,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 29,
+      "label": "Smithy",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 30,
+      "label": "Construction",
+      "group": "Empires",
+      "tier": 3,
+      "height": 4,
+      "shape": "box",
+      "description": "",
+      "x": 600,
+      "y": 240,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 31,
+      "label": "Stone Wall",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 32,
+      "label": "Stonework",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 592.0,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 33,
+      "label": "Cartography",
+      "group": "Nations",
+      "tier": 4,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 34,
+      "label": "Seaport",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 35,
+      "label": "Eduction",
+      "group": "Nations",
+      "tier": 4,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 36,
+      "label": "University",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 37,
+      "label": "Machinery",
+      "group": "Nations",
+      "tier": 4,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 800,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 38,
+      "label": "Ballista Tower",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 820,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 39,
+      "label": "Lumber Mill",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 784.8,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 40,
+      "label": "Statecraft",
+      "group": "Magic",
+      "tier": 5,
+      "height": 1,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 60,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 41,
+      "label": "Town Hall",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 42,
+      "label": "Printing",
+      "group": "Magic",
+      "tier": 5,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 43,
+      "label": "Printing Press",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 44,
+      "label": "Architecture",
+      "group": "Magic",
+      "tier": 5,
+      "height": 3,
+      "shape": "box",
+      "description": "",
+      "x": 1000,
+      "y": 180,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 45,
+      "label": "Windmill",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 1020,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 46,
+      "label": "Battlements",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 2,
+      "x": 995.6,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 47,
+      "label": "Future Ideas",
+      "group": "Wonder",
+      "tier": 6,
+      "height": 2,
+      "shape": "box",
+      "description": "",
+      "x": 1200,
+      "y": 120,
+      "font": {
+        "size": 14
+      }
+    },
+    {
+      "id": 48,
+      "label": "Renaissance",
+      "group": "Wonder",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 12
+    },
+    {
+      "from": 1,
+      "to": 15
+    },
+    {
+      "from": 3,
+      "to": 15
+    },
+    {
+      "from": 3,
+      "to": 17
+    },
+    {
+      "from": 6,
+      "to": 17
+    },
+    {
+      "from": 9,
+      "to": 20
+    },
+    {
+      "from": 12,
+      "to": 23
+    },
+    {
+      "from": 15,
+      "to": 25
+    },
+    {
+      "from": 17,
+      "to": 25
+    },
+    {
+      "from": 17,
+      "to": 28
+    },
+    {
+      "from": 17,
+      "to": 30
+    },
+    {
+      "from": 20,
+      "to": 30
+    },
+    {
+      "from": 23,
+      "to": 33
+    },
+    {
+      "from": 23,
+      "to": 35
+    },
+    {
+      "from": 25,
+      "to": 35
+    },
+    {
+      "from": 28,
+      "to": 35
+    },
+    {
+      "from": 28,
+      "to": 37
+    },
+    {
+      "from": 30,
+      "to": 37
+    },
+    {
+      "from": 33,
+      "to": 40
+    },
+    {
+      "from": 35,
+      "to": 40
+    },
+    {
+      "from": 35,
+      "to": 42
+    },
+    {
+      "from": 37,
+      "to": 42
+    },
+    {
+      "from": 35,
+      "to": 44
+    },
+    {
+      "from": 37,
+      "to": 44
+    },
+    {
+      "from": 40,
+      "to": 47
+    },
+    {
+      "from": 42,
+      "to": 47
+    },
+    {
+      "from": 44,
+      "to": 47
+    }
+  ]
+}
