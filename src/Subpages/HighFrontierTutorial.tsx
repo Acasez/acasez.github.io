@@ -59,6 +59,7 @@ Then the challenge came with integrating the tutorial with the rest of the gamep
           altTextTwo="Tutorial for the boost system"
         />
       </PortfolioRowFrame>
+      <hr />
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Tooltips
           name="Tooltips"
@@ -68,12 +69,46 @@ Then the challenge came with integrating the tutorial with the rest of the gamep
 
           My work here on tooltips later led me to develop Edvin's Nested Tooltips as a standalone Unity asset for easy creation of nested tooltips
           "
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioRow //Keyword System
+          name="Keyword System"
+          imageLocation="images/HighFrontier/KeywordsSheet.JPG"
+          altText="Keyword sheet on google sheets I used while developing the system"
+          imageCaption="Keyword sheet on google sheets I used while developing the system. I also used the same document to plan out the tutorial phases"
+          description="One UI element I really think is great is the layered tooltip system used in Crusader Kings 3 and other recent paradox games. It allows you to quickly understand concepts and connect them and is very helpful for understanding complex games. After designing the tutorial, I also designed a keyword system, which is used to underline words and add icons in the text, and lead into a nested tooltip system, that I later developed into Edvin’s Nested Tooltips, a standalone Unity asset for easy creation of nested tooltips."
           portfolioLinks={[
             {
               linkTo: "/portfolio-v2/EdvinsNestedTooltips",
               label: "Edvin's Nested Tooltips",
             },
           ]}
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioRow //Other UI Improvements
+          name="Other UI Improvements"
+          imageLocation="images/HighFrontier/sitenodeprefab.JPG"
+          altText="Screenshot of the game in Unity."
+          imageCaption="Screenshot of the game in Unity. I know that some people are working on a more PC focused UI for the game overall, which will definitely help."
+          description="During my time working on High Frontier I also helped with some other UI improvements. One early problem I found was that it was really hard to differentiate the sprites for claims, factories and colonies at a glance so I set up a system where the name texts for factory sites are underlined (and colonized sites are also bolded). 
+
+As part of making the keywords system I set up a SpriteSheet with all the icons in Krita and used that to make a TextMeshPro sprite sheet, which could be used in all sorts of texts.
+I used the sprites to update the support chain interface when selecting parts to use symbols instead of text, and did some minor tweaks such as graying out buttons that can’t be used. There are still some cases where the game should be better at communicating to the player that something is impossible before they try, but there are fewer now and hopefully future designers can continue to work on it.
+"
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioRow //Refactored Code
+          name="Refactored Code"
+          imageLocation="images/HighFrontier/MovementTooltip.jpg"
+          altText="Screenshot of the game quite zoomed out. The player is hovering over the Aqua display on the interface, showing a tooltip."
+          description="Finally I did some fixes in the code backend to increase performance and clarity. One thing I fixed in multiple locations was reducing the game’s overreliance on instantiating objects for display and UI.
+For example, when I joined the game it would instantiate the “chit” tokens for every site that wasn’t unexplored every turn and every time one site somewhere changed. This could easily be replaced with a system that includes the chit token in the prefab, but has it hidden by default. When the site needs to show that it’s a claim/factory/colony/bust, it changes the color, sprite and sets it to be shown.
+
+Unnecessary instantiating and destruction of objects is bad for performance and adds more things to keep in memory and also makes the prefabs themselves harder to interact with in editor as everything is split into tiny prefabs. There were many other similar examples of instantiating prefabs, where just serializing objects and showing, hiding and changing their sprite would work.
+"
         />
       </PortfolioRowFrame>
     </>

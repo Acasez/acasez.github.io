@@ -49,11 +49,11 @@
 }
 
 .project-link.pf {
-    background: #00fff7;
+    background: #00d061;
 }
 
-.project-link.web:hover {
-    background: #00c7c0;
+.project-link.pf:hover {
+    background: #009747;
 }
 
 .project-link.mail {
