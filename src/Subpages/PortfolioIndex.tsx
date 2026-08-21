@@ -48,7 +48,7 @@ export default function PortfolioIndex() {
           projectTags={["Board Game", "Professional Project", "Group"]}
           name="Mariestad Climate Board Game (2022-2024)"
           subtitle="Eurogame style board game about city planning and sustainability"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="MariestadClimateGame"
           description="A strategic board game about making a mid-sized Swedish city climate neutral. In the game players play cards to build green power, nature areas to absorb pollution and other projects to achieve sustainability, while managing their income and the opinion of people in the municipality.
 
 I proposed the original idea for the game to the municipality and have worked on game design, balance and testing. I worked with 2D artists Iris Casado, Zoey Wu and Alexander Ros who did the graphic design and card illustrations. It is now printed in use in schools and more in Mariestad
@@ -68,7 +68,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Unity", "C#", "Game", "Solo"]}
           name="Mariestad Digital Adaptation (2024-2025)"
           subtitle="Digital Adaptation of the climate board game"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="MariestadDigitalAdaptation"
           description="I also made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of the physical board game and an inbuilt tutorial. It also has the option to be played in either English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge. I made a script that imports the card data using CSV files for quick playtesting and balancing, a method I use in my Unity projects today. "
           itchLink="https://acasez.itch.io/mariestad-climate-game"
         />
@@ -81,7 +81,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Board Games", "Internship", "Group"]}
           name="ION Internship (2024)"
           subtitle="Internship at ION Games"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="IonInternship"
           description="During the summer of 2024 I had an internship at ION Games, a board game studio in Stockholm, working on playtesting and game design. I helped playtest a variety of games, including Dino Dynasty, Atlas, and Pax Viking Second Edition. I worked with the designers to give feedback on rules, balance and rulebooks. I also did most of the work on the solo rules of Pax Viking Second Edition. Since then I have been in contact with some of the designers and done occasional digital playtests."
           webpageLinks={[
             {
@@ -99,7 +99,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Board Games", "Internship", "Group", "Unity", "C#"]}
           name="High Frontier Tutorial (2025)"
           subtitle="Tutorial for the digital adaptation of the board game"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="HighFrontierTutorial"
           description="During the fall of 2025 I returned to Ion Games for 3 months to do another internship, this one focusing on the digital side. I worked on making a tutorial and UI improvements for the digital implementation of the board game High Frontier, as well as various bug fixes, performance improvements and debug tools. I worked with many talented interns, as well as game designers in the company."
         />
       </PortfolioRowFrame>
@@ -119,7 +119,7 @@ I proposed the original idea for the game to the municipality and have worked on
           ]}
           name="Kastorix (2023-)"
           subtitle="Fantasy TTRPG"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="Kastorix"
           description="Kastorix is a worldbuilding project and TTRPG system I've been working on for a while. Fantasy world set on a moon orbiting a gas giant, featuring an industrial not-quite roman republic led by dragons fighting off eldritch monsters. It also has airships as the main method of travel, magic that's both a science and art form, humans as a minority species and lot's of lovely magitech.
 
         I’m currently playtesting the system with some friends and developing a webpage for the project (see link below) There you can for example find a dynamic character sheet in the style of Pathbuilder for Pathfinder "
@@ -143,7 +143,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Game", "Solo", "Unity", "C#"]}
           name="City State (2022)"
           subtitle="Turn Based City Builder"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="CityState"
           //TOOD, update description
           description="City State was made for my Bachelor's Thesis about structure in Tech Trees. It's a fairly short city building game that was made to see how different tech tree structures of tech trees affect the gameplay. It was however still designed to be fun and playable as a game though and I worked on it afterwards to add some juice. "
           itchLink="https://acasez.itch.io/city-state"
@@ -158,7 +158,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Game", "Group", "Unity", "Level Design"]}
           name="To Hel and Back (2021-2022)"
           subtitle="Norse mythology inspired hack and slash roguelike"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="ToHelAndBack"
           //TOOD, update description
           description="Hack and Slash about a fallen warrior attempting to battle out of Hel. Defeat the enemies in your way and upgrade your abilities.
 
@@ -178,7 +178,6 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Game", "Solo", "Unity", "C#"]}
           name="City Builder Projects (2022-2024)"
           subtitle="Turn Based City Builders"
-          projectPageLink="./mariestadClimateGame.html"
           //TOOD, update description
           description="After building City State and getting positive feedback on it I wanted to try to make another city builder. I've tried two different concepts and while neither were great successes, they have both taught me a great deal about making games in Unity and making city builders as games. The project also shows more of my design philosophy and methods."
         />
@@ -192,7 +191,7 @@ I proposed the original idea for the game to the municipality and have worked on
           projectTags={["Game Concept", "Solo"]}
           name="Land of the Arcane (2019-2021)"
           subtitle="Fantasy/Magitech 4X"
-          projectPageLink="./mariestadClimateGame.html"
+          projectPageLink="LandOfTheArcane"
           //TOOD, update description
           description="I really want to make a Fantasy 4X, but can't really make it on my own. Still it's one of my favorite genres and so I have worked on planning out tech trees, worldbuilding and some mechanics. Land of the Arcane is a fantasy 4X inspired by Stellaris, Civilization, Age of Wonders and many other games, and one of my dream projects to make. Still in the planning stages so far."
         />

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectTags.css";
 import { memo } from "react";
@@ -69,9 +69,9 @@ function PortfolioRow({
 
       <div className="portfolio-text">
         {projectPageLink ? (
-          <Link className="portfolio-title" to={projectPageLink}>
+          <NavLink className="portfolio-title" to={projectPageLink}>
             {name}
-          </Link>
+          </NavLink>
         ) : (
           <h1 className="portfolio-title">{name}</h1>
         )}

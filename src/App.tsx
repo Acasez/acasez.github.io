@@ -1,10 +1,16 @@
-// App.jsx
-import { Routes, Route } from "react-router-dom";
-import { Suspense } from "react";
+// App.tsx
+import { Routes, Route, useLocation } from "react-router-dom";
+import { Suspense, useEffect } from "react";
 import { routes } from "./Routes/config.ts";
 import MainHeader from "./components/MainHeader";
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
   return (
     <>
       <MainHeader />
