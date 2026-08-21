@@ -79,7 +79,7 @@ export default function MainHeader() {
                   <div className="dropdown_menu">
                     <ul>
                       <li>
-                        <a href="englishCV.html">English</a>
+                        <NavLink to="/portfolio-v2/EnglishCV">English</NavLink>
                       </li>
                       <li>
                         <a href="swedishCV.html">Swedish</a>

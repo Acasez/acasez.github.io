@@ -50,4 +50,8 @@ export const routes = [
     path: "/portfolio-v2/AboutMe",
     component: lazy(() => import("../Subpages/AboutMe")),
   },
+  {
+    path: "/portfolio-v2/EnglishCV",
+    component: lazy(() => import("../Subpages/EnglishCV")),
+  },
 ];
