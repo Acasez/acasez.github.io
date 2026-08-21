@@ -103,7 +103,6 @@ sheets = [
     {"name": "Civic Tree", "range": "Civic Tree!A1:K100"},
     {"name": "Prosper Tech Tree", "range": "Prosper Tech Tree!A1:K100"},
     {"name": "City State Tech Tree", "range": "City State Tech Tree!A1:K100"},
-    # Add more sheets here as needed
 ]
 
 # Fetch data for each sheet and save as JSON

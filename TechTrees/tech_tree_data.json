@@ -16,6 +16,22 @@
     },
     {
       "id": 2,
+      "label": "Pasture",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 3,
       "label": "Pottery",
       "group": "Tribes",
       "tier": 1,
@@ -29,7 +45,39 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
+      "label": "Granary",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 5,
+      "label": "Farm",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 197.4,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 6,
       "label": "Mining",
       "group": "Tribes",
       "tier": 1,
@@ -43,7 +91,23 @@
       }
     },
     {
-      "id": 4,
+      "id": 7,
+      "label": "Mine",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 220,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 8,
       "label": "Sailing",
       "group": "Tribes",
       "tier": 2,
@@ -57,7 +121,23 @@
       }
     },
     {
-      "id": 5,
+      "id": 9,
+      "label": "Fishing Boat",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 420,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 10,
       "label": "Carpentry",
       "group": "Tribes",
       "tier": 2,
@@ -71,7 +151,23 @@
       }
     },
     {
-      "id": 6,
+      "id": 11,
+      "label": "Woodcutter Huts",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 12,
       "label": "The Wheel",
       "group": "Tribes",
       "tier": 2,
@@ -85,7 +181,22 @@
       }
     },
     {
-      "id": 7,
+      "id": 13,
+      "label": "Roads",
+      "group": "Tribes",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 14,
       "label": "Calendar",
       "group": "Tribes",
       "tier": 2,
@@ -99,7 +210,39 @@
       }
     },
     {
-      "id": 8,
+      "id": 15,
+      "label": "Orchard",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 420,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 16,
+      "label": "Council",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 397.4,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 17,
       "label": "Masonry",
       "group": "Tribes",
       "tier": 3,
@@ -113,7 +256,22 @@
       }
     },
     {
-      "id": 9,
+      "id": 18,
+      "label": "Bridges",
+      "group": "Tribes",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 19,
       "label": "Writing",
       "group": "Tribes",
       "tier": 3,
@@ -127,7 +285,23 @@
       }
     },
     {
-      "id": 10,
+      "id": 20,
+      "label": "Library",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 21,
       "label": "Smithing",
       "group": "Tribes",
       "tier": 3,
@@ -141,7 +315,23 @@
       }
     },
     {
-      "id": 11,
+      "id": 22,
+      "label": "Smithing",
+      "font-size": 1,
+      "group": "Tribes",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 620,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 23,
       "label": "Shipbuilding",
       "group": "Kingdoms",
       "tier": 4,
@@ -155,7 +345,23 @@
       }
     },
     {
-      "id": 12,
+      "id": 24,
+      "label": "Lighthouse",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 820,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 25,
       "label": "Hydrology",
       "group": "Kingdoms",
       "tier": 4,
@@ -169,7 +375,39 @@
       }
     },
     {
-      "id": 13,
+      "id": 26,
+      "label": "Aqueduct",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 820,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 27,
+      "label": "Water Mill",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 795.6,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 28,
       "label": "Currency",
       "group": "Kingdoms",
       "tier": 4,
@@ -183,7 +421,23 @@
       }
     },
     {
-      "id": 14,
+      "id": 29,
+      "label": "Caravanasary",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 820,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 30,
       "label": "Runes",
       "group": "Kingdoms",
       "tier": 4,
@@ -197,7 +451,23 @@
       }
     },
     {
-      "id": 15,
+      "id": 31,
+      "label": "Runesmith",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 820,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 32,
       "label": "Mathematics",
       "group": "Kingdoms",
       "tier": 5,
@@ -211,7 +481,22 @@
       }
     },
     {
-      "id": 16,
+      "id": 33,
+      "label": "Improved Roads",
+      "group": "Kingdoms",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 34,
       "label": "Construction",
       "group": "Kingdoms",
       "tier": 5,
@@ -225,7 +510,23 @@
       }
     },
     {
-      "id": 17,
+      "id": 35,
+      "label": "Arena",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1020,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 36,
       "label": "Metal Casting",
       "group": "Kingdoms",
       "tier": 5,
@@ -239,7 +540,23 @@
       }
     },
     {
-      "id": 18,
+      "id": 37,
+      "label": "Forge",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1020,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 38,
       "label": "Compass",
       "group": "Kingdoms",
       "tier": 6,
@@ -253,7 +570,23 @@
       }
     },
     {
-      "id": 19,
+      "id": 39,
+      "label": "Harbour",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 40,
       "label": "Natural Studies",
       "group": "Kingdoms",
       "tier": 6,
@@ -267,7 +600,22 @@
       }
     },
     {
-      "id": 20,
+      "id": 41,
+      "label": "Monster Taming",
+      "group": "Kingdoms",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1220,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 42,
       "label": "Machinery",
       "group": "Kingdoms",
       "tier": 6,
@@ -281,7 +629,23 @@
       }
     },
     {
-      "id": 21,
+      "id": 43,
+      "label": "Lumber Mill",
+      "font-size": 1,
+      "group": "Kingdoms",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1220,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 44,
       "label": "Engineering",
       "group": "Empires",
       "tier": 7,
@@ -295,7 +659,38 @@
       }
     },
     {
-      "id": 22,
+      "id": 45,
+      "label": "Castle",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 46,
+      "label": "Improved Bridges",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1399.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 47,
       "label": "Crop Rotation",
       "group": "Empires",
       "tier": 7,
@@ -309,7 +704,38 @@
       }
     },
     {
-      "id": 23,
+      "id": 48,
+      "label": "Grain Silo",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 49,
+      "label": "Improved Farms",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1392.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 50,
       "label": "Arcana",
       "group": "Empires",
       "tier": 7,
@@ -323,7 +749,23 @@
       }
     },
     {
-      "id": 24,
+      "id": 51,
+      "label": "Infusion Altar",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1420,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 52,
       "label": "Alloying",
       "group": "Empires",
       "tier": 7,
@@ -337,7 +779,23 @@
       }
     },
     {
-      "id": 25,
+      "id": 53,
+      "label": "Blast Furnace",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1420,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 54,
       "label": "Cartography",
       "group": "Empires",
       "tier": 8,
@@ -351,7 +809,23 @@
       }
     },
     {
-      "id": 26,
+      "id": 55,
+      "label": "Seaport",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 56,
       "label": "Printing",
       "group": "Empires",
       "tier": 8,
@@ -365,7 +839,23 @@
       }
     },
     {
-      "id": 27,
+      "id": 57,
+      "label": "Printing Press",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 58,
       "label": "Magitech",
       "group": "Empires",
       "tier": 8,
@@ -379,7 +869,23 @@
       }
     },
     {
-      "id": 28,
+      "id": 59,
+      "label": "Artificing Academy",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 60,
       "label": "Astronomy",
       "group": "Empires",
       "tier": 9,
@@ -393,7 +899,39 @@
       }
     },
     {
-      "id": 29,
+      "id": 61,
+      "label": "Divinatory",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1820,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 62,
+      "label": "Observatory",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1792.0,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 63,
       "label": "Economics",
       "group": "Empires",
       "tier": 9,
@@ -407,7 +945,54 @@
       }
     },
     {
-      "id": 30,
+      "id": 64,
+      "label": "Bank",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1820,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 65,
+      "label": "Sawmill",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1802.8,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 66,
+      "label": "Advanced Roads",
+      "group": "Empires",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1780.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 67,
       "label": "Runeguns",
       "group": "Empires",
       "tier": 9,
@@ -421,7 +1006,23 @@
       }
     },
     {
-      "id": 31,
+      "id": 68,
+      "label": "Fortress",
+      "font-size": 1,
+      "group": "Empires",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1820,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 69,
       "label": "Airships",
       "group": "Nations",
       "tier": 10,
@@ -435,7 +1036,23 @@
       }
     },
     {
-      "id": 32,
+      "id": 70,
+      "label": "Airship Tower",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2020,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 71,
       "label": "Biomancy",
       "group": "Nations",
       "tier": 10,
@@ -449,7 +1066,38 @@
       }
     },
     {
-      "id": 33,
+      "id": 72,
+      "label": "Biomancy Lab",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 73,
+      "label": "Biomancy",
+      "group": "Nations",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1988.4,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 74,
       "label": "Golems",
       "group": "Nations",
       "tier": 10,
@@ -463,7 +1111,38 @@
       }
     },
     {
-      "id": 34,
+      "id": 75,
+      "label": "Golem Workshop",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2020,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 76,
+      "label": "Golems",
+      "group": "Nations",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1984.8,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 77,
       "label": "Chemistry",
       "group": "Nations",
       "tier": 10,
@@ -477,7 +1156,39 @@
       }
     },
     {
-      "id": 35,
+      "id": 78,
+      "label": "Grocery",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2020,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 79,
+      "label": "Chemistry Lab",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 1997.4,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 80,
       "label": "Aerial Warfare",
       "group": "Nations",
       "tier": 11,
@@ -491,7 +1202,23 @@
       }
     },
     {
-      "id": 36,
+      "id": 81,
+      "label": "Anti-Air Battery",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 82,
       "label": "Aether Power",
       "group": "Nations",
       "tier": 11,
@@ -505,7 +1232,23 @@
       }
     },
     {
-      "id": 37,
+      "id": 83,
+      "label": "Aether Collector",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 84,
       "label": "Adamantium",
       "group": "Nations",
       "tier": 11,
@@ -519,7 +1262,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 85,
       "label": "Industry",
       "group": "Nations",
       "tier": 12,
@@ -533,7 +1276,54 @@
       }
     },
     {
-      "id": 39,
+      "id": 86,
+      "label": "Train Station",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2420,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 87,
+      "label": "Factory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2386.6,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 88,
+      "label": "Railroads",
+      "group": "Nations",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2364.0,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 89,
       "label": "Arcane Shielding",
       "group": "Nations",
       "tier": 12,
@@ -547,7 +1337,23 @@
       }
     },
     {
-      "id": 40,
+      "id": 90,
+      "label": "Shield Generator",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 91,
       "label": "Golem Hearts",
       "group": "Nations",
       "tier": 12,
@@ -561,7 +1367,38 @@
       }
     },
     {
-      "id": 41,
+      "id": 92,
+      "label": "Golem Factory",
+      "font-size": 1,
+      "group": "Nations",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2420,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 93,
+      "label": "Improved Golems",
+      "group": "Nations",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2386.6,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 94,
       "label": "Aether Flight",
       "group": "Magic",
       "tier": 13,
@@ -575,7 +1412,23 @@
       }
     },
     {
-      "id": 42,
+      "id": 95,
+      "label": "Aerodome",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 96,
       "label": "Communications",
       "group": "Magic",
       "tier": 13,
@@ -589,7 +1442,54 @@
       }
     },
     {
-      "id": 43,
+      "id": 97,
+      "label": "Bomb Shelter",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2620,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 98,
+      "label": "Network Tower",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2588.4,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 99,
+      "label": "Scrying",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2555.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 100,
       "label": "Restoration",
       "group": "Magic",
       "tier": 13,
@@ -603,7 +1503,38 @@
       }
     },
     {
-      "id": 44,
+      "id": 101,
+      "label": "Hospital",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 102,
+      "label": "Improved Biomancy",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2595.6,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 103,
       "label": "Stealth",
       "group": "Magic",
       "tier": 14,
@@ -617,7 +1548,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 104,
       "label": "Mana Fuel Cells",
       "group": "Magic",
       "tier": 14,
@@ -631,7 +1562,37 @@
       }
     },
     {
-      "id": 46,
+      "id": 105,
+      "label": "Modern Roads",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2820,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 106,
+      "label": "Mana Efficiency",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2807.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 107,
       "label": "Elemental Weapons",
       "group": "Magic",
       "tier": 14,
@@ -645,7 +1606,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 108,
       "label": "Illusory Displays",
       "group": "Magic",
       "tier": 14,
@@ -659,7 +1620,39 @@
       }
     },
     {
-      "id": 48,
+      "id": 109,
+      "label": "Command Center",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2820,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 110,
+      "label": "Cinema",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2784.8,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 111,
       "label": "Automation",
       "group": "Magic",
       "tier": 15,
@@ -673,7 +1666,23 @@
       }
     },
     {
-      "id": 49,
+      "id": 112,
+      "label": "Arcane Hub",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3020,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 113,
       "label": "Terraforming",
       "group": "Magic",
       "tier": 15,
@@ -687,7 +1696,38 @@
       }
     },
     {
-      "id": 50,
+      "id": 114,
+      "label": "Growth Focus",
+      "font-size": 1,
+      "group": "Magic",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3020,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 115,
+      "label": "Terraforming",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 2988.4,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 116,
       "label": "Learning Golems",
       "group": "Magic",
       "tier": 15,
@@ -701,7 +1741,22 @@
       }
     },
     {
-      "id": 51,
+      "id": 117,
+      "label": "Thinking Golems",
+      "group": "Magic",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3020,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 118,
       "label": "Advanced Flight",
       "group": "Wonder",
       "tier": 16,
@@ -715,7 +1770,23 @@
       }
     },
     {
-      "id": 52,
+      "id": 119,
+      "label": "Airport",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3220,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 120,
       "label": "Sky Cities",
       "group": "Wonder",
       "tier": 16,
@@ -729,7 +1800,38 @@
       }
     },
     {
-      "id": 53,
+      "id": 121,
+      "label": "Resort",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3220,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 122,
+      "label": "Levitate City",
+      "group": "Wonder",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3199.2,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 123,
       "label": "Awakening",
       "group": "Wonder",
       "tier": 16,
@@ -743,7 +1845,38 @@
       }
     },
     {
-      "id": 54,
+      "id": 124,
+      "label": "Gene Clinic",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3220,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 125,
+      "label": "Awakening",
+      "group": "Wonder",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3190.2,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 126,
       "label": "Leyline Manipulation",
       "group": "Wonder",
       "tier": 17,
@@ -757,7 +1890,23 @@
       }
     },
     {
-      "id": 55,
+      "id": 127,
+      "label": "Node Stabilizer",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3420,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 128,
       "label": "Dimensionalism",
       "group": "Wonder",
       "tier": 17,
@@ -771,7 +1920,39 @@
       }
     },
     {
-      "id": 56,
+      "id": 129,
+      "label": "Teleport Circle",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3420,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 130,
+      "label": "Dimensional Ward",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3383.0,
+      "y": 191,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 131,
       "label": "Disintegration",
       "group": "Wonder",
       "tier": 17,
@@ -785,7 +1966,7 @@
       }
     },
     {
-      "id": 57,
+      "id": 132,
       "label": "Floating Fortresses",
       "group": "Wonder",
       "tier": 18,
@@ -799,7 +1980,22 @@
       }
     },
     {
-      "id": 58,
+      "id": 133,
+      "label": "Improved Levitation",
+      "group": "Wonder",
+      "shape": "eclipse",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3620,
+      "y": 71,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 134,
       "label": "Portals",
       "group": "Wonder",
       "tier": 18,
@@ -813,7 +2009,23 @@
       }
     },
     {
-      "id": 59,
+      "id": 135,
+      "label": "Gate",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3620,
+      "y": 131,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 136,
       "label": "Mana Shaping",
       "group": "Wonder",
       "tier": 18,
@@ -827,7 +2039,23 @@
       }
     },
     {
-      "id": 60,
+      "id": 137,
+      "label": "Mana Forge",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3620,
+      "y": 251,
+      "font": {
+        "size": 4.5
+      }
+    },
+    {
+      "id": 138,
       "label": "Titans",
       "group": "Wonder",
       "tier": 18,
@@ -839,396 +2067,412 @@
       "font": {
         "size": 14
       }
+    },
+    {
+      "id": 139,
+      "label": "Titan Fabrication Site",
+      "font-size": 1,
+      "group": "Wonder",
+      "shape": "box",
+      "margin": {
+        "top": 4
+      },
+      "size": 6,
+      "x": 3620,
+      "y": 311,
+      "font": {
+        "size": 4.5
+      }
     }
   ],
   "edges": [
     {
       "from": 1,
-      "to": 5
-    },
-    {
-      "from": 1,
-      "to": 6
-    },
-    {
-      "from": 2,
-      "to": 7
-    },
-    {
-      "from": 3,
-      "to": 7
-    },
-    {
-      "from": 6,
-      "to": 8
-    },
-    {
-      "from": 7,
-      "to": 8
-    },
-    {
-      "from": 7,
-      "to": 9
-    },
-    {
-      "from": 3,
       "to": 10
     },
     {
-      "from": 4,
-      "to": 11
-    },
-    {
-      "from": 5,
-      "to": 11
-    },
-    {
-      "from": 4,
+      "from": 1,
       "to": 12
     },
     {
-      "from": 5,
-      "to": 12
-    },
-    {
-      "from": 8,
-      "to": 12
-    },
-    {
-      "from": 8,
-      "to": 13
-    },
-    {
-      "from": 9,
-      "to": 13
-    },
-    {
-      "from": 8,
+      "from": 3,
       "to": 14
     },
     {
-      "from": 9,
+      "from": 6,
       "to": 14
-    },
-    {
-      "from": 10,
-      "to": 14
-    },
-    {
-      "from": 11,
-      "to": 15
     },
     {
       "from": 12,
-      "to": 15
-    },
-    {
-      "from": 13,
-      "to": 15
-    },
-    {
-      "from": 13,
-      "to": 16
-    },
-    {
-      "from": 14,
-      "to": 16
+      "to": 17
     },
     {
       "from": 14,
       "to": 17
     },
     {
-      "from": 15,
-      "to": 18
-    },
-    {
-      "from": 15,
+      "from": 14,
       "to": 19
     },
     {
-      "from": 16,
-      "to": 19
-    },
-    {
-      "from": 16,
-      "to": 20
-    },
-    {
-      "from": 17,
-      "to": 20
-    },
-    {
-      "from": 18,
+      "from": 6,
       "to": 21
     },
     {
-      "from": 19,
-      "to": 21
-    },
-    {
-      "from": 19,
-      "to": 22
-    },
-    {
-      "from": 19,
+      "from": 8,
       "to": 23
     },
     {
-      "from": 20,
+      "from": 10,
       "to": 23
     },
     {
-      "from": 20,
-      "to": 24
-    },
-    {
-      "from": 21,
+      "from": 8,
       "to": 25
     },
     {
-      "from": 22,
-      "to": 26
+      "from": 10,
+      "to": 25
     },
     {
-      "from": 23,
-      "to": 26
+      "from": 17,
+      "to": 25
     },
     {
-      "from": 23,
-      "to": 27
-    },
-    {
-      "from": 24,
-      "to": 27
-    },
-    {
-      "from": 25,
+      "from": 17,
       "to": 28
     },
     {
+      "from": 19,
+      "to": 28
+    },
+    {
+      "from": 17,
+      "to": 30
+    },
+    {
+      "from": 19,
+      "to": 30
+    },
+    {
+      "from": 21,
+      "to": 30
+    },
+    {
+      "from": 23,
+      "to": 32
+    },
+    {
       "from": 25,
-      "to": 29
-    },
-    {
-      "from": 26,
-      "to": 29
-    },
-    {
-      "from": 26,
-      "to": 30
-    },
-    {
-      "from": 27,
-      "to": 30
+      "to": 32
     },
     {
       "from": 28,
-      "to": 31
-    },
-    {
-      "from": 29,
-      "to": 31
-    },
-    {
-      "from": 27,
       "to": 32
     },
     {
-      "from": 29,
-      "to": 32
-    },
-    {
-      "from": 29,
-      "to": 33
-    },
-    {
-      "from": 30,
-      "to": 33
+      "from": 28,
+      "to": 34
     },
     {
       "from": 30,
       "to": 34
     },
     {
-      "from": 31,
-      "to": 35
-    },
-    {
-      "from": 31,
+      "from": 30,
       "to": 36
     },
     {
       "from": 32,
-      "to": 36
-    },
-    {
-      "from": 33,
-      "to": 36
-    },
-    {
-      "from": 33,
-      "to": 37
-    },
-    {
-      "from": 34,
-      "to": 37
-    },
-    {
-      "from": 36,
       "to": 38
     },
     {
-      "from": 36,
-      "to": 39
-    },
-    {
-      "from": 37,
-      "to": 39
-    },
-    {
-      "from": 37,
+      "from": 32,
       "to": 40
     },
     {
-      "from": 35,
-      "to": 41
+      "from": 34,
+      "to": 40
     },
     {
-      "from": 38,
-      "to": 41
-    },
-    {
-      "from": 38,
+      "from": 34,
       "to": 42
     },
     {
-      "from": 39,
+      "from": 36,
       "to": 42
     },
     {
-      "from": 39,
-      "to": 43
+      "from": 38,
+      "to": 44
     },
     {
       "from": 40,
-      "to": 43
-    },
-    {
-      "from": 41,
       "to": 44
     },
     {
-      "from": 42,
-      "to": 44
-    },
-    {
-      "from": 42,
-      "to": 45
-    },
-    {
-      "from": 43,
-      "to": 45
-    },
-    {
-      "from": 43,
-      "to": 46
-    },
-    {
-      "from": 42,
+      "from": 40,
       "to": 47
     },
     {
-      "from": 43,
-      "to": 47
+      "from": 40,
+      "to": 50
+    },
+    {
+      "from": 42,
+      "to": 50
+    },
+    {
+      "from": 42,
+      "to": 52
     },
     {
       "from": 44,
-      "to": 48
-    },
-    {
-      "from": 45,
-      "to": 48
-    },
-    {
-      "from": 45,
-      "to": 49
-    },
-    {
-      "from": 46,
-      "to": 49
-    },
-    {
-      "from": 46,
-      "to": 50
+      "to": 54
     },
     {
       "from": 47,
-      "to": 50
-    },
-    {
-      "from": 48,
-      "to": 51
-    },
-    {
-      "from": 48,
-      "to": 52
-    },
-    {
-      "from": 49,
-      "to": 52
-    },
-    {
-      "from": 49,
-      "to": 53
-    },
-    {
-      "from": 50,
-      "to": 53
-    },
-    {
-      "from": 51,
-      "to": 54
-    },
-    {
-      "from": 52,
-      "to": 54
-    },
-    {
-      "from": 52,
-      "to": 55
-    },
-    {
-      "from": 53,
-      "to": 55
-    },
-    {
-      "from": 53,
       "to": 56
     },
     {
-      "from": 54,
-      "to": 57
+      "from": 50,
+      "to": 56
     },
     {
-      "from": 54,
+      "from": 50,
       "to": 58
     },
     {
-      "from": 55,
+      "from": 52,
       "to": 58
     },
     {
-      "from": 55,
-      "to": 59
-    },
-    {
-      "from": 56,
-      "to": 59
-    },
-    {
-      "from": 56,
+      "from": 54,
       "to": 60
+    },
+    {
+      "from": 54,
+      "to": 63
+    },
+    {
+      "from": 56,
+      "to": 63
+    },
+    {
+      "from": 56,
+      "to": 67
+    },
+    {
+      "from": 58,
+      "to": 67
+    },
+    {
+      "from": 60,
+      "to": 69
+    },
+    {
+      "from": 63,
+      "to": 69
+    },
+    {
+      "from": 58,
+      "to": 71
+    },
+    {
+      "from": 63,
+      "to": 71
+    },
+    {
+      "from": 63,
+      "to": 74
+    },
+    {
+      "from": 67,
+      "to": 74
+    },
+    {
+      "from": 67,
+      "to": 77
+    },
+    {
+      "from": 69,
+      "to": 80
+    },
+    {
+      "from": 69,
+      "to": 82
+    },
+    {
+      "from": 71,
+      "to": 82
+    },
+    {
+      "from": 74,
+      "to": 82
+    },
+    {
+      "from": 74,
+      "to": 84
+    },
+    {
+      "from": 77,
+      "to": 84
+    },
+    {
+      "from": 82,
+      "to": 85
+    },
+    {
+      "from": 82,
+      "to": 89
+    },
+    {
+      "from": 84,
+      "to": 89
+    },
+    {
+      "from": 84,
+      "to": 91
+    },
+    {
+      "from": 80,
+      "to": 94
+    },
+    {
+      "from": 85,
+      "to": 94
+    },
+    {
+      "from": 85,
+      "to": 96
+    },
+    {
+      "from": 89,
+      "to": 96
+    },
+    {
+      "from": 89,
+      "to": 100
+    },
+    {
+      "from": 91,
+      "to": 100
+    },
+    {
+      "from": 94,
+      "to": 103
+    },
+    {
+      "from": 96,
+      "to": 103
+    },
+    {
+      "from": 96,
+      "to": 104
+    },
+    {
+      "from": 100,
+      "to": 104
+    },
+    {
+      "from": 100,
+      "to": 107
+    },
+    {
+      "from": 96,
+      "to": 108
+    },
+    {
+      "from": 100,
+      "to": 108
+    },
+    {
+      "from": 103,
+      "to": 111
+    },
+    {
+      "from": 104,
+      "to": 111
+    },
+    {
+      "from": 104,
+      "to": 113
+    },
+    {
+      "from": 107,
+      "to": 113
+    },
+    {
+      "from": 107,
+      "to": 116
+    },
+    {
+      "from": 108,
+      "to": 116
+    },
+    {
+      "from": 111,
+      "to": 118
+    },
+    {
+      "from": 111,
+      "to": 120
+    },
+    {
+      "from": 113,
+      "to": 120
+    },
+    {
+      "from": 113,
+      "to": 123
+    },
+    {
+      "from": 116,
+      "to": 123
+    },
+    {
+      "from": 118,
+      "to": 126
+    },
+    {
+      "from": 120,
+      "to": 126
+    },
+    {
+      "from": 120,
+      "to": 128
+    },
+    {
+      "from": 123,
+      "to": 128
+    },
+    {
+      "from": 123,
+      "to": 131
+    },
+    {
+      "from": 126,
+      "to": 132
+    },
+    {
+      "from": 126,
+      "to": 134
+    },
+    {
+      "from": 128,
+      "to": 134
+    },
+    {
+      "from": 128,
+      "to": 136
+    },
+    {
+      "from": 131,
+      "to": 136
+    },
+    {
+      "from": 131,
+      "to": 138
     }
   ]
 }
