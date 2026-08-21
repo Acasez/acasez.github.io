@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectTags.css";
 import { memo } from "react";
-import MediaDisplay from "./MediaDisplay";
-import ProjectLinks from "./ProjectLinks";
+import MediaDisplay from "../components/MediaDisplay";
+import ProjectLinks from "../components/ProjectLinks";
 
 interface PortFolioProps {
   imageLocation?: string;

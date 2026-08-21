@@ -1,7 +1,7 @@
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
-import MediaDisplay from "./MediaDisplay";
+import MediaDisplay from "../components/MediaDisplay";
 
 interface PortFolioProps {
   videoId?: string;

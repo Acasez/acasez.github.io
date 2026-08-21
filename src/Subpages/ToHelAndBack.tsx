@@ -1,7 +1,7 @@
-import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
-import PortfolioListRow from "../components/PortfolioListRow";
-import PortfolioRow from "../components/PortfolioOverviewRow";
-import PortfolioRowFrame from "../components/PortfolioRowFrame";
+import PortfolioDoubleImageRow from "../PortfolioRows/PortfolioDoubleImageRow";
+import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
+import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
+import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 
 export default function ToHelAndBack() {

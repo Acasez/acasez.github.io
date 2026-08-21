@@ -1,9 +1,9 @@
 import MediaDisplay from "../components/MediaDisplay";
-import PortfolioCoverImage from "../components/PortfolioCoverImage";
-import PortfolioFullText from "../components/PortfolioFullText";
-import PortfolioListRow from "../components/PortfolioListRow";
-import PortfolioRow from "../components/PortfolioOverviewRow";
-import PortfolioRowFrame from "../components/PortfolioRowFrame";
+import PortfolioCoverImage from "../PortfolioRows/PortfolioCoverImage";
+import PortfolioFullText from "../PortfolioRows/PortfolioFullText";
+import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
+import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
+import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TechTreeVisualizer from "../components/TechTreeVisualizer";
 import TitleSection from "../components/TitleSection";
 import "../CSS/HRLInes.css";

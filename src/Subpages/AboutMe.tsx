@@ -1,7 +1,7 @@
 import MediaDisplay from "../components/MediaDisplay";
-import PortfolioCoverImage from "../components/PortfolioCoverImage";
-import PortfolioRow from "../components/PortfolioOverviewRow";
-import PortfolioRowFrame from "../components/PortfolioRowFrame";
+import PortfolioCoverImage from "../PortfolioRows/PortfolioCoverImage";
+import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
+import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 
 export default function AboutMe() {

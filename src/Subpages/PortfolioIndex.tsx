@@ -1,6 +1,6 @@
 import HeroSection from "../components/HeroSection";
-import PortfolioRow from "../components/PortfolioOverviewRow";
-import PortfolioRowFrame from "../components/PortfolioRowFrame";
+import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
+import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 import "../CSS/HRLines.css";
 export default function PortfolioIndex() {

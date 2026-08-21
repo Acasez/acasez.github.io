@@ -1,7 +1,7 @@
 import "../CSS/PortfolioRow.css";
 import "../CSS/ProjectLinks.css";
 import "../CSS/ProjectTags.css";
-import MediaDisplay from "./MediaDisplay";
+import MediaDisplay from "../components/MediaDisplay";
 
 interface PortFolioProps {
   videoIdOne?: string;
@@ -12,13 +12,9 @@ interface PortFolioProps {
   imageLocationTwo?: string;
   altTextTwo: string;
   imageCaptionTwo?: string;
-  videoIdThree?: string;
-  imageLocationThree?: string;
-  altTextThree: string;
-  imageCaptionThree?: string;
 }
 
-export default function PortfolioTripleImage({
+export default function PortfolioRow({
   videoIdOne,
   imageLocationOne,
   altTextOne,
@@ -27,10 +23,6 @@ export default function PortfolioTripleImage({
   imageLocationTwo,
   altTextTwo,
   imageCaptionTwo,
-  videoIdThree,
-  imageLocationThree,
-  altTextThree,
-  imageCaptionThree,
 }: PortFolioProps) {
   return (
     <>
@@ -49,15 +41,6 @@ export default function PortfolioTripleImage({
           imageLocation={imageLocationTwo}
           altText={altTextTwo}
           imageCaption={imageCaptionTwo}
-          coverImage={false}
-        />
-      </div>
-      <div className="portfolio-media">
-        <MediaDisplay
-          videoId={videoIdThree}
-          imageLocation={imageLocationThree}
-          altText={altTextThree}
-          imageCaption={imageCaptionThree}
           coverImage={false}
         />
       </div>
