@@ -14,7 +14,7 @@ interface PortFolioProps {
   imageCaptionTwo?: string;
 }
 
-export default function PortfolioRow({
+export default function PortfolioDoubleImageRow({
   videoIdOne,
   imageLocationOne,
   altTextOne,
