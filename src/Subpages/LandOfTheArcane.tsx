@@ -1,9 +1,12 @@
+import MediaDisplay from "../components/MediaDisplay";
+import PortfolioCoverImage from "../components/PortfolioCoverImage";
 import PortfolioFullText from "../components/PortfolioFullText";
 import PortfolioListRow from "../components/PortfolioListRow";
 import PortfolioRow from "../components/PortfolioOverviewRow";
 import PortfolioRowFrame from "../components/PortfolioRowFrame";
 import TechTreeVisualizer from "../components/TechTreeVisualizer";
 import TitleSection from "../components/TitleSection";
+import "../CSS/HRLInes.css";
 
 export default function LandOfTheArcane() {
   return (
@@ -71,13 +74,74 @@ But Land of the Arcane is primarily not about war and conflict. A lot of fantasy
         defaultZoom={0.46}
       />
       <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Overview
-          imageLocation="images/LandOfTheArcane/LateTechTree.jpg"
-          altText="Screenshot of my tech tree on a Miro board showing the Age of Nations and Age of Magic"
-          imageCaption="Part of the tech tree showing Age of Nations and Age of Magic"
-          description="Land of the arcane (LOTA) is a concept/design document for a 4X game I've been working on on and off for some time now and a game I want to make at some point. The problem is that while 4X's are a great genre, they don't fit well to indie game development. I like tech trees, fantasy worldbuilding and magitech and so LOTA has been a way to combine those. The main part of the work has been designing a tech and civic tree, but I've also planned out worldbuilding, collected art references and designed systems for species, cultures and unit design. 
-					
-There is nothing playable connected to LOTA and I haven't worked on it for a bit, but I would still love to make it into a game some day. 
+        <PortfolioFullText //Overview
+          description="Making the tech tree was one of the first things I did for Land of the Arcane, and it's a fun combination of Game Design and Worldbuilding. I looked at the tech tree from many different games to see what technologies they highlight, how advancement works both mechanically and as a view of history. The tech trees I looked at the most were the ones used in Civilization 4, 5 and 6 and Humankind. I also looked at the Vox Pupuli and JNR mods for Civ 5 and 6 respectively to see how members of the community expand on tech trees.
+
+Game Design wise I set up a few rules for myself. Each era has 10 techs spread out in 3 steps. Each tech has a maximum of three required techs and three techs it leads to. To start making the tech tree I made cards for some of the technologies I really wanted in the game; Airships, Magitech, Golems, Leyline Manipulation, Runes... I focused on concepts I liked and that fit the world I was making. Then I worked on figuring out what technologies I would need to connect to them and how many techs and eras it should have total. Over the course of designing the era and tech count has steadily expanded, and right now it's at 60 techs over 6 eras. That felt like a good amount to carry a sense of progression and scope without making individual techs feel pointless
+
+On the techs there are smaller notes in different colours, which are things unlocked by the techs. These are right now concepts/features (white), buildings (green), weapons/armor (purple) and resources (yellow). They might be a bit hard to read here, but I am hoping to update the vis.js visualiser with them soon.
+"
+        />
+      </PortfolioRowFrame>
+      <TechTreeVisualizer
+        title="LOTA Civic Tree"
+        jsonPath={"TechTrees/civic_tree_data.json"}
+        defaultZoom={0.46}
+      />
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioFullText //Overview
+          description="As I was looking at different tech trees I found some interesting comparisons between Humankind which has more technologies that touch on social developments and military strategies, and Civilization which generally has more technologies regarding material science and religion. Civilization 6 however did something interesting by splitting its technology tree into Civics and Techs in two separate trees, which I think was a great idea, and just copied. It shows cultural and societal development in a great way and prevents scenarios where you build a laboratory to ‘research’ ‘techs’ like ideology or professional sports. Of course there are nuances that both systems miss, your radio stations in your nations aren't inventing Urban Planning, but it's a good approximation.
+
+This tree might appear to follow our world's progress far more than the tech tree, but that's because magic doesn't stop revolutions. People whether they are elves, orcs, humans or lizardfolk will want representation and rights. They will also invent sports and arts. The way these things take form in the Land of the Arcane will of course be different though. Skyship racing is a popular sport, at least for the rich. Mechanized warfare does not come from tanks, it comes from armies of golems. Information warfare is done via scrying, divination and warded rooms in government buildings.
+
+Then of course some things are new. Our world's most extreme exploration might be the poles or the deep sea. Here there are floating islands, crystal forests and giant underground caverns to explore. Our world may have skyscrapers but we don't have floating islands, either man made or artificial (yet?). When a rich enough government can make their biggest cities float, that has some socioeconomic impacts.
+"
+        />
+      </PortfolioRowFrame>
+      <hr />
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioRow //Species Creation
+          name="Species Creation"
+          imageLocation="images/LandOfTheArcane/SpeciesSetup.jpg"
+          altText="A screenshot of the species design notes"
+          imageCaption="My species notes and some example traits"
+          description="At the start of the game you design a species by picking traits and appearance. Species traits are things like 'Strong', 'Small' and 'Adaptive' and have an impact on the game. Strong species deal more melee damage in battle and have a higher production. A small species requires less housing but does less damage. Adaptive species (like humans) can settle in more types of terrain, while Lizardfolk might struggle outside of hot climates.
+
+After you designed your species, you now have a tribe of people looking for a place to settle in a vast world. The start of your journey. And your opponents do the same thing. Here the game follows a lot of 4X standards. Explore the world, expand your nation, exploit resources. Exterminate?
+
+Diplomacy is important. Generally the world would have a few different tribes of most species so there isn't just one 'Elven Kingdom'. You aren’t leading the world's only dwarven settlers, there is another faction of them over there (though the option of being the only one of your species could still exist for challenge runs and roleplay). You will see multiple nations of most species and pretty soon multispecies nations. This comes with advantages, having a larger population and the ability to use different traits for different things. Do you have strong, durable turtle people that immigrated to your country? That's a nice elite durable vanguard. Your nimble, intelligent lizardfolk, they make good spies and scouts.
+
+Still, of course having a multispecies nation isn't without issues and internal politics…
+"
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioCoverImage>
+          <MediaDisplay
+            imageLocation="images/LandOfTheArcane/UnitDesign.jpg"
+            altText="A screenshot of my unit design notes"
+            coverImage={true}
+          />
+        </PortfolioCoverImage>
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioFullText //Species Creation
+          name="Unit Editor"
+          description="Instead of having predefined units that are unlocked on different conditions, Land of the Arcane has a unit designer. Here you can pick the weapons, armor, materials in the armor and of course species of your unit. In order to be able to use a type of weapon or armor you must first unlock it, which would generally be done in the tech tree. At the start of the game your only weapon option would be clubs, but you quickly get access to spears by researching mining. and then your first ranged option in bows by researching Carpentry.
+
+The goal of the unit editor would be to add customizability to the game and to allow for more varied scenarios. A mana poor nation or one with an honourbound culture might decide to forgo Runeguns and instead outfit their armies in adamantium armor, runes of shielding and melee weapons. It would be an expensive army to build, but a durable one, that could beat a runegun regiment. Due to their lack of ranged attacks they would have a problem fighting back against airships though.
+
+On the other hand Runeguns might be good for a revolutionary militia that doesn't have time to train with traditional weapons. An intelligent and weak science loving species might let their entire army be composed of golems. With enough resources, that's a durable army that doesn't need to sleep and can march far. Could be a problem if those Golems start to think for themselves though...
+
+"
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioFullText //Species Creation
+          name="Inspiration"
+          description="While Land of the Arcane is a fantasy setting, it should be clear by now that traditional fantasy works like Lord of the Rings aren't its primary inspiration source. Rather a lot of inspiration has been taken from settings like Eberron, Ravnica, Kaladesh/Avishkar, Runeterra and the worlds of works like Fullmetal Alchemist, Wandering Inn, Mother of Learning, Arcane Ascension and Final Fantasy. Worlds where magic is everywhere and can be harnessed.
+
+Still Land of the Arcane is also about the journey there, how your nation goes from petty tribe in a large world full of wonder and danger, to a kingdom starting to understand magic around you, to an empire or federation spanning a continent with fleets of airships, gigantic golems, cities in the skies and dimensional portals between cities. Some of the inspiration was actually from the excellent Minecraft mod Thaumcraft, where the player has a similar journey but on a much smaller scale.
 "
         />
       </PortfolioRowFrame>
