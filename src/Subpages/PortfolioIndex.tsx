@@ -171,17 +171,6 @@ I proposed the original idea for the game to the municipality and have worked on
         title="Game Drafts and Cancelled projects"
         subtitle="For things that aren't finished, but I still have a lot to say about"
       />
-      <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //City Builder Projects
-          imageLocation="images/CityState/Exploring.jpg"
-          altText="Screenshot of the game during play"
-          projectTags={["Game", "Solo", "Unity", "C#"]}
-          name="City Builder Projects (2022-2024)"
-          subtitle="Turn Based City Builders"
-          //TOOD, update description
-          description="After building City State and getting positive feedback on it I wanted to try to make another city builder. I've tried two different concepts and while neither were great successes, they have both taught me a great deal about making games in Unity and making city builders as games. The project also shows more of my design philosophy and methods."
-        />
-      </PortfolioRowFrame>
 
       <hr />
       <PortfolioRowFrame reverse={false}>
@@ -236,6 +225,17 @@ I have an alpha version, but the project is on pause while I develop other proje
           description="Dice based turn based tactical rouge-like about exploring an overgrown dungeon. It has a working turn-based dice-centric combat system. Prototype can be found on itch
 
 It was made with the other team members at Corvian Games (Now Tiny Creature Games). I worked on combat mechanics, and coded in blueprints. It was a nice refresher in working with blueprints, and I would like to do more projects in Unreal at some point. "
+        />
+      </PortfolioRowFrame>
+
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioRow //City Builder Projects
+          imageLocation="images/CityState/Exploring.jpg"
+          altText="Screenshot of the game during play"
+          projectTags={["Game", "Solo", "Unity", "C#"]}
+          name="City Builder Projects (2022-2024)"
+          subtitle="Turn Based City Builders"
+          description="After building City State and getting positive feedback on it I wanted to try to make another city builder. I've tried two different concepts and while neither were great successes, they have both taught me a great deal about making games in Unity and making city builders as games. I plan to set up a page for it later"
         />
       </PortfolioRowFrame>
 
