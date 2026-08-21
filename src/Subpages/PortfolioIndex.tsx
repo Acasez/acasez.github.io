@@ -3,10 +3,31 @@ import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 import "../CSS/HRLines.css";
+import ProjectTags from "../components/ProjectTags";
 export default function PortfolioIndex() {
   return (
     <>
       <HeroSection />
+      <ProjectTags
+        projectTags={[
+          "Unity",
+          "Unreal",
+          "C#",
+          "Javascript",
+          "Python",
+          "SQLite",
+          "Game",
+          "Asset",
+          "Board Game",
+          "TTRPG",
+          "Website",
+          "Professional Project",
+          "Internship",
+          "Level Design",
+          "Solo",
+          "Group",
+        ]}
+      />
       <TitleSection
         title="Main Projects"
         subtitle="Some of the projects I've done. Clicking on the titles go to their link"
@@ -228,7 +249,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
         />
       </PortfolioRowFrame>
 
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={false}>
         <PortfolioRow //City Builder Projects
           imageLocation="images/CityState/Exploring.jpg"
           altText="Screenshot of the game during play"
@@ -239,7 +260,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
         />
       </PortfolioRowFrame>
 
-      <PortfolioRowFrame reverse={false}>
+      <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Ruins of Magic
           imageLocation="images/others/RuinsOFMagicGif.gif"
           altText="Gif of the game, showing the player character using a magical rift to power a crystal and burning some crates"
@@ -251,7 +272,7 @@ It was made with the other team members at Corvian Games (Now Tiny Creature Game
         />
       </PortfolioRowFrame>
 
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Abyss Tactics
           imageLocation="images/others/Abyss Final 2.JPG"
           altText="Screenshot of the game, showing a battle where a gunner deciding who to shoot"

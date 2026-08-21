@@ -55,6 +55,12 @@
     border-color: #285a82;
 }
 
+.tag.sqlite {
+    background: #add2da;
+    border-color: #e1f9fe;
+    color: black;
+}
+
 .tag.asset {
     background: #008060;
     border-color: #005a40;
@@ -86,16 +92,31 @@
 }
 
 .tag.ttrpg {
-    background: #ba7309;
-    border-color: #d7e83b;
+    background: #ab1111;
+    border-color: #f72929;
 }
 
-.tag.job {
+.tag.professional {
     background: #3eb6bf;
     border-color: #65ffff;
+}
+
+.tag.internship {
+    background: #b90b99;
+    border-color: #db10b6;
+}
+
+.tag.level {
+    background: #c78a40;
+    border-color: #e19f4f;
 }
 
 .tag.website {
     background: #4285f4;
     border-color: #3367d6;
+}
+
+.tag.avalonia {
+    background: #3b3b3d;
+    border-color: #787878;
 }
