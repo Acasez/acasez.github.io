@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "../CSS/PortfolioRow.css";
-import "../CSS/ProjectTags.css";
 import { memo } from "react";
 import MediaDisplay from "../components/MediaDisplay";
 import ProjectLinks from "../components/ProjectLinks";
+import ProjectTags from "../components/ProjectTags";
 
 interface PortFolioProps {
   imageLocation?: string;
@@ -51,20 +51,7 @@ function PortfolioRow({
             coverImage={false}
           />
         </div>
-        {projectTags ? (
-          <div className="project-tags">
-            {projectTags.map((tag) => (
-              <span
-                key={tag}
-                className={`tag ${tag.toLowerCase().replace("#", "sharp")}`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        ) : (
-          ""
-        )}
+        <ProjectTags projectTags={projectTags} />
       </div>
 
       <div className="portfolio-text">
