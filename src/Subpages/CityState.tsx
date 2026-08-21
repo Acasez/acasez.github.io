@@ -4,6 +4,7 @@ import PortfolioDoubleImageRow from "../components/PortfolioDoubleImageRow";
 import PortfolioListRow from "../components/PortfolioListRow";
 import PortfolioRow from "../components/PortfolioOverviewRow";
 import PortfolioRowFrame from "../components/PortfolioRowFrame";
+import TechTreeVisualizer from "../components/TechTreeVisualizer";
 import TitleSection from "../components/TitleSection";
 
 export default function CityState() {
@@ -52,6 +53,11 @@ export default function CityState() {
           imageCaptionTwo="Random tech tree, inspired by Stellaris. Every time you research a tech you get three semi-random options. Techs are separated into tiers but there are no direct connections. You have to research 2 techs from a tier to get options in the next tier. "
         />
       </PortfolioRowFrame>
+      <TechTreeVisualizer
+        title="City State Tech Tree"
+        jsonPath={"TechTrees/city_state_tech_tree_data.json"}
+        defaultZoom={1.2}
+      />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //Turn Based City Builder
           imageLocation="images/CityState/TooltipTiny.JPG"

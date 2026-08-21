@@ -68,7 +68,19 @@ But Land of the Arcane is primarily not about war and conflict. A lot of fantasy
       <TechTreeVisualizer
         title="LOTA Tech Tree"
         jsonPath={"TechTrees/tech_tree_data.json"}
+        defaultZoom={0.46}
       />
+      <PortfolioRowFrame reverse={true}>
+        <PortfolioRow //Overview
+          imageLocation="images/LandOfTheArcane/LateTechTree.jpg"
+          altText="Screenshot of my tech tree on a Miro board showing the Age of Nations and Age of Magic"
+          imageCaption="Part of the tech tree showing Age of Nations and Age of Magic"
+          description="Land of the arcane (LOTA) is a concept/design document for a 4X game I've been working on on and off for some time now and a game I want to make at some point. The problem is that while 4X's are a great genre, they don't fit well to indie game development. I like tech trees, fantasy worldbuilding and magitech and so LOTA has been a way to combine those. The main part of the work has been designing a tech and civic tree, but I've also planned out worldbuilding, collected art references and designed systems for species, cultures and unit design. 
+					
+There is nothing playable connected to LOTA and I haven't worked on it for a bit, but I would still love to make it into a game some day. 
+"
+        />
+      </PortfolioRowFrame>
     </>
   );
 }

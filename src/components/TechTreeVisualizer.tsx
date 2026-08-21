@@ -6,6 +6,7 @@ import "../CSS/TechTreeVisualizer.css";
 interface TechTreeProps {
   title: string;
   jsonPath: string;
+  defaultZoom: number;
 }
 
 const networkOptions = {
@@ -38,21 +39,32 @@ const networkOptions = {
   interaction: { dragNodes: false, zoomView: true, dragView: true },
   zoom: {
     min: 0.1, // Minimum zoom level
-    max: 2.0, // Maximum zoom level
+    max: 0.4, // Maximum zoom level
   },
 };
 
-const DEFAULT_ZOOM = 0.46;
-
-export default function TechTreeVisualizer({ jsonPath, title }: TechTreeProps) {
+export default function TechTreeVisualizer({
+  jsonPath,
+  title,
+  defaultZoom,
+}: TechTreeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
+  const networkRef = useRef<Network | null>(null); // Store network in a ref for access in the reset function
+
+  const resetView = () => {
+    if (!networkRef.current) return;
+    networkRef.current.fit();
+    networkRef.current.moveTo({
+      scale: defaultZoom,
+      animation: false,
+    });
+  };
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    let network: Network | null = null;
     let cancelled = false;
 
     fetch(jsonPath)
@@ -62,36 +74,18 @@ export default function TechTreeVisualizer({ jsonPath, title }: TechTreeProps) {
       })
       .then((data) => {
         if (cancelled) return;
-        network = new Network(
+
+        const network = new Network(
           container,
           { nodes: new DataSet(data.nodes), edges: new DataSet(data.edges) },
           networkOptions,
         );
+
+        networkRef.current = network; // Store the network instance in the ref
         network.fit();
         network.moveTo({
-          scale: DEFAULT_ZOOM,
+          scale: defaultZoom,
           animation: false,
-        });
-        network.on("dragEnd", () => {
-          if (!network) return;
-          const currentView = network.getViewPosition();
-          const containerWidth = containerRef.current?.clientWidth || 0;
-          const containerHeight = containerRef.current?.clientHeight || 0;
-
-          // Define bounds (adjust as needed)
-          const minX = -containerWidth * 0.5;
-          const maxX = containerWidth * 0.5;
-          const minY = -containerHeight * 0.5;
-          const maxY = containerHeight * 0.5;
-
-          // Clamp the position
-          const clampedX = Math.max(minX, Math.min(maxX, currentView.x));
-          const clampedY = Math.max(minY, Math.min(maxY, currentView.y));
-
-          network.moveTo({
-            position: { x: clampedX, y: clampedY },
-            animation: false,
-          });
         });
         setError(null);
       })
@@ -100,14 +94,17 @@ export default function TechTreeVisualizer({ jsonPath, title }: TechTreeProps) {
       });
 
     return () => {
-      cancelled = true; // ignore late-arriving fetch results
-      network?.destroy(); // required: vis.js throws if a container keeps a live network
+      cancelled = true;
+      networkRef.current?.destroy();
     };
   }, [jsonPath]);
 
   return (
     <>
       <h1>{title}</h1>
+      <button onClick={resetView} className="reset-button">
+        Reset View
+      </button>
       <div ref={containerRef} className="tech-tree-container" />
       {error && <p role="alert">Failed to load tech tree: {error}</p>}
     </>
