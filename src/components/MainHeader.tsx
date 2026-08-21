@@ -68,6 +68,9 @@ export default function MainHeader() {
             <NavLink to="/portfolio-v2/Kastorix">Kastorix</NavLink>
           </li>
           <li>
+            <NavLink to="/portfolio-v2/AboutMe">About Me</NavLink>
+          </li>
+          {/* <li> //TODO FIX Later, once I can get React PDF viewers to work
             <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
@@ -105,7 +108,7 @@ export default function MainHeader() {
                 </li>
               </ul>
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>
