@@ -24,15 +24,13 @@ const tagGroups = [
       "Board Game",
       "TTRPG",
       "Website",
-      "Professional Project",
-      "Internship",
       "Level Design",
       "Game Concept",
     ],
   },
   {
     title: "Project Scope",
-    tags: ["Solo", "Group"],
+    tags: ["Solo", "Group", "Professional Project", "Internship"],
   },
 ];
 
@@ -306,22 +304,6 @@ export default function PortfolioIndex() {
           selectedTag={selectedTag}
           onTagClick={setSelectedTag}
         />
-        {selectedTag && (
-          <button
-            onClick={() => setSelectedTag(null)}
-            style={{
-              padding: "8px 16px",
-              backgroundColor: "#f0f0f0",
-              border: "1px solid #ccc",
-              borderRadius: "20px",
-              cursor: "pointer",
-              fontSize: "0.9em",
-              fontWeight: "bold",
-            }}
-          >
-            Show All
-          </button>
-        )}
       </div>
       {hasMainProjects && (
         <>
