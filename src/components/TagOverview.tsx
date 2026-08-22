@@ -1,37 +1,3 @@
-// First, let's define the tag groups
-const tagGroups = [
-  {
-    title: "Programming Languages",
-    tags: ["C#", "Javascript", "Python", "SQLite"],
-  },
-  {
-    title: "Game Engines & Frameworks",
-    tags: ["Unity", "Unreal", "Avalonia"],
-  },
-  {
-    title: "Project Types",
-    tags: [
-      "Game",
-      "Asset",
-      "Board Game",
-      "TTRPG",
-      "Website",
-      "Professional Project",
-      "Internship",
-      "Level Design",
-    ],
-  },
-  {
-    title: "Project Scope",
-    tags: ["Solo", "Group"],
-  },
-  {
-    title: "Other",
-    tags: ["Game Concept"],
-  },
-];
-
-// Then update your ProjectTags component to handle groups
 interface TagGroupProps {
   groups: {
     title: string;

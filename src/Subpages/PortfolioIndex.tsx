@@ -2,10 +2,42 @@
 import React from "react";
 import { useState } from "react";
 import HeroSection from "../components/HeroSection";
-import ProjectTags from "../components/ProjectTags";
+import TagOverview from "../components/TagOverview";
 import TitleSection from "../components/TitleSection";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
+
+const tagGroups = [
+  {
+    title: "Programming Languages",
+    tags: ["C#", "Javascript", "Python", "SQLite"],
+  },
+  {
+    title: "Game Engines & Frameworks",
+    tags: ["Unity", "Unreal", "Avalonia"],
+  },
+  {
+    title: "Project Types",
+    tags: [
+      "Game",
+      "Asset",
+      "Board Game",
+      "TTRPG",
+      "Website",
+      "Professional Project",
+      "Internship",
+      "Level Design",
+    ],
+  },
+  {
+    title: "Project Scope",
+    tags: ["Solo", "Group"],
+  },
+  {
+    title: "Other",
+    tags: ["Game Concept"],
+  },
+];
 
 interface Project {
   imageLocation: string;
@@ -242,12 +274,6 @@ export default function PortfolioIndex() {
   ];
 
   // Filter projects based on selected tag
-  const allProjects = [...mainProjects, ...gameDrafts, ...smallProjects];
-  const allTags = Array.from(
-    new Set(allProjects.flatMap((project) => project.projectTags)),
-  ).sort();
-
-  // Filter projects based on selected tag
   const filterProjects = (projects: ProjectArray): ProjectArray => {
     return selectedTag
       ? projects.filter((project) =>
@@ -278,8 +304,8 @@ export default function PortfolioIndex() {
           padding: "0 16px",
         }}
       >
-        <ProjectTags
-          projectTags={allTags}
+        <TagOverview
+          groups={tagGroups}
           selectedTag={selectedTag}
           onTagClick={setSelectedTag}
         />
