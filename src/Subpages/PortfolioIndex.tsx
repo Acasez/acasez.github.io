@@ -27,15 +27,12 @@ const tagGroups = [
       "Professional Project",
       "Internship",
       "Level Design",
+      "Game Concept",
     ],
   },
   {
     title: "Project Scope",
     tags: ["Solo", "Group"],
-  },
-  {
-    title: "Other",
-    tags: ["Game Concept"],
   },
 ];
 
