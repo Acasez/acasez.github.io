@@ -308,10 +308,11 @@ export default function PortfolioIndex() {
         <>
           <TitleSection
             title="Main Projects"
-            subtitle={
+            subtitle="Some of the projects I've done. Clicking on the titles go to their link"
+            extraLine={
               selectedTag
                 ? `Showing "${filteredMainProjects.length}" projects tagged with "${selectedTag}."`
-                : "Some of the projects I've done. Clicking on the titles go to their link"
+                : ""
             }
           />
           {filteredMainProjects.map((project, index) => (
@@ -342,6 +343,11 @@ export default function PortfolioIndex() {
           <TitleSection
             title="Game Drafts and Cancelled projects"
             subtitle="For things that aren't finished, but I still have a lot to say about"
+            extraLine={
+              selectedTag
+                ? `Showing "${filteredGameDrafts.length}" projects tagged with "${selectedTag}."`
+                : ""
+            }
           />
           <hr />
           {filteredGameDrafts.map((project, index) => (
@@ -360,6 +366,11 @@ export default function PortfolioIndex() {
           <TitleSection
             title="Small Projects"
             subtitle="Small or old projects. They lack their own subpage"
+            extraLine={
+              selectedTag
+                ? `Showing "${filteredSmallProjects.length}" projects tagged with "${selectedTag}."`
+                : ""
+            }
           />
           {filteredSmallProjects.map((project, index) => (
             <React.Fragment key={index}>
