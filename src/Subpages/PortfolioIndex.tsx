@@ -310,7 +310,7 @@ export default function PortfolioIndex() {
             title="Main Projects"
             subtitle={
               selectedTag
-                ? `Showing "${filteredMainProjects.length}" projects tagged with "${selectedTag}"`
+                ? `Showing "${filteredMainProjects.length}" projects tagged with "${selectedTag}."`
                 : "Some of the projects I've done. Clicking on the titles go to their link"
             }
           />

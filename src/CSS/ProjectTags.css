@@ -1,4 +1,10 @@
 /* Update your ProjectTags.css with these styles */
+.project-tags {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .project-tags-container {
     display: flex;
     flex-direction: column;
@@ -56,6 +62,7 @@
 .tag.selected {
     box-shadow: 0 0 0 2px white, 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    background-color: greenyellow;
 }
 
 /* Specific tag colors - using your existing colors but with better contrast */

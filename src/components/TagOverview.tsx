@@ -24,25 +24,19 @@ export default function TagOverview({
 
   return (
     <div className="tag-filter-container">
-      <div>
+      <div style={{ display: "flex", gap: "10px" }}>
         <button className="tag show-filters-tag" onClick={toggleTags}>
           {displayTags ? "Hide tag filters" : "Show tag filters"}
         </button>
+        {selectedTag && (
+          <button className="tag selected" onClick={() => onTagClick?.(null)}>
+            Show All
+          </button>
+        )}
       </div>
 
       {displayTags && (
         <div className="project-tags-container">
-          {selectedTag && (
-            <div className="show-all-container">
-              <button
-                className="tag selected"
-                onClick={() => onTagClick?.(null)}
-              >
-                Show All
-              </button>
-            </div>
-          )}
-
           {groups.map((group, index) => (
             <div key={index} className="tag-group">
               <span className="tag-group-title">{group.title}:</span>
