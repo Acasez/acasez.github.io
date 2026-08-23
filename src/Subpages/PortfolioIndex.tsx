@@ -82,7 +82,7 @@ export default function PortfolioIndex() {
     {
       imageLocation: "images/MariestadClimateGame/Gameboard in Play.jpg",
       altText: "Image of the board game in play",
-      projectTags: ["Board Game", "Professional Project", "Group"],
+      projectTags: ["Board Game", "Professional-Project", "Group"],
       name: "Mariestad Climate Board Game (2022-2024)",
       subtitle:
         "Eurogame style board game about city planning and sustainability",
@@ -175,7 +175,7 @@ export default function PortfolioIndex() {
       imageLocation: "images/ToHelAndBack/axeattack.jpg",
       altText:
         "Screenshot of the game during play, showing the main character Sif attacking enemies",
-      projectTags: ["Game", "Group", "Unity", "Level Design"],
+      projectTags: ["Game", "Group", "Unity", "Level-Design"],
       name: "To Hel and Back (2021-2022)",
       subtitle: "Norse mythology inspired hack and slash roguelike",
       projectPageLink: "ToHelAndBack",
@@ -224,7 +224,7 @@ export default function PortfolioIndex() {
       imageLocation: "images/others/Skulltap.JPG",
       altText:
         "Screenshot of the game, displaying the combat menu against a spider monster",
-      projectTags: ["Game", "Unreal"],
+      projectTags: ["Game", "Unreal", "Group"],
       name: "Dungeon of Dice (2024)",
       subtitle: "Dice-based tactical rouge-like",
       description:
@@ -257,7 +257,7 @@ export default function PortfolioIndex() {
       imageLocation: "images/others/Abyss Final 2.JPG",
       altText:
         "Screenshot of the game, showing a battle where a gunner deciding who to shoot",
-      projectTags: ["Game", "Unreal"],
+      projectTags: ["Game", "Unreal", "Group"],
       name: "Abyss Tactics (2018-2019)",
       subtitle: "Fantasy Napoleonic Turn Based Tactics",
       description:
