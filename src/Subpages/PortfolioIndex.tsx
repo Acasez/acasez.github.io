@@ -15,11 +15,11 @@ import {
 const tagGroups = [
   {
     title: "Programming Languages",
-    tags: ["C#", "Javascript", "Python", "SQLite"],
+    tags: ["C#", "Javascript", "Typescript", "Python", "SQLite"],
   },
   {
     title: "Game Engines & Frameworks",
-    tags: ["Unity", "Unreal", "Avalonia"],
+    tags: ["Unity", "Unreal", "React", "Avalonia"],
   },
   {
     title: "Project Types",

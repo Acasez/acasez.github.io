@@ -7,7 +7,7 @@ export const mainProjects = [
     subtitle: "Free Unity Asset",
     projectPageLink: "EdvinsNestedTooltips",
     description:
-      "Edvin's Nested Tooltips is a Unity Asset I made that allows for easy creation of nested, layered tooltips. Inspired by tooltips seen in games like Crusader Kings 3 and Baldur's Gate 3, this unity asset was designed so me and anyone else could create nested tooltips for their strategy games. It uses a system of Keyword Scriptable Objects to easily add custom keywords. This allow developers to quickly make nested tooltips, and explain custom game mechanics with no need for in-game wikis.",
+      "Edvin's Nested Tooltips is a Unity Asset I made that allows for easy creation of nested, layered tooltips. Inspired by tooltips seen in games like Crusader Kings 3 and Baldur's Gate 3, this unity asset was designed so me and anyone else could create nested tooltips for their strategy games. It uses a system of Keyword Scriptable Objects to easily add custom keywords. This allows developers to quickly make nested tooltips, and explain custom game mechanics with no need for in-game wikis.",
     itchLink: "https://acasez.itch.io/edvins-nested-tooltips",
     githubLink: "https://github.com/Acasez/EdvinsLayeredTooltips",
   },
@@ -31,7 +31,7 @@ export const mainProjects = [
       "Eurogame style board game about city planning and sustainability",
     projectPageLink: "MariestadClimateGame",
     description:
-      "A strategic board game about making a mid-sized Swedish city climate neutral. In the game players play cards to build green power, nature areas to absorb pollution and other projects to achieve sustainability, while managing their income and the opinion of people in the municipality.\n\nI proposed the original idea for the game to the municipality and have worked on game design, balance and testing. I worked with 2D artists Iris Casado, Zoey Wu and Alexander Ros who did the graphic design and card illustrations. It is now printed in use in schools and more in Mariestad",
+      "A strategic board game about making a mid-sized Swedish city climate neutral. In the game players play cards to build green power, nature areas to absorb pollution and other projects to achieve sustainability, while managing their income and the opinion of people in the municipality.\n\nI proposed the original idea for the game to the municipality and have worked on game design, balance and testing. I worked with 2D artists Iris Casado, Zoey Wu and Alexander Ros who did the graphic design and card illustrations. It is now printed in use in schools and more in Mariestad.",
     webpageLinks: [
       {
         url: "https://mariestad.se/nyheter/nyhetsarkiv/2024-06-03-klimatspelet-mariestad-bidrar-till-den-grona-omstallningen",
@@ -137,14 +137,21 @@ export const gameDrafts = [
 
 export const smallProjects = [
   {
-    imageLocation: "images/Avalonia Garage/ParkedVehicles2.JPG",
-    altText: "Image of the program displaying 6 different vehicles parked",
-    projectTags: ["Avalonia", "C#", "Solo"], // Changed from "CSharp" to match your tag list
-    name: "Avalonia Garage (2026)",
-    subtitle: "C# Project",
+    imageLocation: "images/others/WhoWouldWinPage.png",
+    altText: "Image of the website",
+    projectTags: ["React", "Typescript", "Solo"],
+    name: "Who Would Win (2026)",
+    subtitle: "React Website to rank characters",
     description:
-      "Currently I'm doing a fullstack programming course at Lexicon/LTU, where we made a garage application in C# as a task. Since I already knew C# I took some extra time to learn Avalonia UI framework and create a UI for it. Features different types of vehicles that can be parked and unparked, a UI with drop downs and filters. Boats and Airplanes take up 2 and 3 respectively spaces in the garage, and can therefore not be added if there isn't enough empty space in a row.",
-    githubLink: "https://github.com/Acasez/Garage-With-Avalonia-UI",
+      "I set up this site as a little fun project while I was learning React. I’ve long liked to argue “who would win” matchups with my friends, we even have a discord server called Anime Battles where we randomize anime characters out of our favorites list and debate the matchups. This site allows you to do that with any characters. Set up a CSV file with characters, import it and get randomized matchups. The website keeps track of ELO ratings from battles, shows the top current 10, and allows you to export the results as a JSON file. It also features keyboard mapping to vote on, skip or undo matchups.",
+    githubLink: "https://github.com/Acasez/would-would-win",
+    webpageLinks: [
+      {
+        url: "https://acasez.github.io/would-would-win/",
+        label: "Website page",
+      },
+    ],
+    hasSubpage: false,
   },
   {
     imageLocation: "images/Wizard's Legacy/HalfwayToInventory.JPG",

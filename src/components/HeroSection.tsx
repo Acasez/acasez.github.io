@@ -26,8 +26,8 @@ export default function HeroSection() {
               though I have no problem working on other genres or on non game
               projects. I also really like worldbuilding, especially in fantasy
               and historical settings. When I’m not developing games or other
-              projects I like to play games of kinds (video games, board games,
-              ttrgps), read books and manga and go out in nature.
+              projects I like to play games of all kinds (video games, board
+              games, ttrgps), read books and manga and go out in nature.
             </p>
             <div className="project-links">
               <a href="https://acasez.itch.io" className="project-link itch">
