@@ -54,7 +54,6 @@ type ProjectArray = Project[];
 
 export default function PortfolioIndex() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
   // Your projects data - you'll want to move this to a separate file/data structure
   const mainProjects = [
     {

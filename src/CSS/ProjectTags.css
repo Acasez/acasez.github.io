@@ -1,11 +1,11 @@
-/* Tags - positioned below image */
-.project-tags {
+/* Update your ProjectTags.css with these styles */
+.project-tags-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .tag-group {
@@ -13,130 +13,151 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: -8px;
 }
 
 .tag-group-title {
-    font-weight: bold;
-    margin-right: 8px;
-    color: #555;
-    min-width: 150px;
+    font-weight: 600;
+    margin-right: 12px;
+    color: #444;
+    min-width: 180px;
+    font-size: 0.95em;
+    text-align: right;
 }
 
 .tag-group-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    flex: 1;
 }
 
-/* Tag Styles */
+/* Base tag style */
 .tag {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.75em;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
     font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: white;
-    background: #666;
-    border: 1px solid #555;
-    transition: all 0.2s ease;
 }
 
+/* Hover effect */
 .tag:hover {
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Tag Color Variations */
-.tag.unity {
-    background: #0078d7;
-    border-color: #005a9e;
+/* Selected tag style */
+.tag.selected {
+    box-shadow: 0 0 0 2px white, 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
-.tag.unreal {
-    background: #333;
-    border-color: #222;
-}
-
+/* Specific tag colors - using your existing colors but with better contrast */
 .tag.csharp {
-    background: #68217a;
-    border-color: #4a1554;
+    background-color: #68217a;
+    color: white;
 }
 
 .tag.javascript {
-    background: #f0db4f;
-    color: #000;
-    border-color: #d4b83d;
+    background-color: #f7df1e;
+    color: #333;
 }
 
 .tag.python {
-    background: #3572A5;
-    border-color: #285a82;
+    background-color: #306998;
+    color: white;
 }
 
 .tag.sqlite {
-    background: #add2da;
-    border-color: #e1f9fe;
-    color: black;
+    background-color: #003840;
+    color: white;
 }
 
-.tag.asset {
-    background: #008060;
-    border-color: #005a40;
+.tag.unity {
+    background-color: #4185f4;
+    color: white;
 }
 
-.tag.solo {
-    background: #c45e1b;
-    border-color: #934513;
+.tag.unreal {
+    background-color: #222;
+    color: white;
 }
 
-.tag.group {
-    background: #8844aa;
-    border-color: #663380;
-}
-
-.tag.internship {
-    background: #555;
-    border-color: #444;
+.tag.avalonai {
+    background-color: #2c3e50;
+    color: white;
 }
 
 .tag.game {
-    background: #4682b4;
-    border-color: #35638f;
+    background-color: #e74c3c;
+    color: white;
 }
 
-.tag.board {
-    background: #179f0a;
-    border-color: #69e83b;
+.tag.asset {
+    background-color: #3498db;
+    color: white;
+}
+
+.tag.board-game {
+    background-color: #2ecc71;
+    color: white;
 }
 
 .tag.ttrpg {
-    background: #ab1111;
-    border-color: #f72929;
-}
-
-.tag.professional {
-    background: #3eb6bf;
-    border-color: #65ffff;
-}
-
-.tag.internship {
-    background: #b90b99;
-    border-color: #db10b6;
-}
-
-.tag.level {
-    background: #c78a40;
-    border-color: #e19f4f;
+    background-color: #9b59b6;
+    color: white;
 }
 
 .tag.website {
-    background: #4285f4;
-    border-color: #3367d6;
+    background-color: #1abc9c;
+    color: white;
 }
 
-.tag.avalonia {
-    background: #3b3b3d;
-    border-color: #787878;
+.tag.level-design {
+    background-color: #f39c12;
+    color: white;
+}
+
+.tag.game-concept {
+    background-color: #34495e;
+    color: white;
+}
+
+.tag.solo {
+    background-color: #e67e22;
+    color: white;
+}
+
+.tag.group {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.tag.professional-project {
+    background-color: #16a085;
+    color: white;
+}
+
+.tag.internship {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Container for the Show All button */
+.show-all-container {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.show-all-container .tag {
+    background-color: #95a5a6;
+    color: white;
 }
