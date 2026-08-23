@@ -19,7 +19,7 @@ export default function ProjectTags({
       {projectTags.map((tag) => (
         <button
           key={tag}
-          className={`tag ${tag.toLowerCase().replace("#", "sharp")} ${
+          className={`tag ${tag.toLowerCase().replace("#", "sharp").replace(" ", "-")} ${
             selectedTag === tag ? "selected" : ""
           }`}
           onClick={() => {

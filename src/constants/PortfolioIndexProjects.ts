@@ -14,7 +14,7 @@ export const mainProjects = [
   {
     imageLocation: "images/Amsvartne/Amsvartne.JPG",
     altText: "Image of Amsvartne",
-    projectTags: ["Unity", "C#", "Game", "Group"],
+    projectTags: ["Unity", "C#", "Game", "Group", "Level-Design"],
     name: "Amsvartne (2045-2025)",
     subtitle: "Atmospheric Puzzle Platformer",
     projectPageLink: "Amsvartne",
@@ -53,7 +53,7 @@ export const mainProjects = [
   {
     imageLocation: "images/IonGames/IonGameDesignLogo.png",
     altText: "Logo of ION Game Design",
-    projectTags: ["Board Game", "Internship", "Group"], // Changed from "Board Games" to match your tag list
+    projectTags: ["Board-Game", "Internship", "Group"], // Changed from "Board Games" to match your tag list
     name: "ION Internship (2024)",
     subtitle: "Internship at ION Games",
     projectPageLink: "IonInternship",
@@ -69,7 +69,7 @@ export const mainProjects = [
   {
     imageLocation: "images/HighFrontier/MoveBurn.jpg",
     altText: "Screenshot of the tutorial",
-    projectTags: ["Board Game", "Internship", "Group", "Unity", "C#"], // Changed from "Board Games" to match your tag list
+    projectTags: ["Board-Game", "Internship", "Group", "Unity", "C#"], // Changed from "Board Games" to match your tag list
     name: "High Frontier Tutorial (2025)",
     subtitle: "Tutorial for the digital adaptation of the board game",
     projectPageLink: "HighFrontierTutorial",
@@ -126,7 +126,7 @@ export const gameDrafts = [
   {
     imageLocation: "images/LandOfTheArcane/EarlyCivicTree.jpg",
     altText: "Image of the civic tree draft",
-    projectTags: ["Game Concept", "Solo"],
+    projectTags: ["Game-Concept", "Solo"],
     name: "Land of the Arcane (2019-2021)",
     subtitle: "Fantasy/Magitech 4X",
     projectPageLink: "LandOfTheArcane",
@@ -139,7 +139,7 @@ export const smallProjects = [
   {
     imageLocation: "images/others/WhoWouldWinPage.png",
     altText: "Image of the website",
-    projectTags: ["React", "Typescript", "Solo"],
+    projectTags: ["React", "Typescript", "Solo", "Website"],
     name: "Who Would Win (2026)",
     subtitle: "React Website to rank characters",
     description:
@@ -152,6 +152,16 @@ export const smallProjects = [
       },
     ],
     hasSubpage: false,
+  },
+  {
+    imageLocation: "images/Avalonia Garage/ParkedVehicles2.JPG",
+    altText: "Image of the program displaying 6 different vehicles parked",
+    projectTags: ["Avalonia", "C#", "Solo"],
+    name: "Avalonia Garage (2026)",
+    subtitle: "C# Project",
+    description:
+      "Currently I'm doing a fullstack programming course at Lexicon/LTU, where we made a garage application in C# as a task. Since I already knew C# I took some extra time to learn Avalonia UI framework and create a UI for it. Features different types of vehicles that can be parked and unparked, a UI with drop downs and filters. Boats and Airplanes take up 2 and 3 respectively spaces in the garage, and can therefore not be added if there isn't enough empty space in a row.",
+    githubLink: "https://github.com/Acasez/Garage-With-Avalonia-UI",
   },
   {
     imageLocation: "images/Wizard's Legacy/HalfwayToInventory.JPG",
@@ -200,7 +210,7 @@ export const smallProjects = [
     imageLocation: "images/others/Abyss Final 2.JPG",
     altText:
       "Screenshot of the game, showing a battle where a gunner deciding who to shoot",
-    projectTags: ["Game", "Unreal", "Group"],
+    projectTags: ["Game", "Unreal", "Group", "Level-Design"],
     name: "Abyss Tactics (2018-2019)",
     subtitle: "Fantasy Napoleonic Turn Based Tactics",
     description:
