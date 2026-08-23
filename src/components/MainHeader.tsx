@@ -95,6 +95,7 @@ export default function MainHeader() {
                   <div className="dropdown_menu">
                     <ul>
                       <li>
+                        <NavLink to="/portfolio-v2/AOW4Tomes">ge of Wonders 4 Tomes</NavLink>
                         <a href="customTomes.html">Age of Wonders 4 Tomes</a>
                       </li>
                       <li>

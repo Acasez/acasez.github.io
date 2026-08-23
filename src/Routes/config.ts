@@ -54,4 +54,16 @@ export const routes = [
     path: "/portfolio-v2/EnglishCV",
     component: lazy(() => import("../Subpages/EnglishCV")),
   },
+  {
+    path: "/portfolio-v2/AOW4Tomes",
+    component: lazy(() => import("../Subpages/AOW4Tomes")),
+  },
+  {
+    path: "/portfolio-v2/MyHeroSnap",
+    component: lazy(() => import("../Subpages/MyHeroSnap")),
+  },
+  {
+    path: "/portfolio-v2/MeridianSunsets",
+    component: lazy(() => import("../Subpages/MeridianSunsets")),
+  },
 ];
