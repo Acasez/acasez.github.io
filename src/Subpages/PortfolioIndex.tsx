@@ -59,7 +59,6 @@ type ProjectArray = Project[];
 
 export default function PortfolioIndex() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  // Your projects data - you'll want to move this to a separate file/data structure
 
   // Filter projects based on selected tag
   const filterProjects = (projects: ProjectArray): ProjectArray => {
