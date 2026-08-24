@@ -70,7 +70,7 @@ export default function MainHeader() {
           <li>
             <NavLink to="/portfolio-v2/AboutMe">About Me</NavLink>
           </li>
-          {/* <li> //TODO FIX Later, once I can get React PDF viewers to work
+          {/* <li>
             <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
@@ -95,8 +95,9 @@ export default function MainHeader() {
                   <div className="dropdown_menu">
                     <ul>
                       <li>
-                        <NavLink to="/portfolio-v2/AOW4Tomes">ge of Wonders 4 Tomes</NavLink>
-                        <a href="customTomes.html">Age of Wonders 4 Tomes</a>
+                        <NavLink to="/portfolio-v2/AOW4Tomes">
+                          Age of Wonders 4 Tomes
+                        </NavLink>
                       </li>
                       <li>
                         <a href="myherosnap.html">My Hero Snap</a>
