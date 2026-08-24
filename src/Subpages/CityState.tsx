@@ -11,7 +11,7 @@ export default function CityState() {
   return (
     <>
       <TitleSection title="City State" subtitle="Turn Based City Builder" />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Turn Based City Builder
           imageLocation="images/CityState/EarlyGame.gif"
           altText="Gif of the game in play"

@@ -5,6 +5,7 @@ import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
+import "../CSS/HRLInes.css";
 
 export default function MariestadDigitalAdaptation() {
   return (
@@ -13,7 +14,7 @@ export default function MariestadDigitalAdaptation() {
         title="Mariestad Digital Adaptation"
         subtitle="Digital Adaptation of the climate board game"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/MariestadDigitalAdaptation/NewMidScience.JPG"
           altText="The game in play"

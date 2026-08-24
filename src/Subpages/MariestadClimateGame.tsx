@@ -5,6 +5,7 @@ import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
+import "../CSS/HRLInes.css";
 
 export default function MariestadClimateGame() {
   return (
@@ -13,7 +14,7 @@ export default function MariestadClimateGame() {
         title="Mariestad Climate Board Game"
         subtitle="Eurogame style board game about city planning and sustainability"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/MariestadClimateGame/Gameboard in Play.jpg"
           altText="The game in play"

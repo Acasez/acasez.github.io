@@ -8,7 +8,7 @@ export default function Kastorix() {
   return (
     <>
       <TitleSection title="Kastorix" subtitle="Fantasy TTRPG" />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/Kastorix/Maps/Kastorix.jpg"
           altText="World Map"

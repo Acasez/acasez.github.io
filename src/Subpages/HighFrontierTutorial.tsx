@@ -2,6 +2,7 @@ import PortfolioDoubleImageRow from "../PortfolioRows/PortfolioDoubleImageRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
+import "../CSS/HRLInes.css";
 
 export default function HighFrontierTutorial() {
   return (
@@ -10,7 +11,7 @@ export default function HighFrontierTutorial() {
         title="High Frontier"
         subtitle="Tutorial and UI improvements for digital board game implementation"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/HighFrontier/mainmenu.jpg"
           altText="Screenshot of the Main Menu of High Frontier"

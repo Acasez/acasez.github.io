@@ -15,7 +15,7 @@ export default function LandOfTheArcane() {
         title="Land Of The Arcane"
         subtitle="Fantasy/Magitech 4X Concept"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/LandOfTheArcane/LateTechTree.jpg"
           altText="Screenshot of my tech tree on a Miro board showing the Age of Nations and Age of Magic"

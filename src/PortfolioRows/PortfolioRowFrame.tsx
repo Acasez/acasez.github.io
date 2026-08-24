@@ -3,12 +3,21 @@ import "../CSS/PortfolioRow.css";
 interface RowProps {
   reverse: boolean;
   children: React.ReactNode;
+  introRow?: boolean;
 }
 
-export default function PortfolioRowFrame({ reverse, children }: RowProps) {
-  return (
-    <div className={reverse ? "portfolio-row reverse" : "portfolio-row"}>
-      {children}
-    </div>
-  );
+export default function PortfolioRowFrame({
+  reverse,
+  children,
+  introRow,
+}: RowProps) {
+  const className = [
+    "portfolio-row",
+    reverse ? "reverse" : "",
+    introRow ? "intro-row" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return <div className={className}>{children}</div>;
 }

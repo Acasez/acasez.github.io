@@ -3,6 +3,7 @@ import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
+import "../CSS/HRLInes.css";
 
 export default function ToHelAndBack() {
   return (
@@ -11,7 +12,7 @@ export default function ToHelAndBack() {
         title="To Hel And Back"
         subtitle="Norse mythology inspired hack and slash roguelike"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/ToHelAndBack/axeattack.jpg"
           altText="Screenshot of the game during play, showing the main character Sif attacking enemies"

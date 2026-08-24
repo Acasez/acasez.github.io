@@ -11,7 +11,7 @@ export default function Amsvartne() {
         title="Amsvartne"
         subtitle="Story rich atmospheric puzzle-platformer set in a mystical dieselpunk world"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/Amsvartne/AmsvartneLamp.jpg"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"

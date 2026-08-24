@@ -82,6 +82,12 @@ Currently I am as mentioned designing my own TTRPG called Kastorix, inspired by 
 
 I also read some manga of various genres, with some of my favorites including Lullaby of the Dawn, Bloom Into You, Dr Stone, Magus of the Library and I Hear the Sunspot. And I’ve read quite a bit of fanfics (mostly fluff and canon divergence AU's). I've written some fics of my own, including a Horizon Forbidden West longfic called Meridian Sunsets.
 " //Maybe add a link later
+          webpageLinks={[
+            {
+              url: "https://archiveofourown.org/works/45724504",
+              label: "Meridian Sunsets (AO3)",
+            },
+          ]}
         />
       </PortfolioRowFrame>
     </>

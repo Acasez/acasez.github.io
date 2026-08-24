@@ -20,7 +20,6 @@ interface PortFolioProps {
   youtubeLink?: string;
   webpageLinks?: { url: string; label: string }[];
   portfolioLinks?: { linkTo: string; label: string }[];
-  //featuresList?: string[];
 }
 
 function PortfolioRow({

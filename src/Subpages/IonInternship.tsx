@@ -9,7 +9,7 @@ export default function IonInternship() {
         title="Ion Internship"
         subtitle="Internship at a board game company"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/IonGames/IonGameDesignLogo.png"
           altText="The logo of Ion Games"

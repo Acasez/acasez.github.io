@@ -16,6 +16,11 @@
     flex-direction: row-reverse;
 }
 
+.portfolio-row.intro-row {
+    background-color: lightblue;
+    color: black;
+}
+
 /* Text content */
 .portfolio-text {
     flex: 1;

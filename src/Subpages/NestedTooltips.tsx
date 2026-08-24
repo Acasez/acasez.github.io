@@ -11,7 +11,7 @@ export default function EdvinsNestedTooltips() {
         title="Edvin's Nested Tooltips"
         subtitle="Unity Asset to easily add nested tooltips based on a keyword system"
       />
-      <PortfolioRowFrame reverse={true}>
+      <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview
           imageLocation="images/EdvinsLayeredTooltips/CardTooltip.JPG"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
@@ -55,9 +55,9 @@ export default function EdvinsNestedTooltips() {
           name="Tooltips"
           imageLocation="images/EdvinsLayeredTooltips/TooltipsInGame.JPG"
           altText="Screenshot of a chain of nested tooltips in High Frontier 4 All"
-          description="A tooltip is simply a message that appears in a text box when you hover over a UI element. They are common in video games, but also on websites and in software. I have some tooltips on the Kastorix Character Sheet page. Doing tooltips in Unity isn’t particularly hard, there are many youtube tutorials on the subject and and you can find free assets for tooltips on the Unity Store
+          description="A tooltip is simply a message that appears in a text box when you hover over a UI element. They are common in video games, but also on websites and in software. I have some tooltips on the Kastorix Character Sheet page, and plan to add more when I redo the site in React. Doing tooltips in Unity isn’t particularly hard, there are many youtube tutorials on the subject and and you can find free assets for tooltips on the Unity Store
 
-          To make a tooltip you need a way to check if the user is hovering over a specific UI element, a way to get the right tooltip text on an object and show it in the right place There are some things to keep in mind here, enabling raycasting on the UI element, checking canvas layers so nothing obscures the UI or the tooltip and deciding how you want to show the tooltip text."
+          To create a tooltip system in Unity you need a way to check if the user is hovering over a specific UI element, a way to get the right tooltip text on an object and show it in the right place. There are some things to keep in mind here like, enabling raycasting on the UI element, checking canvas layers so nothing obscures the UI or the tooltip and deciding how you want to show the tooltip text, but overall, setting up a basic tooltip system is something I would recommend to anyone making complex games in Unity."
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={true}>
