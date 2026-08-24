@@ -7,29 +7,29 @@ export default function MainHeader() {
       <nav className="topnav" role="navigation">
         <ul>
           <li>
-            <NavLink to="/portfolio-v2/" end>
+            <NavLink to="/" end>
               <u>Edvin Skogsholm Sanne</u>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/EdvinsNestedTooltips">
+            <NavLink to="/EdvinsNestedTooltips">
               Edvin's Nested Tooltips
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/Amsvartne">Amsvartne</NavLink>
+            <NavLink to="/Amsvartne">Amsvartne</NavLink>
           </li>
           <li>
             <a href="#">Mariestad Board Game ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <NavLink to="/portfolio-v2/MariestadClimateGame">
+                  <NavLink to="/MariestadClimateGame">
                     Mariestad Board Game
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/portfolio-v2/MariestadDigitalAdaptation">
+                  <NavLink to="/MariestadDigitalAdaptation">
                     Mariestad Digital Adaptation
                   </NavLink>
                 </li>
@@ -41,48 +41,42 @@ export default function MainHeader() {
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <NavLink to="/portfolio-v2/IonInternship">
-                    Ion Internship
-                  </NavLink>
+                  <NavLink to="/IonInternship">Ion Internship</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/portfolio-v2/HighFrontierTutorial">
-                    High Frontier
-                  </NavLink>
+                  <NavLink to="/HighFrontierTutorial">High Frontier</NavLink>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/CityState">City State</NavLink>
+            <NavLink to="/CityState">City State</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/ToHelAndBack">To Hel and Back</NavLink>
+            <NavLink to="/ToHelAndBack">To Hel and Back</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/landOfTheArcane">
-              Land of the Arcane
-            </NavLink>
+            <NavLink to="/landOfTheArcane">Land of the Arcane</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/Kastorix">Kastorix</NavLink>
+            <NavLink to="/Kastorix">Kastorix</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio-v2/AboutMe">About Me</NavLink>
+            <NavLink to="/AboutMe">About Me</NavLink>
           </li>
           {/* <li>
             <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
                 <li>
-                  <NavLink to="/portfolio-v2/AboutMe">About Me</NavLink>
+                  <NavLink to="/AboutMe">About Me</NavLink>
                 </li>
                 <li>
                   <a href="#">🞀 CV's</a>
                   <div className="dropdown_menu">
                     <ul>
                       <li>
-                        <NavLink to="/portfolio-v2/EnglishCV">English</NavLink>
+                        <NavLink to="/EnglishCV">English</NavLink>
                       </li>
                       <li>
                         <a href="swedishCV.html">Swedish</a>
@@ -95,7 +89,7 @@ export default function MainHeader() {
                   <div className="dropdown_menu">
                     <ul>
                       <li>
-                        <NavLink to="/portfolio-v2/AOW4Tomes">
+                        <NavLink to="/AOW4Tomes">
                           Age of Wonders 4 Tomes
                         </NavLink>
                       </li>

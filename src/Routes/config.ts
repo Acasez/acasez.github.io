@@ -3,67 +3,67 @@ import { lazy } from "react";
 
 export const routes = [
   {
-    path: "/portfolio-v2",
+    path: "",
     component: lazy(() => import("../Subpages/PortfolioIndex")),
   },
   {
-    path: "/portfolio-v2/EdvinsNestedTooltips",
+    path: "/EdvinsNestedTooltips",
     component: lazy(() => import("../Subpages/NestedTooltips")),
   },
   {
-    path: "/portfolio-v2/Amsvartne",
+    path: "/Amsvartne",
     component: lazy(() => import("../Subpages/Amsvartne")),
   },
   {
-    path: "/portfolio-v2/MariestadClimateGame",
+    path: "/MariestadClimateGame",
     component: lazy(() => import("../Subpages/MariestadClimateGame")),
   },
   {
-    path: "/portfolio-v2/MariestadDigitalAdaptation",
+    path: "/MariestadDigitalAdaptation",
     component: lazy(() => import("../Subpages/MariestadDigitalAdaptation")),
   },
   {
-    path: "/portfolio-v2/IonInternship",
+    path: "/IonInternship",
     component: lazy(() => import("../Subpages/IonInternship")),
   },
   {
-    path: "/portfolio-v2/HighFrontierTutorial",
+    path: "/HighFrontierTutorial",
     component: lazy(() => import("../Subpages/HighFrontierTutorial")),
   },
   {
-    path: "/portfolio-v2/CityState",
+    path: "/CityState",
     component: lazy(() => import("../Subpages/CityState")),
   },
   {
-    path: "/portfolio-v2/ToHelAndBack",
+    path: "/ToHelAndBack",
     component: lazy(() => import("../Subpages/ToHelAndBack")),
   },
   {
-    path: "/portfolio-v2/LandOfTheArcane",
+    path: "/LandOfTheArcane",
     component: lazy(() => import("../Subpages/LandOfTheArcane")),
   },
   {
-    path: "/portfolio-v2/Kastorix",
+    path: "/Kastorix",
     component: lazy(() => import("../Subpages/Kastorix")),
   },
   {
-    path: "/portfolio-v2/AboutMe",
+    path: "/AboutMe",
     component: lazy(() => import("../Subpages/AboutMe")),
   },
   {
-    path: "/portfolio-v2/EnglishCV",
+    path: "/EnglishCV",
     component: lazy(() => import("../Subpages/EnglishCV")),
   },
   {
-    path: "/portfolio-v2/AOW4Tomes",
+    path: "/AOW4Tomes",
     component: lazy(() => import("../Subpages/AOW4Tomes")),
   },
   {
-    path: "/portfolio-v2/MyHeroSnap",
+    path: "/MyHeroSnap",
     component: lazy(() => import("../Subpages/MyHeroSnap")),
   },
   {
-    path: "/portfolio-v2/MeridianSunsets",
+    path: "/MeridianSunsets",
     component: lazy(() => import("../Subpages/MeridianSunsets")),
   },
 ];
