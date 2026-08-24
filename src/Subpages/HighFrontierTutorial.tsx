@@ -3,6 +3,7 @@ import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
 import "../CSS/HRLInes.css";
+import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 
 export default function HighFrontierTutorial() {
   return (
@@ -16,6 +17,23 @@ export default function HighFrontierTutorial() {
           imageLocation="images/HighFrontier/mainmenu.jpg"
           altText="Screenshot of the Main Menu of High Frontier"
           description="During the fall of 2025 I returned to Ion Games for 3 months to do another internship, this one focusing on the digital side. I worked on making a tutorial and UI improvements for the digital implementation of the board game High Frontier, as well as various bug fixes, performance improvements and debug tools. I worked with many talented interns, as well as game designers in the company. "
+        />
+      </PortfolioRowFrame>
+      <PortfolioRowFrame reverse={false}>
+        <PortfolioListRow //Features List
+          imageLocation="images/HighFrontier/RadRoll.jpg"
+          altText="A screenshot of the game explaining radiation belts"
+          listHeader="Things I worked on"
+          listContent={[
+            "Planning out the tutorial parts, style and tone.",
+            "Writing and testing the tutorial.",
+            "Creating the tutorial components and coding it in C#.",
+            "Connecting the tutorial script with other components, so it can guide the player.",
+            "Playtesting and iterating the tutorial from feedback.",
+            "Creating a system for tooltips and keywords.",
+            "Making other UI improvements on the game.",
+            "Refactoring game code for performance and clarity.",
+          ]}
         />
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
