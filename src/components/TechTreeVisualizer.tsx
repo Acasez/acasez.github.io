@@ -50,7 +50,7 @@ export default function TechTreeVisualizer({
 }: TechTreeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
-  const networkRef = useRef<Network | null>(null); // Store network in a ref for access in the reset function
+  const networkRef = useRef<Network | null>(null);
 
   const resetView = () => {
     if (!networkRef.current) return;
@@ -97,7 +97,7 @@ export default function TechTreeVisualizer({
       cancelled = true;
       networkRef.current?.destroy();
     };
-  }, [jsonPath]);
+  }, [defaultZoom, jsonPath]);
 
   return (
     <>
