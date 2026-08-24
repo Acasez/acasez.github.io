@@ -4,6 +4,14 @@
     margin-bottom: 0.5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    .TitleSection {
+        /* Dark mode: light text on dark background */
+        background-color: #1a1a1a;
+        color: whitesmoke;
+    }
+}
+
 .TitleSection::before {
     content: "";
     position: absolute;
