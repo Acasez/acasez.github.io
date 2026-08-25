@@ -21,7 +21,7 @@ I started by just worldbuilding in an obsidian vault, but later began thinking a
 "
           webpageLinks={[
             {
-              url: "https://acasez.github.io/Kastorix/RPG%20Overview.html",
+              url: "https://acasez.github.io/kastorix/Kastorix/RPG%20Overview.html",
               label: "TTRPG Home Page",
             },
           ]}
@@ -50,7 +50,7 @@ If it sounds interesting, I recommend you to go to the page and check it out, ma
 "
           webpageLinks={[
             {
-              url: "https://acasez.github.io/Kastorix/InteractivePages/CharactherSheet.html",
+              url: "https://acasez.github.io/kastorix/Kastorix/InteractivePages/CharactherSheet.html",
               label: "Character Sheet",
             },
             {
@@ -80,7 +80,7 @@ I still want to improve the DM Screen with features to make it easier to design 
 "
           webpageLinks={[
             {
-              url: "https://acasez.github.io/Kastorix/InteractivePages/DM%20Screen.html",
+              url: "https://acasez.github.io/kastorix/Kastorix/InteractivePages/DM%20Screen.html",
               label: "Dm Screen",
             },
           ]}

@@ -7,6 +7,10 @@ export const routes = [
     component: lazy(() => import("../Subpages/PortfolioIndex")),
   },
   {
+    path: "/index",
+    component: lazy(() => import("../Subpages/PortfolioIndex")),
+  },
+  {
     path: "/EdvinsNestedTooltips",
     component: lazy(() => import("../Subpages/NestedTooltips")),
   },
