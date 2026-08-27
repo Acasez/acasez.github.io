@@ -53,7 +53,7 @@ export const mainProjects = [
   {
     imageLocation: "images/IonGames/IonGameDesignLogo.png",
     altText: "Logo of ION Game Design",
-    projectTags: ["Board-Game", "Internship", "Group"], // Changed from "Board Games" to match your tag list
+    projectTags: ["Board-Game", "Internship", "Group"],
     name: "ION Internship (2024)",
     subtitle: "Internship at ION Games",
     projectPageLink: "IonInternship",
@@ -69,7 +69,7 @@ export const mainProjects = [
   {
     imageLocation: "images/HighFrontier/MoveBurn.jpg",
     altText: "Screenshot of the tutorial",
-    projectTags: ["Board-Game", "Internship", "Group", "Unity", "C#"], // Changed from "Board Games" to match your tag list
+    projectTags: ["Board-Game", "Internship", "Group", "Unity", "C#"],
     name: "High Frontier Tutorial (2025)",
     subtitle: "Tutorial for the digital adaptation of the board game",
     projectPageLink: "HighFrontierTutorial",
