@@ -83,6 +83,11 @@
     color: white;
 }
 
+.tag.sql {
+    background-color: #359088;
+    color: white;
+}
+
 .tag.sqlite {
     background-color: #003840;
     color: white;

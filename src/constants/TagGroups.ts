@@ -1,7 +1,7 @@
 export const tagGroups = [
   {
     title: "Programming Languages",
-    tags: ["C#", "Javascript", "Typescript", "Python", "SQLite"],
+    tags: ["C#", "Javascript", "Typescript", "Python", "SQLite", "SQL"],
   },
   {
     title: "Game Engines & Frameworks",

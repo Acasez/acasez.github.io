@@ -139,7 +139,7 @@ export const smallProjects = [
   {
     imageLocation: "images/LMS/Courses.JPG",
     altText: "Image of the teacher courses view on the website",
-    projectTags: ["React", "Typescript", "Group", "Website"],
+    projectTags: ["React", "Typescript", "SQL", "C#", "Group", "Website"],
     name: "Learning Platform Website",
     subtitle: "Learning platform website",
     description:
