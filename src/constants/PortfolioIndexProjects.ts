@@ -144,7 +144,7 @@ export const smallProjects = [
     subtitle: "Learning platform website",
     description:
       "Built as the final project on the Lexicon part of the fullstack development course I’m doing. Features a backend with an SQL database, JWT token authentication and a frontend with React and Tailwind. We planned out the project in Figma, set up github workflow actions and used a github project kanban page to track progress and user stories. \n\nThe web page has two roles: Teacher and Student. Teachers can manage courses and learning content, while students can access their assigned course, modules, activities, resources, and submissions. I mostly worked in frontend, making react pages and components such as our reusable Data Table which can create a sort, filter and pageable table for a type of T.",
-    githubLink: "https://github.com/Leo-Mart/Lexicon_Project_Assignment",
+    githubLink: "https://github.com/Acasez/Lexicon_Project_Assignment",
     hasSubpage: false,
   },
   {
