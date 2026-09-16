@@ -137,6 +137,17 @@ export const gameDrafts = [
 
 export const smallProjects = [
   {
+    imageLocation: "images/LMS/Courses.JPG",
+    altText: "Image of the teacher courses view on the website",
+    projectTags: ["React", "Typescript", "Group", "Website"],
+    name: "Learning Platform Website",
+    subtitle: "Learning platform website",
+    description:
+      "Built as the final project on the Lexicon part of the fullstack development course I’m doing. Features a backend with an SQL database, JWT token authentication and a frontend with React and Tailwind. We planned out the project in Figma, set up github workflow actions and used a github project kanban page to track progress. \n\nThe web page has two roles: Teacher and Student. Teachers can manage courses and learning content, while students can access their assigned course, modules, activities, resources, and submissions. I mostly worked in frontend, making react pages and components such as our reusable Data Table which can create a table for a type of T.",
+    githubLink: "https://github.com/Leo-Mart/Lexicon_Project_Assignment",
+    hasSubpage: false,
+  },
+  {
     imageLocation: "images/others/WhoWouldWinPage.png",
     altText: "Image of the website",
     projectTags: ["React", "Typescript", "Solo", "Website"],
