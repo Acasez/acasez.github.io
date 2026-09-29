@@ -1,8 +1,8 @@
-export default function EnglishCV() {
+export default function SwedishCV() {
   return (
     <>
       <object
-        data="CVs/EnglishCV.pdf"
+        data="CVs/SwedishCV.pdf"
         width="100%"
         height="600px"
         type="application/pdf"

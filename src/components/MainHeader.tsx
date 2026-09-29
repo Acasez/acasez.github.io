@@ -58,13 +58,13 @@ export default function MainHeader() {
           <li>
             <NavLink to="/landOfTheArcane">Land of the Arcane</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/Kastorix">Kastorix</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/AboutMe">About Me</NavLink>
           </li>
-          {/* <li>
+          <li>
             <a href="#">About Me ▼</a>
             <div className="dropdown_menu">
               <ul>
@@ -79,12 +79,12 @@ export default function MainHeader() {
                         <NavLink to="/EnglishCV">English</NavLink>
                       </li>
                       <li>
-                        <a href="swedishCV.html">Swedish</a>
+                        <NavLink to="/SwedishCV">Swedish</NavLink>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">🞀 Fan Content</a>
                   <div className="dropdown_menu">
                     <ul>
@@ -101,10 +101,10 @@ export default function MainHeader() {
                       </li>
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </>

@@ -5,14 +5,19 @@ export const routes = [
   {
     path: "",
     component: lazy(() => import("../Subpages/PortfolioIndex")),
+    createHeader: false,
   },
   {
     path: "/index",
     component: lazy(() => import("../Subpages/PortfolioIndex")),
+    header: "Overview",
+    createHeader: true,
   },
   {
     path: "/EdvinsNestedTooltips",
     component: lazy(() => import("../Subpages/NestedTooltips")),
+    header: "Edvins Layered Tooltips",
+    createHeader: true,
   },
   {
     path: "/Amsvartne",
@@ -57,6 +62,10 @@ export const routes = [
   {
     path: "/EnglishCV",
     component: lazy(() => import("../Subpages/EnglishCV")),
+  },
+  {
+    path: "/SwedishCV",
+    component: lazy(() => import("../Subpages/SwedishCV")),
   },
   {
     path: "/AOW4Tomes",
