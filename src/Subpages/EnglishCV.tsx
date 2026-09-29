@@ -4,7 +4,7 @@ export default function EnglishCV() {
       <object
         data="CVs/EnglishCV.pdf"
         width="100%"
-        height="600px"
+        height="1000px"
         type="application/pdf"
       >
         <p>
