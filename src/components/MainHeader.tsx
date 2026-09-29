@@ -58,11 +58,8 @@ export default function MainHeader() {
           <li>
             <NavLink to="/landOfTheArcane">Land of the Arcane</NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/Kastorix">Kastorix</NavLink>
-          </li> */}
           <li>
-            <NavLink to="/AboutMe">About Me</NavLink>
+            <NavLink to="/Kastorix">Kastorix</NavLink>
           </li>
           <li>
             <a href="#">About Me ▼</a>
