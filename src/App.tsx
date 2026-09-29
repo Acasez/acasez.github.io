@@ -1,7 +1,7 @@
 // App.tsx
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Suspense, useEffect } from "react";
-import { routes } from "./Routes/config.ts";
+import { Suspense, useEffect, type ReactNode } from "react";
+import { flatRoutes } from "./Routes/config.ts";
 import MainHeader from "./components/MainHeader";
 import Footer from "./components/Footer.tsx";
 
@@ -16,13 +16,27 @@ export default function App() {
     <>
       <MainHeader />
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          {routes.map(({ path, component: Component }) => (
-            <Route key={path} path={path} element={<Component />} />
-          ))}
-        </Routes>
+        <AppRoutes />
       </Suspense>
       <Footer />
     </>
+  );
+}
+
+export function AppRoutes({ fallback }: { fallback?: ReactNode }) {
+  return (
+    <Routes>
+      {flatRoutes.map(({ path, component: Component }) => (
+        <Route
+          key={path}
+          path={path}
+          element={
+            <Suspense fallback={fallback ?? <div>Loading…</div>}>
+              <Component />
+            </Suspense>
+          }
+        />
+      ))}
+    </Routes>
   );
 }

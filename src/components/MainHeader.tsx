@@ -1,109 +1,64 @@
-import "../CSS/headerStyle.css";
 import { NavLink } from "react-router-dom";
+import { routes } from "../Routes/config";
+import type { RouteNode } from "../Routes/config";
+import "../CSS/headerStyle.css";
+
+/** Hidden from header when createHeader === false */
+function isVisible(node: RouteNode): boolean {
+  return node.createHeader !== false;
+}
+
+interface NavItemProps {
+  item: RouteNode;
+}
+
+/** Recursively renders one nav node: either a plain link or a dropdown */
+function NavItem({ item }: NavItemProps) {
+  const visibleChildren: RouteNode[] = (item.children ?? []).filter(isVisible);
+
+  // Node with children → dropdown trigger + menu (works at any depth)
+  if (visibleChildren.length > 0) {
+    return (
+      <li>
+        {item.path ? (
+          <NavLink to={item.path || "/"} end={item.path === ""}>
+            {item.header} ▼
+          </NavLink>
+        ) : (
+          <a href="#">{item.header} ▼</a>
+        )}
+        <div className="dropdown_menu">
+          <ul>
+            {visibleChildren.map((child: RouteNode) => (
+              <NavItem key={child.path ?? child.header} item={child} />
+            ))}
+          </ul>
+        </div>
+      </li>
+    );
+  }
+
+  // Leaf node → plain link
+  return (
+    <li>
+      <NavLink
+        to={item.path || "/"}
+        end={item.path === "" || item.path === "/index"}
+      >
+        {item.underline ? <u>{item.header}</u> : item.header}
+      </NavLink>
+    </li>
+  );
+}
 
 export default function MainHeader() {
   return (
-    <>
-      <nav className="topnav" role="navigation">
-        <ul>
-          <li>
-            <NavLink to="/" end>
-              <u>Edvin Skogsholm Sanne</u>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/EdvinsNestedTooltips">
-              Edvin's Nested Tooltips
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Amsvartne">Amsvartne</NavLink>
-          </li>
-          <li>
-            <a href="#">Mariestad Board Game ▼</a>
-            <div className="dropdown_menu">
-              <ul>
-                <li>
-                  <NavLink to="/MariestadClimateGame">
-                    Mariestad Board Game
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/MariestadDigitalAdaptation">
-                    Mariestad Digital Adaptation
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">Ion Internship ▼</a>
-            <div className="dropdown_menu">
-              <ul>
-                <li>
-                  <NavLink to="/IonInternship">Ion Internship</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/HighFrontierTutorial">High Frontier</NavLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <NavLink to="/CityState">City State</NavLink>
-          </li>
-          <li>
-            <NavLink to="/ToHelAndBack">To Hel and Back</NavLink>
-          </li>
-          <li>
-            <NavLink to="/landOfTheArcane">Land of the Arcane</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Kastorix">Kastorix</NavLink>
-          </li>
-          <li>
-            <a href="#">About Me ▼</a>
-            <div className="dropdown_menu">
-              <ul>
-                <li>
-                  <NavLink to="/AboutMe">About Me</NavLink>
-                </li>
-                <li>
-                  <a href="#">🞀 CV's</a>
-                  <div className="dropdown_menu">
-                    <ul>
-                      <li>
-                        <NavLink to="/EnglishCV">English</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/SwedishCV">Swedish</NavLink>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                {/* <li>
-                  <a href="#">🞀 Fan Content</a>
-                  <div className="dropdown_menu">
-                    <ul>
-                      <li>
-                        <NavLink to="/AOW4Tomes">
-                          Age of Wonders 4 Tomes
-                        </NavLink>
-                      </li>
-                      <li>
-                        <a href="myherosnap.html">My Hero Snap</a>
-                      </li>
-                      <li>
-                        <a href="meridianSunsets.html">Meridian Sunsets</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li> */}
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav className="topnav" role="navigation">
+      <ul>
+        {routes.filter(isVisible).map((item: RouteNode) => (
+          <NavItem key={item.path ?? item.header} item={item} />
+        ))}
+      </ul>
+    </nav>
   );
 }
