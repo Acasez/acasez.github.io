@@ -53,7 +53,7 @@ export const routes: RouteNode[] = [
   {
     path: "/index",
     component: lazy(() => import("../Subpages/PortfolioIndex")),
-    header: "Overview",
+    header: "Edvin Skogsholm Sanne",
     createHeader: false, // the name above already links to "/"
   },
   {
