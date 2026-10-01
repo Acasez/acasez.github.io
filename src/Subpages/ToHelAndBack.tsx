@@ -18,7 +18,7 @@ export default function ToHelAndBack() {
           altText="Screenshot of the game during play, showing the main character Sif attacking enemies"
           description="Edvin's Nested Tooltips is exactly what it sounds like, it's a Unity Asset that helps easily add nested tooltips. Perfect for strategy games, rpg's or just any game with many mechanics and subsystems. Originally I was planning to put it up for purchase on the Unity Asset Store, but that proved a real hassle so I decided to instead make it available for free on itch.io (though you can still donate on itch if you really like it).
       "
-          itchLink="https://acasez.itch.io/edvins-nested-tooltips"
+          itchLink="https://10hpstudios.itch.io/to-hel-and-back"
           youtubeLink="https://www.youtube.com/watch?v=7FwxtrYJtMs"
         />
       </PortfolioRowFrame>
