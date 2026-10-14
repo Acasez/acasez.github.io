@@ -18,11 +18,17 @@ export default function Kastorix() {
 It started as I wanted to do a worldbuilding project that didn't need to connect to DND/Pathfinder lore. Previous worlds I’ve built have been for DMing DND/Pathfinder and therefore they had follow those systems' game mechanics and tropes. In Kastorix I was able to do things like making humans a minority species compared to the other sapients, making airships one of the main methods of traveling around and having magic be commonplace. I could also build a world where I didn’t need to provide gods and divine forces, for clerics or demons for warlocks.
 
 I started by just worldbuilding in an obsidian vault, but later began thinking about how I could use a setting TTRPG setting. The TTRPG uses Pathfinder (2e) as a base, but it is also very different especially in terms of character creation and the fact it uses opposed rolls when possible. It's a classless system that gives players (at least) two feats per level to plot out as desired. My current group is enjoying it a great deal, and we’ve had a campaign running for almost a year now.
+
+Currently there are two versions of the site, an old version with all the pages and a newer React page that so far has an intro page, Character Sheet, and DM Screen.
 "
           webpageLinks={[
             {
-              url: "https://acasez.github.io/kastorixv2/l",
+              url: "https://acasez.github.io/kastorixv2",
               label: "TTRPG Home Page",
+            },
+            {
+              url: "https://acasez.github.io/kastorix/Kastorix/RPG%20Overview.html",
+              label: "Old page with more worldbuilding",
             },
           ]}
         />
@@ -41,11 +47,11 @@ I started by just worldbuilding in an obsidian vault, but later began thinking a
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Character Sheet
           name="Character Sheet"
-          imageLocation="images/Kastorix/Site/CharachterSheetv1.2.JPG"
+          imageLocation="images/Kastorix/Site/CharacterSheetV2.JPG"
           altText="An screenshot of the Character Sheet"
-          description="One of the things I’ve been working the most on have been the online Character Sheet, inspired by Pathbuilder for Pathfinder. It is designed to provide an easy way to design, update and play with your character. So far it is in a WIP stage, with many features in process. But it is still possible to plot out your feats, spells and other options. It also greys out feats that are unavailable because they are too high level.
+          description="One of the things I’ve been working the most on have been the online Character Sheet, inspired by Pathbuilder for Pathfinder. It is designed to provide an easy way to design, update and play with your character. 
 
-If it sounds interesting, I recommend you to go to the page and check it out, make a character. Right now most features work, but it still has a few bugs and I have more features planned. The Character Sheet is as the other pages coded in Javascript, split over many different scripts. When I’m not working on other projects, I’m adding new things here.
+If it sounds interesting, I recommend you to go to the page and check it out, make a character. You can set stats, pick feats, spells, weapons and more. When I’m not working on other projects, I’m adding new things here.
 
 "
           webpageLinks={[
@@ -62,19 +68,19 @@ If it sounds interesting, I recommend you to go to the page and check it out, ma
       </PortfolioRowFrame>
       <PortfolioRowFrame reverse={false}>
         <PortfolioDoubleImageRow
-          imageLocationOne="images/Kastorix/Site/Gray out restricted feats2.JPG"
-          altTextOne="Screenshot of the selection modal on the character sheet, the user looking at Arcane feats. The feat is level 7 so they cannot pick level 8 or higher feats"
-          imageLocationTwo="images/Kastorix/Site/Choosing Spell.JPG"
-          altTextTwo="Screenshot of the selection modal on the character sheet, the user is looking at spells, having selected the Hail of Nails spell. You can see the categories of spells at the top"
+          imageLocationOne="images/Kastorix/Site/CSV2SpellSelection.JPG"
+          altTextOne="Screenshot of the selection modal on the character sheet, the user looking at spells, filtered for those with the metal aspect."
+          imageLocationTwo="images/Kastorix/Site/CharacterSheetV2Selections.JPG"
+          altTextTwo="Screenshot of character sheet, with the user having picked some more spells for their character Zulsa."
         ></PortfolioDoubleImageRow>
       </PortfolioRowFrame>
       <hr />
       <PortfolioRowFrame reverse={true}>
         <PortfolioRow //DM Screen
           name="DM Screen"
-          imageLocation="images/Kastorix/Site/DM Screen.JPG"
+          imageLocation="images/Kastorix/Site/DmScreenV2.JPG"
           altText="Screenshot of the DM Screen with two creatures open"
-          description="To accompany the Character Sheet I have made an interactive DM Screen where I can design and run different creatures. Here I can create new creatures, create custom attacks and abilities with dropdowns and save them as JSON files. I then import and load the creatures when I DM, and keep track of stats and abilities. Many of the functions such as the proficiency and collection management uses the same Javascript functions as the character sheet
+          description="To accompany the Character Sheet I have made an interactive DM Screen where I can design and run different creatures. Here I can create new creatures, create custom attacks and abilities with dropdowns and save them as JSON files. I then import and load the creatures when I DM, and keep track of stats and abilities. Many of the functions such as the proficiency markers and spell and weapon components reuses React Components from the character sheet.
 
 I still want to improve the DM Screen with features to make it easier to design and balance creatures, with things like creature type and level templates. 
 "
@@ -91,8 +97,7 @@ I still want to improve the DM Screen with features to make it easier to design 
           name="Data Handling"
           imageLocation="images/Kastorix/Site/Kastorix Sheets.JPG"
           altText="Screenshot of my google sheet open, showing some arcane feats"
-          description="One thing I found is that designing an TTRPG, especially one as combat heavy and crunchy as this requires a lot of data. Making spells and feats is of course fun, but storing and updating was a bit of a challenge. At first I put the feats directly on the pages, but later I ended up storing them in a google sheet document. I have a python script to import all the data to my folder and store it as a SQLite database and in JSON files for easy access. The character sheet, DM Sheet and other documents can pull data from JSON files.
-"
+          description="One thing I found is that designing an TTRPG, especially one as combat heavy and crunchy as this requires a lot of data. Making spells and feats is of course fun, but storing and updating was a bit of a challenge. At first I put the feats directly on the pages, but later I ended up storing them in a google sheet document. I have a python script to import all the data to my folder and store it  in JSON files for easy access. The raw JSON data is then at runtime used to make typed data objects that are exported for the character sheet, DM Screen and more."
         />
       </PortfolioRowFrame>
     </>
