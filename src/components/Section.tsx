@@ -1,4 +1,5 @@
 // src/components/Layout/Section.tsx
+/*
 import ContentRow from "./ContentRow";
 import ReactMarkdown from "react-markdown";
 
@@ -35,7 +36,6 @@ export default function Section({
 
   return (
     <div className={`w-full ${className}`}>
-      {/* Header Row */}
       {hasHeader && (
         <ContentRow reverse={headerReverse}>
           <div className="flex-1 text-center">
@@ -58,10 +58,10 @@ export default function Section({
         </ContentRow>
       )}
 
-      {/* Content Row */}
+      {/* Content Row 
       <ContentRow reverse={contentReverse} vertical={vertical}>
         {children}
       </ContentRow>
     </div>
   );
-}
+} */
