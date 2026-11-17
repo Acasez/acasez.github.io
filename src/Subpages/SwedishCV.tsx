@@ -2,7 +2,7 @@ export default function SwedishCV() {
   return (
     <>
       <object
-        data="CVs/SwedishCV.pdf"
+        data="CVs/Edvin - SwedishCV.pdf"
         width="100%"
         height="1000px"
         type="application/pdf"
