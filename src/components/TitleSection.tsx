@@ -1,4 +1,3 @@
-import "../CSS/TitleSection.css";
 interface TitleSectionProps {
   title: string;
   subtitle: string;
@@ -12,9 +11,9 @@ export default function TitleSection({
 }: TitleSectionProps) {
   return (
     <>
-      <div className="TitleSection">
-        <h1>{title} </h1>
-        <h2>{subtitle} </h2>
+      <div className="mb-0.5 bg-gray-200 relative justify-center flex flex-col">
+        <h1 className="text-2xl">{title} </h1>
+        <h2 className="text-lg">{subtitle} </h2>
         {extraLine && <h3>{extraLine} </h3>}
       </div>
     </>

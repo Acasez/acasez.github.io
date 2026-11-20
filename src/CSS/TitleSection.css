@@ -1,9 +1,9 @@
-.TitleSection {
+/* .TitleSection {
     position: relative;
     background-color: whitesmoke;
     margin-bottom: 0.5rem;
 }
-
+ */
 @media (prefers-color-scheme: dark) {
     .TitleSection {
         /* Dark mode: light text on dark background */

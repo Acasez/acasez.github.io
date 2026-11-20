@@ -1,5 +1,5 @@
 // App.tsx
-import MainHeader from "./components/MainHeader";
+import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.tsx";
 import AppRoutes from "./components/AppRouter.tsx";
 import { Suspense } from "react";
@@ -7,7 +7,7 @@ import { Suspense } from "react";
 export default function App() {
   return (
     <>
-      <MainHeader />
+      <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <AppRoutes />
       </Suspense>

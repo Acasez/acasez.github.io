@@ -139,7 +139,7 @@ export const routes: RouteNode[] = [
         createHeader: true,
       },
       {
-        header: "🞀 CV's",
+        header: "CV's",
         createHeader: true,
         children: [
           {
