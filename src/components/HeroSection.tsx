@@ -2,13 +2,15 @@ import "../CSS/HeroSection.css";
 export default function HeroSection() {
   return (
     <>
-      <section id="top" className="intro-box">
-        <div className="intro-container">
-          <div className="intro-image">
-            <img src="images/AboutMe/Photo.jpg" alt="Picture of me" />
-          </div>
-          <div className="intro-text">
-            <h2 className="sectionText">Heya!</h2>
+      <section id="top" className="bg-linear-to-b from-sky-300">
+        <div className="flex flex-row p-3 gap-3">
+          <img
+            className="rounded-lg w-75 h-75"
+            src="images/AboutMe/Photo.jpg"
+            alt="Picture of me"
+          />
+          <div className="text-black text-lg">
+            <h2 className="text-4xl text-center underline m-1">Heya!</h2>
             <p>
               My name is Edvin Skogsholm Sanne and I'm a game designer and
               programmer from Sweden. I have a bachelor degree in game design
@@ -29,7 +31,7 @@ export default function HeroSection() {
               projects I like to play games of all kinds (video games, board
               games, ttrgps), read books and manga and go out in nature.
             </p>
-            <div className="project-links">
+            <div className="flex m-2 gap-2 justify-center">
               <a href="https://acasez.itch.io" className="project-link itch">
                 Itch.io
               </a>
