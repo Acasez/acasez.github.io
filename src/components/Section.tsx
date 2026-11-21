@@ -1,5 +1,5 @@
 // src/components/Layout/Section.tsx
-/*
+
 import ContentRow from "./ContentRow";
 import ReactMarkdown from "react-markdown";
 
@@ -58,10 +58,10 @@ export default function Section({
         </ContentRow>
       )}
 
-      {/* Content Row 
+      {/* Content Row */}
       <ContentRow reverse={contentReverse} vertical={vertical}>
         {children}
       </ContentRow>
     </div>
   );
-} */
+}
