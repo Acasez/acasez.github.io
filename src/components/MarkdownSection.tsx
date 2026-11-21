@@ -54,6 +54,7 @@ function transformChildren(children: React.ReactNode): React.ReactNode {
 
 interface MarkdownSectionProps {
   name?: string;
+  tagLine?: string;
   projectPageLink?: string;
   description: string;
   cursive?: boolean;
@@ -64,6 +65,7 @@ export default function MarkdownSection({
   projectPageLink,
   description,
   cursive,
+  tagLine,
 }: MarkdownSectionProps) {
   const marked = markFirstOccurrences(description);
 
@@ -73,16 +75,22 @@ export default function MarkdownSection({
   };
 
   return (
-    <div className="portfolio-text">
+    <div className="portfolio-text m-1">
       {projectPageLink ? (
-        <NavLink className="text-2xl text-header" to={projectPageLink}>
-          {name}
+        <NavLink
+          className="text-5xl text-text-projectTitle text-center font-bold block self-center mb-2"
+          to={projectPageLink}
+        >
+          <span className="relative inline-block after:absolute after:bottom-0 after:left-0 after:w-full after:origin-left after:scale-x-0 after:border-b-3 after:border-striking after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100">
+            {name}
+          </span>
         </NavLink>
       ) : (
         <h1 className="text-5xl text-orange-500 text-center font-bold">
           {name}
         </h1>
       )}
+      <h2 className="text-xl font-bold text-center block">{tagLine}</h2>
       <div
         className={`text-center text-xl m-2 text-text-flavor ${cursive ? "italic text-text" : ""}`}
       >

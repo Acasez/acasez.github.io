@@ -15,7 +15,7 @@ export const mainProjects = [
     imageLocation: "images/Amsvartne/Amsvartne.JPG",
     altText: "Image of Amsvartne",
     projectTags: ["Unity", "C#", "Game", "Group", "Level-Design"],
-    name: "Amsvartne (2045-2025)",
+    name: "Amsvartne (2024-2025)",
     subtitle: "Atmospheric Puzzle Platformer",
     projectPageLink: "Amsvartne",
     description:
@@ -79,7 +79,7 @@ export const mainProjects = [
   {
     imageLocation: "images/Kastorix/Maps/Kastorix.jpg",
     altText: "Kastorix World Map",
-    projectTags: ["TTRPG", "Solo", "Website", "Javascript", "Python", "SQLite"],
+    projectTags: ["TTRPG", "Solo", "Website", "Typescript", "Python"],
     name: "Kastorix (2023-)",
     subtitle: "Fantasy TTRPG",
     projectPageLink: "Kastorix",
@@ -87,7 +87,7 @@ export const mainProjects = [
       "Kastorix is a worldbuilding project and TTRPG system I've been working on for a while. Fantasy world set on a moon orbiting a gas giant, featuring an industrial not-quite roman republic led by dragons fighting off eldritch monsters. It also has airships as the main method of travel, magic that's both a science and art form, humans as a minority species and lot's of lovely magitech.\n\nI'm currently playtesting the system with some friends and developing a webpage for the project (see link below) There you can for example find a dynamic character sheet in the style of Pathbuilder for Pathfinder",
     webpageLinks: [
       {
-        url: "https://acasez.github.io/Kastorix/RPG%20Overview.html",
+        url: "https://acasez.github.io/Kastorix/RPG%20Overview",
         label: "TTRPG Home Page",
       },
       {

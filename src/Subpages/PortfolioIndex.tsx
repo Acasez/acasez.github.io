@@ -12,6 +12,9 @@ import {
   smallProjects,
 } from "../constants/PortfolioIndexProjects";
 import { tagGroups } from "../constants/TagGroups";
+import MarkdownSection from "../components/MarkdownSection";
+import Section from "../components/Section";
+import ImageDisplay from "../components/ImageDisplay";
 
 interface Project {
   imageLocation: string;
@@ -84,7 +87,7 @@ export default function PortfolioIndex() {
           />
           {filteredMainProjects.map((project, index) => (
             <React.Fragment key={index}>
-              <PortfolioRowFrame reverse={index % 2 === 0}>
+              {/* <PortfolioRowFrame reverse={index % 2 === 0}>
                 <PortfolioRow
                   imageLocation={project.imageLocation}
                   altText={project.altText}
@@ -98,7 +101,20 @@ export default function PortfolioIndex() {
                   youtubeLink={project.youtubeLink}
                   webpageLinks={project.webpageLinks}
                 />
-              </PortfolioRowFrame>
+              </PortfolioRowFrame> */}
+              <Section contentReverse={index % 2 === 0}>
+                <MarkdownSection
+                  name={project.name}
+                  tagLine={project.subtitle}
+                  projectPageLink={project.projectPageLink}
+                  description={project.description}
+                />
+                <ImageDisplay
+                  imageLocation={project.imageLocation}
+                  altText={project.altText}
+                  coverImage={false}
+                />
+              </Section>
               {index < filteredMainProjects.length - 1 && <hr />}
             </React.Fragment>
           ))}

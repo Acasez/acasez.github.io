@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "../CSS/PortfolioRow.css";
-import { memo } from "react";
 import MediaDisplay from "../components/MediaDisplay";
 import ProjectLinks from "../components/ProjectLinks";
 import ProjectTags from "../components/ProjectTags";
@@ -22,7 +21,7 @@ interface PortFolioProps {
   portfolioLinks?: { linkTo: string; label: string }[];
 }
 
-function PortfolioRow({
+export default function PortfolioRow({
   imageLocation,
   videoId,
   altText,
@@ -41,7 +40,7 @@ function PortfolioRow({
   return (
     <>
       <div>
-        <div className="portfolio-media">
+        <div className="w-100% max-w-800">
           <MediaDisplay
             videoId={videoId}
             imageLocation={imageLocation}
@@ -77,5 +76,3 @@ function PortfolioRow({
     </>
   );
 }
-
-export default memo(PortfolioRow);

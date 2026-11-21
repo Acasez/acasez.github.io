@@ -20,6 +20,7 @@
   --color-text-calm: #4da6ff;
   --color-text-black: #1e2939;
   --color-text-trait: #666;
+  --color-text-projectTitle: #008000;
 
   --color-header: #ffa500;
   --color-striking: #ff5722;
@@ -29,24 +30,11 @@
 
   --color-button-add: #4caf50;
 
-  --color-prof-Untrained: #f7f7f7;
-  --color-prof-Trained: #47d147;
-  --color-prof-Expert: #66b3ff;
-  --color-prof-Master: #cc66ff;
-  --color-prof-Legendary: #ff9966;
-
-  --color-health: #ef4444;
-  --color-aura: #a855f7;
-  --color-mana: #38bdf8;
-
-  --color-PHY: #cd18e1;
-  --color-DEX: #fe9a00;
-  --color-INT: #2b7fff;
-  --color-WIL: #009966;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.75em;
+  text-rendering: optimizelegibility;
 }
