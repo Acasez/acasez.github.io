@@ -17,7 +17,7 @@ export default function HeroSection() {
           />
           <div className="text-black text-lg">
             <h2 className="text-4xl text-center underline m-1">Heya!</h2>
-            <MarkdownSection description={DESC.Overview} />
+            <MarkdownSection description={DESC.Overview} children={false} />
             <ProjectLinks
               itchLink="https://acasez.itch.io"
               githubLink="https://github.com/Acasez"
