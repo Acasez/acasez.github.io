@@ -1,5 +1,4 @@
 // src/components/Layout/Section.tsx
-
 import ContentRow from "./ContentRow";
 import ReactMarkdown from "react-markdown";
 
@@ -35,7 +34,7 @@ export default function Section({
   const hasHeader = title || subtitle || flavorText;
 
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`w-full my-2 ${className}`}>
       {hasHeader && (
         <ContentRow reverse={headerReverse}>
           <div className="flex-1 text-center">

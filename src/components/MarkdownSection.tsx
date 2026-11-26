@@ -58,6 +58,7 @@ interface MarkdownSectionProps {
   projectPageLink?: string;
   description: string;
   cursive?: boolean;
+  children: React.ReactNode;
 }
 
 export default function MarkdownSection({
@@ -66,6 +67,7 @@ export default function MarkdownSection({
   description,
   cursive,
   tagLine,
+  children,
 }: MarkdownSectionProps) {
   const marked = markFirstOccurrences(description);
 
@@ -95,6 +97,7 @@ export default function MarkdownSection({
         className={`text-center text-xl m-2 text-text-flavor ${cursive ? "italic text-text" : ""}`}
       >
         <ReactMarkdown components={components}>{marked}</ReactMarkdown>
+        {children}
       </div>
     </div>
   );

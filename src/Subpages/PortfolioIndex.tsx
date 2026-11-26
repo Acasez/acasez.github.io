@@ -15,6 +15,7 @@ import { tagGroups } from "../constants/TagGroups";
 import MarkdownSection from "../components/MarkdownSection";
 import Section from "../components/Section";
 import ImageDisplay from "../components/ImageDisplay";
+import ProjectLinks from "../components/ProjectLinks";
 
 interface Project {
   imageLocation: string;
@@ -99,7 +100,14 @@ export default function PortfolioIndex() {
                   tagLine={project.subtitle}
                   projectPageLink={project.projectPageLink}
                   description={project.description}
-                />
+                >
+                  <ProjectLinks
+                    itchLink={project.itchLink}
+                    githubLink={project.githubLink}
+                    youtubeLink={project.youtubeLink}
+                    webpageLinks={project.webpageLinks}
+                  />
+                </MarkdownSection>
                 <ImageDisplay
                   imageLocation={project.imageLocation}
                   altText={project.altText}
