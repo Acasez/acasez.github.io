@@ -14,7 +14,7 @@ export default function ImageDisplay({
   return (
     <>
       <div className={coverImage ? "" : ""}>
-        <div className="w-200">
+        <div className="w-175">
           {imageCaption ? (
             <div className="text-center text-xl cursive">
               <img src={imageLocation} alt={altText} />

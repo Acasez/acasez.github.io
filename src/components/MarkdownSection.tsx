@@ -94,7 +94,7 @@ export default function MarkdownSection({
       )}
       <h2 className="text-xl font-bold text-center block">{tagLine}</h2>
       <div
-        className={`text-center text-xl m-2 text-text-flavor ${cursive ? "italic text-text" : ""}`}
+        className={`text-center text-xl m-2 text-text-flavor flex flex-col ${cursive ? "italic text-text" : ""}`}
       >
         <ReactMarkdown components={components}>{marked}</ReactMarkdown>
         {children}

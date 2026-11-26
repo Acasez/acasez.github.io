@@ -10,7 +10,7 @@ export default function ProjectTags({ projectTags, selectedTag }: TagProps) {
   if (!projectTags) return null;
 
   return (
-    <div className="project-tags">
+    <div className="flex justify-center gap-1.5 bg-blue-300 rounded-2xl p-3 w-fit self-center">
       {projectTags.map((tag) => (
         <div
           key={tag}

@@ -16,6 +16,7 @@ import MarkdownSection from "../components/MarkdownSection";
 import Section from "../components/Section";
 import ImageDisplay from "../components/ImageDisplay";
 import ProjectLinks from "../components/ProjectLinks";
+import ProjectTags from "../components/ProjectTags";
 
 interface Project {
   imageLocation: string;
@@ -107,6 +108,7 @@ export default function PortfolioIndex() {
                     youtubeLink={project.youtubeLink}
                     webpageLinks={project.webpageLinks}
                   />
+                  <ProjectTags projectTags={project.projectTags} />
                 </MarkdownSection>
                 <ImageDisplay
                   imageLocation={project.imageLocation}
