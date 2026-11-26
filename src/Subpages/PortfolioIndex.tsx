@@ -80,21 +80,6 @@ export default function PortfolioIndex() {
           />
           {filteredMainProjects.map((project, index) => (
             <React.Fragment key={index}>
-              {/* <PortfolioRowFrame reverse={index % 2 === 0}>
-                <PortfolioRow
-                  imageLocation={project.imageLocation}
-                  altText={project.altText}
-                  projectTags={project.projectTags}
-                  name={project.name}
-                  subtitle={project.subtitle}
-                  projectPageLink={project.projectPageLink}
-                  description={project.description}
-                  itchLink={project.itchLink}
-                  githubLink={project.githubLink}
-                  youtubeLink={project.youtubeLink}
-                  webpageLinks={project.webpageLinks}
-                />
-              </PortfolioRowFrame> */}
               <Section contentReverse={index % 2 === 0}>
                 <MarkdownSection
                   name={project.name}
