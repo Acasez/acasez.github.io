@@ -58,16 +58,7 @@ export default function PortfolioIndex() {
   return (
     <>
       <HeroSection />
-      {/* Tags and Reset Button Container */}
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          gap: "16px",
-          padding: "0 16px",
-        }}
-      >
+      <div>
         <TagOverview
           groups={tagGroups}
           selectedTag={selectedTag}

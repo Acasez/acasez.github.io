@@ -23,9 +23,12 @@ export default function TagOverview({
   };
 
   return (
-    <div className="tag-filter-container">
-      <div style={{ display: "flex", gap: "10px" }}>
-        <button className="tag show-filters-tag" onClick={toggleTags}>
+    <div className="">
+      <div>
+        <button
+          className="ml-3 mb-1 rounded-2xl bg-amber-100 p-1 px-2"
+          onClick={toggleTags}
+        >
           {displayTags ? "Hide tag filters" : "Show tag filters"}
         </button>
         {selectedTag && (
@@ -36,11 +39,11 @@ export default function TagOverview({
       </div>
 
       {displayTags && (
-        <div className="project-tags-container">
+        <div className="flex flex-col gap-2 m-3">
           {groups.map((group, index) => (
-            <div key={index} className="tag-group">
-              <span className="tag-group-title">{group.title}:</span>
-              <div className="tag-group-tags">
+            <div key={index} className="flex flex-row align-middle">
+              <span className="text-lg m-2">{group.title}:</span>
+              <div className="flex flex-row gap-1">
                 {group.tags.map((tag) => (
                   <button
                     key={tag}
