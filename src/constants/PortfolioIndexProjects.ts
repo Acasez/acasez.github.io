@@ -25,7 +25,7 @@ export const mainProjects = [
   {
     imageLocation: "images/MariestadClimateGame/Gameboard in Play.jpg",
     altText: "Image of the board game in play",
-    projectTags: ["Board Game", "Professional-Project", "Group"],
+    projectTags: ["Board Game", "Professional Project", "Group"],
     name: "Mariestad Climate Board Game (2022-2024)",
     subtitle:
       "Eurogame style board game about city planning and sustainability",
@@ -79,7 +79,7 @@ export const mainProjects = [
   {
     imageLocation: "images/Kastorix/Maps/Kastorix.jpg",
     altText: "Kastorix World Map",
-    projectTags: ["TTRPG", "Solo", "Website", "Typescript", "Python"],
+    projectTags: ["TTRPG", "React", "Solo", "Website", "Typescript", "Python"],
     name: "Kastorix (2023-)",
     subtitle: "Fantasy TTRPG",
     projectPageLink: "Kastorix",
@@ -111,7 +111,7 @@ export const mainProjects = [
     imageLocation: "images/ToHelAndBack/axeattack.jpg",
     altText:
       "Screenshot of the game during play, showing the main character Sif attacking enemies",
-    projectTags: ["Game", "Group", "Unity", "Level-Design"],
+    projectTags: ["Game", "Group", "Unity", "Level Design"],
     name: "To Hel and Back (2021-2022)",
     subtitle: "Norse mythology inspired hack and slash roguelike",
     projectPageLink: "ToHelAndBack",
@@ -126,7 +126,7 @@ export const gameDrafts = [
   {
     imageLocation: "images/LandOfTheArcane/EarlyCivicTree.jpg",
     altText: "Image of the civic tree draft",
-    projectTags: ["Game-Concept", "Solo"],
+    projectTags: ["Game Concept", "Solo"],
     name: "Land of the Arcane (2019-2021)",
     subtitle: "Fantasy/Magitech 4X",
     projectPageLink: "LandOfTheArcane",
@@ -140,7 +140,7 @@ export const smallProjects = [
     imageLocation: "images/LMS/Courses.JPG",
     altText: "Image of the teacher courses view on the website",
     projectTags: ["React", "Typescript", "SQL", "C#", "Group", "Website"],
-    name: "Learning Platform Website",
+    name: "Learning Platform Website  (2026)",
     subtitle: "Learning platform website",
     description:
       "Built as the final project on the Lexicon part of the fullstack development course I’m doing. Features a backend with an SQL database, JWT token authentication and a frontend with React and Tailwind. We planned out the project in Figma, set up github workflow actions and used a github project kanban page to track progress and user stories. \n\nThe web page has two roles: Teacher and Student. Teachers can manage courses and learning content, while students can access their assigned course, modules, activities, resources, and submissions. I mostly worked in frontend, making react pages and components such as our reusable Data Table which can create a sort, filter and pageable table for a type of T.",
