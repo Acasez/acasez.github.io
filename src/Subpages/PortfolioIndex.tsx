@@ -4,8 +4,6 @@ import { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import TagOverview from "../components/TagOverview";
 import TitleSection from "../components/TitleSection";
-import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
-import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import {
   mainProjects,
   gameDrafts,
@@ -121,10 +119,28 @@ export default function PortfolioIndex() {
           <hr />
           {filteredGameDrafts.map((project, index) => (
             <React.Fragment key={index}>
-              <PortfolioRowFrame reverse={index % 2 === 0}>
-                <PortfolioRow {...project} />
-              </PortfolioRowFrame>
-              {index < filteredGameDrafts.length - 1 && <hr />}
+              <Section contentReverse={index % 2 === 0}>
+                <MarkdownSection
+                  name={project.name}
+                  tagLine={project.subtitle}
+                  projectPageLink={project.projectPageLink}
+                  description={project.description}
+                >
+                  <ProjectLinks
+                    itchLink={project.itchLink}
+                    githubLink={project.githubLink}
+                    youtubeLink={project.youtubeLink}
+                    webpageLinks={project.webpageLinks}
+                  />
+                  <ProjectTags projectTags={project.projectTags} />
+                </MarkdownSection>
+                <ImageDisplay
+                  imageLocation={project.imageLocation}
+                  altText={project.altText}
+                  coverImage={false}
+                />
+              </Section>
+              {index < filteredMainProjects.length - 1 && <hr />}
             </React.Fragment>
           ))}
         </>
@@ -143,10 +159,28 @@ export default function PortfolioIndex() {
           />
           {filteredSmallProjects.map((project, index) => (
             <React.Fragment key={index}>
-              <PortfolioRowFrame reverse={index % 2 === 0}>
-                <PortfolioRow {...project} />
-              </PortfolioRowFrame>
-              {index < filteredSmallProjects.length - 1 && <hr />}
+              <Section contentReverse={index % 2 === 0}>
+                <MarkdownSection
+                  name={project.name}
+                  tagLine={project.subtitle}
+                  projectPageLink={project.projectPageLink}
+                  description={project.description}
+                >
+                  <ProjectLinks
+                    itchLink={project.itchLink}
+                    githubLink={project.githubLink}
+                    youtubeLink={project.youtubeLink}
+                    webpageLinks={project.webpageLinks}
+                  />
+                  <ProjectTags projectTags={project.projectTags} />
+                </MarkdownSection>
+                <ImageDisplay
+                  imageLocation={project.imageLocation}
+                  altText={project.altText}
+                  coverImage={false}
+                />
+              </Section>
+              {index < filteredMainProjects.length - 1 && <hr />}
             </React.Fragment>
           ))}
         </>
