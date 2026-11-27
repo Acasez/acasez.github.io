@@ -12,7 +12,11 @@ const DESC = parseMarkdownByHeaders(overviewMarkdown);
 export default function AboutMe() {
   return (
     <>
-      <TitleSection title="About Me" subtitle="Yup, that's me" />
+      <TitleSection
+        title="About Me"
+        subtitle="Yup, that's me"
+        topBorder={false}
+      />
       <Section>
         <ImageDisplay
           imageLocation="images/AboutMe/SkövdeSlice.jpg"

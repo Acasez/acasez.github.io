@@ -10,6 +10,7 @@ export default function Amsvartne() {
       <TitleSection
         title="Amsvartne"
         subtitle="Story rich atmospheric puzzle-platformer set in a mystical dieselpunk world"
+        topBorder={false}
       />
       <PortfolioRowFrame reverse={true} introRow={true}>
         <PortfolioRow //Overview

@@ -75,6 +75,7 @@ export default function PortfolioIndex() {
                 ? `Showing "${filteredMainProjects.length}" projects tagged with "${selectedTag}."`
                 : ""
             }
+            topBorder={true}
           />
           {filteredMainProjects.map((project, index) => (
             <React.Fragment key={index}>
@@ -115,6 +116,7 @@ export default function PortfolioIndex() {
                 ? `Showing "${filteredGameDrafts.length}" projects tagged with "${selectedTag}."`
                 : ""
             }
+            topBorder={true}
           />
           <hr />
           {filteredGameDrafts.map((project, index) => (
@@ -156,6 +158,7 @@ export default function PortfolioIndex() {
                 ? `Showing "${filteredSmallProjects.length}" projects tagged with "${selectedTag}."`
                 : ""
             }
+            topBorder={true}
           />
           {filteredSmallProjects.map((project, index) => (
             <React.Fragment key={index}>
