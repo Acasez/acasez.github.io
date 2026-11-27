@@ -7,16 +7,16 @@ I grew up in the city of Norrköping, moved to Stockholm when I was 13 and lived
 
 &nbsp;
 
-Now I'm back in Stockholm looking for work, but I am open to moving to some other part of Sweden (or nearby EU countries) if I find a job there. Currently I'm studying fullstack programming/software development via a course by Lexicon/LTU. I’m also developing my own TTRPG, and organizing board game events at my nearest library. 
+Now I'm back in Stockholm looking for work, but I am open to moving to some other part of Sweden (or nearby EU countries) if I find a job there. Currently I'm studying fullstack programming/software development via a course by Lexicon/LTU. I’m also developing my own TTRPG, and organizing board game events at my local library. 
 
-### Strategy Games
+### StrategyGames
 I play a variety of games, but as I mentioned in my initial blurb on the front page and you might guess by the rest of my portfolio, strategy games are my favorite. I like grand strategy games (EU4, CK3), 4X's (Civ 5 & 6, Stellaris, Age of Wonders 3 & 4), turn based tactics (Xcom, Darkest Dungeon, Baldur's Gate 3), card games (Slay the Spire 1 & 2, Marvel Snap), city builders (City Skylines, Against The Storm) and more bite-sized strategy games (Slipways, Terraformers, FTL, Into the Breach).
 
 &nbsp;
 
 While I like most types of strategy games, I don’t vibe as much with games like Starcraft or Age of Empires, as I find real time strategy games without pause quite stressful. Real time with pause like FTL or Shadow Gambit are cool though.
 
-### Other Games
+### OtherGames
 While I do play a lot of strategy games and Civ 5 is the game I have the most time on steam, it's not close to the game I have spent overall the most time on. Let's just say I am glad Minecraft doesn't have an overall hour count. I haven’t played that much recently, but between different mod packs, servers (both large mini game and friendly servers), custom maps, and vanilla survival I have put in a lot of hours there.
 
 &nbsp;
@@ -27,7 +27,7 @@ Besides Minecraft, some examples of games I've played and liked a lot are Portal
 
 I'm not really a Console player, but I also enjoy Mario Kart when I get a chance to play. 
 
-### Board Games
+### BoardGames
 If it wasn't clear already I'm also a big fan of board games. My favorite types of board games are deckbuilders, like Ascension, the Clank! series, Dune Imperium and Dominion. In general I've found that I like games that have a lot of different cards, but aren't ‘just’ card games with predefined/player created decks. There is something about figuring out a plan on the fly from an array of cards that is really fun.
 
 &nbsp;
@@ -50,4 +50,4 @@ I also read quite a bit, mostly fantasy books and have a love of interesting wor
 
 &nbsp;
 
-I also read some manga of various genres, with some of my favorites including Lullaby of the Dawn, Bloom Into You, Dr Stone, Magus of the Library and I Hear the Sunspot. And I’ve read quite a bit of fanfics (mostly fluff and canon divergence AU's). I've written some fics of my own, including a Horizon Forbidden West longfic called Meridian Sunsets.
+I also read some manga of various genres, with some of my favorites including Lullaby of the Dawn, Bloom Into You, Dr Stone, Marriage Toxin, Witch Hat Atelier Magus of the Library and I Hear the Sunspot. And I’ve read quite a bit of fanfics (mostly fluff and canon divergence AU's). I've written some fics of my own, including a Horizon Forbidden West longfic called Meridian Sunsets.
