@@ -5,7 +5,7 @@ interface ListProps {
 
 export default function List({ listHeader, listContent }: ListProps) {
   return (
-    <div className="flex flex-col gap-2 w-full">
+    <div className="flex flex-col gap-2 ml-5 mt-5 w-full">
       <h3 className="text-3xl text-striking mt-2">{listHeader}:</h3>
       <ul>
         {listContent.map((listEntry) => (
