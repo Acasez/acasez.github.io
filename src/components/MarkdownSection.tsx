@@ -77,7 +77,7 @@ export default function MarkdownSection({
   };
 
   return (
-    <div className="portfolio-text m-1">
+    <div className="portfolio-text">
       {projectPageLink ? (
         <NavLink
           className="text-5xl text-text-projectTitle text-center font-bold block self-center mb-2"

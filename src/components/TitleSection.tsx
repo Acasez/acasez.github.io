@@ -2,7 +2,7 @@ interface TitleSectionProps {
   title: string;
   subtitle: string;
   extraLine?: string;
-  topBorder: boolean;
+  topBorder?: boolean;
 }
 
 export default function TitleSection({

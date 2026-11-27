@@ -2,7 +2,15 @@ import PortfolioDoubleImageRow from "../PortfolioRows/PortfolioDoubleImageRow";
 import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
+import ImageDisplay from "../components/ImageDisplay";
+import MarkdownSection from "../components/MarkdownSection";
+import ProjectLinks from "../components/ProjectLinks";
+import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
+import aboutMeMarkdown from "../markdown/Amsvartne.md?raw";
+import { parseMarkdownByHeaders } from "../utils/parseMarkdown";
+
+const MarkdownText = parseMarkdownByHeaders(aboutMeMarkdown);
 
 export default function Amsvartne() {
   return (
@@ -12,15 +20,16 @@ export default function Amsvartne() {
         subtitle="Story rich atmospheric puzzle-platformer set in a mystical dieselpunk world"
         topBorder={false}
       />
-      <PortfolioRowFrame reverse={true} introRow={true}>
-        <PortfolioRow //Overview
+      <Section>
+        <MarkdownSection name="Overview" description={MarkdownText.Overview}>
+          <ProjectLinks itchLink="https://corviangames.itch.io/amsvartne" />
+        </MarkdownSection>
+        <ImageDisplay
           imageLocation="images/Amsvartne/AmsvartneLamp.jpg"
           altText="Screenshot showing a card and a tooltip displaying the Nature Track feature from the Mariestad Climate Game"
-          description="Amsvartne is a 2D puzzle platformer I made as part of the start up group Corvian Games (now Tiny Creature Games). It focuses on narrative exploration and puzzle solving using light to navigate levels and solve puzzles. It's set in a mystical mine in a fantasy dieselpunk setting. I worked on the game and level design, as well as programming multiple game systems.
-"
-          itchLink="https://corviangames.itch.io/amsvartne"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
+      </Section>
       <PortfolioRowFrame reverse={false}>
         <PortfolioListRow //Features List
           imageLocation="images/Amsvartne/Amsvartnelorepage.JPG"
@@ -38,14 +47,20 @@ export default function Amsvartne() {
           ]}
         />
       </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/Amsvartne/lightbehindwall.JPG"
-          altTextOne="screenshot of the game, the player is walking through a door"
-          imageLocationTwo="images/Amsvartne/shineBright.JPG"
-          altTextTwo="Bright Crystal that can be picked up"
+      <Section>
+        <ImageDisplay
+          imageLocation="images/Amsvartne/lightbehindwall.JPG"
+          altText="Screenshot of the game, the player is walking through a door"
+          imageCaption="The player is walking through a door"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
+        <ImageDisplay
+          imageLocation="images/Amsvartne/shineBright.JPG"
+          altText="Bright Crystal that can be picked up"
+          imageCaption="Bright Crystal that can be picked up"
+          coverImage={false}
+        />
+      </Section>
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Initial Idea
           name="Initial Idea"
