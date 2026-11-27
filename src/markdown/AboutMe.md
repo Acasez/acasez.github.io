@@ -1,9 +1,7 @@
 ### Overview
-Hiya, welcome to the About Me page.
 
-&nbsp;
-
-I grew up in the city of Norrköping, moved to Stockholm when I was 13 and lived there for 6 years. After that I moved to Skövde and studied game design for 6 years, getting a Bachelor’s Degree in Game Design and a Master’s in Digital Narration and Cultural Heritage from Högskolan i Skövde/Skövde University. Sadly that didn't give me a job, but it was a good time. 
+I grew up in the city of Norrköping, moved to Stockholm when I was 13 and lived there for 6 years. After that I moved to Skövde and studied game design for 6 years, getting a Bachelor’s Degree in Game Design and a Master’s in Digital Narration and Cultural Heritage from Högskolan i Skövde/Skövde University. During the latter I developed and published the Mariestad Climate Game for the Municipality of Mariestad. 
+Sadly neither the education or the board gave me a job, but it was a good time. 
 
 &nbsp;
 

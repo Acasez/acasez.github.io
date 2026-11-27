@@ -6,7 +6,7 @@ import { parseMarkdownByHeaders } from "../utils/parseMarkdown";
 import ImageDisplay from "../components/ImageDisplay";
 import ProjectLinks from "../components/ProjectLinks";
 
-const DESC = parseMarkdownByHeaders(aboutMeMarkdown);
+const MarkdownText = parseMarkdownByHeaders(aboutMeMarkdown);
 
 export default function AboutMe() {
   return (
@@ -26,8 +26,9 @@ export default function AboutMe() {
       </Section>
       <Section>
         <MarkdownSection
-          name={"Overview"}
-          description={DESC.Overview}
+          name="Yo"
+          tagLine="Welcome to the About Me page"
+          description={MarkdownText.Overview}
           children={undefined}
         ></MarkdownSection>
         <ImageDisplay
@@ -39,7 +40,7 @@ export default function AboutMe() {
       <Section contentReverse={true}>
         <MarkdownSection
           name={"Strategy Games"}
-          description={DESC.StrategyGames}
+          description={MarkdownText.StrategyGames}
           children={undefined}
         ></MarkdownSection>
         <ImageDisplay
@@ -51,7 +52,7 @@ export default function AboutMe() {
       <Section>
         <MarkdownSection
           name={"Other Games"}
-          description={DESC.OtherGames}
+          description={MarkdownText.OtherGames}
           children={undefined}
         ></MarkdownSection>
         <ImageDisplay
@@ -63,7 +64,7 @@ export default function AboutMe() {
       <Section contentReverse={true}>
         <MarkdownSection
           name={"Board Games"}
-          description={DESC.BoardGames}
+          description={MarkdownText.BoardGames}
           children={undefined}
         ></MarkdownSection>
         <ImageDisplay
@@ -73,7 +74,7 @@ export default function AboutMe() {
         />
       </Section>
       <Section>
-        <MarkdownSection name={"TTRPG"} description={DESC.TTRPG}>
+        <MarkdownSection name={"TTRPG"} description={MarkdownText.TTRPG}>
           <ProjectLinks
             portfolioLinks={[
               {
@@ -90,7 +91,7 @@ export default function AboutMe() {
         />
       </Section>
       <Section contentReverse={true}>
-        <MarkdownSection name={"Reading"} description={DESC.Reading}>
+        <MarkdownSection name={"Reading"} description={MarkdownText.Reading}>
           <ProjectLinks
             webpageLinks={[
               {
