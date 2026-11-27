@@ -18,10 +18,7 @@ export default function HighFrontierTutorial() {
         subtitle="Tutorial and UI improvements for digital board game implementation"
       />
       <Section>
-        <MarkdownSection
-          name="Overview"
-          description={MarkdownText.Overview}
-        />
+        <MarkdownSection name="Overview" description={MarkdownText.Overview} />
         <ImageDisplay
           imageLocation="images/HighFrontier/mainmenu.jpg"
           altText="Screenshot of the Main Menu of High Frontier"
