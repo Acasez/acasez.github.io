@@ -137,10 +137,21 @@ export const gameDrafts = [
 
 export const smallProjects = [
   {
+    imageLocation: "images/others/BoomerangEnd.JPG",
+    altText: "Screenshot of the end of the game",
+    projectTags: ["React", "Typescript", "Game"],
+    name: "Boomerang Australia Digital (2026) ",
+    subtitle: "Adaptation of board game",
+    description:
+      "Built as part of a course in software development at LTU, this is a digital implementation of the board game Boomerang Australia. Features all the game mechanics of the original game, and is designed to be expandable. Code in Typescript + React, using Bun.serve to provide server. Can be played over local networks with 2-4 players, and has a solo mode for testing.. ",
+    githubLink: "https://github.com/Acasez/Boomerang-Austrailia",
+    hasSubpage: false,
+  },
+  {
     imageLocation: "images/LMS/Courses.JPG",
     altText: "Image of the teacher courses view on the website",
     projectTags: ["React", "Typescript", "SQL", "C#", "Group", "Website"],
-    name: "Learning Platform Website  (2026)",
+    name: "Learning Platform Website (2026)",
     subtitle: "Learning platform website",
     description:
       "Built as the final project on the Lexicon part of the fullstack development course I’m doing. Features a backend with an SQL database, JWT token authentication and a frontend with React and Tailwind. We planned out the project in Figma, set up github workflow actions and used a github project kanban page to track progress and user stories. \n\nThe web page has two roles: Teacher and Student. Teachers can manage courses and learning content, while students can access their assigned course, modules, activities, resources, and submissions. I mostly worked in frontend, making react pages and components such as our reusable Data Table which can create a sort, filter and pageable table for a type of T.",
