@@ -1,35 +1,38 @@
-import MediaDisplay from "../components/MediaDisplay";
-import PortfolioCoverImage from "../PortfolioRows/PortfolioCoverImage";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import TitleSection from "../components/TitleSection";
+import Section from "../components/Section";
+import MarkdownSection from "../components/MarkdownSection";
+import overviewMarkdown from "../markdown/AboutMe.md?raw";
+import { parseMarkdownByHeaders } from "../utils/parseMarkdown";
+import ImageDisplay from "../components/ImageDisplay";
+
+const DESC = parseMarkdownByHeaders(overviewMarkdown);
 
 export default function AboutMe() {
   return (
     <>
       <TitleSection title="About Me" subtitle="Yup, that's me" />
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioCoverImage>
-          <MediaDisplay
-            imageLocation="images/AboutMe/SkövdeSlice.jpg"
-            altText="Picture of Skövde from the nearby hill of Billingen, taken by me"
-            imageCaption="Picture of Skövde from the nearby hill of Billingen, taken by me"
-            coverImage={true}
-          />
-        </PortfolioCoverImage>
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Overview
+      <Section>
+        <ImageDisplay
+          imageLocation="images/AboutMe/SkövdeSlice.jpg"
+          altText="Picture of Skövde from the nearby hill of Billingen, taken by me"
+          imageCaption="Picture of Skövde from the nearby hill of Billingen, taken by me"
+          coverImage={true}
+        />
+      </Section>
+      <Section>
+        <MarkdownSection
+          name={"Overview"}
+          description={DESC.Overview}
+          children={undefined}
+        ></MarkdownSection>
+        <ImageDisplay
           imageLocation="images/AboutMe/Photo.jpg"
           altText="Picture of me"
-          description="Hiya, welcome to the About Me page.
-
-I grew up in the city of Norrköping, moved to Stockholm when I was 13 and lived there for 6 years. After that I moved to Skövde and studied game design for 6 years, getting a Bachelor’s Degree in Game Design and a Master’s in Digital Narration and Cultural Heritage from Högskolan i Sköve/Skövde University. Sadly that didn't give me a job, but it was a good time. 
-
-Now I'm back in Stockholm looking for work, but I am open to moving to some other part of Sweden (or nearby EU countries) if I find a job there. Currently I'm studying fullstack programming/software development via a course by Lexicon/LTU. I’m also developing my own TTRPG, and organizing board game events at my nearest library. 
-"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
+      </Section>
       <PortfolioRowFrame reverse={false}>
         <PortfolioRow //Strategy Games
           imageLocation="images/AboutMe/CK3Reform.jpg"

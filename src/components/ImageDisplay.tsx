@@ -13,17 +13,15 @@ export default function ImageDisplay({
 }: ImageProps) {
   return (
     <>
-      <div className={coverImage ? "" : ""}>
-        <div className="w-175">
-          {imageCaption ? (
-            <div className="text-center text-xl cursive">
-              <img src={imageLocation} alt={altText} />
-              <p>{imageCaption}</p>
-            </div>
-          ) : (
-            <img className="" src={imageLocation} alt={altText} />
-          )}
-        </div>
+      <div className={coverImage ? "w-full" : "w-600"}>
+        {imageCaption ? (
+          <div className="text-center text-xl cursive">
+            <img src={imageLocation} alt={altText} />
+            <p>{imageCaption}</p>
+          </div>
+        ) : (
+          <img className="" src={imageLocation} alt={altText} />
+        )}
       </div>
     </>
   );
