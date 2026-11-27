@@ -1,11 +1,14 @@
-import MediaDisplay from "../components/MediaDisplay";
-import PortfolioCoverImage from "../PortfolioRows/PortfolioCoverImage";
-import PortfolioDoubleImageRow from "../PortfolioRows/PortfolioDoubleImageRow";
-import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
-import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
-import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
+import ImageDisplay from "../components/ImageDisplay";
+import List from "../components/List";
+import MarkdownSection from "../components/MarkdownSection";
+import ProjectLinks from "../components/ProjectLinks";
+import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
+import mariestadDigitalAdaptationMarkdown from "../markdown/MariestadDigitalAdaptation.md?raw";
+import { parseMarkdownByHeaders } from "../utils/parseMarkdown";
 import "../CSS/HRLInes.css";
+
+const MarkdownText = parseMarkdownByHeaders(mariestadDigitalAdaptationMarkdown);
 
 export default function MariestadDigitalAdaptation() {
   return (
@@ -14,42 +17,44 @@ export default function MariestadDigitalAdaptation() {
         title="Mariestad Digital Adaptation"
         subtitle="Digital Adaptation of the climate board game"
       />
-      <PortfolioRowFrame reverse={true} introRow={true}>
-        <PortfolioRow //Overview
+      <Section>
+        <MarkdownSection name="Overview" description={MarkdownText.Overview}>
+          <ProjectLinks
+            itchLink="https://acasez.itch.io/mariestad-climate-game"
+            portfolioLinks={[
+              {
+                linkTo: "/portfolio-v2/MariestadClimateGame",
+                label: "Board Game",
+              },
+              {
+                linkTo: "/portfolio-v2/NestedTooltips",
+                label: "Nested Tooltips",
+              },
+            ]}
+          />
+        </MarkdownSection>
+        <ImageDisplay
           imageLocation="images/MariestadDigitalAdaptation/NewMidScience.JPG"
           altText="The game in play"
-          description="I made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of a physical board game and an inbuilt tutorial. It has support to be played in both English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge.
-
-          When I made my Unity Asset for layered tooltips I also updated this project to feature them.
-"
-          itchLink="https://acasez.itch.io/mariestad-climate-game"
-          portfolioLinks={[
-            {
-              linkTo: "/portfolio-v2/MariestadClimateGame",
-              label: "Board Game",
-            },
-            {
-              linkTo: "/portfolio-v2/NestedTooltips",
-              label: "Nested Tooltips",
-            },
-          ]}
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioCoverImage>
-          <MediaDisplay
-            imageLocation="images/MariestadDigitalAdaptation/gameplay.gif"
-            altText="Gif of gameplay"
-            imageCaption="Some gameplay, you can see the mini animations as cards fly across the screen."
-            coverImage={true}
-          />
-        </PortfolioCoverImage>
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioListRow //Features List
+      </Section>
+      <Section>
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/gameplay.gif"
+          altText="Gif of gameplay"
+          imageCaption="Some gameplay, you can see the mini animations as cards fly across the screen."
+          coverImage={true}
+        />
+      </Section>
+      <Section>
+        <ImageDisplay
           imageLocation="images/MariestadDigitalAdaptation/CardExample.JPG"
           altText="Explanation of a cards cost in the tutorial"
           imageCaption="The tutorial (if enabled) shows up in the top left corner and explains the game concepts. It can be minimized, and their are options to go forwards and back in it."
+          coverImage={false}
+        />
+        <List
           listHeader="Things I worked on"
           listContent={[
             "Made a unity script to put together cards from their components using scriptable objects",
@@ -67,70 +72,83 @@ export default function MariestadDigitalAdaptation() {
             "Implemented my Nested Tooltips system.",
           ]}
         />
-      </PortfolioRowFrame>
+      </Section>
       <hr />
-      <PortfolioRowFrame reverse={true}>
-        <PortfolioRow //Idea
-          name="Idea and start"
+      <Section>
+        <MarkdownSection
+          name="Idea and Start"
+          description={MarkdownText.IdeaAndStart}
+        />
+        <ImageDisplay
           imageLocation="images/MariestadClimateGame/ScripatbleObject.JPG"
           altText="Card scripatble Object from Unity"
-          description="When I was making the Unity Script that put together the cards for the Board Game, I got the idea of trying to actually make a digital adaptation. It would be nice to play and an easier way to show people the game design of the board game without having to sit down and play it. I had also gotten really into playing solo Terraforming Mars at https://terraforming-mars.herokuapp.com, and I liked the idea of making something similar.
-
-I did most of the game code in spring 2024 as the game was being printed, and had a playable version in May. But for the initial versions I just used the games boards for UI, which looked awkward and was inefficient on a digital screen. I knew I wanted to fix something better, but I was a bit tired of the game then and took a few months break from the project.
-
-In the fall of 2024 I took a remote course in UI design from Uppsala University and decided that was a good time to fix the UI of the digital adaption.
-"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioRow //Idea
+      </Section>
+      <Section contentReverse={true}>
+        <MarkdownSection
           name="Game Board Design"
+          description={MarkdownText.GameBoardDesign}
+        />
+        <ImageDisplay
           imageLocation="images/MariestadDigitalAdaptation/CurrentDigital.JPG"
           altText="Old UI for the game"
-          imageCaption="The early UI for the digital adaptation "
-          description="The first part of this was splitting up the game boards and moving elements around for a more natural feeling layout that follows strategy genre conventions. Money, Income and tags were moved to the top of the screen where resources generally are in strategy games. Many resources that used tracks in the board game were made into numbers instead to take advantage of the digital format.
-
-I also changed the size of green energy and traffic tracks as the current size was way to fit for solo play. The pollution track I did a large redesign on, making into a dynamic display that shows the next couple of steps and their bonus rewards. This removes a lot of unused game elements and creates a nice visual of ‘pulling’ in pollution. It also allowed me to create an alternative setting where the bonuses on the track are randomly placed. 
-"
+          imageCaption="The early UI for the digital adaptation"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/MariestadDigitalAdaptation/FigmaPlanning.JPG"
-          altTextOne="Inspiration images I collected in a Figma board"
-          imageCaptionOne="I began by finding images of UI for strategy, solarpunk and digital board games."
-          imageLocationTwo="images/MariestadDigitalAdaptation/Wireframe0.1.JPG"
-          altTextTwo="Wireframe Design"
-          imageCaptionTwo="I then used Figma to plan out the new design for the UI, starting with a wireframe and adding more details over time. "
+      </Section>
+      <Section>
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/FigmaPlanning.JPG"
+          altText="Inspiration images I collected in a Figma board"
+          imageCaption="I began by finding images of UI for strategy, solarpunk and digital board games."
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/MariestadDigitalAdaptation/PollutionTrack.JPG"
-          altTextOne="Screenshot of the Pollution Track in the digital game"
-          imageCaptionOne="The pollution track I described earlier. As you reduce pollution it gets moved into the green VP display, connecting the two elements and creating a visual of ‘pulling’ pollution into nature. I really like this visual idea, and even if it’s a small touch, I think it adds a lot."
-          imageLocationTwo="images/MariestadDigitalAdaptation/gameboardpollution.jpg"
-          altTextTwo="Image of the Pollution Track on physical game board"
-          imageCaptionTwo="The same pollution track on the physical game board"
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/Wireframe0.1.JPG"
+          altText="Wireframe Design"
+          imageCaption="I then used Figma to plan out the new design for the UI, starting with a wireframe and adding more details over time."
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioRow //DoTween
+      </Section>
+      <Section>
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/PollutionTrack.JPG"
+          altText="Screenshot of the Pollution Track in the digital game"
+          imageCaption="The pollution track I described earlier. As you reduce pollution it gets moved into the green VP display, connecting the two elements and creating a visual of ‘pulling’ pollution into nature. I really like this visual idea, and even if it’s a small touch, I think it adds a lot."
+          coverImage={false}
+        />
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/gameboardpollution.jpg"
+          altText="Image of the Pollution Track on physical game board"
+          imageCaption="The same pollution track on the physical game board"
+          coverImage={false}
+        />
+      </Section>
+      <Section contentReverse={true}>
+        <MarkdownSection
           name="DoTween Micro Animations"
+          description={MarkdownText.DoTweenMicroAnimations}
+        />
+        <ImageDisplay
           imageLocation="images/MariestadDigitalAdaptation/DoScale.JPG"
           altText="moneyText.transform.DOScale(1.1f, animationsTimer).OnComplete(() => ResetText(moneyText));"
           imageCaption="DOTween code for scaling up the money text temporary when your receive income, and then scaling it back after animationsTimer const has passed."
-          description="I also wanted to add more feeling or ‘juice’ into the game. For this I added some micro animations using the DoTween plugin for unity which I found absolutely perfect for this. It allows you to add easy animations of things moving between points, scaling up or down or rotating. While none of these things are particularly hard to do in code, DoTween is so much faster and easier than doing it by hand. A line like the one above is so much quicker to write and use than having to deal with Unity's default ways of doing scaling, timers and more. I will definitely use this plugin for future projects that would benefit from something like it. "
+          coverImage={false}
         />
-      </PortfolioRowFrame>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioDoubleImageRow //Double Image
-          imageLocationOne="images/MariestadDigitalAdaptation/NewStart.JPG"
-          altTextOne="Screenshot of the game in the early game"
-          imageLocationTwo="images/MariestadDigitalAdaptation/NewEndGame.JPG"
-          altTextTwo="Screenshot of the game in the late game"
+      </Section>
+      <Section>
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/NewStart.JPG"
+          altText="Screenshot of the game in the early game"
+          coverImage={false}
         />
-      </PortfolioRowFrame>
+        <ImageDisplay
+          imageLocation="images/MariestadDigitalAdaptation/NewEndGame.JPG"
+          altText="Screenshot of the game in the late game"
+          coverImage={false}
+        />
+      </Section>
     </>
   );
 }
