@@ -58,7 +58,7 @@ interface MarkdownSectionProps {
   projectPageLink?: string;
   description: string;
   cursive?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function MarkdownSection({

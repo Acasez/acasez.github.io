@@ -11,7 +11,7 @@ My first job as a game designer was to work on exactly what those puzzles would 
 
 
 ### Light
-After some early testing one of the key elements of the game we identified was light, both as a concept and main mechanic. The player, called Kol, finds a helmet with a light source and can use it to solve puzzles. The light mechanic also gave me as the designer a lot of ideas and concepts to make puzzles with. I designed puzzle elements like mirrors, lenses, crystals, light sensors and magical dark areas which I think could make for very cool puzzles."
+After some early testing one of the key elements of the game we identified was light, both as a concept and main mechanic. The player, called Kol, finds a helmet with a light source and can use it to solve puzzles. The light mechanic also gave me as the designer a lot of ideas and concepts to make puzzles with. I designed puzzle elements like mirrors, lenses, crystals, light sensors and magical dark areas which I think could make for very cool puzzles.
         
 
 ### Notes
