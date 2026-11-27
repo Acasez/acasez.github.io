@@ -1,8 +1,8 @@
 import PortfolioDoubleImageRow from "../PortfolioRows/PortfolioDoubleImageRow";
-import PortfolioListRow from "../PortfolioRows/PortfolioListRow";
 import PortfolioRow from "../PortfolioRows/PortfolioOverviewRow";
 import PortfolioRowFrame from "../PortfolioRows/PortfolioRowFrame";
 import ImageDisplay from "../components/ImageDisplay";
+import List from "../components/List";
 import MarkdownSection from "../components/MarkdownSection";
 import ProjectLinks from "../components/ProjectLinks";
 import Section from "../components/Section";
@@ -30,11 +30,14 @@ export default function Amsvartne() {
           coverImage={false}
         />
       </Section>
-      <PortfolioRowFrame reverse={false}>
-        <PortfolioListRow //Features List
+      <Section>
+        <ImageDisplay
           imageLocation="images/Amsvartne/Amsvartnelorepage.JPG"
           altText="Lore text"
-          listHeader="Things I've worked on"
+          coverImage={false}
+        />
+        <List
+          listHeader={"Things I've worked on"}
           listContent={[
             "Programmed the light mechanic.",
             "Expandable keywords (tooltips within tooltips).",
@@ -46,7 +49,7 @@ export default function Amsvartne() {
             "Helped with narrative, worldbuilding and the ludo-narrative connection between the story and puzzles.",
           ]}
         />
-      </PortfolioRowFrame>
+      </Section>
       <Section>
         <ImageDisplay
           imageLocation="images/Amsvartne/lightbehindwall.JPG"
