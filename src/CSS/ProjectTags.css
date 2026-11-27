@@ -171,6 +171,11 @@
     color: white;
 }
 
+.tag.bun {
+    background-color: #fbf0df;
+    color: #333;
+}
+
 /* Container for the Show All button */
 .show-all-container {
     margin-bottom: 12px;

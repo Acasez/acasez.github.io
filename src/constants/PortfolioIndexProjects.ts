@@ -139,7 +139,7 @@ export const smallProjects = [
   {
     imageLocation: "images/others/BoomerangEnd.JPG",
     altText: "Screenshot of the end of the game",
-    projectTags: ["React", "Typescript", "Game"],
+    projectTags: ["React", "Typescript", "Game", "Bun"],
     name: "Boomerang Australia Digital (2026) ",
     subtitle: "Adaptation of board game",
     description:

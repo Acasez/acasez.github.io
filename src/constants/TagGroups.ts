@@ -5,7 +5,7 @@ export const tagGroups = [
   },
   {
     title: "Game Engines & Frameworks",
-    tags: ["Unity", "Unreal", "React", "Avalonia"],
+    tags: ["Unity", "Unreal", "React", "Avalonia", "Bun"],
   },
   {
     title: "Project Types",
