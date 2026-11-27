@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";import{t as c}from"./List-CxF5dBAe.js";var l=e(),u=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";import{t as c}from"./List-CrffEs_b.js";var l=e(),u=`### Overview\r
 Amsvartne is a 2D puzzle platformer I made as part of the start up group Corvian Games (now Tiny Creature Games). It focuses on narrative exploration and puzzle solving using light to navigate levels and solve puzzles. It's set in a mystical mine in a fantasy dieselpunk setting. I worked on the game and level design, as well as programming multiple game systems.\r
 \r
 \r

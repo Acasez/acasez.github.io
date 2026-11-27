@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";import{t as c}from"./List-CxF5dBAe.js";/* empty css                */var l=e(),u=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";import{t as c}from"./List-CrffEs_b.js";/* empty css                */var l=e(),u=`### Overview\r
 I designed a board game for the municipality of Mariestad with graphics by Iris Casado, Wu Deyu, Alexander Ros and others. The game is a eurogame inspired by games like Terraforming Mars, however the game is designed to be fairly short and easy to learn. The game can be played with 2-4 players and its playtime varies depending on the amount of players. 2 experienced players can play it in under 25 minutes, but for 4 new players it can take about an hour and half.\r
 \r
 &nbsp;\r

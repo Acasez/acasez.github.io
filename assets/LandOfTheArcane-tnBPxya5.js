@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./List-CxF5dBAe.js";import{t as c}from"./TechTreeVisualizer-DBkIfWe1.js";/* empty css                */var l=e(),u=`### Introduction\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./List-CrffEs_b.js";import{t as c}from"./TechTreeVisualizer-BvyN53yY.js";/* empty css                */var l=e(),u=`### Introduction\r
 Land of the arcane (LOTA) is a concept/design document for a 4X game I've been working on on and off for some time now and a game I want to make at some point. The problem is that while 4X's are a great genre, they don't fit well to indie game development. I like tech trees, fantasy worldbuilding and magitech and so LOTA has been a way to combine those. The main part of the work has been designing a tech and civic tree, but I've also planned out worldbuilding, collected art references and designed systems for species, cultures and unit design.\r
 \r
 &nbsp;\r

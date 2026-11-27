@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";import{t as c}from"./List-CxF5dBAe.js";/* empty css                */var l=e(),u=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";import{t as c}from"./List-CrffEs_b.js";/* empty css                */var l=e(),u=`### Overview\r
 I made a digital, solo only, adaption of the Mariestad Board Game. It has most of the features of a physical board game and an inbuilt tutorial. It has support to be played in both English and Swedish and has options for different amounts of starting pollution, to provide different levels of challenge.\r
 \r
 &nbsp;\r

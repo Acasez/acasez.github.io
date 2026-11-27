@@ -1,4 +1,4 @@
-import{i as e,l as t,o as n,t as r}from"./index-C-3D75g7.js";import{a as i,i as a,n as o,r as s,t as c}from"./ImageDisplay-Dt6QAroT.js";import{t as l}from"./ProjectLinks-DxEU8JUi.js";var u=t(n(),1),d=e(),f=`### Overview\r
+import{i as e,l as t,o as n,t as r}from"./index-BP2NCw0F.js";import{a as i,i as a,n as o,r as s,t as c}from"./ImageDisplay-BpYshgOJ.js";import{t as l}from"./ProjectLinks-CsePodlU.js";var u=t(n(),1),d=e(),f=`### Overview\r
 My name is Edvin Skogsholm Sanne and I'm a game designer and programmer from Sweden. I have a bachelor degree in game design and a master’s in digital narration from Högskolan i Skövde/Skövde University. I’ve also studied programming through remote courses from Uppsala University and Luleå University. My main skills lie in gameplay, balance and game programming. I have also worked on level design, web development, UI design and more. I have 2+ years of experience with programming in C# in Unity and some experience with Unity Blueprints, Java/Kotlin, Javascript, C++, Python and other programming languages.\r
 \r
 &nbsp;\r

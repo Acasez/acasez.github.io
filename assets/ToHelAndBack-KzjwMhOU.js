@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";import{t as c}from"./List-CxF5dBAe.js";/* empty css                */var l=e(),u=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";import{t as c}from"./List-CrffEs_b.js";/* empty css                */var l=e(),u=`### Overview\r
 To Hel and Back is a Norse mythology-inspired hack-and-slash roguelike. You play as Sif, fighting through levels with a battle axe and a throwing axe that lets you teleport to its landing point. Between levels, you choose runes that shape your build.\r
 \r
 ### AxeThrow\r

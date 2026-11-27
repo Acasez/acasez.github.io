@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";var c=e(),l=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";var c=e(),l=`### Overview\r
 During the summer of 2024 I had an internship at the board game studio ION Games for a few weeks. I worked with gameplay, balance and playtesting for a few different board games. It was an engaging and informative experience and I enjoyed my time there. After working on Mariestad Board Game for a long time it was interesting to see how a commercial board studio worked, and I learned quite a few things from working with professional board game designers. It shows some of the challenges in commercial game development, but also many of the advantages a studio has when developing games.\r
 \r
 &nbsp;\r

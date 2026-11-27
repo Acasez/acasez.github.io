@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";/* empty css                */var c=e(),l=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";/* empty css                */var c=e(),l=`### Overview\r
 Kastorix is a TTRPG and worldbuilding project I have been working on for a bit over a year now. It's a high fantasy world with science fiction elements, set on a moon orbiting a gas giant. It has over 35 different nations, 9 playable sapient species (plus things like dragons, coatl, giant spiders and hippo centaurs which aren’t playable), many types of magical creatures and a developed magic system. Technology wise the world roughly mirrors our 18th/19th century, but it relies heavily on magitech which changes many aspects of society.\r
 \r
 &nbsp;\r

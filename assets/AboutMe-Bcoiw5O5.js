@@ -1,4 +1,4 @@
-import{i as e,t}from"./index-C-3D75g7.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-Dt6QAroT.js";import{t as s}from"./ProjectLinks-DxEU8JUi.js";var c=e(),l=`### Overview\r
+import{i as e,t}from"./index-BP2NCw0F.js";import{a as n,i as r,n as i,r as a,t as o}from"./ImageDisplay-BpYshgOJ.js";import{t as s}from"./ProjectLinks-CsePodlU.js";var c=e(),l=`### Overview\r
 \r
 I grew up in the city of Norrköping, moved to Stockholm when I was 13 and lived there for 6 years. After that I moved to Skövde and studied game design for 6 years, getting a Bachelor’s Degree in Game Design and a Master’s in Digital Narration and Cultural Heritage from Högskolan i Skövde/Skövde University. During the latter I developed and published the Mariestad Climate Game for the Municipality of Mariestad. \r
 Sadly neither the education or the board gave me a job, but it was a good time. \r
